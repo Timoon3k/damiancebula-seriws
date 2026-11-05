@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class="wrap prose"><p class="eyebrow">Błąd 404</p><h1>Nie ma takiej strony.</h1><p>Wybierz usługę lub przejdź do kontaktu — pomożemy znaleźć rozwiązanie.</p><a class="button" href="<?php echo esc_url(home_url('/')); ?>">Strona główna <?php echo dc_icon(); ?></a></section><?php get_footer(); ?>

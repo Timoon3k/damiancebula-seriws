@@ -1,0 +1,143 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "title": "Serwis klimatyzacji i AGD Stalowa Wola — Damian Cebula",
+      "description": "Montaż, serwis i naprawa klimatyzacji oraz naprawa pralek, lodówek i zmywarek w Stalowej Woli. Damian Cebula — zadzwoń i omów zgłoszenie: 794 225 139.",
+      "canonical": "http://127.0.0.1:8080/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness"
+      ]
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "title": "Serwis klimatyzacji Stalowa Wola — Damian Cebula",
+      "description": "Montaż, naprawa, czyszczenie i konserwacja klimatyzacji w Stalowej Woli. Serwis dla domów, mieszkań i biur. Omów zakres prac z Damianem Cebulą.",
+      "canonical": "http://127.0.0.1:8080/serwis-klimatyzacji-stalowa-wola/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList",
+        "Service"
+      ]
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "title": "Serwis AGD Stalowa Wola — naprawa pralek i zmywarek",
+      "description": "Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Zgłoś objawy, ustal diagnozę i zakres serwisu AGD. Damian Cebula — telefon 794 225 139.",
+      "canonical": "http://127.0.0.1:8080/serwis-agd-stalowa-wola/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList",
+        "Service"
+      ]
+    },
+    {
+      "route": "/realizacje/",
+      "title": "Realizacje montażu klimatyzacji — Damian Cebula",
+      "description": "Zobacz autentyczne zdjęcia montażu i serwisu klimatyzacji przekazane przez Damiana Cebulę. Jednostki wewnętrzne, zewnętrzne i instalacje.",
+      "canonical": "http://127.0.0.1:8080/realizacje/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/o-firmie/",
+      "title": "Damian Cebula — lokalny serwis AGD i klimatyzacji",
+      "description": "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD w Stalowej Woli i okolicach. Poznaj zakres usług i sposób zgłoszenia usterki.",
+      "canonical": "http://127.0.0.1:8080/o-firmie/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/kontakt/",
+      "title": "Kontakt — Damian Cebula, serwis w Stalowej Woli",
+      "description": "Zgłoś naprawę AGD, serwis lub montaż klimatyzacji w Stalowej Woli. Damian Cebula: 794 225 139, kontakt@damiancebula-serwis.pl. Formularz kontaktowy.",
+      "canonical": "http://127.0.0.1:8080/kontakt/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList"
+      ]
+    }
+  ],
+  "crawl": [
+    {
+      "url": "http://127.0.0.1:8080/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/realizacje/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/o-firmie/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/kontakt/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/serwis-klimatyzacji-pompa-prozniowa-960.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/polityka-prywatnosci/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzatora-jednostka-wewnetrzna-1600.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-prowadzenie-instalacji-1600.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca1-480.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca3-480.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca4-480.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca5-480.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-prava2-480.webp",
+      "status": 200
+    }
+  ],
+  "notFound": true,
+  "privacyLimitation": "Existing production policy not imported: source network access denied."
+}

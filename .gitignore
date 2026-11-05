@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+!.env.example
+artifacts/*.zip
+artifacts/screenshots/
+artifacts/test-results/

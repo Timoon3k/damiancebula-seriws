@@ -1,30 +1,35 @@
-# Damian Cebula — przebudowa strony WWW
+# Damian Cebula — WordPress / DC Serwis
 
-**Cel:** odtworzenie nowego projektu 1:1 na podstawie makiety (czarny/grafit + pomarańcz) i wykonanie wielostronicowej, szybkiej witryny WordPress dla serwisu klimatyzacji i AGD w Stalowej Woli.
+Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w Stalowej Woli. Zawiera sześć układów stron, lokalne fotografie realizacji, formularz z wymaganą zgodą na przetwarzanie danych, progresywną nawigację AJAX i animacje, fallback SEO oraz konfigurowalne miejsca na Google Maps i opinie Trustindex.
 
-- Strona produkcyjna (źródło treści): https://damiancebula-serwis.pl/
-- Repozytorium: https://github.com/Timoon3k/damiancebula-seriws
-- Telefon (potwierdzony na stronie): **794 225 139**
-- E-mail (potwierdzony na stronie): **kontakt@damiancebula-serwis.pl**
-- Kluczowe frazy: **serwis klimatyzacji Stalowa Wola**, **serwis AGD Stalowa Wola**.
-- Makieta w załącznikach przekazanych przez właściciela; dokładny opis layoutu: [docs/DESIGN_SPEC.md](docs/DESIGN_SPEC.md).
-- Pełne zadanie dla Codexa: [CODEX_PROMPT.md](CODEX_PROMPT.md).
-- Audyt istniejącej witryny: [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md).
-- SEO: [docs/LOCAL_SEO.md](docs/LOCAL_SEO.md).
-- Zasoby: [assets/SOURCES.md](assets/SOURCES.md).
+- [Motyw i instrukcja instalacji](wp-content/themes/dc-serwis/README.md)
+- [Lokalny WordPress w Dockerze](dev/README.md)
+- [Testy i ograniczenia](docs/TEST_REPORT.md)
+- [Porównanie z makietą](docs/VISUAL_COMPARISON.md)
+- [Migracja i SEO](docs/MIGRATION_CHECKLIST.md)
+- [Wymagania projektu](CODEX_PROMPT.md)
+- [Makieta referencyjna](design/reference/makieta-uklad-strony-1-1.jpg)
+- [Źródła fotografii](assets/SOURCES.md)
 
-## Sposób pracy
+## Szybki start w środowisku chmurowym
 
-To repozytorium zaczęło jako **puste**. Najpierw dodano dokumentację dla Codexa i procedurę pobrania mediów widocznych publicznie na istniejącej stronie. Nie oznacza to wdrożenia nowej strony na hostingu ani kompletnego eksportu bazy WordPress.
+```sh
+cd /workspace/damiancebula-seriws
+bash dev/setup.sh
+bash dev/start.sh
+npm ci
+npm run test:browser
+npm run test:editor
+npm run test:a11y
+python3 scripts/package-theme.py
+```
 
-**Ważne:** oryginalne zdjęcia i makieta przesłane w rozmowie są dostarczane także jako paczka ZIP do umieszczenia pod ścieżkami `design/reference/` i `assets/photos/`. Jeżeli te pliki nie znajdują się jeszcze w repo, nie uznawaj odtworzenia 1:1 za zweryfikowane.
+Archiwum powstaje jako `artifacts/dc-serwis.zip`, z katalogiem `dc-serwis/` na najwyższym poziomie, gotowym do instalacji przez panel. Screenshoty 1440/768/390 zapisuje test przeglądarkowy w `artifacts/screenshots/`; porównania i wybrane zrzuty znajdują się w `docs/visual/`.
 
-## Rozpoczęcie prac
+## Status i granice wdrożenia
 
-1. Przeczytaj `AGENTS.md`, `CODEX_PROMPT.md` i pozostałe dokumenty.
-2. Sprawdź zdjęcia w `assets/source-web/`; import obecnych mediów wykonuje workflow `Import public site media`.
-3. Wgraj zdjęcia właściciela i oryginał makiety z paczki ZIP, jeżeli nie ma ich w repo.
-4. Stwórz motyw WordPress i wdrażaj zmiany **w PR**, nie na serwerze produkcyjnym.
-5. Zweryfikuj frontend względem makiety, lokalne SEO i Core Web Vitals.
+Kod jest testowany w lokalnym WordPressie, a produkcja pozostaje bez zmian. Mapa Google i shortcode opinii pozostają puste do samodzielnego uzupełnienia przez właściciela. Motyw nie wymyśla adresu, ocen ani godzin pracy. Zachowuje istniejące treści i politykę prywatności podczas aktywacji — nie zawiera eksportu produkcyjnej bazy.
 
-Nie umieszczaj żadnych haseł, kluczy API, danych wp-config.php ani eksportów baz danych w tym repozytorium.
+Dostęp do obecnej witryny i API GitHuba był blokowany polityką proxy. Przed wdrożeniem wymagane są weryfikacja istniejącej polityki prywatności, test dostarczalności poczty i akceptacja różnic fotograficznych wobec makiety. Nie deklarujemy zgodności pixel-perfect ani wyników Core Web Vitals bez odpowiednich pomiarów. Pełny stan testów i PR opisuje raport.
+
+Dane potwierdzone: **Damian Cebula**, **794 225 139**, **kontakt@damiancebula-serwis.pl**, **damiancebula-serwis.pl**. Nie umieszczaj haseł, konfiguracji produkcyjnego WordPressa ani eksportów baz w repozytorium.

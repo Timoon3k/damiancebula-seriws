@@ -1,0 +1,42 @@
+name: dc-dev
+services:
+  db:
+    image: mariadb:11.4@sha256:d1891ede5a559f1086f55053bb8cc1569b0298338c4d72d71725a7f74f6ba620
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  wordpress:
+    image: wordpress:php8.3-apache@sha256:6888208af0e3cb93af427c13a434273b07ba353ce9e2d5a29abe3031bb28ea3a
+    ports:
+      - "127.0.0.1:8080:80"
+    environment: &wp-env
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+  cli:
+    image: wordpress:cli-php8.3@sha256:34e17709bfceae80069746fc1ed20a535ebe081b3b4c160e6fcb438579d5cb27
+    user: "33:33"
+    environment:
+      <<: *wp-env
+      WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD}
+    volumes:
+      - wordpress:/var/www/html
+    profiles: [tools]
+volumes:
+  database:
+  wordpress:

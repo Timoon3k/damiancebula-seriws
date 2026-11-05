@@ -1,0 +1,8 @@
+services:
+  wordpress:
+    volumes:
+      - /workspace/damiancebula-seriws/wp-content/themes/dc-serwis:/var/www/html/wp-content/themes/dc-serwis:ro
+  cli:
+    volumes:
+      - /workspace/damiancebula-seriws/wp-content/themes/dc-serwis:/var/www/html/wp-content/themes/dc-serwis:ro
+      - /workspace/damiancebula-seriws/scripts:/scripts:ro
