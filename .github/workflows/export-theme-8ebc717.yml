@@ -1,0 +1,67 @@
+name: Export DC Serwis 2.0.0 from 8ebc717
+
+on:
+  push:
+    branches:
+      - ci/export-dc-serwis-8ebc717
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export-theme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact theme source
+        uses: actions/checkout@v4
+        with:
+          ref: 8ebc717353de46879fe5aa59aa24ab59653d9be1
+          persist-credentials: false
+
+      - name: Verify source SHA
+        run: test "$(git rev-parse HEAD)" = "8ebc717353de46879fe5aa59aa24ab59653d9be1"
+
+      - name: Create WordPress installable ZIP
+        run: |
+          python3 scripts/package-theme.py
+          mv artifacts/dc-serwis.zip artifacts/dc-serwis-2.0.0-8ebc717.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          p=Path('artifacts/dc-serwis-2.0.0-8ebc717.zip')
+          assert p.is_file() and p.stat().st_size > 0
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None, 'Damaged ZIP archive'
+              files=z.namelist()
+              assert all(name.startswith('dc-serwis/') for name in files), 'Unexpected ZIP root'
+              assert 'dc-serwis/style.css' in files
+              assert 'dc-serwis/functions.php' in files
+              assert 'Version: 2.0.0' in z.read('dc-serwis/style.css').decode()
+              print(f'Verified WordPress theme, {len(files)} files, {p.stat().st_size} bytes')
+          PY
+          sha256sum artifacts/dc-serwis-2.0.0-8ebc717.zip
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc-serwis-2.0.0-8ebc717
+          path: artifacts/dc-serwis-2.0.0-8ebc717.zip
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Publish direct-download release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag=dc-serwis-2.0.0-8ebc717
+          asset=artifacts/dc-serwis-2.0.0-8ebc717.zip
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$asset" --clobber
+          else
+            gh release create "$tag" "$asset" \
+              --target 8ebc717353de46879fe5aa59aa24ab59653d9be1 \
+              --title "DC Serwis 2.0.0 (8ebc717)" \
+              --notes "Instalacyjny ZIP zawierający wyłącznie motyw WordPress dc-serwis z commita 8ebc717353de46879fe5aa59aa24ab59653d9be1. Nie zawiera całego repozytorium."
+          fi
