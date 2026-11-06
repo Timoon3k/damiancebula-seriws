@@ -1,0 +1,34 @@
+[
+  {
+    "width": 310,
+    "height": 66,
+    "childWidth": 396.796875,
+    "overflow": false,
+    "contrast": "dark-to-light",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 275,
+    "height": 66,
+    "childWidth": 352,
+    "overflow": false,
+    "contrast": "dark-to-light",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 268,
+    "height": 55,
+    "childWidth": 342.6875,
+    "overflow": false,
+    "contrast": "dark-to-light",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 246,
+    "height": 55,
+    "childWidth": 314.28125,
+    "overflow": false,
+    "contrast": "dark-to-light",
+    "duplicateWordmark": false
+  }
+]

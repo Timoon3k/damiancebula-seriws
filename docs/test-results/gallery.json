@@ -1,0 +1,1466 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "route": "/",
+      "photos": [
+        {
+          "natural": [
+            1439,
+            1079
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 740,
+            "right": 945.328125
+          },
+          "imageBox": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 740,
+            "top": 472.5625
+          },
+          "contained": {
+            "width": 205.328125,
+            "height": 153.96042173384294
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-1536x1152.webp"
+        },
+        {
+          "natural": [
+            204,
+            280
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 957.328125,
+            "right": 1162.65625
+          },
+          "imageBox": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 957.328125,
+            "top": 472.5625
+          },
+          "contained": {
+            "width": 112.18861607142857,
+            "height": 153.984375
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4-219x300.webp"
+        },
+        {
+          "natural": [
+            205,
+            364
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 1174.65625,
+            "right": 1379.984375
+          },
+          "imageBox": {
+            "width": 205.328125,
+            "height": 153.984375,
+            "left": 1174.65625,
+            "top": 472.5625
+          },
+          "contained": {
+            "width": 86.72196943681318,
+            "height": 153.984375
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-576x1024.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "photos": [
+        {
+          "natural": [
+            1439,
+            1079
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 432,
+            "height": 324,
+            "left": 60,
+            "right": 492
+          },
+          "imageBox": {
+            "width": 432,
+            "height": 324,
+            "left": 60,
+            "top": 387.9375
+          },
+          "contained": {
+            "width": 431.99999999999994,
+            "height": 323.92494788047253
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-1536x1152.webp"
+        },
+        {
+          "natural": [
+            480,
+            657
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 432,
+            "height": 324,
+            "left": 504,
+            "right": 936
+          },
+          "imageBox": {
+            "width": 432,
+            "height": 324,
+            "left": 504,
+            "top": 387.9375
+          },
+          "contained": {
+            "width": 236.71232876712327,
+            "height": 324
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            432,
+            768
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 432,
+            "height": 324,
+            "left": 948,
+            "right": 1380
+          },
+          "imageBox": {
+            "width": 432,
+            "height": 324,
+            "left": 948,
+            "top": 387.9375
+          },
+          "contained": {
+            "width": 182.25,
+            "height": 324
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-576x1024.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 1440,
+      "route": "/realizacje/",
+      "photos": [
+        {
+          "natural": [
+            1439,
+            1079
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "right": 482.65625
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "top": -541.96875
+          },
+          "contained": {
+            "width": 422.65625,
+            "height": 316.9187586865879
+          },
+          "caption": {
+            "text": "Klimatyzator ścienny zamontowany na szarej ścianie",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-1536x1152.webp"
+        },
+        {
+          "natural": [
+            480,
+            657
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "right": 931.328125
+          },
+          "imageBox": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "top": -541.96875
+          },
+          "contained": {
+            "width": 231.59817351598173,
+            "height": 317
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna AUX na elewacji budynku",
+            "height": 49,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            960,
+            1708
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "right": 1379.984375
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "top": -541.96875
+          },
+          "contained": {
+            "width": 178.1645199063232,
+            "height": 316.984375
+          },
+          "caption": {
+            "text": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp"
+        },
+        {
+          "natural": [
+            423,
+            317
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "right": 482.65625
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "top": -149.96875
+          },
+          "contained": {
+            "width": 422.65625,
+            "height": 316.74239066193854
+          },
+          "caption": {
+            "text": "Jednostka wewnętrzna zabezpieczona folią podczas montażu",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70-768x576.webp"
+        },
+        {
+          "natural": [
+            423,
+            317
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "right": 931.328125
+          },
+          "imageBox": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "top": -149.96875
+          },
+          "contained": {
+            "width": 422.671875,
+            "height": 316.75410017730496
+          },
+          "caption": {
+            "text": "Prowadzenie instalacji klimatyzacji przy elewacji",
+            "height": 49,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1-768x576.webp"
+        },
+        {
+          "natural": [
+            422,
+            564
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "right": 1379.984375
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "top": -149.96875
+          },
+          "contained": {
+            "width": 237.17625221631204,
+            "height": 316.984375
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961.webp"
+        },
+        {
+          "natural": [
+            422,
+            317
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "right": 482.65625
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "top": 242.03125
+          },
+          "contained": {
+            "width": 421.9791995268139,
+            "height": 316.984375
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna na żwirowym podłożu",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046.webp"
+        },
+        {
+          "natural": [
+            422,
+            564
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "right": 931.328125
+          },
+          "imageBox": {
+            "width": 422.671875,
+            "height": 317,
+            "left": 508.65625,
+            "top": 242.03125
+          },
+          "contained": {
+            "width": 237.18794326241135,
+            "height": 317
+          },
+          "caption": {
+            "text": "Rząd jednostek zewnętrznych na dachu",
+            "height": 49,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5.webp"
+        },
+        {
+          "natural": [
+            422,
+            317
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "right": 1379.984375
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 957.328125,
+            "top": 242.03125
+          },
+          "contained": {
+            "width": 421.9791995268139,
+            "height": 316.984375
+          },
+          "caption": {
+            "text": "Klimatyzator przypodłogowy we wnętrzu",
+            "height": 49.015625,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643.webp"
+        },
+        {
+          "natural": [
+            422,
+            564
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "right": 482.65625
+          },
+          "imageBox": {
+            "width": 422.65625,
+            "height": 316.984375,
+            "left": 60,
+            "top": 634.03125
+          },
+          "contained": {
+            "width": 237.17625221631204,
+            "height": 316.984375
+          },
+          "caption": {
+            "text": "Instalacje klimatyzacyjne na dachu",
+            "height": 49,
+            "scrollHeight": 49,
+            "clientHeight": 49
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "photos": [
+        {
+          "natural": [
+            768,
+            576
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 108,
+            "height": 81,
+            "left": 396,
+            "right": 504
+          },
+          "imageBox": {
+            "width": 108,
+            "height": 81,
+            "left": 396,
+            "top": 506.296875
+          },
+          "contained": {
+            "width": 108,
+            "height": 81
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            108,
+            147
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 108,
+            "height": 81,
+            "left": 516,
+            "right": 624
+          },
+          "imageBox": {
+            "width": 108,
+            "height": 81,
+            "left": 516,
+            "top": 506.296875
+          },
+          "contained": {
+            "width": 59.51020408163265,
+            "height": 80.99999999999999
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4-219x300.webp"
+        },
+        {
+          "natural": [
+            108,
+            191
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 108,
+            "height": 81,
+            "left": 636,
+            "right": 744
+          },
+          "imageBox": {
+            "width": 108,
+            "height": 81,
+            "left": 636,
+            "top": 506.296875
+          },
+          "contained": {
+            "width": 45.80104712041885,
+            "height": 81
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-169x300.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 768,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "photos": [
+        {
+          "natural": [
+            768,
+            576
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 232,
+            "height": 174,
+            "left": 24,
+            "right": 256
+          },
+          "imageBox": {
+            "width": 232,
+            "height": 174,
+            "left": 24,
+            "top": 459.75
+          },
+          "contained": {
+            "width": 232,
+            "height": 174
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            480,
+            657
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 232,
+            "height": 174,
+            "left": 268,
+            "right": 500
+          },
+          "imageBox": {
+            "width": 232,
+            "height": 174,
+            "left": 268,
+            "top": 459.75
+          },
+          "contained": {
+            "width": 127.12328767123287,
+            "height": 174
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            232,
+            412
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 232,
+            "height": 174,
+            "left": 512,
+            "right": 744
+          },
+          "imageBox": {
+            "width": 232,
+            "height": 174,
+            "left": 512,
+            "top": 459.75
+          },
+          "contained": {
+            "width": 97.98058252427184,
+            "height": 174
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-576x1024.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 768,
+      "route": "/realizacje/",
+      "photos": [
+        {
+          "natural": [
+            768,
+            576
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "right": 246.65625
+          },
+          "imageBox": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "top": 1.734375
+          },
+          "contained": {
+            "width": 222.64583333333331,
+            "height": 166.984375
+          },
+          "caption": {
+            "text": "Klimatyzator ścienny zamontowany na szarej ścianie",
+            "height": 91,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            480,
+            657
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "right": 495.328125
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "top": 1.734375
+          },
+          "contained": {
+            "width": 122.00913242009132,
+            "height": 167
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna AUX na elewacji budynku",
+            "height": 90.984375,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            768,
+            1366
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "right": 744
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "top": 1.734375
+          },
+          "contained": {
+            "width": 93.89165446559298,
+            "height": 167
+          },
+          "caption": {
+            "text": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+            "height": 90.984375,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-768x1366.webp"
+        },
+        {
+          "natural": [
+            223,
+            167
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "right": 246.65625
+          },
+          "imageBox": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "top": 285.71875
+          },
+          "contained": {
+            "width": 222.65625,
+            "height": 166.74257286995515
+          },
+          "caption": {
+            "text": "Jednostka wewnętrzna zabezpieczona folią podczas montażu",
+            "height": 91.015625,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70-300x225.webp"
+        },
+        {
+          "natural": [
+            223,
+            167
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "right": 495.328125
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "top": 285.71875
+          },
+          "contained": {
+            "width": 222.671875,
+            "height": 166.754274103139
+          },
+          "caption": {
+            "text": "Prowadzenie instalacji klimatyzacji przy elewacji",
+            "height": 91,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1-300x225.webp"
+        },
+        {
+          "natural": [
+            223,
+            297
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "right": 744
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "top": 285.71875
+          },
+          "contained": {
+            "width": 125.39057239057239,
+            "height": 167
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji",
+            "height": 91,
+            "scrollHeight": 91,
+            "clientHeight": 91
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961-225x300.webp"
+        },
+        {
+          "natural": [
+            223,
+            167
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "right": 246.65625
+          },
+          "imageBox": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "top": 569.71875
+          },
+          "contained": {
+            "width": 222.65625,
+            "height": 166.74257286995515
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna na żwirowym podłożu",
+            "height": 70.015625,
+            "scrollHeight": 70,
+            "clientHeight": 70
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046-300x225.webp"
+        },
+        {
+          "natural": [
+            223,
+            297
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "right": 495.328125
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 272.65625,
+            "top": 569.71875
+          },
+          "contained": {
+            "width": 125.39057239057239,
+            "height": 167
+          },
+          "caption": {
+            "text": "Rząd jednostek zewnętrznych na dachu",
+            "height": 70,
+            "scrollHeight": 70,
+            "clientHeight": 70
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5-225x300.webp"
+        },
+        {
+          "natural": [
+            223,
+            167
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "right": 744
+          },
+          "imageBox": {
+            "width": 222.671875,
+            "height": 167,
+            "left": 521.328125,
+            "top": 569.71875
+          },
+          "contained": {
+            "width": 222.671875,
+            "height": 166.754274103139
+          },
+          "caption": {
+            "text": "Klimatyzator przypodłogowy we wnętrzu",
+            "height": 70,
+            "scrollHeight": 70,
+            "clientHeight": 70
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643-300x225.webp"
+        },
+        {
+          "natural": [
+            223,
+            297
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "right": 246.65625
+          },
+          "imageBox": {
+            "width": 222.65625,
+            "height": 166.984375,
+            "left": 24,
+            "top": 832.71875
+          },
+          "contained": {
+            "width": 125.37884048821549,
+            "height": 166.984375
+          },
+          "caption": {
+            "text": "Instalacje klimatyzacyjne na dachu",
+            "height": 70,
+            "scrollHeight": 70,
+            "clientHeight": 70
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6-225x300.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "photos": [
+        {
+          "natural": [
+            390,
+            292
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 18,
+            "right": 128
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 18,
+            "top": 532.046875
+          },
+          "contained": {
+            "width": 110,
+            "height": 82.35897435897436
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            110,
+            150
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 140,
+            "right": 250
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 140,
+            "top": 532.046875
+          },
+          "contained": {
+            "width": 60.50000000000001,
+            "height": 82.5
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4-219x300.webp"
+        },
+        {
+          "natural": [
+            110,
+            195
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 262,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 262,
+            "top": 532.046875
+          },
+          "contained": {
+            "width": 46.53846153846154,
+            "height": 82.5
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-169x300.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 390,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "photos": [
+        {
+          "natural": [
+            390,
+            292
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 18,
+            "right": 128
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 18,
+            "top": 532.515625
+          },
+          "contained": {
+            "width": 110,
+            "height": 82.35897435897436
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            389,
+            533
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 140,
+            "right": 250
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 140,
+            "top": 532.515625
+          },
+          "contained": {
+            "width": 60.211069418386494,
+            "height": 82.5
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            110,
+            195
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 110,
+            "height": 82.5,
+            "left": 262,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 110,
+            "height": 82.5,
+            "left": 262,
+            "top": 532.515625
+          },
+          "contained": {
+            "width": 46.53846153846154,
+            "height": 82.5
+          },
+          "caption": null,
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-169x300.webp"
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "width": 390,
+      "route": "/realizacje/",
+      "photos": [
+        {
+          "natural": [
+            390,
+            292
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "right": 188
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "top": 28.40625
+          },
+          "contained": {
+            "width": 170,
+            "height": 127.28205128205128
+          },
+          "caption": {
+            "text": "Klimatyzator ścienny zamontowany na szarej ścianie",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42-768x576.webp"
+        },
+        {
+          "natural": [
+            389,
+            533
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "top": 28.40625
+          },
+          "contained": {
+            "width": 93.05347091932458,
+            "height": 127.5
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna AUX na elewacji budynku",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp"
+        },
+        {
+          "natural": [
+            390,
+            693
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "right": 188
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "top": 243.90625
+          },
+          "contained": {
+            "width": 71.75324675324674,
+            "height": 127.49999999999999
+          },
+          "caption": {
+            "text": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40-576x1024.webp"
+        },
+        {
+          "natural": [
+            170,
+            127
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "top": 243.90625
+          },
+          "contained": {
+            "width": 170,
+            "height": 127
+          },
+          "caption": {
+            "text": "Jednostka wewnętrzna zabezpieczona folią podczas montażu",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70-300x225.webp"
+        },
+        {
+          "natural": [
+            170,
+            127
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "right": 188
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "top": 459.40625
+          },
+          "contained": {
+            "width": 170,
+            "height": 127
+          },
+          "caption": {
+            "text": "Prowadzenie instalacji klimatyzacji przy elewacji",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1-300x225.webp"
+        },
+        {
+          "natural": [
+            170,
+            226
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "top": 459.40625
+          },
+          "contained": {
+            "width": 95.9070796460177,
+            "height": 127.50000000000001
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji",
+            "height": 74,
+            "scrollHeight": 74,
+            "clientHeight": 74
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961-225x300.webp"
+        },
+        {
+          "natural": [
+            170,
+            127
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "right": 188
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "top": 674.90625
+          },
+          "contained": {
+            "width": 170,
+            "height": 127
+          },
+          "caption": {
+            "text": "Jednostka zewnętrzna na żwirowym podłożu",
+            "height": 56,
+            "scrollHeight": 56,
+            "clientHeight": 56
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046-300x225.webp"
+        },
+        {
+          "natural": [
+            170,
+            226
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "top": 674.90625
+          },
+          "contained": {
+            "width": 95.9070796460177,
+            "height": 127.50000000000001
+          },
+          "caption": {
+            "text": "Rząd jednostek zewnętrznych na dachu",
+            "height": 56,
+            "scrollHeight": 56,
+            "clientHeight": 56
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5-225x300.webp"
+        },
+        {
+          "natural": [
+            170,
+            127
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "right": 188
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 18,
+            "top": 872.40625
+          },
+          "contained": {
+            "width": 170,
+            "height": 127
+          },
+          "caption": {
+            "text": "Klimatyzator przypodłogowy we wnętrzu",
+            "height": 56,
+            "scrollHeight": 56,
+            "clientHeight": 56
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643-300x225.webp"
+        },
+        {
+          "natural": [
+            170,
+            226
+          ],
+          "fit": "contain",
+          "transform": "none",
+          "frame": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "right": 372
+          },
+          "imageBox": {
+            "width": 170,
+            "height": 127.5,
+            "left": 202,
+            "top": 872.40625
+          },
+          "contained": {
+            "width": 95.9070796460177,
+            "height": 127.50000000000001
+          },
+          "caption": {
+            "text": "Instalacje klimatyzacyjne na dachu",
+            "height": 56,
+            "scrollHeight": 56,
+            "clientHeight": 56
+          },
+          "source": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6-225x300.webp"
+        }
+      ],
+      "lightbox": true
+    }
+  ],
+  "errors": []
+}

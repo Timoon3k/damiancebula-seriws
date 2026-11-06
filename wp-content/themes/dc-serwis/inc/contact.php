@@ -44,7 +44,7 @@ function dc_contact_handle() {
     set_transient($key, $attempts + 1, 5 * MINUTE_IN_SECONDS);
     // Fixed destination and subject; user data can never become a mail header.
     $body = "Imię: $name\nE-mail: $email\nTelefon: $phone\n\n$message\n\nPotwierdzenie zgody na odpowiedź: tak\nData zgłoszenia: " . wp_date('Y-m-d H:i:s T') . "\nPolityka prywatności: " . (get_privacy_policy_url() ?: home_url('/polityka-prywatnosci/'));
-    $sent = wp_mail('kontakt@damiancebula-serwis.pl', 'Zgłoszenie ze strony Damian Cebula', $body, ['Content-Type: text/plain; charset=UTF-8']);
+    $sent = wp_mail('kontakt@damiancebula-serwis.pl', 'Zgłoszenie ze strony Damian Cebula', $body, ['Content-Type: text/plain; charset=UTF-8', 'Reply-To: ' . $email]);
     dc_contact_finish($sent ? 'sent' : 'failed');
 }
 add_action('admin_post_nopriv_dc_contact', 'dc_contact_handle');

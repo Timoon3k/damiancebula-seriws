@@ -1,0 +1,3 @@
+/* Content is visible by default. JavaScript animates only live, visible nodes. */
+.dc-motion-wipe{position:fixed;z-index:35;inset:0 auto 0 0;width:clamp(50px,12vw,180px);background:linear-gradient(90deg,transparent,#ff7a1a40 30%,#ff7a1ab3 75%,transparent);pointer-events:none;opacity:0;transform:translateX(-200%) skewX(-18deg);contain:strict}
+@media(prefers-reduced-motion:reduce){.dc-motion-wipe{display:none}}

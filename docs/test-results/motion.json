@@ -1,0 +1,94 @@
+{
+  "routes": [
+    {
+      "mobile": false,
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": false,
+      "path": "/serwis-agd-stalowa-wola/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": false,
+      "path": "/realizacje/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": false,
+      "path": "/o-firmie/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": false,
+      "path": "/kontakt/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": false,
+      "path": "/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/serwis-agd-stalowa-wola/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/realizacje/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/o-firmie/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/kontakt/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    },
+    {
+      "mobile": true,
+      "path": "/",
+      "realContentAnimation": true,
+      "geometricWipe": true,
+      "viewTransitionsAvailable": false
+    }
+  ],
+  "initialHero": true,
+  "scrollReveal": true,
+  "rapidNavigation": true,
+  "history": true,
+  "reducedMotion": true,
+  "errors": []
+}

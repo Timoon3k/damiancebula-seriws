@@ -8,7 +8,9 @@
     "test:a11y": "node tests/accessibility.cjs",
     "test:seo": "node tests/seo.cjs",
     "test:map": "node tests/map.cjs",
-    "test:navigation": "node tests/navigation.cjs"
+    "test:navigation": "node tests/navigation.cjs",
+    "test:motion": "node tests/motion.cjs",
+    "test:gallery": "node tests/gallery.cjs"
   },
   "engines": {
     "node": ">=20"

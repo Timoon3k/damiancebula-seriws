@@ -1,0 +1,12 @@
+{
+  "themeVersion": "1.3.0",
+  "completePhotos": true,
+  "fullLogoContrastAndMargins": true,
+  "scrollspyDisabled": true,
+  "stickyPreserved": true,
+  "visibleAjaxDesktopMobileWithoutViewTransitions": true,
+  "formRecipient": "kontakt@damiancebula-serwis.pl",
+  "replyToValidated": true,
+  "mailInterceptedNoRealSend": true,
+  "productionModified": false
+}

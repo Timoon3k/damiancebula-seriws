@@ -16,6 +16,9 @@ add_action('after_setup_theme', 'dc_setup');
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('dc-site', get_theme_file_uri('assets/site.css'), [], filemtime(get_theme_file_path('assets/site.css')));
     wp_enqueue_script('dc-site', get_theme_file_uri('assets/site.js'), [], filemtime(get_theme_file_path('assets/site.js')), ['in_footer' => true, 'strategy' => 'defer']);
+    wp_enqueue_style('dc-branding', get_theme_file_uri('assets/branding.css'), ['dc-site'], filemtime(get_theme_file_path('assets/branding.css')));
+    wp_enqueue_script('dc-branding', get_theme_file_uri('assets/branding.js'), [], filemtime(get_theme_file_path('assets/branding.js')), ['in_footer'=>true, 'strategy'=>'defer']);
+    wp_enqueue_style('dc-motion', get_theme_file_uri('assets/motion.css'), ['dc-site'], filemtime(get_theme_file_path('assets/motion.css')));
     wp_enqueue_style('dc-navigation', get_theme_file_uri('assets/navigation.css'), ['dc-site'], filemtime(get_theme_file_path('assets/navigation.css')));
     wp_enqueue_script('dc-navigation', get_theme_file_uri('assets/navigation.js'), ['dc-site'], filemtime(get_theme_file_path('assets/navigation.js')), ['in_footer'=>true, 'strategy'=>'defer']);
 });
@@ -43,6 +46,7 @@ function dc_icon($name = 'arrow') {
     ];
     return '<svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($paths[$name] ?? $paths['arrow']) . '</svg>';
 }
+require_once get_theme_file_path('inc/branding.php');
 require_once get_theme_file_path('inc/company.php');
 require_once get_theme_file_path('inc/seo.php');
 require_once get_theme_file_path('inc/contact.php');

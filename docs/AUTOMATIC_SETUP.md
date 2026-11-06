@@ -1,4 +1,4 @@
-# Automatyczne strony, zdjęcia i menu — DC Serwis 1.2
+# Automatyczne strony, zdjęcia i menu — DC Serwis 1.3
 
 ## Nowa, oddzielna witryna
 
@@ -34,4 +34,4 @@ Adres jest edytowalny w Wygląd → Dostosuj → DC — Dane firmy. Początkowo 
 
 Polityka jest osobną stroną pod `/polityka-prywatnosci/` i nie staje się siódmą pozycją głównego menu. Strona wskazana jako polityka w WordPressie i ręczne edycje są zachowywane. Dokument obejmuje faktyczne funkcje motywu, formularz, mapę i opcjonalne opinie; po włączeniu analityki, innej poczty lub nowych wtyczek trzeba go odpowiednio zaktualizować.
 
-Nowy znak DC jest w `assets/branding/`, a twórca projektu w stopce to majewskitomasz.pl. Sticky menu i scrollspy działają bez powielania nagłówka. Konfigurację Rank Math i ponownej indeksacji opisuje `RANK_MATH_SEO.md`.
+Nowy znak DC jest w `assets/branding/`, a twórca projektu w stopce to majewskitomasz.pl. Sticky menu działa bez powielania nagłówka; scrollspy został wyłączony. Menu otwiera podstrony przez AJAX. Konfigurację Rank Math i ponownej indeksacji opisuje `RANK_MATH_SEO.md`.

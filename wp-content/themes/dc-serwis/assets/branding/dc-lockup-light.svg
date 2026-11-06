@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 220" width="1180" height="220" fill="none">
+  <title>Damian Cebula — Serwis Klimatyzacji i AGD</title>
+  <g transform="translate(4 16)">
+    <path fill="#ff7a1a" d="M36 12h100c49 0 70 29 56 74l-12 39c-11 35-38 53-81 53H0l44-105h51l-26 63h38c17 0 27-8 32-24l10-30c5-17-2-27-21-27H58L36 12Z"/>
+    <path fill="#cbd0d3" d="M251 12h85l-19 43h-60c-23 0-37 13-45 36l-5 15c-7 21-1 30 22 30h61l-19 42h-68c-55 0-75-29-58-75l6-17c18-49 46-74 100-74Z"/>
+    <path stroke="#ff7a1a" stroke-width="12" stroke-linecap="round" d="M127 92c37 33 63-31 108-8M119 112c37 33 63-31 108-8"/>
+    <path fill="#ff7a1a" d="m369 10 9 0-66 174h-9z"/>
+  </g>
+  <text x="405" y="103" fill="#f6f6f4" font-family="Arial,Helvetica,sans-serif" font-size="91" font-weight="800" letter-spacing="-3">Damian Cebula</text>
+  <text x="406" y="171" fill="#d1d6da" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="400" letter-spacing="-.8">Serwis Klimatyzacji i AGD</text>
+</svg>

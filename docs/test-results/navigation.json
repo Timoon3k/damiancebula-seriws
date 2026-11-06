@@ -1,8 +1,21 @@
 {
   "sticky": true,
   "reservedHeaderSpace": true,
-  "desktopScrollspy": true,
-  "mobileScrollspy": true,
+  "scrollspyDisabled": true,
+  "desktopPages": [
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/realizacje/",
+    "/o-firmie/",
+    "/kontakt/"
+  ],
+  "mobilePages": [
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/realizacje/",
+    "/o-firmie/",
+    "/kontakt/"
+  ],
   "ajaxHistory": true,
   "nativeUrls": true,
   "mobileKeyboard": true,

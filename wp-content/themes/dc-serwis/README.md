@@ -53,6 +53,10 @@ Pełne zasady automatycznej instalacji, bezpiecznej synchronizacji i przepięcia
 
 Adres firmy edytujesz w **Wygląd → Dostosuj → DC — Dane firmy**. Wartości początkowe: Aleje Jana Pawła II 42, 37-450 Stalowa Wola. Z tego samego źródła korzystają kontakt, stopka, mapa i polityka. Na nowej instalacji importer dodaje politykę jako osobną stronę, bez siódmej pozycji głównego menu; istniejącej polityki ani ręcznych zmian nie nadpisuje.
 
-Nagłówek ma nowe logo DC; eksporty PNG i ikonę witryny znajdziesz w `assets/branding/`. Sticky menu pojawia się po przewinięciu. Na stronie głównej zwykłe kliknięcia menu przewijają do sekcji, a kafle usług otwierają pełne podstrony. Bez JavaScript i przy otwarciu w nowej karcie działają rzeczywiste URL podstron.
+Nagłówek ma nowe logo DC; eksporty PNG i ikonę witryny znajdziesz w `assets/branding/`. Sticky menu pojawia się po przewinięciu. Menu i kafle usług otwierają pełne podstrony; scrollspy został wyłączony w 1.3. Bez JavaScript i przy otwarciu w nowej karcie działają rzeczywiste URL podstron.
 
 Konfigurację Rank Math i ponownego zgłaszania stron do Google opisuje `docs/RANK_MATH_SEO.md` w repozytorium. Aktualizacja kodu nie zgłasza automatycznie indeksacji ani nie zmienia konfiguracji kont Google.
+
+## Wersja 1.3
+
+Scrollspy jest wyłączony; sticky menu i zwykłe podstrony pozostają. Widoczne animacje AJAX i wejścia są wspólne dla desktopu/mobile. Galerie pokazują całe zdjęcia. Logo pełne wgrywaj przez Tożsamość witryny; nie zostanie zmniejszone do samej ikony. Jasny wariant w paczce: `assets/branding/dc-lockup-light.png`; tryb kontrastu jest edytowalny. Formularz wysyła do kontakt@damiancebula-serwis.pl; sprawdź SMTP zgodnie z `docs/MAIL_DELIVERY.md`.

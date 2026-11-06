@@ -46,5 +46,11 @@
     "success": false,
     "status": "limited",
     "message": "Zbyt wiele prób. Odczekaj kilka minut lub zadzwoń: 794 225 139."
+  },
+  "delivery": {
+    "recipient": "kontakt@damiancebula-serwis.pl",
+    "replyToVerified": true,
+    "consentRecordVerified": true,
+    "externalMailSent": false
   }
 }
