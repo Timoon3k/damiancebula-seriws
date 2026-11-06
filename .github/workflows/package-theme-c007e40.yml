@@ -1,0 +1,60 @@
+name: Package DC Serwis WordPress theme c007e40
+
+on:
+  push:
+    branches:
+      - ci/package-theme-c007e40
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout requested main commit
+        uses: actions/checkout@v4
+        with:
+          ref: c007e40592628316a4484f4b7236aeea2cf9246c
+          persist-credentials: false
+      - name: Verify source revision
+        run: test "$(git rev-parse HEAD)" = "c007e40592628316a4484f4b7236aeea2cf9246c"
+      - name: Build WordPress theme ZIP
+        run: |
+          python3 scripts/package-theme.py
+          mkdir -p artifacts
+          mv artifacts/dc-serwis.zip artifacts/dc-serwis-1.6.0-c007e40.zip
+          python3 - <<'PY'
+          import zipfile
+          p='artifacts/dc-serwis-1.6.0-c007e40.zip'
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              f=z.namelist()
+              assert 'dc-serwis/style.css' in f and 'dc-serwis/functions.php' in f
+              assert f and all(x.startswith('dc-serwis/') for x in f)
+              print('Theme files:',len(f))
+          PY
+          sha256sum artifacts/dc-serwis-1.6.0-c007e40.zip
+      - name: Upload ZIP as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc-serwis-1.6.0-c007e40
+          path: artifacts/dc-serwis-1.6.0-c007e40.zip
+          retention-days: 90
+          if-no-files-found: error
+      - name: Publish directly downloadable GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="dc-serwis-1.6.0-c007e40"
+          archive="artifacts/dc-serwis-1.6.0-c007e40.zip"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$archive" --clobber
+          else
+            gh release create "$tag" "$archive" \
+              --target c007e40592628316a4484f4b7236aeea2cf9246c \
+              --title "DC Serwis 1.6.0 – main c007e40" \
+              --notes "ZIP zawierający wyłącznie instalacyjny motyw WordPress dc-serwis z main c007e40592628316a4484f4b7236aeea2cf9246c."
+          fi
