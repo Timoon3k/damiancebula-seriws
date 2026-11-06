@@ -24,7 +24,7 @@
           if(pixels[n+3]<128 || Math.max(pixels[n],pixels[n+1],pixels[n+2])<12) continue;
           light+=.2126*pixels[n]+.7152*pixels[n+1]+.0722*pixels[n+2];count++;
         }
-        if(image.dataset.logoTone==='auto' && count && light/count<145) image.dataset.logoTone='dark';
+        if(image.dataset.logoTone==='auto' && count) image.dataset.logoTone=light/count<145?'dark':'light';
         const box=image.closest('.brand-uploaded-lockup');
         if(box){
           const fit=()=>{

@@ -1,4 +1,6 @@
-# DC Serwis — instalacja i edycja
+# DC Serwis 2.0 — instalacja i edycja
+
+Aktualny kierunek to **Architectural Service**: jasna porcelana, petrol, szałwia i miedź, asymetryczne układy, różne kompozycje usług oraz nowe ilustracyjne wnętrza. [Instrukcja aktualizacji 2.0](UPDATE_2_0.md) opisuje instalację na odrębnym stagingu. Historyczne sekcje 1.2–1.6 niżej dokumentują poprzednie wersje; migawka, ciemny wygląd i pozioma mini-galeria zostały zastąpione w 2.0.
 
 Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. Krój Manrope jest dołączony lokalnie: dwa pliki WOFF2 z polskimi znakami, bez żądań do zewnętrznych serwisów fontów. Środowisko dotychczasowych testów lokalnych: WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4; wyniki bieżącej wersji opisuje raport w repozytorium. Interfejs jest po polsku; pakiet językowy panelu WordPress instaluje administrator niezależnie od motywu.
 
@@ -25,7 +27,7 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. 
 
 ## Edycja
 
-Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Dekoracyjne ikony i strzałki używają bloków HTML. Fotografie można zastąpić obrazami z biblioteki mediów; WordPress tworzy ich srcset. Zdjęcia dostarczone w motywie mają własny srcset dodawany podczas renderowania, aby zachować poprawność bloków w edytorze. Synchronizacja aktualizuje zarządzane strony, dopóki nie zostały zmienione ręcznie. Wykryte własne edycje są zachowywane i raportowane.
+Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Dekoracyjne ikony i strzałki używają bloków HTML. Fotografie można zastąpić obrazami z biblioteki mediów; WordPress tworzy ich srcset. Wersja 2.0 rozpoznaje wyłącznie znane pliki domyślnych ilustracji wcześniejszego motywu i prezentuje nowe wnętrza bez zapisu do bazy. Edytor może nadal pokazywać zapisany wcześniejszy podgląd; ostateczny wygląd sprawdzaj w podglądzie witryny. Własne zdjęcie o innej nazwie nie jest podmieniane. Zdjęcia dostarczone w motywie mają własny srcset dodawany podczas renderowania, aby zachować poprawność bloków w edytorze. Synchronizacja aktualizuje zarządzane strony, dopóki nie zostały zmienione ręcznie. Wykryte własne edycje są zachowywane i raportowane.
 
 ## Mapa i opinie Google
 
@@ -41,11 +43,11 @@ Wstaw `[dc_contact]`. Wymagane: imię, e-mail, wiadomość i checkbox zgody na p
 
 ## AJAX i animacje
 
-Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł, metadata, schema i stan menu. Obsługuje Wstecz, fokus i komunikaty czytnika ekranu. Awaria pobrania uruchamia zwykłą nawigację. Obce strony, panel, pliki, linki `tel:` i `mailto:` działają standardowo. View Transitions i reveal mają wariant `prefers-reduced-motion`. Strony zawierające widget opinii przechodzą na pełne ładowanie, aby umożliwić poprawną inicjalizację skryptów wtyczki. Formularz AJAX działa niezależnie.
+Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł, metadata, schema i stan menu. Obsługuje Wstecz, fokus i komunikaty czytnika ekranu. Awaria pobrania uruchamia zwykłą nawigację. Obce strony, panel, pliki, linki `tel:` i `mailto:` działają standardowo. Całe `main` i hero pozostają widoczne, bez View Transitions, masek i przygaszania. Wybrane grupy poniżej pierwszego widoku pojawiają się tylko raz przez opacity i przesunięcie o 16 px w 620 ms; `prefers-reduced-motion` i brak JavaScript pozostawiają treść bez animacji. Strony zawierające widget opinii przechodzą na pełne ładowanie, aby umożliwić poprawną inicjalizację skryptów wtyczki. Formularz AJAX działa niezależnie.
 
 ## Źródła grafiki
 
-Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi: oryginalne wygenerowane obrazy `editorial-*`, inspirowane stylem makiety; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
+Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi w wersji 2.0: wygenerowane wnętrza `editorial-architecture-*` (WebP 480/960/1536), bez wizerunków techników; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
 
 Wersja 1.6 zachowuje wszystkie istniejące pliki fotografii i dodaje lokalny krój **Manrope**, wagi 200–800, podzbiory `latin` i `latin-ext` (łącznie około 40 KB). Źródło: `@fontsource-variable/manrope` 5.3.0; licencja SIL OFL 1.1 jest dołączona w `assets/fonts/OFL-Manrope.txt`. Szczegóły: `docs/FONTS.md` w repozytorium.
 
@@ -78,3 +80,9 @@ Zainstaluj ZIP 1.5.0 przez **Wygląd → Motywy → Dodaj → Wyślij motyw** wy
 Przestronny wygląd w czerni, graficie i pomarańczu: duża fotografia w hero, otwarte sekcje usług, spokojniejszy proces obsługi oraz nowe układy tekstów, galerii, FAQ i formularza. Na telefonie mini-galeria strony głównej przewija się w poziomie bez dodatkowej biblioteki. Treści SEO, H1–H3, adresy, metadane, schema i pliki zdjęć pozostają zachowane. Nadal działają drawer, AJAX, migawka tekstu, ograniczenie ruchu, ostre logo i automatyczna mapa w Kontakcie. Formularz kieruje wiadomości na **kontakt@damiancebula-serwis.pl**, a stopka wskazuje **majewskitomasz.pl**.
 
 Wgraj ZIP **1.6.0** wyłącznie do nowej, oddzielnej instancji WordPress i zastąp tam pliki motywu. Wyczyść cache WordPress/LiteSpeed, Hostinger i przeglądarki; sprawdź wszystkie podstrony oraz widoki mobilne. Nie trzeba ponownie wstawiać wzorców ani wpisywać tekstów SEO. Stara strona, jej baza i przypisanie domeny pozostają bez zmian. Push do `main` nie instaluje paczki na Hostinger. Instrukcja: `docs/UPDATE_1_6.md`; założenia wyglądu: `docs/PREMIUM_DESIGN.md` w repozytorium.
+
+## Wersja 2.0
+
+Architectural Service zastępuje ciemne powierzchnie porcelaną, petrolem i szałwią. Nowe fotografie wnętrz są ilustracjami; fotografie realizacji pozostają w niezmienionej kolejności, z oryginalnymi ALT, podpisami i pełnym lightboxem. Galerie na telefonie korzystają z pionowej, nieregularnej kompozycji. Logo zachowuje znak DC, z wariantem kolorystycznym dla jasnego nagłówka; favicon pozostaje bez zmian.
+
+Migawka tekstu, pełnoekranowy wipe i przygaszanie `main` są usunięte. Hero jest widoczne natychmiast, a dyskretna animacja niższych grup działa tylko raz. Zachowano pełne adresy stron, teksty SEO, H1–H3, metadata, schema, Rank Math, prawną treść polityki i mechanizmy formularza, mapy oraz opinii. Aktualizacja nie przepisuje bazy. Szczegóły instalacji i sprawdzenia: [UPDATE_2_0.md](UPDATE_2_0.md).

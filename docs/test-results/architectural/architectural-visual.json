@@ -1,0 +1,306 @@
+{
+  "capturedAt": "2026-11-06T22:31:25.293Z",
+  "beforeCommit": "c007e40592628316a4484f4b7236aeea2cf9246c",
+  "beforeSource": "Actual pre-change local HTTP HTML, replayed with original theme assets from Git; not a production screenshot.",
+  "beforeHtmlSha256": "2dce81c39d56337cb252fac8539a430fd2fc26aafb08cf4efafbea638972519e",
+  "afterSource": "Current running isolated WordPress at http://127.0.0.1:8081",
+  "reducedMotion": true,
+  "externalMap": "Explicitly labelled local test placeholder; no contact with Google.",
+  "captureOnlyStyle": "content-visibility:visible on images prevents off-screen Chromium culling in full-page captures.",
+  "captures": [
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/home-1440.jpg",
+      "bytes": 328830
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/serwis-klimatyzacji-stalowa-wola-1440.jpg",
+      "bytes": 466880
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/serwis-agd-stalowa-wola-1440.jpg",
+      "bytes": 327872
+    },
+    {
+      "stage": "before",
+      "route": "/realizacje/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/realizacje-1440.jpg",
+      "bytes": 347266
+    },
+    {
+      "stage": "before",
+      "route": "/o-firmie/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/o-firmie-1440.jpg",
+      "bytes": 159261
+    },
+    {
+      "stage": "before",
+      "route": "/kontakt/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/kontakt-1440.jpg",
+      "bytes": 158322
+    },
+    {
+      "stage": "before",
+      "route": "/polityka-prywatnosci/",
+      "width": 1440,
+      "file": "docs/visual/architectural/before/polityka-prywatnosci-1440.jpg",
+      "bytes": 902292
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/home-768.jpg",
+      "bytes": 222161
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/serwis-klimatyzacji-stalowa-wola-768.jpg",
+      "bytes": 271072
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/serwis-agd-stalowa-wola-768.jpg",
+      "bytes": 221399
+    },
+    {
+      "stage": "before",
+      "route": "/realizacje/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/realizacje-768.jpg",
+      "bytes": 241770
+    },
+    {
+      "stage": "before",
+      "route": "/o-firmie/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/o-firmie-768.jpg",
+      "bytes": 120095
+    },
+    {
+      "stage": "before",
+      "route": "/kontakt/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/kontakt-768.jpg",
+      "bytes": 122981
+    },
+    {
+      "stage": "before",
+      "route": "/polityka-prywatnosci/",
+      "width": 768,
+      "file": "docs/visual/architectural/before/polityka-prywatnosci-768.jpg",
+      "bytes": 839967
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/home-390.jpg",
+      "bytes": 187665
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/serwis-klimatyzacji-stalowa-wola-390.jpg",
+      "bytes": 225495
+    },
+    {
+      "stage": "before",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/serwis-agd-stalowa-wola-390.jpg",
+      "bytes": 190910
+    },
+    {
+      "stage": "before",
+      "route": "/realizacje/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/realizacje-390.jpg",
+      "bytes": 241128
+    },
+    {
+      "stage": "before",
+      "route": "/o-firmie/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/o-firmie-390.jpg",
+      "bytes": 100025
+    },
+    {
+      "stage": "before",
+      "route": "/kontakt/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/kontakt-390.jpg",
+      "bytes": 112737
+    },
+    {
+      "stage": "before",
+      "route": "/polityka-prywatnosci/",
+      "width": 390,
+      "file": "docs/visual/architectural/before/polityka-prywatnosci-390.jpg",
+      "bytes": 707501
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/home-1440.jpg",
+      "bytes": 445029
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-1440.jpg",
+      "bytes": 476960
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/serwis-agd-stalowa-wola-1440.jpg",
+      "bytes": 354175
+    },
+    {
+      "stage": "after",
+      "route": "/realizacje/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/realizacje-1440.jpg",
+      "bytes": 529397
+    },
+    {
+      "stage": "after",
+      "route": "/o-firmie/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/o-firmie-1440.jpg",
+      "bytes": 179669
+    },
+    {
+      "stage": "after",
+      "route": "/kontakt/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/kontakt-1440.jpg",
+      "bytes": 165281
+    },
+    {
+      "stage": "after",
+      "route": "/polityka-prywatnosci/",
+      "width": 1440,
+      "file": "docs/visual/architectural/after/polityka-prywatnosci-1440.jpg",
+      "bytes": 830389
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/home-768.jpg",
+      "bytes": 220614
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-768.jpg",
+      "bytes": 276063
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/serwis-agd-stalowa-wola-768.jpg",
+      "bytes": 224797
+    },
+    {
+      "stage": "after",
+      "route": "/realizacje/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/realizacje-768.jpg",
+      "bytes": 276517
+    },
+    {
+      "stage": "after",
+      "route": "/o-firmie/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/o-firmie-768.jpg",
+      "bytes": 126208
+    },
+    {
+      "stage": "after",
+      "route": "/kontakt/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/kontakt-768.jpg",
+      "bytes": 126049
+    },
+    {
+      "stage": "after",
+      "route": "/polityka-prywatnosci/",
+      "width": 768,
+      "file": "docs/visual/architectural/after/polityka-prywatnosci-768.jpg",
+      "bytes": 768620
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/home-390.jpg",
+      "bytes": 218634
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-390.jpg",
+      "bytes": 263694
+    },
+    {
+      "stage": "after",
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/serwis-agd-stalowa-wola-390.jpg",
+      "bytes": 194145
+    },
+    {
+      "stage": "after",
+      "route": "/realizacje/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/realizacje-390.jpg",
+      "bytes": 278311
+    },
+    {
+      "stage": "after",
+      "route": "/o-firmie/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/o-firmie-390.jpg",
+      "bytes": 110026
+    },
+    {
+      "stage": "after",
+      "route": "/kontakt/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/kontakt-390.jpg",
+      "bytes": 114739
+    },
+    {
+      "stage": "after",
+      "route": "/polityka-prywatnosci/",
+      "width": 390,
+      "file": "docs/visual/architectural/after/polityka-prywatnosci-390.jpg",
+      "bytes": 676882
+    }
+  ]
+}

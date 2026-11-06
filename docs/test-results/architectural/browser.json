@@ -1,0 +1,291 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 360,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1024,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1280,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/serwis-agd-stalowa-wola/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/realizacje/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/o-firmie/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1920,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    }
+  ],
+  "ajax": true,
+  "history": true,
+  "lightbox": true,
+  "mobileMenu": true,
+  "noJsForm": true,
+  "errors": [],
+  "failures": []
+}

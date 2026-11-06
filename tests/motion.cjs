@@ -1,109 +1,33 @@
-const {chromium} = require('playwright');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const root = (process.env.BASE_URL || 'http://127.0.0.1:8081').replace(/\/$/, '');
-const paths = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/', '/realizacje/', '/o-firmie/', '/kontakt/', '/'];
-
-(async () => {
-  const browser = await chromium.launch({executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium', headless: true, args: ['--no-sandbox']});
-  const errors = [];
-  const report = [];
-  fs.mkdirSync('artifacts/screenshots', {recursive: true});
-  for (const mobile of [false, true]) {
-    const context = await browser.newContext({viewport: mobile ? {width: 390, height: 844} : {width: 1440, height: 900}, reducedMotion: 'no-preference', isMobile:mobile, hasTouch:mobile});
-    await context.route('**/*', route => route.request().url().startsWith(root) ? route.continue() : route.abort());
-    await context.addInitScript(() => {
-      // Safari and older browsers do not need the View Transitions API.
-      Object.defineProperty(document, 'startViewTransition', {value: undefined, configurable: true});
-      window.dcMotionTest = true;
-      window.dcMotionSamples = [];
-      window.dcMotionEvents = [];
-      addEventListener('dc:motion', event => window.dcMotionEvents.push({stage: event.detail.stage, time: performance.now()}));
-      function sample() {
-        document.getAnimations().filter(animation => animation.id.startsWith('dc-')).forEach(animation => {
-          const target = animation.effect.target;
-          const style = getComputedStyle(target);
-          window.dcMotionSamples.push({id: animation.id, path: location.pathname, opacity: Number(style.opacity), transform: style.transform, clipPath:style.clipPath, probe:target.dataset.dcMotionProbe || '', text:target.textContent?.trim().slice(0,60), playState: animation.playState, duration: animation.effect.getTiming().duration, stage: document.documentElement.dataset.dcMotion, tag: target.tagName});
-        });
-        requestAnimationFrame(sample);
-      }
-      requestAnimationFrame(sample);
-    });
-    const page = await context.newPage();
-    page.on('pageerror', error => errors.push(error.message));
-    await page.goto(root, {waitUntil: 'domcontentloaded'});
-    await page.waitForFunction(() => window.dcMotionSamples.some(sample => sample.id === 'dc-title-enter' && sample.opacity > 0 && sample.opacity < .95 && sample.transform !== 'none'));
-    await page.waitForFunction(() => document.documentElement.dataset.dcMotion === 'idle');
-    assert.equal(await page.evaluate(() => document.startViewTransition), undefined);
-    assert.equal(await page.locator('h1').evaluate(element => getComputedStyle(element).opacity), '1');
-    assert.equal(await page.locator('h1').evaluate(element => getComputedStyle(element).transform), 'none');
-    for (const path of paths) {
-      await page.evaluate(() => { window.dcMotionSamples = []; window.dcMotionEvents = []; });
-      if (mobile) await page.getByRole('button', {name: /Menu/}).click();
-      await page.locator(`#primary-nav a[href="${root}${path}"]`).click();
-      await page.waitForURL(root + path);
-      if (path === paths[0]) await page.screenshot({path: `artifacts/screenshots/motion-active-${mobile ? 390 : 1440}.png`, animations: 'allow'});
-      await page.waitForFunction(() => document.documentElement.dataset.dcMotion === 'idle' && !document.documentElement.classList.contains('is-navigating'));
-      const samples = await page.evaluate(() => window.dcMotionSamples);
-      const visibleMotion = id => samples.some(sample => sample.id === id && sample.playState === 'running' && sample.opacity > 0 && sample.opacity < .98 && sample.transform !== 'none');
-      assert.ok(visibleMotion('dc-page-leave'), `Visible page exit on ${mobile ? 'mobile' : 'desktop'}: ${path}`);
-      assert.ok(visibleMotion('dc-page-enter'), `Visible page entry: ${path}`);
-      assert.ok(visibleMotion('dc-title-enter'), `Visible title entry: ${path}`);
-      assert.ok(samples.some(sample => sample.id === 'dc-navigation-wipe' && sample.playState === 'running' && sample.opacity > .05 && sample.opacity < .95 && sample.clipPath.startsWith('inset(')), `Visible full-screen shutter: ${path}`);
-      assert.ok(samples.some(sample => sample.id === 'dc-title-enter' && sample.clipPath.startsWith('inset(') && sample.opacity < .95), 'Title is revealed through a moving mask');
-      assert.ok(samples.every(sample => sample.duration <= 580), 'Every animation has a bounded duration');
-      assert.ok(Math.max(...samples.filter(sample => sample.id === 'dc-page-leave').map(sample => sample.duration)) + 410 <= 700, 'Combined exit and staggered entrance stay below 700 ms');
-      assert.equal(await page.evaluate(() => window.dcMotionTest), true, 'Real AJAX navigation preserves the window');
-      assert.equal(await page.locator('main').evaluate(element => getComputedStyle(element).opacity), '1');
-      assert.equal(await page.locator('main').evaluate(element => getComputedStyle(element).transform), 'none');
-      assert.equal(await page.locator('#main[aria-busy]').count(), 0);
-      report.push({mobile, touch:mobile, path, realContentAnimation:true, pageShutter:true, titleMask:true, viewTransitionsAvailable:false});
-    }
-    // Only the text is masked: images and long section containers stay visible.
-    await page.evaluate(() => { window.dcMotionSamples = []; const heading=document.querySelector('.local-copy h2'); heading.dataset.dcMotionProbe='local-heading'; heading.scrollIntoView({behavior:'instant',block:'center'}); });
-    await page.waitForFunction(() => window.dcMotionSamples.some(sample => sample.id === 'dc-text-reveal' && sample.probe === 'local-heading' && sample.opacity > 0 && sample.opacity < .98 && sample.clipPath.startsWith('inset(')));
-    await page.locator('.local-projects').screenshot({path:`artifacts/screenshots/text-shutter-${mobile ? 390 : 1440}.png`,animations:'allow'});
-    const revealSamples = await page.evaluate(() => window.dcMotionSamples.filter(sample => sample.id === 'dc-text-reveal'));
-    assert(revealSamples.every(sample => ['H2','H3','P','FIGCAPTION','LI'].includes(sample.tag)), 'Scroll animation masks text, not entire sections');
-    await page.waitForFunction(() => !document.getAnimations().some(animation => animation.id.startsWith('dc-')));
-    assert.equal(await page.locator('.local-copy h2').evaluate(element => getComputedStyle(element).clipPath), 'none', 'Text has no lingering clipping after reveal');
-    await page.evaluate(() => { window.dcMotionSamples = []; scrollTo({top:0,behavior:'instant'}); });
-    await page.waitForFunction(() => scrollY === 0);
-    await page.locator('.local-copy h2').evaluate(element => element.scrollIntoView({behavior:'instant',block:'center'}));
-    await page.waitForTimeout(180);
-    assert.equal(await page.evaluate(() => window.dcMotionSamples.some(sample => sample.id === 'dc-text-reveal' && sample.probe === 'local-heading')), false, 'Previously revealed text does not replay on every scroll');
-    // Two fast destinations must leave neither an old page nor a stuck overlay.
-    await page.evaluate(({root, paths}) => {
-      document.querySelector(`#primary-nav a[href="${root}${paths[0]}"]`).click();
-      document.querySelector(`#primary-nav a[href="${root}${paths[1]}"]`).click();
-    }, {root, paths});
-    await page.waitForURL(root + paths[1]);
-    await page.waitForFunction(() => document.documentElement.dataset.dcMotion === 'idle' && !document.documentElement.classList.contains('is-navigating') && !document.getAnimations().some(animation => animation.id.startsWith('dc-')));
-    assert.equal(await page.locator('.dc-motion-wipe').evaluate(element => getComputedStyle(element).opacity), '0');
-    assert.equal(await page.locator('#main[aria-busy]').count(), 0);
-    assert.equal(await page.evaluate(() => window.dcMotionTest), true);
-    await page.goBack();
-    await page.waitForURL(root + '/');
-    await page.waitForFunction(() => document.documentElement.dataset.dcMotion === 'idle' && !document.documentElement.classList.contains('is-navigating'));
-    await page.screenshot({path: `artifacts/screenshots/motion-settled-${mobile ? 390 : 1440}.png`});
-    await context.close();
-  }
-  const reduced = await browser.newContext({viewport: {width: 390, height: 844}, reducedMotion: 'reduce'});
-  await reduced.route('**/*', route => route.request().url().startsWith(root) ? route.continue() : route.abort());
-  const page = await reduced.newPage();
-  page.on('pageerror', error => errors.push(error.message));
-  await page.goto(root, {waitUntil: 'networkidle'});
-  assert.equal(await page.evaluate(() => document.getAnimations().filter(animation => animation.id.startsWith('dc-')).length), 0);
-  await page.getByRole('button', {name: /Menu/}).click();
-  await page.locator(`#primary-nav a[href="${root}${paths[0]}"]`).click();
-  await page.waitForURL(root + paths[0]);
-  await page.waitForFunction(() => !document.documentElement.classList.contains('is-navigating'));
-  assert.equal(await page.evaluate(() => document.getAnimations().filter(animation => animation.id.startsWith('dc-')).length), 0);
-  assert.equal(await page.locator('h1').evaluate(element => getComputedStyle(element).opacity), '1');
-  assert.equal(await page.locator('.dc-motion-wipe').evaluate(element => getComputedStyle(element).display), 'none');
-  assert.deepEqual(errors, [], 'No animation JavaScript errors');
-  fs.mkdirSync('artifacts/test-results', {recursive: true});
-  fs.writeFileSync('artifacts/test-results/motion.json', JSON.stringify({routes: report, initialHero: true, scrollReveal:true, textShutter:true, oncePerText:true, touchMobile:true, rapidNavigation: true, history: true, reducedMotion: true, errors}, null, 2));
-  await browser.close();
-  console.log('PASS: actual page shutters and scroll text masks on desktop/touch mobile, no View Transitions API, rapid AJAX, history and reduced motion');
-})().catch(error => { console.error(error); process.exit(1); });
+const {chromium}=require('playwright');const assert=require('node:assert/strict');const fs=require('node:fs');
+const root=(process.env.BASE_URL||'http://127.0.0.1:8081').replace(/\/$/,'');
+const paths=['/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/','/'];
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});const errors=[],checks=[];
+ try{for(const mobile of [false,true]){
+  const context=await browser.newContext({viewport:mobile?{width:390,height:844}:{width:1440,height:900},isMobile:mobile,hasTouch:mobile,reducedMotion:'no-preference'});
+  await context.route('**/*',route=>route.request().url().startsWith(root)?route.continue():route.abort());
+  await context.addInitScript(()=>{
+   window.dcStableDocument=true;window.dcFrameSamples=[];window.dcRevealSamples=[];
+   requestAnimationFrame(function sample(){const main=document.querySelector('#main'),title=main?.querySelector('h1');if(main&&title){const m=getComputedStyle(main),h=getComputedStyle(title);window.dcFrameSamples.push({path:location.pathname,mainOpacity:m.opacity,titleOpacity:h.opacity,mainMask:m.clipPath,titleMask:h.clipPath,wipe:!!document.querySelector('.dc-motion-wipe'),busy:document.documentElement.classList.contains('is-navigating')})}
+    for(const a of document.getAnimations().filter(a=>a.id==='dc-group-reveal')){const el=a.effect.target,s=getComputedStyle(el);window.dcRevealSamples.push({probe:el.dataset.probe,tag:el.tagName,opacity:Number(s.opacity),transform:s.transform,clip:s.clipPath,duration:a.effect.getTiming().duration,delay:a.effect.getTiming().delay,hero:!!el.closest('.hero')})}requestAnimationFrame(sample)});
+  });
+  const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(root,{waitUntil:'networkidle'});await p.waitForFunction(()=>document.documentElement.dataset.dcMotion==='idle');
+  assert.equal(await p.locator('.dc-motion-wipe').count(),0);assert.equal(await p.locator('h1').evaluate(e=>getComputedStyle(e).opacity),'1');
+  const target=p.locator('.services>.service-card').first();await target.evaluate(e=>e.dataset.probe='service');
+  assert.equal(await target.evaluate(e=>e.classList.contains('dc-reveal-pending')),true,'Only below-fold groups can wait to reveal');
+  await target.evaluate(e=>e.scrollIntoView({behavior:'instant',block:'center'}));
+  await p.waitForFunction(()=>window.dcRevealSamples.some(s=>s.probe==='service'&&s.opacity>.05&&s.opacity<.95&&s.transform!=='none'));
+  await p.waitForFunction(()=>!document.getAnimations().some(a=>a.id==='dc-group-reveal'));
+  assert.equal(await target.evaluate(e=>getComputedStyle(e).opacity),'1');
+  await p.evaluate(()=>{window.dcRevealSamples=[];scrollTo({top:0,behavior:'instant'})});await p.waitForFunction(()=>scrollY===0);await target.evaluate(e=>e.scrollIntoView({behavior:'instant',block:'center'}));await p.waitForTimeout(150);
+  assert.equal(await p.evaluate(()=>window.dcRevealSamples.some(s=>s.probe==='service')),false,'Repeated scroll never re-hides a revealed group');
+  for(const path of paths){if(mobile)await p.locator('.menu-toggle').click();await p.locator(`#primary-nav a[href="${root}${path}"]`).click();await p.waitForURL(root+path);await p.waitForFunction(()=>!document.documentElement.classList.contains('is-navigating'));assert.equal(await p.evaluate(()=>window.dcStableDocument),true);assert.equal(await p.locator('#main').evaluate(e=>e===document.activeElement),true);assert.equal(await p.locator('h1').evaluate(e=>getComputedStyle(e).opacity),'1');checks.push({mobile,path,stableAjax:true,heroImmediatelyVisible:true})}
+  await p.evaluate(({root,paths})=>{document.querySelector(`#primary-nav a[href="${root}${paths[0]}"]`).click();document.querySelector(`#primary-nav a[href="${root}${paths[1]}"]`).click()},{root,paths});await p.waitForURL(root+paths[1]);await p.waitForFunction(()=>!document.documentElement.classList.contains('is-navigating'));await p.goBack();await p.waitForURL(root+'/');await p.waitForFunction(()=>!document.documentElement.classList.contains('is-navigating'));
+  const frames=await p.evaluate(()=>window.dcFrameSamples),reveals=await p.evaluate(()=>window.dcRevealSamples);
+  assert(frames.length>10);assert(frames.every(f=>f.mainOpacity==='1'&&f.titleOpacity==='1'&&f.mainMask==='none'&&f.titleMask==='none'&&!f.wipe),'No frame dims or masks the whole page or hero');
+  assert(reveals.every(s=>s.clip==='none'&&!s.hero&&s.duration>=500&&s.duration<=750&&s.delay<=90),'Only subtle group motion is used');
+  await context.close();
+ }
+ const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const p=await reduced.newPage();await p.goto(root,{waitUntil:'networkidle'});assert.equal(await p.locator('.dc-reveal-pending').count(),0);assert.equal(await p.evaluate(()=>document.getAnimations().filter(a=>a.id==='dc-group-reveal').length),0);await reduced.close();
+ const nojs=await browser.newContext({viewport:{width:390,height:844},javaScriptEnabled:false});const n=await nojs.newPage();await n.goto(root);assert.equal(await n.locator('h1').evaluate(e=>getComputedStyle(e).opacity),'1');assert.equal(await n.locator('#primary-nav').isVisible(),true);await nojs.close();
+ assert.deepEqual(errors,[]);fs.mkdirSync('artifacts/test-results',{recursive:true});fs.writeFileSync('artifacts/test-results/motion.json',JSON.stringify({checks,frameVisibility:true,noShutter:true,noPageDimming:true,heroImmediate:true,groupRevealOnce:true,reducedMotion:true,noJavaScript:true,rapidNavigation:true,history:true,errors},null,2));console.log('PASS:12 stable desktop/touch AJAX routes; no masked/dimmed hero/main frames, group-only reveal once, rapid navigation/history/reduced/noJS');
+ }finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

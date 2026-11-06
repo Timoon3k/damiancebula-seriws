@@ -14,7 +14,7 @@ const root = (process.env.BASE_URL || 'http://127.0.0.1:8081').replace(/\/$/, ''
       await p.locator('.brand-uploaded-lockup.is-fitted').waitFor();
       const image = p.locator('.brand img');
       assert.equal(await image.getAttribute('data-logo-tone'), 'dark');
-      assert.match(await image.evaluate(i => getComputedStyle(i).filter), /invert\(1\)/);
+      assert.equal(await image.evaluate(i => getComputedStyle(i).filter), 'none', 'Dark lettering is retained on the light header');
       assert.equal(await p.locator('.brand-wordmark').count(), 0, 'Full wordmark is not duplicated');
       const metrics = await p.locator('.brand-uploaded-lockup').evaluate(box => {
         const img = box.querySelector('img');
@@ -33,7 +33,7 @@ const root = (process.env.BASE_URL || 'http://127.0.0.1:8081').replace(/\/$/, ''
       assert.equal(metrics.sizes, null);
       assert(metrics.sourcePixelsPerDevicePixel >= 1, 'Enough source resolution for a retina display');
       await p.locator('.site-header').screenshot({path:`artifacts/screenshots/logo-custom-${width}.png`});
-      results.push({width,...metrics,contrast:'dark-to-light',duplicateWordmark:false});
+      results.push({width,...metrics,contrast:'dark-on-porcelain',duplicateWordmark:false});
       await p.close();
     }
     fs.mkdirSync('artifacts/test-results', {recursive:true});

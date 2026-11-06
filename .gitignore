@@ -5,3 +5,6 @@ node_modules/
 artifacts/*.zip
 artifacts/screenshots/
 artifacts/test-results/
+
+artifacts/production-seo/
+artifacts/performance-architectural/

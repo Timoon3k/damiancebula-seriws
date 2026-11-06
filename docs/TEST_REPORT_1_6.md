@@ -1,0 +1,21 @@
+# Testy i ograniczenia — DC Serwis 1.6
+
+Testowano 2026-11-06 na odrębnej lokalnej instalacji WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4. Redesign jest autorskim rozwinięciem wcześniejszej makiety, zgodnie z nową prośbą właściciela o wygląd premium. Produkcja, baza i przypisanie domeny pozostają bez zmian.
+
+- PASS: 49 kombinacji siedmiu stron i siedmiu szerokości (1440/768/390/360/1024/1280/1536). Brak poziomego przewijania strony, jeden H1, poprawny język i canonical, dostępne obrazy i podpis twórcy. Działają AJAX, historia, lightbox, mobilne menu, formularz i nawigacja bez JavaScript.
+- PASS: 15 kontroli axe WCAG A/AA — siedem stron desktop/mobile i otwarty mobilny modal. Brak wykrytych naruszeń w badanym interfejsie.
+- PASS: menu wysuwane z prawej, pojedynczy relokowany nav, tło inert, klawiatura, Escape/przycisk/tło, blokada i przywrócenie scrolla, resize desktop, rzeczywista animacja z emulacją dotyku oraz fokus nowego main po AJAX. Sticky bez skoku i bez scrollspy.
+- PASS: 12 animowanych przejść między sześcioma trasami na desktopie i telefonie, maska tytułu i przesłona strony, odsłanianie tekstu tylko raz, szybkie zmiany adresów, Wstecz i ograniczony ruch. Brak zależności od View Transitions API i pozostawionych przycięć.
+- PASS: 9 galerii (home/Klimatyzacja/Realizacje przy 1440/768/390). Pełne zdjęcia bez cropowania i zoomu, podpisy, otwarcie pełnego pliku i powrót fokusu. Test uwzględnia nowe ramki 4:5 mini-galerii desktop i 4:3 pozostałych widoków. Natywny poziomy pasek home na telefonie sprawdzono przez doprowadzenie i skupienie każdego kadru w widocznym obszarze, bez przewijania całej strony w poziomie.
+- PASS: porównanie z baseline sprzed redesignu dla siedmiu stron. Znormalizowana treść główna, tekst i kolejność H1–H3, title, description, canonical, robots, schema, linki usług, href/src/ALT/podpisy realizacji pozostały identyczne. Sumy SHA256 29 chronionych plików zdjęć i oryginałów są identyczne. Wszystkie fotografie, również ilustracyjne, pozostawiono bez edycji.
+- PASS: lokalny Manrope w dwóch WOFF2 (39 956 B), zmienne wagi 200–800, polskie znaki sprawdzone fontTools, lokalne fontFace i preload. Bez zewnętrznych fontów i nowych zależności JS. Pełna licencja OFL 1.1 jest w motywie.
+- PASS: dodatkowe kontrole 1440/390 potwierdzają użycie wyłącznie dwóch lokalnych fontów z polskimi znakami oraz widoczny fokus klawiatury na przyciskach i panelach usług. Ścięcie przycisku znika przy focus-visible, aby nie przycinać obrysu.
+- PASS: składnia zmienionego functions.php, skryptów testowych, poprawność theme.json i git diff --check. ZIP 1.6.0 ma 77 plików motywu, poprawny katalog dc-serwis/, CRC, fonty i licencję; bez plików środowiska oraz repozytorium.
+
+Raporty: [browser](test-results/browser.json), [accessibility](test-results/accessibility.json), [navigation](test-results/navigation.json), [motion](test-results/motion.json), [gallery](test-results/gallery.json), [preservation](test-results/premium-preservation.json), [fonty i fokus](test-results/premium-design.json), [podsumowanie 1.6 i SHA256 ZIP](test-results/version-1.6.json). Baseline zapisano przed zmianami: tests/fixtures/premium-baseline.json. Nie nadpisano go w celu dopasowania do nowego projektu.
+
+Zrzuty wszystkich siedmiu stron znajdują się w artifacts/screenshots/; wybrane w [porównaniu wizualnym](VISUAL_COMPARISON.md). Obejrzano układy home, obu usług, O firmie, Kontakt, galerii i polityki. Zrzuty statyczne wykonano z ograniczeniem ruchu; działające animacje mierzył osobny test motion.
+
+Nie zmieniono logiki formularza, odbiorcy kontakt@damiancebula-serwis.pl, checkboxa prywatności, mapy bez przycisku zgody, danych firmy, logo ani podpisu majewskitomasz.pl. Nie wysyłano testowej wiadomości na rzeczywistą skrzynkę. Ruch mapy Google w testach był zastąpiony atrapą lub blokowany — nie potwierdza to dostępności zewnętrznego Google Maps na hostingu.
+
+Nie wykonywano nowych pomiarów produkcyjnych Core Web Vitals, indeksacji Google ani dostarczalności SMTP. Zachowanie obecnych tekstów i metadanych nie stanowi gwarancji pozycji w wyszukiwarce. Instalacja nowego ZIP na oddzielnej witrynie i wyczyszczenie cache są opisane w [UPDATE_1_6.md](UPDATE_1_6.md). Push do main nie jest automatycznym wdrożeniem na Hostinger. Poprzednie podsumowania wersji pozostają w test-results/version-1.4.json i version-1.5.json.

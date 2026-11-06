@@ -33,11 +33,22 @@ const root=(process.env.BASE_URL||'http://127.0.0.1:8081').replace(/\/$/,'');
       assert.equal(focusedCard.within,true);
       assert.equal(focusedCard.outline,'solid','The service panel has a visible focus boundary');
       assert(focusedCard.width>=2);
-      checks.push({width,fonts,focusedButton,focusedCard});
+      // WordPress adds privacy-policy to BODY. Legal typography must never make
+      // the surrounding header/footer links invisible against the petrol footer.
+      await page.goto(root+'/polityka-prywatnosci/',{waitUntil:'networkidle'});
+      const privacyChrome=await page.evaluate(()=>{
+        function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(value=>{const channel=value/255;return channel<=.04045?channel/12.92:((channel+.055)/1.055)**2.4}).reduce((sum,value,index)=>sum+value*[.2126,.7152,.0722][index],0)}
+        const footer=document.querySelector('.site-footer');const background=luminance(getComputedStyle(footer).backgroundColor);
+        return {bodyWidth:document.body.getBoundingClientRect().width,viewport:innerWidth,links:[...footer.querySelectorAll('a')].map(link=>{const foreground=luminance(getComputedStyle(link).color);return {text:link.textContent.trim(),contrast:(Math.max(foreground,background)+.05)/(Math.min(foreground,background)+.05)}})};
+      });
+      assert(Math.abs(privacyChrome.bodyWidth-width)<1,'Legal layout does not constrain the page body');
+      assert(privacyChrome.links.length>=10,'Footer navigation and contact remain present');
+      assert(privacyChrome.links.every(link=>link.contrast>=4.5),'Legal page footer links meet AA contrast');
+      checks.push({width,fonts,focusedButton,focusedCard,privacyChrome});
       await page.close();
     }
     fs.mkdirSync('artifacts/test-results',{recursive:true});
     fs.writeFileSync('artifacts/test-results/premium-design.json',JSON.stringify({checks,localFonts:true,polishGlyphs:true,visibleKeyboardFocus:true},null,2));
-    console.log('PASS: local Polish font subsets and unclipped keyboard focus at1440/390px');
+    console.log('PASS: local Polish fonts, unclipped focus and privacy-page footer contrast at1440/390px');
   } finally {await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1});

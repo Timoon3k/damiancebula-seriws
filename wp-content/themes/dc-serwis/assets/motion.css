@@ -1,3 +1,15 @@
-/* Content is visible by default. JavaScript animates only live, visible nodes. */
-.dc-motion-wipe{position:fixed;z-index:35;inset:0;background:linear-gradient(115deg,#171a1e,#24282b);pointer-events:none;opacity:0;clip-path:inset(0 0 0 100%);contain:strict}
-@media(prefers-reduced-motion:reduce){.dc-motion-wipe{display:none}}
+/* Visible by default. Only off-screen groups prepared by JavaScript can reveal. */
+.dc-reveal-pending {
+  opacity: 0;
+  transform: translateY(16px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dc-reveal-pending {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+.no-js .dc-reveal-pending {
+  opacity: 1;
+  transform: none;
+}

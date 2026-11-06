@@ -7,7 +7,7 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
  const errors=[];const failures=[];const results=[];
- for(const width of [1440,768,390,360,1024,1280,1536]){
+ for(const width of [1440,768,390,360,1024,1280,1536,1920]){
   const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}); await mockMap(context); const page=await context.newPage();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400 && r.url().startsWith(root)) failures.push([r.status(),r.url()]);});

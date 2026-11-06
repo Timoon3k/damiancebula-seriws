@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "sourceCommit": "c007e40",
+  "baselineCapturedAt": "2026-11-06T19:52:12.414Z",
+  "pages": [
+    {
+      "route": "/",
+      "unchanged": true
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "unchanged": true
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "unchanged": true
+    },
+    {
+      "route": "/realizacje/",
+      "unchanged": true
+    },
+    {
+      "route": "/o-firmie/",
+      "unchanged": true
+    },
+    {
+      "route": "/kontakt/",
+      "unchanged": true
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "unchanged": true
+    }
+  ],
+  "protectedImages": 29,
+  "headingsTextLegalMetadataOgTwitterCanonicalRobotsSchemaLinksGalleryUnchanged": true,
+  "productionSnapshotVerified": false,
+  "productionReason": "Network proxy denies the production host; local baseline is explicitly separate.",
+  "databaseReset": false
+}

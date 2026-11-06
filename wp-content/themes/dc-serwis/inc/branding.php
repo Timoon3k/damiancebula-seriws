@@ -62,12 +62,12 @@ function dc_header_brand() {
         echo $image->get_updated_html();
         if ($lockup) { echo '</span>'; return; }
     } else {
-        echo '<img class="brand-logo brand-lockup" src="'.esc_url(get_theme_file_uri('assets/branding/dc-lockup-light.svg')).'" width="1180" height="220" alt="" decoding="async">';
+        echo '<img class="brand-logo brand-lockup" src="'.esc_url(get_theme_file_uri('assets/branding/dc-lockup-porcelain.svg')).'" width="1180" height="220" alt="" decoding="async">';
         return;
     }
     echo '<span class="brand-wordmark"><strong>Damian Cebula</strong><small>Serwis Klimatyzacji i AGD</small></span>';
 }
 add_action('customize_register', function ($customizer) {
     $customizer->add_setting('dc_logo_tone', ['default'=>'auto','sanitize_callback'=>function ($value) { return in_array($value,['auto','light','dark'],true) ? $value : 'auto'; }]);
-    $customizer->add_control('dc_logo_tone', ['section'=>'title_tagline','label'=>'Czytelność logo na ciemnym tle','description'=>'Wgraj oryginalne logo w dużej rozdzielczości i pomiń przycinanie. Motyw korzysta z oryginału zamiast miniatury, również dla wcześniejszych przycięć, gdy oryginał jest w bibliotece. Samo powiększenie małego pliku nie przywróci szczegółów. Tryb automatyczny rozpoznaje ciemne litery; dla zewnętrznej domeny wybierz wariant ręcznie.','type'=>'select','choices'=>['auto'=>'Automatycznie','light'=>'Logo ma jasne napisy','dark'=>'Logo ma ciemne napisy — rozjaśnij']]);
+    $customizer->add_control('dc_logo_tone', ['section'=>'title_tagline','label'=>'Czytelność logo na jasnym tle','description'=>'Wgraj oryginalne logo w dużej rozdzielczości i pomiń przycinanie. Motyw korzysta z oryginału zamiast miniatury, również dla wcześniejszych przycięć, gdy oryginał jest w bibliotece. Samo powiększenie małego pliku nie przywróci szczegółów. Tryb automatyczny rozpoznaje ciemne litery; dla zewnętrznej domeny wybierz wariant ręcznie.','type'=>'select','choices'=>['auto'=>'Automatycznie','light'=>'Logo ma jasne napisy — przyciemnij','dark'=>'Logo ma ciemne napisy']]);
 });

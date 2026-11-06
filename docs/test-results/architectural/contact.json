@@ -1,0 +1,56 @@
+{
+  "nonce": {
+    "http": 422,
+    "success": false,
+    "status": "expired",
+    "message": "Formularz wygasł. Odśwież stronę i spróbuj ponownie."
+  },
+  "honeypot": {
+    "http": 422,
+    "success": false,
+    "status": "invalid",
+    "message": "Sprawdź imię, adres e-mail, treść wiadomości i potwierdzenie zapoznania z polityką prywatności."
+  },
+  "consent": {
+    "http": 422,
+    "success": false,
+    "status": "invalid",
+    "message": "Sprawdź imię, adres e-mail, treść wiadomości i potwierdzenie zapoznania z polityką prywatności."
+  },
+  "email": {
+    "http": 422,
+    "success": false,
+    "status": "invalid",
+    "message": "Sprawdź imię, adres e-mail, treść wiadomości i potwierdzenie zapoznania z polityką prywatności."
+  },
+  "success": {
+    "http": 200,
+    "success": true,
+    "status": "sent",
+    "message": "Wiadomość została przekazana do wysyłki. Dziękujemy za kontakt."
+  },
+  "failure": {
+    "http": 422,
+    "success": false,
+    "status": "failed",
+    "message": "Nie udało się przekazać wiadomości do wysyłki. Zadzwoń: 794 225 139 lub napisz bezpośrednio e-mail."
+  },
+  "third": {
+    "http": 200,
+    "success": true,
+    "status": "sent",
+    "message": "Wiadomość została przekazana do wysyłki. Dziękujemy za kontakt."
+  },
+  "limited": {
+    "http": 429,
+    "success": false,
+    "status": "limited",
+    "message": "Zbyt wiele prób. Odczekaj kilka minut lub zadzwoń: 794 225 139."
+  },
+  "delivery": {
+    "recipient": "kontakt@damiancebula-serwis.pl",
+    "replyToVerified": true,
+    "consentRecordVerified": true,
+    "externalMailSent": false
+  }
+}

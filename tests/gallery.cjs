@@ -23,7 +23,7 @@ const routes = [
         await gallery.scrollIntoViewIfNeeded();
         // Inspect each frame after bringing it into view. On mobile the home
         // gallery is a native horizontal strip, so off-screen slides are expected.
-        const carousel = route.name === 'home' && width <= 700;
+        const carousel = false; // Architectural galleries keep their DOM order in an irregular grid.
         const photos = [];
         for (const figure of await gallery.locator('figure').all()) {
           await figure.scrollIntoViewIfNeeded();
@@ -64,8 +64,8 @@ const routes = [
           assert.ok(photo.natural[0] > 0 && photo.natural[1] > 0, `${label}: loaded`);
           assert.equal(photo.fit, 'contain', `${label}: entire photo fits frame`);
           assert.equal(photo.transform, 'none', `${label}: no image zoom cropping`);
-          const expectedRatio = route.selector === '.mini-gallery' && width > 1050 ? 4 / 5 : 4 / 3;
-          assert.ok(Math.abs(photo.frame.width / photo.frame.height - expectedRatio) < .02, `${label}: intended responsive frame ratio`);
+          assert.ok(photo.frame.width > 40 && photo.frame.height > 40, `${label}: a usable individual frame`);
+          assert.ok(photo.frame.width / photo.frame.height >= .55 && photo.frame.width / photo.frame.height <= 1.6, `${label}: intended portrait or landscape editorial frame`);
           assert.ok(Math.abs(photo.imageBox.width - photo.frame.width) < 1 && Math.abs(photo.imageBox.height - photo.frame.height) < 1, `${label}: intrinsic WP dimensions do not overflow frame`);
           assert.ok(photo.contained.width <= photo.frame.width + 1 && photo.contained.height <= photo.frame.height + 1, `${label}: original contents fit`);
           assert.ok(photo.frame.left >= -1 && photo.frame.right <= width + 1, `${label}: every frame can be brought fully into the viewport`);
@@ -105,6 +105,6 @@ const routes = [
     assert.deepEqual(errors, [], 'No gallery JavaScript errors');
     fs.mkdirSync('artifacts/test-results', { recursive: true });
     fs.writeFileSync('artifacts/test-results/gallery.json', JSON.stringify({ checks, errors }, null, 2));
-    console.log(`PASS: ${checks.length} galleries at 1440/768/390px; complete image framing, native mobile carousel, keyboard reachability, captions, authentic photos, lightbox and focus`);
+    console.log(`PASS: ${checks.length} galleries at 1440/768/390px; complete image framing, irregular ordered composition, keyboard reachability, captions, authentic photos, lightbox and focus`);
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

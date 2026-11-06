@@ -1,6 +1,73 @@
-.brand{min-width:0;flex-shrink:0;gap:12px}.brand .brand-lockup{display:block;width:310px;height:auto;max-width:100%;max-height:66px;object-fit:contain;flex-shrink:0}.brand .brand-symbol{width:80px;height:48px;max-height:48px;object-fit:contain}.brand-wordmark{min-width:0}.brand img[data-logo-tone=dark]{filter:invert(1) hue-rotate(180deg)}
-@media(max-width:1200px){.brand .brand-lockup{width:275px}}
-@media(max-width:700px){.brand .brand-lockup{width:min(268px,calc(100vw - 114px));max-height:60px}.brand .brand-symbol{width:64px;height:42px}.brand-wordmark strong{font-size:18px}.brand-wordmark small{font-size:10px}}
-.brand-uploaded-lockup{position:relative;display:block;width:310px;height:66px;overflow:hidden;flex-shrink:0}.brand-uploaded-lockup.is-fitted>img{position:absolute;max-width:none;max-height:none;object-fit:fill}
-@media(max-width:1200px){.brand-uploaded-lockup{width:275px}}
-@media(max-width:700px){.brand-uploaded-lockup{width:min(268px,calc(100vw - 114px));height:55px}}
+.brand {
+  gap: 12px;
+}
+.brand .brand-lockup {
+  display: block;
+  width: 310px;
+  height: auto;
+  max-width: 100%;
+  max-height: 66px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.brand .brand-symbol {
+  width: 80px;
+  height: 48px;
+  object-fit: contain;
+}
+.brand-wordmark strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+.brand-wordmark small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.brand img[data-logo-tone="light"] {
+  filter: brightness(0.25) saturate(0.75);
+}
+.brand img[data-logo-tone="dark"] {
+  filter: none;
+}
+.brand-uploaded-lockup {
+  position: relative;
+  display: block;
+  width: 310px;
+  height: 66px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.brand-uploaded-lockup.is-fitted > img {
+  position: absolute;
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+}
+@media (max-width: 1200px) {
+  .brand .brand-lockup,
+  .brand-uploaded-lockup {
+    width: 275px;
+  }
+}
+@media (max-width: 760px) {
+  .brand .brand-lockup,
+  .brand-uploaded-lockup {
+    width: min(268px, calc(100vw - 114px));
+  }
+  .brand-uploaded-lockup {
+    height: 55px;
+  }
+  .brand .brand-symbol {
+    width: 64px;
+    height: 42px;
+  }
+  .brand-wordmark strong {
+    font-size: 18px;
+  }
+  .brand-wordmark small {
+    font-size: 10px;
+  }
+}

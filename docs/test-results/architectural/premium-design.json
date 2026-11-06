@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "fonts": {
+        "family": "Manrope, Arial, Helvetica, sans-serif",
+        "polish": true,
+        "resources": [
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-wght-normal.woff2",
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-ext-wght-normal.woff2"
+        ]
+      },
+      "focusedButton": {
+        "visible": true,
+        "clip": "none",
+        "outline": "solid"
+      },
+      "focusedCard": {
+        "within": true,
+        "outline": "solid",
+        "width": 2
+      },
+      "privacyChrome": {
+        "bodyWidth": 1440,
+        "viewport": 1440,
+        "links": [
+          {
+            "text": "794 225 139",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Skontaktuj się",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Strona główna",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Klimatyzacja",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Serwis AGD",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Realizacje",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "O firmie",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Kontakt",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "kontakt@damiancebula-serwis.pl",
+            "contrast": 10.18590158335309
+          },
+          {
+            "text": "Polityka prywatności",
+            "contrast": 10.18590158335309
+          },
+          {
+            "text": "majewskitomasz.pl",
+            "contrast": 10.18590158335309
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "fonts": {
+        "family": "Manrope, Arial, Helvetica, sans-serif",
+        "polish": true,
+        "resources": [
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-wght-normal.woff2",
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-ext-wght-normal.woff2"
+        ]
+      },
+      "focusedButton": {
+        "visible": true,
+        "clip": "none",
+        "outline": "solid"
+      },
+      "focusedCard": {
+        "within": true,
+        "outline": "solid",
+        "width": 2
+      },
+      "privacyChrome": {
+        "bodyWidth": 390,
+        "viewport": 390,
+        "links": [
+          {
+            "text": "794 225 139",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Skontaktuj się",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Strona główna",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Klimatyzacja",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Serwis AGD",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Realizacje",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "O firmie",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "Kontakt",
+            "contrast": 13.121716144245699
+          },
+          {
+            "text": "kontakt@damiancebula-serwis.pl",
+            "contrast": 10.18590158335309
+          },
+          {
+            "text": "Polityka prywatności",
+            "contrast": 10.18590158335309
+          },
+          {
+            "text": "majewskitomasz.pl",
+            "contrast": 10.18590158335309
+          }
+        ]
+      }
+    }
+  ],
+  "localFonts": true,
+  "polishGlyphs": true,
+  "visibleKeyboardFocus": true
+}

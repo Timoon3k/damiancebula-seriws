@@ -1,0 +1,58 @@
+[
+  {
+    "width": 310,
+    "height": 66,
+    "childWidth": 396.796875,
+    "naturalWidth": 2048,
+    "currentSrc": "http://127.0.0.1:8081/wp-content/uploads/2026/11/dc-dark-padded-test.png",
+    "srcset": null,
+    "sizes": null,
+    "devicePixelRatio": 2,
+    "sourcePixelsPerDevicePixel": 2.580665485331758,
+    "overflow": false,
+    "contrast": "dark-on-porcelain",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 275,
+    "height": 66,
+    "childWidth": 352,
+    "naturalWidth": 2048,
+    "currentSrc": "http://127.0.0.1:8081/wp-content/uploads/2026/11/dc-dark-padded-test.png",
+    "srcset": null,
+    "sizes": null,
+    "devicePixelRatio": 2,
+    "sourcePixelsPerDevicePixel": 2.909090909090909,
+    "overflow": false,
+    "contrast": "dark-on-porcelain",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 268,
+    "height": 55,
+    "childWidth": 343.03125,
+    "naturalWidth": 2048,
+    "currentSrc": "http://127.0.0.1:8081/wp-content/uploads/2026/11/dc-dark-padded-test.png",
+    "srcset": null,
+    "sizes": null,
+    "devicePixelRatio": 2,
+    "sourcePixelsPerDevicePixel": 2.985150769791382,
+    "overflow": false,
+    "contrast": "dark-on-porcelain",
+    "duplicateWordmark": false
+  },
+  {
+    "width": 246,
+    "height": 55,
+    "childWidth": 314.875,
+    "naturalWidth": 2048,
+    "currentSrc": "http://127.0.0.1:8081/wp-content/uploads/2026/11/dc-dark-padded-test.png",
+    "srcset": null,
+    "sizes": null,
+    "devicePixelRatio": 2,
+    "sourcePixelsPerDevicePixel": 3.2520841603811035,
+    "overflow": false,
+    "contrast": "dark-on-porcelain",
+    "duplicateWordmark": false
+  }
+]

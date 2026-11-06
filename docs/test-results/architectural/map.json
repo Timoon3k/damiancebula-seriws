@@ -1,0 +1,11 @@
+{
+  "automaticEmbed": true,
+  "noConsentButton": true,
+  "confirmedAddress": true,
+  "ajaxAutomaticEmbed": true,
+  "mobileAutomaticEmbed": true,
+  "noJavaScriptAutomaticEmbed": true,
+  "blockedFrameFallback": true,
+  "externalGoogleContact": false,
+  "interceptedMapRequests": 5
+}

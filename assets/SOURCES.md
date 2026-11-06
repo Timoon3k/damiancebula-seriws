@@ -45,3 +45,21 @@ Nowy autorski monogram DC z motywem przepływu powietrza: `assets/branding/dc-ma
 Do motywu dołączono lokalny krój **Manrope**, wagi 200–800, podzbiory `latin` i `latin-ext` w dwóch plikach WOFF2 (łącznie 39 956 B). Źródło: [`@fontsource-variable/manrope` 5.3.0](https://www.npmjs.com/package/@fontsource-variable/manrope/v/5.3.0), rodzina autorstwa The Manrope Project Authors. Pliki są dystrybuowane na licencji **SIL Open Font License 1.1**; pełna licencja znajduje się w [`assets/fonts/OFL-Manrope.txt`](../wp-content/themes/dc-serwis/assets/fonts/OFL-Manrope.txt) w motywie. Pochodzenie, mapy znaków i sposób dostarczania opisuje [dokumentacja fontów](../docs/FONTS.md). Fonty są pobierane z własnej witryny, bez Google Fonts ani zewnętrznego CDN.
 
 Redesign 1.6 nie dodaje ani nie podmienia plików fotografii. Zachowane są materiały realizacji z `assets/photos/` i `assets/source-web/`, ich warianty w motywie oraz istniejące ilustracyjne obrazy `editorial-*`. Wcześniejsze opisy ich pochodzenia pozostają aktualne.
+
+## 7. Architectural Service 2.0 — wnętrza ilustracyjne, 2026-11-06
+
+Na podstawie nowego briefu właściciela przygotowano przez **image generation** dwie nowe fotografie ilustracyjne. Nie są zdjęciami faktycznych realizacji Damiana Cebuli i nie przedstawiają pracowników. Nie pochodzą z cudzego motywu ani biblioteki stockowej. Dotychczasowe zdjęcia z technikami pozostają w archiwum plików dla kompatybilności, ale znane domyślne ilustracje usług są podczas renderowania zastępowane nowymi wnętrzami.
+
+| Rodzina plików w motywie `assets/images/` | Zawartość | WebP 480 / 960 / 1536 px |
+|---|---|---|
+| `editorial-architecture-living-*` | Jasny salon, drewno, szałwia i ścienny klimatyzator split | 17 598 / 59 284 / 140 034 B |
+| `editorial-architecture-laundry-*` | Pralka w jasnej zabudowie gospodarczej z drewnem i szałwią | 11 748 / 36 000 / 79 074 B |
+
+Źródłowe wygenerowane PNG w przestrzeni roboczej (nie są częścią paczki motywu):
+
+- salon: `/workspace/generated_images/exec-e4b83c90-9205-432a-91f5-796d3fde0ae0.png`;
+- pralnia: `/workspace/generated_images/exec-95bfe52b-e154-4881-84a5-f3b34a8109fd.png`.
+
+WebP są dostarczane lokalnie z `srcset` i `sizes`, z ALT zaczynającym się od „Zdjęcie ilustracyjne”. Nie trafiły do Realizacji. Autentyczne pliki z `assets/photos/`, `assets/source-web/` oraz ich chronione warianty pozostają bez zmian, z dotychczasowymi ALT, podpisami i kolejnością.
+
+Wariant logo `assets/branding/dc-lockup-porcelain.svg` w motywie zachowuje geometrię dotychczasowego znaku DC i zmienia wyłącznie wypełnienia na petrol oraz ciemniejszą miedź dla jasnego nagłówka. Istniejące warianty i favicon pozostają zachowane. Fonty Manrope i licencja OFL nie zmieniają się.

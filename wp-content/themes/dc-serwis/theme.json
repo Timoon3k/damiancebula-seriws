@@ -11,23 +11,38 @@
       "palette": [
         {
           "slug": "ink",
-          "color": "#0e1012",
-          "name": "Czerń"
+          "color": "#192E33",
+          "name": "Petrol"
         },
         {
           "slug": "surface",
-          "color": "#171a1e",
-          "name": "Grafit"
+          "color": "#FFFEFB",
+          "name": "Porcelana"
         },
         {
           "slug": "orange",
-          "color": "#ff7a1a",
-          "name": "Pomarańcz"
+          "color": "#9C4F2C",
+          "name": "Miedź — tekst"
         },
         {
           "slug": "text",
-          "color": "#f6f6f4",
-          "name": "Biel"
+          "color": "#192E33",
+          "name": "Tekst"
+        },
+        {
+          "slug": "paper",
+          "color": "#F7F6F2",
+          "name": "Ciepła biel"
+        },
+        {
+          "slug": "sage",
+          "color": "#DDE5E1",
+          "name": "Szałwia"
+        },
+        {
+          "slug": "copper",
+          "color": "#CC7446",
+          "name": "Miedź"
         }
       ]
     },
@@ -65,8 +80,8 @@
   },
   "styles": {
     "color": {
-      "background": "#0e1012",
-      "text": "#f6f6f4"
+      "background": "#F7F6F2",
+      "text": "#192E33"
     },
     "typography": {
       "fontFamily": "var:preset|font-family|sans"

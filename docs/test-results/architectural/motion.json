@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "mobile": false,
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": false,
+      "path": "/serwis-agd-stalowa-wola/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": false,
+      "path": "/realizacje/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": false,
+      "path": "/o-firmie/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": false,
+      "path": "/kontakt/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": false,
+      "path": "/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/serwis-agd-stalowa-wola/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/realizacje/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/o-firmie/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/kontakt/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    },
+    {
+      "mobile": true,
+      "path": "/",
+      "stableAjax": true,
+      "heroImmediatelyVisible": true
+    }
+  ],
+  "frameVisibility": true,
+  "noShutter": true,
+  "noPageDimming": true,
+  "heroImmediate": true,
+  "groupRevealOnce": true,
+  "reducedMotion": true,
+  "noJavaScript": true,
+  "rapidNavigation": true,
+  "history": true,
+  "errors": []
+}

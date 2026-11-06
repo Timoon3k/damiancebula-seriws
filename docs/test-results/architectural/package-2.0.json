@@ -1,0 +1,14 @@
+{
+  "themeVersion": "2.0.0",
+  "zip": "artifacts/dc-serwis.zip",
+  "bytes": 2927912,
+  "files": 85,
+  "sha256": "1aa9b389abf32b87cc9d4d63f128a70a56d1b757b55bc96d3203316471e93ce4",
+  "crcVerified": true,
+  "rootDirectoryOnly": "dc-serwis/",
+  "contentsMatchSource": true,
+  "fontsAndLicense": true,
+  "newImagesAndPresentationAdapter": true,
+  "noLegacyPremiumStylesheets": true,
+  "productionDeployed": false
+}

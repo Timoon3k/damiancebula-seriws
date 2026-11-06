@@ -1,0 +1,26 @@
+{
+  "capturedAt": "2026-11-06T22:20:04.569Z",
+  "origin": "https://damiancebula-serwis.pl",
+  "complete": false,
+  "productionSnapshotVerified": false,
+  "reason": "curl: (56) CONNECT tunnel failed, response 403",
+  "records": [
+    {
+      "route": "/",
+      "status": "unavailable",
+      "reason": "curl: (56) CONNECT tunnel failed, response 403"
+    }
+  ],
+  "notCaptured": [
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/realizacje/",
+    "/o-firmie/",
+    "/kontakt/",
+    "/polityka-prywatnosci/",
+    "/robots.txt",
+    "/sitemap_index.xml",
+    "/wp-sitemap.xml"
+  ],
+  "note": "No network-policy bypass, production writes or indexing requests were performed."
+}

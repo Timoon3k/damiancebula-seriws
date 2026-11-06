@@ -1,0 +1,1817 @@
+{
+  "sourceCommit": "c007e40",
+  "source": "Actual HTTP HTML captured before architectural changes; semantic extraction excludes only the explicitly new hero CTA and footer navigation.",
+  "capturedAt": "2026-11-06T19:52:12.414Z",
+  "pages": [
+    {
+      "route": "/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Naprawiamy.Montujemy.Przywracamykomfort. Serwis klimatyzacji i AGDw Stalowej Woli. Klimatyzacja Montaż, serwis, czyszczenie i naprawa klimatyzacji w Stalowej Woli. Klimatyzacja — poznaj usługę Serwis AGD Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Serwis AGD — poznaj usługę Jak przebiegaserwis? Prosty i przejrzysty proces — od zgłoszenia do sprawnego działania. 1. Kontakt Zgłaszasz problem telefonicznie lub przez formularz. 2. Diagnoza Ustalamy przyczynę usterki i zakres prac. 3. Serwis Wykonujemy uzgodnioną naprawę lub niezbędny serwis. 4. Sprawne działanie Sprawdzamy urządzenie po zakończeniu prac. Stalowa Wola i okolice Lokalny serwisze Stalowej Woli Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD dla domów, mieszkań i biur. Zakres dojazdu i termin ustalamy podczas kontaktu. Poznaj serwis Realizacje Zobacz wszystkie realizacje Serwis klimatyzacji i AGD w Stalowej Woli Klimatyzator wymaga przeglądu, a pralka przestała działać? Opisz objawy i podaj model urządzenia. Ustalimy kolejne kroki: rozpoznanie usterki, możliwy zakres naprawy i wycenę przed rozpoczęciem uzgodnionych prac. Montaż i naprawa klimatyzacji · Naprawa pralek i zmywarek",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Naprawiamy.Montujemy.Przywracamykomfort."
+        },
+        {
+          "tag": "H2",
+          "text": "Klimatyzacja"
+        },
+        {
+          "tag": "H2",
+          "text": "Serwis AGD"
+        },
+        {
+          "tag": "H2",
+          "text": "Jak przebiegaserwis?"
+        },
+        {
+          "tag": "H3",
+          "text": "1. Kontakt"
+        },
+        {
+          "tag": "H3",
+          "text": "2. Diagnoza"
+        },
+        {
+          "tag": "H3",
+          "text": "3. Serwis"
+        },
+        {
+          "tag": "H3",
+          "text": "4. Sprawne działanie"
+        },
+        {
+          "tag": "H2",
+          "text": "Lokalny serwisze Stalowej Woli"
+        },
+        {
+          "tag": "H2",
+          "text": "Realizacje"
+        },
+        {
+          "tag": "H2",
+          "text": "Serwis klimatyzacji i AGD w Stalowej Woli"
+        }
+      ],
+      "legalAndSeoText": [
+        "Serwis klimatyzacji i AGDw Stalowej Woli.",
+        "Montaż, serwis, czyszczenie i naprawa klimatyzacji w Stalowej Woli.",
+        "Naprawa pralek, zmywarek i lodówek w Stalowej Woli.",
+        "Prosty i przejrzysty proces — od zgłoszenia do sprawnego działania.",
+        "Zgłaszasz problem telefonicznie lub przez formularz.",
+        "Ustalamy przyczynę usterki i zakres prac.",
+        "Wykonujemy uzgodnioną naprawę lub niezbędny serwis.",
+        "Sprawdzamy urządzenie po zakończeniu prac.",
+        "Stalowa Wola i okolice",
+        "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD dla domów, mieszkań i biur. Zakres dojazdu i termin ustalamy podczas kontaktu.",
+        "Klimatyzator wymaga przeglądu, a pralka przestała działać? Opisz objawy i podaj model urządzenia. Ustalimy kolejne kroki: rozpoznanie usterki, możliwy zakres naprawy i wycenę przed rozpoczęciem uzgodnionych prac.",
+        "Montaż i naprawa klimatyzacji · Naprawa pralek i zmywarek"
+      ],
+      "title": "Serwis klimatyzacji i AGD Stalowa Wola — Damian Cebula",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Montaż, serwis i naprawa klimatyzacji oraz naprawa pralek, lodówek i zmywarek w Stalowej Woli. Damian Cebula — zadzwoń i omów zgłoszenie: 794 225 139."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Serwis klimatyzacji i AGD Stalowa Wola — Damian Cebula"
+        },
+        {
+          "name": "og:description",
+          "content": "Montaż, serwis i naprawa klimatyzacji oraz naprawa pralek, lodówek i zmywarek w Stalowej Woli. Damian Cebula — zadzwoń i omów zgłoszenie: 794 225 139."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Serwis klimatyzacji i AGD Stalowa Wola — Damian Cebula"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Montaż, serwis i naprawa klimatyzacji oraz naprawa pralek, lodówek i zmywarek w Stalowej Woli. Damian Cebula — zadzwoń i omów zgłoszenie: 794 225 139."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja — poznaj usługę"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD — poznaj usługę"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "Poznaj serwis"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Zobacz wszystkie realizacje"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Montaż i naprawa klimatyzacji"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Naprawa pralek i zmywarek"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "alt": "Klimatyzator ścienny zamontowany na szarej ścianie",
+          "caption": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "alt": "Jednostka zewnętrzna AUX na elewacji budynku",
+          "caption": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "alt": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+          "caption": ""
+        }
+      ],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / Serwis klimatyzacji Stalowa Wola Serwis klimatyzacjiStalowa Wola Montaż, serwis, czyszczenie i naprawa klimatyzacji dla domów, mieszkań i biur w Stalowej Woli i okolicach. Serwis i naprawa Czyszczenie i odgrzybianie Montaż klimatyzacji Przeglądy i konserwacja Dlaczego warto regularnie serwisować klimatyzację? Utrzymanie sprawności i wydajności urządzenia Czyszczenie filtrów i wymienników z nagromadzonych zanieczyszczeń Wykrywanie objawów usterek przed dalszą eksploatacją Kontrola działania i zalecenia dotyczące użytkowania Zgłoś urządzenie Montaż klimatyzacji Stalowa Wola Dobór miejsca instalacji wpływa na rozprowadzanie powietrza, dostęp serwisowy i prowadzenie przewodów. Montujemy klimatyzację w domach, mieszkaniach i biurach. Przed pracami ustalamy warunki techniczne oraz sposób poprowadzenia instalacji. Oferta obejmuje urządzenia naścienne, przypodłogowe, sufitowe i kanałowe — rozwiązanie dobieramy do pomieszczenia. Naprawa klimatyzacji — od objawu do diagnozy Słabsze chłodzenie, nietypowy hałas, zapach lub wyciek skroplin wymagają sprawdzenia. Podczas zgłoszenia podaj model urządzenia i opisz, od kiedy występuje problem. Przy błędzie na wyświetlaczu zapisz kod. Nie rozkręcaj urządzenia samodzielnie; zakres naprawy ustalimy po rozpoznaniu przyczyny. Czyszczenie i konserwacja Czyszczenie, dezynfekcja i odgrzybianie pomagają utrzymać urządzenie w dobrym stanie. Częstotliwość przeglądów zależy od zaleceń producenta, warunków i intensywności użytkowania. Podczas serwisu sprawdzamy działanie urządzenia i omawiamy dalszą eksploatację. Pytania przed zgłoszeniem Jak przygotować się do serwisu klimatyzacji? Przygotuj model urządzenia, opis objawów i ewentualny kod błędu. Zapewnij dostęp do jednostki wewnętrznej i zewnętrznej, o ile jest bezpieczny. Kiedy zaplanować czyszczenie klimatyzatora? Kieruj się instrukcją producenta i warunkami użytkowania. Przy nieprzyjemnym zapachu lub spadku wydajności zgłoś problem zamiast czekać na kolejny planowany przegląd. Ile kosztuje montaż lub naprawa? Koszt zależy od urządzenia, warunków montażu lub rodzaju usterki. Zakres i wycenę uzgadniamy indywidualnie; zgłoszenie nie jest zamówieniem dodatkowych prac. Rzeczywiste realizacje Zobacz galerię Zobacz także: serwis AGD",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Serwis klimatyzacjiStalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Serwis i naprawa"
+        },
+        {
+          "tag": "H2",
+          "text": "Czyszczenie i odgrzybianie"
+        },
+        {
+          "tag": "H2",
+          "text": "Montaż klimatyzacji"
+        },
+        {
+          "tag": "H2",
+          "text": "Przeglądy i konserwacja"
+        },
+        {
+          "tag": "H2",
+          "text": "Dlaczego warto regularnie serwisować klimatyzację?"
+        },
+        {
+          "tag": "H2",
+          "text": "Montaż klimatyzacji Stalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Naprawa klimatyzacji — od objawu do diagnozy"
+        },
+        {
+          "tag": "H2",
+          "text": "Czyszczenie i konserwacja"
+        },
+        {
+          "tag": "H2",
+          "text": "Pytania przed zgłoszeniem"
+        },
+        {
+          "tag": "H2",
+          "text": "Rzeczywiste realizacje"
+        }
+      ],
+      "legalAndSeoText": [
+        "Montaż, serwis, czyszczenie i naprawa klimatyzacji dla domów, mieszkań i biur w Stalowej Woli i okolicach.",
+        "Utrzymanie sprawności i wydajności urządzenia",
+        "Czyszczenie filtrów i wymienników z nagromadzonych zanieczyszczeń",
+        "Wykrywanie objawów usterek przed dalszą eksploatacją",
+        "Kontrola działania i zalecenia dotyczące użytkowania",
+        "Dobór miejsca instalacji wpływa na rozprowadzanie powietrza, dostęp serwisowy i prowadzenie przewodów. Montujemy klimatyzację w domach, mieszkaniach i biurach. Przed pracami ustalamy warunki techniczne oraz sposób poprowadzenia instalacji. Oferta obejmuje urządzenia naścienne, przypodłogowe, sufitowe i kanałowe — rozwiązanie dobieramy do pomieszczenia.",
+        "Słabsze chłodzenie, nietypowy hałas, zapach lub wyciek skroplin wymagają sprawdzenia. Podczas zgłoszenia podaj model urządzenia i opisz, od kiedy występuje problem. Przy błędzie na wyświetlaczu zapisz kod. Nie rozkręcaj urządzenia samodzielnie; zakres naprawy ustalimy po rozpoznaniu przyczyny.",
+        "Czyszczenie, dezynfekcja i odgrzybianie pomagają utrzymać urządzenie w dobrym stanie. Częstotliwość przeglądów zależy od zaleceń producenta, warunków i intensywności użytkowania. Podczas serwisu sprawdzamy działanie urządzenia i omawiamy dalszą eksploatację.",
+        "Jak przygotować się do serwisu klimatyzacji?",
+        "Przygotuj model urządzenia, opis objawów i ewentualny kod błędu. Zapewnij dostęp do jednostki wewnętrznej i zewnętrznej, o ile jest bezpieczny.",
+        "Kiedy zaplanować czyszczenie klimatyzatora?",
+        "Kieruj się instrukcją producenta i warunkami użytkowania. Przy nieprzyjemnym zapachu lub spadku wydajności zgłoś problem zamiast czekać na kolejny planowany przegląd.",
+        "Ile kosztuje montaż lub naprawa?",
+        "Koszt zależy od urządzenia, warunków montażu lub rodzaju usterki. Zakres i wycenę uzgadniamy indywidualnie; zgłoszenie nie jest zamówieniem dodatkowych prac.",
+        "Zobacz także: serwis AGD"
+      ],
+      "title": "Serwis klimatyzacji Stalowa Wola — Damian Cebula",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Montaż, naprawa, czyszczenie i konserwacja klimatyzacji w Stalowej Woli. Serwis dla domów, mieszkań i biur. Omów zakres prac z Damianem Cebulą."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Serwis klimatyzacji Stalowa Wola — Damian Cebula"
+        },
+        {
+          "name": "og:description",
+          "content": "Montaż, naprawa, czyszczenie i konserwacja klimatyzacji w Stalowej Woli. Serwis dla domów, mieszkań i biur. Omów zakres prac z Damianem Cebulą."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Serwis klimatyzacji Stalowa Wola — Damian Cebula"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Montaż, naprawa, czyszczenie i konserwacja klimatyzacji w Stalowej Woli. Serwis dla domów, mieszkań i biur. Omów zakres prac z Damianem Cebulą."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Serwis klimatyzacji Stalowa Wola",
+                  "item": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/#service",
+              "name": "Serwis klimatyzacji Stalowa Wola",
+              "provider": {
+                "@id": "__ORIGIN__/#business"
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "url": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Zgłoś urządzenie"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Zobacz galerię"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Zobacz także: serwis AGD"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "alt": "Klimatyzator ścienny zamontowany na szarej ścianie",
+          "caption": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "alt": "Jednostka zewnętrzna AUX na elewacji budynku",
+          "caption": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "alt": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+          "caption": ""
+        }
+      ],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / Serwis AGD Stalowa Wola Serwis AGDStalowa Wola Naprawa pralek, zmywarek i lodówek. Diagnoza usterek i uzgodniony zakres naprawy w Stalowej Woli i okolicach. Pralki Zmywarki Lodówki Diagnoza i naprawa Profesjonalny serwis AGD w Twojej okolicy Diagnoza objawów i przyczyny usterki Uzgodnienie kosztów i zakresu naprawy Serwis w Stalowej Woli — termin ustalany indywidualnie Doradztwo w sprawie dalszej eksploatacji Zgłoś urządzenie Naprawa pralek Stalowa Wola Pralka nie odpompowuje wody, nie wiruje lub zatrzymuje program? Zanotuj kod błędu i model. Objaw może mieć kilka przyczyn, dlatego naprawę poprzedza diagnoza. Przy wycieku wyłącz urządzenie, jeśli można to zrobić bezpiecznie, i zamknij dopływ wody. Naprawa zmywarek Stalowa Wola Problemy z poborem wody, niedomywanie naczyń i błędy programu wymagają sprawdzenia. Zgłoś widoczne objawy, informację o wycieku i model zmywarki. Przed wizytą zapewnij dostęp do urządzenia, nie demontując samodzielnie zabudowy ani przyłączy elektrycznych. Serwis lodówek Jeżeli lodówka nie utrzymuje temperatury albo pracuje nietypowo, opisz problem podczas kontaktu. Zakres możliwej naprawy i potrzebę części określamy po rozpoznaniu usterki. Nie deklarujemy z góry opłacalności naprawy bez sprawdzenia urządzenia. Pytania przed zgłoszeniem Jakie urządzenia można zgłosić? Serwis obejmuje pralki, zmywarki i lodówki. Podaj model i objawy. Obsługi innych kategorii urządzeń nie deklarujemy bez indywidualnego potwierdzenia. Czy koszt naprawy jest znany przed diagnozą? Nie zawsze. Ten sam objaw może mieć różne przyczyny. Po rozpoznaniu usterki ustalamy zakres prac, dostępność części i wycenę. Jak zgłosić usterkę AGD? Zadzwoń lub skorzystaj z formularza. Przygotuj markę i model urządzenia oraz kod błędu. Nie wysyłaj danych wrażliwych ani dokumentów z danymi osobowymi. Zobacz także: serwis klimatyzacji",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Serwis AGDStalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Pralki"
+        },
+        {
+          "tag": "H2",
+          "text": "Zmywarki"
+        },
+        {
+          "tag": "H2",
+          "text": "Lodówki"
+        },
+        {
+          "tag": "H2",
+          "text": "Diagnoza i naprawa"
+        },
+        {
+          "tag": "H2",
+          "text": "Profesjonalny serwis AGD w Twojej okolicy"
+        },
+        {
+          "tag": "H2",
+          "text": "Naprawa pralek Stalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Naprawa zmywarek Stalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Serwis lodówek"
+        },
+        {
+          "tag": "H2",
+          "text": "Pytania przed zgłoszeniem"
+        }
+      ],
+      "legalAndSeoText": [
+        "Naprawa pralek, zmywarek i lodówek. Diagnoza usterek i uzgodniony zakres naprawy w Stalowej Woli i okolicach.",
+        "Diagnoza objawów i przyczyny usterki",
+        "Uzgodnienie kosztów i zakresu naprawy",
+        "Serwis w Stalowej Woli — termin ustalany indywidualnie",
+        "Doradztwo w sprawie dalszej eksploatacji",
+        "Pralka nie odpompowuje wody, nie wiruje lub zatrzymuje program? Zanotuj kod błędu i model. Objaw może mieć kilka przyczyn, dlatego naprawę poprzedza diagnoza. Przy wycieku wyłącz urządzenie, jeśli można to zrobić bezpiecznie, i zamknij dopływ wody.",
+        "Problemy z poborem wody, niedomywanie naczyń i błędy programu wymagają sprawdzenia. Zgłoś widoczne objawy, informację o wycieku i model zmywarki. Przed wizytą zapewnij dostęp do urządzenia, nie demontując samodzielnie zabudowy ani przyłączy elektrycznych.",
+        "Jeżeli lodówka nie utrzymuje temperatury albo pracuje nietypowo, opisz problem podczas kontaktu. Zakres możliwej naprawy i potrzebę części określamy po rozpoznaniu usterki. Nie deklarujemy z góry opłacalności naprawy bez sprawdzenia urządzenia.",
+        "Jakie urządzenia można zgłosić?",
+        "Serwis obejmuje pralki, zmywarki i lodówki. Podaj model i objawy. Obsługi innych kategorii urządzeń nie deklarujemy bez indywidualnego potwierdzenia.",
+        "Czy koszt naprawy jest znany przed diagnozą?",
+        "Nie zawsze. Ten sam objaw może mieć różne przyczyny. Po rozpoznaniu usterki ustalamy zakres prac, dostępność części i wycenę.",
+        "Jak zgłosić usterkę AGD?",
+        "Zadzwoń lub skorzystaj z formularza. Przygotuj markę i model urządzenia oraz kod błędu. Nie wysyłaj danych wrażliwych ani dokumentów z danymi osobowymi.",
+        "Zobacz także: serwis klimatyzacji"
+      ],
+      "title": "Serwis AGD Stalowa Wola — naprawa pralek i zmywarek",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Zgłoś objawy, ustal diagnozę i zakres serwisu AGD. Damian Cebula — telefon 794 225 139."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Serwis AGD Stalowa Wola — naprawa pralek i zmywarek"
+        },
+        {
+          "name": "og:description",
+          "content": "Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Zgłoś objawy, ustal diagnozę i zakres serwisu AGD. Damian Cebula — telefon 794 225 139."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/serwis-agd-stalowa-wola/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Serwis AGD Stalowa Wola — naprawa pralek i zmywarek"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Zgłoś objawy, ustal diagnozę i zakres serwisu AGD. Damian Cebula — telefon 794 225 139."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/serwis-agd-stalowa-wola/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Serwis AGD Stalowa Wola",
+                  "item": "__ORIGIN__/serwis-agd-stalowa-wola/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "__ORIGIN__/serwis-agd-stalowa-wola/#service",
+              "name": "Serwis AGD Stalowa Wola",
+              "provider": {
+                "@id": "__ORIGIN__/#business"
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "url": "__ORIGIN__/serwis-agd-stalowa-wola/"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Zgłoś urządzenie"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Zobacz także: serwis klimatyzacji"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/realizacje/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / Realizacje Realizacje klimatyzacjii serwisu Zdjęcia rzeczywistych prac przekazane przez właściciela oraz pochodzące z dotychczasowej strony. Pokazujemy widoczny zakres prac, bez przypisywania niepotwierdzonych lokalizacji. W tej galerii znajdują się realizacje klimatyzacji — zdjęć napraw AGD nie udostępniono. Klimatyzator ścienny zamontowany na szarej ścianie Jednostka zewnętrzna AUX na elewacji budynku Pompa próżniowa podczas prac przy instalacji klimatyzacji Jednostka wewnętrzna zabezpieczona folią podczas montażu Prowadzenie instalacji klimatyzacji przy elewacji Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji Jednostka zewnętrzna na żwirowym podłożu Rząd jednostek zewnętrznych na dachu Klimatyzator przypodłogowy we wnętrzu Instalacje klimatyzacyjne na dachu Porozmawiajmy o Twoim urządzeniu",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Realizacje klimatyzacjii serwisu"
+        }
+      ],
+      "legalAndSeoText": [
+        "Zdjęcia rzeczywistych prac przekazane przez właściciela oraz pochodzące z dotychczasowej strony. Pokazujemy widoczny zakres prac, bez przypisywania niepotwierdzonych lokalizacji. W tej galerii znajdują się realizacje klimatyzacji — zdjęć napraw AGD nie udostępniono."
+      ],
+      "title": "Realizacje montażu klimatyzacji — Damian Cebula",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Zobacz autentyczne zdjęcia montażu i serwisu klimatyzacji przekazane przez Damiana Cebulę. Jednostki wewnętrzne, zewnętrzne i instalacje."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Realizacje montażu klimatyzacji — Damian Cebula"
+        },
+        {
+          "name": "og:description",
+          "content": "Zobacz autentyczne zdjęcia montażu i serwisu klimatyzacji przekazane przez Damiana Cebulę. Jednostki wewnętrzne, zewnętrzne i instalacje."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/realizacje/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Realizacje montażu klimatyzacji — Damian Cebula"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Zobacz autentyczne zdjęcia montażu i serwisu klimatyzacji przekazane przez Damiana Cebulę. Jednostki wewnętrzne, zewnętrzne i instalacje."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/realizacje/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Realizacje",
+                  "item": "__ORIGIN__/realizacje/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/realizacje/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6.webp",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Porozmawiajmy o Twoim urządzeniu"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
+          "alt": "Klimatyzator ścienny zamontowany na szarej ścianie",
+          "caption": "Klimatyzator ścienny zamontowany na szarej ścianie"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
+          "alt": "Jednostka zewnętrzna AUX na elewacji budynku",
+          "caption": "Jednostka zewnętrzna AUX na elewacji budynku"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
+          "alt": "Pompa próżniowa podczas prac przy instalacji klimatyzacji",
+          "caption": "Pompa próżniowa podczas prac przy instalacji klimatyzacji"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70.webp",
+          "alt": "Jednostka wewnętrzna zabezpieczona folią podczas montażu",
+          "caption": "Jednostka wewnętrzna zabezpieczona folią podczas montażu"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1.webp",
+          "alt": "Prowadzenie instalacji klimatyzacji przy elewacji",
+          "caption": "Prowadzenie instalacji klimatyzacji przy elewacji"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961.webp",
+          "alt": "Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji",
+          "caption": "Jednostka zewnętrzna klimatyzacji przy ceglanej elewacji"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046.webp",
+          "alt": "Jednostka zewnętrzna na żwirowym podłożu",
+          "caption": "Jednostka zewnętrzna na żwirowym podłożu"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5.webp",
+          "alt": "Rząd jednostek zewnętrznych na dachu",
+          "caption": "Rząd jednostek zewnętrznych na dachu"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643.webp",
+          "alt": "Klimatyzator przypodłogowy we wnętrzu",
+          "caption": "Klimatyzator przypodłogowy we wnętrzu"
+        },
+        {
+          "href": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6.webp",
+          "src": "__ORIGIN__/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6.webp",
+          "alt": "Instalacje klimatyzacyjne na dachu",
+          "caption": "Instalacje klimatyzacyjne na dachu"
+        }
+      ],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/o-firmie/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / O firmie Damian Cebula — lokalny serwisw Stalowej Woli Klimatyzacja i sprawne urządzenia domowe mają pomagać w codziennym życiu. Zajmuję się montażem, czyszczeniem, konserwacją i naprawą klimatyzacji oraz serwisem pralek, lodówek i zmywarek. Obsługuję domy, mieszkania i biura w Stalowej Woli i okolicach. Najpierw rozmowa, potem uzgodniony zakres prac Podczas kontaktu pytam o urządzenie, objawy i warunki pracy. Diagnoza pozwala ustalić kolejne kroki i wycenę. Termin wizyty i obszar dojazdu potwierdzamy indywidualnie. Dwie specjalizacje, jeden kontakt Klimatyzacja — montaż, przegląd i naprawa oraz serwis AGD — pralki, zmywarki i lodówki. Zobacz fotografie realizacji i opisz, jakiej pomocy potrzebujesz. Skontaktuj się",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Damian Cebula — lokalny serwisw Stalowej Woli"
+        },
+        {
+          "tag": "H2",
+          "text": "Najpierw rozmowa, potem uzgodniony zakres prac"
+        },
+        {
+          "tag": "H2",
+          "text": "Dwie specjalizacje, jeden kontakt"
+        }
+      ],
+      "legalAndSeoText": [
+        "Klimatyzacja i sprawne urządzenia domowe mają pomagać w codziennym życiu. Zajmuję się montażem, czyszczeniem, konserwacją i naprawą klimatyzacji oraz serwisem pralek, lodówek i zmywarek. Obsługuję domy, mieszkania i biura w Stalowej Woli i okolicach.",
+        "Podczas kontaktu pytam o urządzenie, objawy i warunki pracy. Diagnoza pozwala ustalić kolejne kroki i wycenę. Termin wizyty i obszar dojazdu potwierdzamy indywidualnie.",
+        "Klimatyzacja — montaż, przegląd i naprawa oraz serwis AGD — pralki, zmywarki i lodówki. Zobacz fotografie realizacji i opisz, jakiej pomocy potrzebujesz."
+      ],
+      "title": "Damian Cebula — lokalny serwis AGD i klimatyzacji",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD w Stalowej Woli i okolicach. Poznaj zakres usług i sposób zgłoszenia usterki."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Damian Cebula — lokalny serwis AGD i klimatyzacji"
+        },
+        {
+          "name": "og:description",
+          "content": "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD w Stalowej Woli i okolicach. Poznaj zakres usług i sposób zgłoszenia usterki."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/o-firmie/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Damian Cebula — lokalny serwis AGD i klimatyzacji"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD w Stalowej Woli i okolicach. Poznaj zakres usług i sposób zgłoszenia usterki."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/o-firmie/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "O firmie",
+                  "item": "__ORIGIN__/o-firmie/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/o-firmie/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja — montaż, przegląd i naprawa"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "serwis AGD — pralki, zmywarki i lodówki"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "fotografie realizacji"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/kontakt/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / Kontakt Kontakt — Damian CebulaStalowa Wola Potrzebujesz serwisu klimatyzacji lub naprawy AGD? Zadzwoń albo opisz urządzenie i objawy w formularzu. 794 225 139kontakt@damiancebula-serwis.pl Aleje Jana Pawła II 42, 37-450 Stalowa Wola Obszar działania: Stalowa Wola i okolice. Termin i zakres dojazdu ustalamy indywidualnie. Napisz, w czym możemy pomóc Nie wypełniaj tego pola Imię (wymagane)E-mail (wymagany) Telefon (opcjonalnie) Wiadomość (wymagana, min. 10 znaków) Wyrażam zgodę na przetwarzanie podanych danych osobowych przez Damiana Cebulę w celu udzielenia odpowiedzi na zgłoszenie. Zapoznałem/am się z polityką prywatności. Dane służą udzieleniu odpowiedzi na zgłoszenie. Nie podawaj danych wrażliwych. Zgłoszenie nie jest potwierdzeniem terminu wizyty. Wyślij wiadomość Adres firmy na mapieAleje Jana Pawła II 42, 37-450 Stalowa Wola.Otwórz w Google Maps (nowa karta, usługa zewnętrzna)",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Kontakt — Damian CebulaStalowa Wola"
+        },
+        {
+          "tag": "H2",
+          "text": "Napisz, w czym możemy pomóc"
+        },
+        {
+          "tag": "H2",
+          "text": "Adres firmy na mapie"
+        }
+      ],
+      "legalAndSeoText": [
+        "Potrzebujesz serwisu klimatyzacji lub naprawy AGD? Zadzwoń albo opisz urządzenie i objawy w formularzu.",
+        "794 225 139kontakt@damiancebula-serwis.pl",
+        "Obszar działania: Stalowa Wola i okolice. Termin i zakres dojazdu ustalamy indywidualnie.",
+        "Nie podawaj danych wrażliwych. Zgłoszenie nie jest potwierdzeniem terminu wizyty.",
+        "Aleje Jana Pawła II 42, 37-450 Stalowa Wola.",
+        "Otwórz w Google Maps (nowa karta, usługa zewnętrzna)"
+      ],
+      "title": "Kontakt — Damian Cebula, serwis w Stalowej Woli",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Zgłoś naprawę AGD, serwis lub montaż klimatyzacji w Stalowej Woli. Damian Cebula: 794 225 139, kontakt@damiancebula-serwis.pl. Formularz kontaktowy."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Kontakt — Damian Cebula, serwis w Stalowej Woli"
+        },
+        {
+          "name": "og:description",
+          "content": "Zgłoś naprawę AGD, serwis lub montaż klimatyzacji w Stalowej Woli. Damian Cebula: 794 225 139, kontakt@damiancebula-serwis.pl. Formularz kontaktowy."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/kontakt/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Kontakt — Damian Cebula, serwis w Stalowej Woli"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Zgłoś naprawę AGD, serwis lub montaż klimatyzacji w Stalowej Woli. Damian Cebula: 794 225 139, kontakt@damiancebula-serwis.pl. Formularz kontaktowy."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/kontakt/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Kontakt",
+                  "item": "__ORIGIN__/kontakt/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/kontakt/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "polityką prywatności"
+        },
+        {
+          "href": "https://www.google.com/maps?q=Aleje%20Jana%20Paw%C5%82a%20II%2042%2C%2037-450%20Stalowa%20Wola%2C%20Polska",
+          "text": "Otwórz w Google Maps (nowa karta, usługa zewnętrzna)"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [],
+      "lang": "pl-PL"
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "httpStatus": 200,
+      "xRobotsTag": "",
+      "text": "Strona główna / Polityka prywatności Polityka prywatności Ta polityka wyjaśnia, jak przetwarzane są dane osób odwiedzających stronę Damiana Cebuli — Serwis Klimatyzacji i AGD oraz kontaktujących się w sprawie usług. Ostatnia aktualizacja: 6 listopada 2026 r. 1. Administrator i kontakt Administratorem danych osobowych jest Damian Cebula, pod adresem: Aleje Jana Pawła II 42, 37-450 Stalowa Wola W sprawach danych osobowych i usług możesz napisać na kontakt@damiancebula-serwis.pl, zadzwonić pod numer 794 225 139 lub przesłać korespondencję na powyższy adres. W sprawie prywatności opisz swoje żądanie i podaj dane umożliwiające odpowiedź; dla ochrony danych może być potrzebne potwierdzenie tożsamości w zakresie adekwatnym do żądania. 2. Jakie dane i w jakich celach są przetwarzane Formularz kontaktowy wymaga imienia, adresu e-mail i treści wiadomości. Numer telefonu jest dobrowolny. Przetwarzana jest również dalsza korespondencja oraz informacje o urządzeniu i zgłoszeniu, które samodzielnie przekażesz. Prosimy nie przesyłać danych szczególnych kategorii, np. informacji o zdrowiu, numerów dokumentów tożsamości ani haseł. Odpowiedź na pytanie o usługę, przygotowanie wyceny i ustalenia przed zawarciem umowy, a następnie jej wykonanie — art. 6 ust. 1 lit. b RODO, jeżeli kontakt dotyczy działań na Twoje żądanie przed zawarciem umowy lub jej realizacji. Kontakt objęty dobrowolną zgodą — art. 6 ust. 1 lit. a RODO, w zakresie, w jakim odpowiedź lub inne przetwarzanie opiera się na zgodzie. Formularz zawiera wymagane zaznaczenie zgody na przetwarzanie podanych danych w celu odpowiedzi na zgłoszenie. Zgodę można wycofać, kontaktując się z administratorem; nie wpływa to na zgodność z prawem wcześniejszego przetwarzania. Nie jest to zgoda na marketing. Wycofanie zgody nie znosi odrębnej podstawy prawnej, jeżeli dane są niezbędne do wykonania umowy lub obowiązku prawnego. Obsługa pozostałej korespondencji, bezpieczeństwo strony, zapobieganie spamowi oraz ustalenie, dochodzenie lub obrona roszczeń — art. 6 ust. 1 lit. f RODO. Prawnie uzasadnionym interesem administratora jest sprawna komunikacja, ochrona strony i praw związanych z działalnością. Zakres przetwarzania ograniczany jest do danych potrzebnych do tych celów, z uwzględnieniem Twoich praw i rozsądnych oczekiwań; możesz wnieść sprzeciw z przyczyn związanych ze swoją szczególną sytuacją. Wypełnienie obowiązków prawnych, w szczególności podatkowych i rachunkowych po wykonaniu usługi — art. 6 ust. 1 lit. c RODO, w zakresie wynikającym z właściwych przepisów. Podanie danych jest dobrowolne, jednak bez adresu do odpowiedzi i opisu sprawy nie będzie możliwa obsługa zgłoszenia. Możesz też skorzystać bezpośrednio z telefonu lub poczty elektronicznej. Administrator nie podejmuje wobec Ciebie decyzji wywołujących skutki prawne w sposób wyłącznie zautomatyzowany i nie prowadzi profilowania osób odwiedzających stronę. 3. Formularz, bezpieczeństwo i dane techniczne Wiadomość z formularza jest przekazywana na firmową skrzynkę e-mail przez mechanizm pocztowy WordPressa i usługę wysyłkową skonfigurowaną na serwerze. Do wiadomości dołączane jest potwierdzenie zaznaczenia zgody oraz czas zgłoszenia. Sam formularz nie zapisuje treści wiadomości w bazie strony. Mechanizm antyspamowy przez 5 minut zlicza próby wysłania na podstawie skrótu adresu IP zabezpieczonego kluczem; nie przechowuje w tym liczniku jawnego adresu IP. Serwer i dostawca hostingu mogą zapisywać dzienniki techniczne obejmujące m.in. adres IP, czas połączenia, żądany adres strony, typ przeglądarki i informacje o błędach. Służą one utrzymaniu dostępności, diagnozie błędów i ochronie przed nadużyciami. Strona korzysta z szyfrowanego połączenia HTTPS; dostęp do danych powinny mieć wyłącznie osoby upoważnione w zakresie potrzebnym do obsługi sprawy. 4. Odbiorcy danych i usługi zewnętrzne Dane mogą być udostępniane upoważnionym osobom obsługującym zgłoszenia oraz dostawcom świadczącym na rzecz administratora hosting, utrzymanie techniczne i obsługę poczty. Hosting strony zapewnia Hostinger. Transport wiadomości zależy od konfiguracji poczty na serwerze i ewentualnej usługi SMTP. Dane mogą też otrzymać podmioty uprawnione na podstawie prawa, a w razie potrzeby doradcy prawni lub księgowi, w zakresie niezbędnym do wykonania ich zadań. Dane z formularza nie są sprzedawane. Google Maps. Na stronie Kontakt znajduje się mapa adresu firmy. Jeżeli jest włączona w ustawieniach witryny, jej osadzona ramka wczytuje się automatycznie po otwarciu Kontaktu, także przy przejściu przez menu. Nie wymaga przycisku włączenia ani zaznaczenia zgody. Przeglądarka łączy się wtedy z usługą Google, która może otrzymać m.in. adres IP, dane przeglądarki i informacje o korzystaniu z mapy oraz stosować własne pliki cookie i podobne technologie. Administrator udostępnia mapę, aby ułatwić odnalezienie firmy, w swoim prawnie uzasadnionym interesie — art. 6 ust. 1 lit. f RODO; możesz wnieść sprzeciw z przyczyn związanych ze swoją szczególną sytuacją. Samo otwarcie strony nie jest udzieleniem zgody. Własne cele i zasady przetwarzania Google opisują zasady prywatności Google. Ustawienia przeglądarki lub rozszerzenia blokujące treści zewnętrzne mogą ograniczyć wyświetlanie mapy; adres firmy pozostaje dostępny jako tekst. Opinie Google. Jeżeli na stronie udostępniony jest widget opinii Trustindex, może on łączyć się z usługą Trustindex i Google oraz przekazywać dane techniczne, takie jak adres IP i dane przeglądarki. Zakres przetwarzania zależy od ustawień tego widgetu. Widget jest opcjonalny. Przed jego włączeniem administrator zapewnia, aby pliki cookie i podobne technologie wymagające zgody pozostawały wyłączone do jej udzielenia. Więcej informacji: polityka prywatności Trustindex i zasady Google. Gdy widget nie jest skonfigurowany, strona go nie wczytuje. Korzystanie z usług zewnętrznych może wiązać się z przetwarzaniem danych poza Europejskim Obszarem Gospodarczym. W takim przypadku zastosowanie mają wymagane prawem podstawy i zabezpieczenia, np. decyzja Komisji Europejskiej o odpowiednim stopniu ochrony dla danego odbiorcy albo standardowe klauzule umowne wraz z wymaganymi dodatkowymi środkami. Informacje o konkretnych odbiorcach i stosowanych zabezpieczeniach można uzyskać, kontaktując się z administratorem; zasady Google i Trustindex opisują także ich własne operacje przetwarzania. 5. Pliki cookie i podobne technologie Motyw nie zawiera własnych narzędzi analitycznych ani reklamowych. WordPress może używać technicznych plików cookie związanych z logowaniem, uwierzytelnieniem i zapamiętaniem ustawień osób zalogowanych. Są one potrzebne do obsługi konta i panelu administracyjnego. Automatycznie wczytywana mapa Google Maps i ewentualny widget opinii mogą korzystać z własnych plików cookie oraz podobnych technologii zgodnie z opisem powyżej i zasadami ich dostawców. Plikami cookie można zarządzać w ustawieniach przeglądarki, w tym usuwać je i blokować. Ograniczenie niezbędnych plików może utrudnić logowanie lub działanie wybranych funkcji. Jeżeli zostaną uruchomione dodatkowe narzędzia analityczne, reklamowe lub inne opcjonalne integracje, informacje o ich dostawcach, celach i czasie działania oraz wymagany mechanizm zgody muszą zostać udostępnione przed ich uruchomieniem. 6. Jak długo przechowywane są dane Korespondencja dotycząca zapytania, które nie doprowadziło do zawarcia umowy — do 6 miesięcy od zakończenia sprawy, chyba że konieczne jest dłuższe przechowanie w związku z konkretnym roszczeniem lub obowiązkiem prawnym. Dane związane z zawartą umową — przez okres jej realizacji, a następnie przez okres wymagany przepisami lub potrzebny do ustalenia, dochodzenia i obrony roszczeń, z uwzględnieniem właściwych terminów przedawnienia. Dokumenty księgowe i podatkowe przechowywane są przez okres wynikający z przepisów. Dane przetwarzane wyłącznie na podstawie zgody — do jej wycofania lub wcześniejszego zakończenia celu. Informacja potwierdzająca udzielenie zgody może być przechowywana przez czas potrzebny do wykazania zgodności przetwarzania z prawem. Licznik antyspamowy formularza — 5 minut. Dzienniki serwera i kopie bezpieczeństwa — przez okresy wynikające z konfiguracji hostingu i poczty, w zakresie potrzebnym do ich funkcji; konkretne informacje można uzyskać od administratora. W przypadku incydentu odpowiedni fragment danych może być zachowany do jego wyjaśnienia lub rozstrzygnięcia roszczeń. 7. Twoje prawa Na zasadach określonych w RODO masz prawo do dostępu do danych i uzyskania ich kopii, sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia danych, gdy przetwarzanie odbywa się automatycznie na podstawie zgody lub umowy. Masz również prawo wnieść sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie, z przyczyn związanych z Twoją szczególną sytuacją, oraz wycofać zgodę w dowolnym momencie. Nie każde prawo ma zastosowanie w każdej sytuacji, np. usunięcie danych nie może uniemożliwić spełnienia obowiązku prawnego. Żądanie możesz wysłać na kontakt@damiancebula-serwis.pl lub na adres administratora. Odpowiedź otrzymasz bez zbędnej zwłoki, co do zasady w ciągu miesiąca; w przypadkach przewidzianych w RODO termin może zostać przedłużony z podaniem przyczyny. Jeżeli uważasz, że dane są przetwarzane niezgodnie z prawem, możesz złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych. Aktualne dane i sposób wniesienia skargi: uodo.gov.pl. 8. Zmiany polityki Polityka jest aktualizowana, gdy zmieniają się sposoby kontaktu, wykorzystywane usługi lub zasady przetwarzania danych. Obowiązuje wersja opublikowana na tej stronie z datą aktualizacji podaną na początku. Informacje odnoszą się do faktycznie udostępnionych funkcji; uruchomienie nowych narzędzi wymaga wcześniejszego uzupełnienia zasad prywatności i, jeżeli jest to potrzebne, uzyskania zgody.",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Polityka prywatności"
+        },
+        {
+          "tag": "H2",
+          "text": "1. Administrator i kontakt"
+        },
+        {
+          "tag": "H2",
+          "text": "2. Jakie dane i w jakich celach są przetwarzane"
+        },
+        {
+          "tag": "H2",
+          "text": "3. Formularz, bezpieczeństwo i dane techniczne"
+        },
+        {
+          "tag": "H2",
+          "text": "4. Odbiorcy danych i usługi zewnętrzne"
+        },
+        {
+          "tag": "H2",
+          "text": "5. Pliki cookie i podobne technologie"
+        },
+        {
+          "tag": "H2",
+          "text": "6. Jak długo przechowywane są dane"
+        },
+        {
+          "tag": "H2",
+          "text": "7. Twoje prawa"
+        },
+        {
+          "tag": "H2",
+          "text": "8. Zmiany polityki"
+        }
+      ],
+      "legalAndSeoText": [
+        "Ta polityka wyjaśnia, jak przetwarzane są dane osób odwiedzających stronę Damiana Cebuli — Serwis Klimatyzacji i AGD oraz kontaktujących się w sprawie usług. Ostatnia aktualizacja: 6 listopada 2026 r.",
+        "Administratorem danych osobowych jest Damian Cebula, pod adresem:",
+        "W sprawach danych osobowych i usług możesz napisać na kontakt@damiancebula-serwis.pl, zadzwonić pod numer 794 225 139 lub przesłać korespondencję na powyższy adres. W sprawie prywatności opisz swoje żądanie i podaj dane umożliwiające odpowiedź; dla ochrony danych może być potrzebne potwierdzenie tożsamości w zakresie adekwatnym do żądania.",
+        "Formularz kontaktowy wymaga imienia, adresu e-mail i treści wiadomości. Numer telefonu jest dobrowolny. Przetwarzana jest również dalsza korespondencja oraz informacje o urządzeniu i zgłoszeniu, które samodzielnie przekażesz. Prosimy nie przesyłać danych szczególnych kategorii, np. informacji o zdrowiu, numerów dokumentów tożsamości ani haseł.",
+        "Odpowiedź na pytanie o usługę, przygotowanie wyceny i ustalenia przed zawarciem umowy, a następnie jej wykonanie — art. 6 ust. 1 lit. b RODO, jeżeli kontakt dotyczy działań na Twoje żądanie przed zawarciem umowy lub jej realizacji.",
+        "Kontakt objęty dobrowolną zgodą — art. 6 ust. 1 lit. a RODO, w zakresie, w jakim odpowiedź lub inne przetwarzanie opiera się na zgodzie. Formularz zawiera wymagane zaznaczenie zgody na przetwarzanie podanych danych w celu odpowiedzi na zgłoszenie. Zgodę można wycofać, kontaktując się z administratorem; nie wpływa to na zgodność z prawem wcześniejszego przetwarzania. Nie jest to zgoda na marketing. Wycofanie zgody nie znosi odrębnej podstawy prawnej, jeżeli dane są niezbędne do wykonania umowy lub obowiązku prawnego.",
+        "Obsługa pozostałej korespondencji, bezpieczeństwo strony, zapobieganie spamowi oraz ustalenie, dochodzenie lub obrona roszczeń — art. 6 ust. 1 lit. f RODO. Prawnie uzasadnionym interesem administratora jest sprawna komunikacja, ochrona strony i praw związanych z działalnością. Zakres przetwarzania ograniczany jest do danych potrzebnych do tych celów, z uwzględnieniem Twoich praw i rozsądnych oczekiwań; możesz wnieść sprzeciw z przyczyn związanych ze swoją szczególną sytuacją.",
+        "Wypełnienie obowiązków prawnych, w szczególności podatkowych i rachunkowych po wykonaniu usługi — art. 6 ust. 1 lit. c RODO, w zakresie wynikającym z właściwych przepisów.",
+        "Podanie danych jest dobrowolne, jednak bez adresu do odpowiedzi i opisu sprawy nie będzie możliwa obsługa zgłoszenia. Możesz też skorzystać bezpośrednio z telefonu lub poczty elektronicznej. Administrator nie podejmuje wobec Ciebie decyzji wywołujących skutki prawne w sposób wyłącznie zautomatyzowany i nie prowadzi profilowania osób odwiedzających stronę.",
+        "Wiadomość z formularza jest przekazywana na firmową skrzynkę e-mail przez mechanizm pocztowy WordPressa i usługę wysyłkową skonfigurowaną na serwerze. Do wiadomości dołączane jest potwierdzenie zaznaczenia zgody oraz czas zgłoszenia. Sam formularz nie zapisuje treści wiadomości w bazie strony. Mechanizm antyspamowy przez 5 minut zlicza próby wysłania na podstawie skrótu adresu IP zabezpieczonego kluczem; nie przechowuje w tym liczniku jawnego adresu IP.",
+        "Serwer i dostawca hostingu mogą zapisywać dzienniki techniczne obejmujące m.in. adres IP, czas połączenia, żądany adres strony, typ przeglądarki i informacje o błędach. Służą one utrzymaniu dostępności, diagnozie błędów i ochronie przed nadużyciami. Strona korzysta z szyfrowanego połączenia HTTPS; dostęp do danych powinny mieć wyłącznie osoby upoważnione w zakresie potrzebnym do obsługi sprawy.",
+        "Dane mogą być udostępniane upoważnionym osobom obsługującym zgłoszenia oraz dostawcom świadczącym na rzecz administratora hosting, utrzymanie techniczne i obsługę poczty. Hosting strony zapewnia Hostinger. Transport wiadomości zależy od konfiguracji poczty na serwerze i ewentualnej usługi SMTP. Dane mogą też otrzymać podmioty uprawnione na podstawie prawa, a w razie potrzeby doradcy prawni lub księgowi, w zakresie niezbędnym do wykonania ich zadań. Dane z formularza nie są sprzedawane.",
+        "Google Maps. Na stronie Kontakt znajduje się mapa adresu firmy. Jeżeli jest włączona w ustawieniach witryny, jej osadzona ramka wczytuje się automatycznie po otwarciu Kontaktu, także przy przejściu przez menu. Nie wymaga przycisku włączenia ani zaznaczenia zgody. Przeglądarka łączy się wtedy z usługą Google, która może otrzymać m.in. adres IP, dane przeglądarki i informacje o korzystaniu z mapy oraz stosować własne pliki cookie i podobne technologie. Administrator udostępnia mapę, aby ułatwić odnalezienie firmy, w swoim prawnie uzasadnionym interesie — art. 6 ust. 1 lit. f RODO; możesz wnieść sprzeciw z przyczyn związanych ze swoją szczególną sytuacją. Samo otwarcie strony nie jest udzieleniem zgody. Własne cele i zasady przetwarzania Google opisują zasady prywatności Google. Ustawienia przeglądarki lub rozszerzenia blokujące treści zewnętrzne mogą ograniczyć wyświetlanie mapy; adres firmy pozostaje dostępny jako tekst.",
+        "Opinie Google. Jeżeli na stronie udostępniony jest widget opinii Trustindex, może on łączyć się z usługą Trustindex i Google oraz przekazywać dane techniczne, takie jak adres IP i dane przeglądarki. Zakres przetwarzania zależy od ustawień tego widgetu. Widget jest opcjonalny. Przed jego włączeniem administrator zapewnia, aby pliki cookie i podobne technologie wymagające zgody pozostawały wyłączone do jej udzielenia. Więcej informacji: polityka prywatności Trustindex i zasady Google. Gdy widget nie jest skonfigurowany, strona go nie wczytuje.",
+        "Korzystanie z usług zewnętrznych może wiązać się z przetwarzaniem danych poza Europejskim Obszarem Gospodarczym. W takim przypadku zastosowanie mają wymagane prawem podstawy i zabezpieczenia, np. decyzja Komisji Europejskiej o odpowiednim stopniu ochrony dla danego odbiorcy albo standardowe klauzule umowne wraz z wymaganymi dodatkowymi środkami. Informacje o konkretnych odbiorcach i stosowanych zabezpieczeniach można uzyskać, kontaktując się z administratorem; zasady Google i Trustindex opisują także ich własne operacje przetwarzania.",
+        "Motyw nie zawiera własnych narzędzi analitycznych ani reklamowych. WordPress może używać technicznych plików cookie związanych z logowaniem, uwierzytelnieniem i zapamiętaniem ustawień osób zalogowanych. Są one potrzebne do obsługi konta i panelu administracyjnego. Automatycznie wczytywana mapa Google Maps i ewentualny widget opinii mogą korzystać z własnych plików cookie oraz podobnych technologii zgodnie z opisem powyżej i zasadami ich dostawców.",
+        "Plikami cookie można zarządzać w ustawieniach przeglądarki, w tym usuwać je i blokować. Ograniczenie niezbędnych plików może utrudnić logowanie lub działanie wybranych funkcji. Jeżeli zostaną uruchomione dodatkowe narzędzia analityczne, reklamowe lub inne opcjonalne integracje, informacje o ich dostawcach, celach i czasie działania oraz wymagany mechanizm zgody muszą zostać udostępnione przed ich uruchomieniem.",
+        "Korespondencja dotycząca zapytania, które nie doprowadziło do zawarcia umowy — do 6 miesięcy od zakończenia sprawy, chyba że konieczne jest dłuższe przechowanie w związku z konkretnym roszczeniem lub obowiązkiem prawnym.",
+        "Dane związane z zawartą umową — przez okres jej realizacji, a następnie przez okres wymagany przepisami lub potrzebny do ustalenia, dochodzenia i obrony roszczeń, z uwzględnieniem właściwych terminów przedawnienia. Dokumenty księgowe i podatkowe przechowywane są przez okres wynikający z przepisów.",
+        "Dane przetwarzane wyłącznie na podstawie zgody — do jej wycofania lub wcześniejszego zakończenia celu. Informacja potwierdzająca udzielenie zgody może być przechowywana przez czas potrzebny do wykazania zgodności przetwarzania z prawem.",
+        "Licznik antyspamowy formularza — 5 minut. Dzienniki serwera i kopie bezpieczeństwa — przez okresy wynikające z konfiguracji hostingu i poczty, w zakresie potrzebnym do ich funkcji; konkretne informacje można uzyskać od administratora. W przypadku incydentu odpowiedni fragment danych może być zachowany do jego wyjaśnienia lub rozstrzygnięcia roszczeń.",
+        "Na zasadach określonych w RODO masz prawo do dostępu do danych i uzyskania ich kopii, sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia danych, gdy przetwarzanie odbywa się automatycznie na podstawie zgody lub umowy. Masz również prawo wnieść sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie, z przyczyn związanych z Twoją szczególną sytuacją, oraz wycofać zgodę w dowolnym momencie. Nie każde prawo ma zastosowanie w każdej sytuacji, np. usunięcie danych nie może uniemożliwić spełnienia obowiązku prawnego.",
+        "Żądanie możesz wysłać na kontakt@damiancebula-serwis.pl lub na adres administratora. Odpowiedź otrzymasz bez zbędnej zwłoki, co do zasady w ciągu miesiąca; w przypadkach przewidzianych w RODO termin może zostać przedłużony z podaniem przyczyny. Jeżeli uważasz, że dane są przetwarzane niezgodnie z prawem, możesz złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych. Aktualne dane i sposób wniesienia skargi: uodo.gov.pl.",
+        "Polityka jest aktualizowana, gdy zmieniają się sposoby kontaktu, wykorzystywane usługi lub zasady przetwarzania danych. Obowiązuje wersja opublikowana na tej stronie z datą aktualizacji podaną na początku. Informacje odnoszą się do faktycznie udostępnionych funkcji; uruchomienie nowych narzędzi wymaga wcześniejszego uzupełnienia zasad prywatności i, jeżeli jest to potrzebne, uzyskania zgody."
+      ],
+      "title": "Polityka prywatności — Damian Cebula, serwis",
+      "metadata": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "description",
+          "content": "Informacje o przetwarzaniu danych osobowych, formularzu kontaktowym, plikach cookie i opcjonalnych usługach Google na stronie Damiana Cebuli."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:locale",
+          "content": "pl_PL"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Damian Cebula"
+        },
+        {
+          "name": "og:title",
+          "content": "Polityka prywatności — Damian Cebula, serwis"
+        },
+        {
+          "name": "og:description",
+          "content": "Informacje o przetwarzaniu danych osobowych, formularzu kontaktowym, plikach cookie i opcjonalnych usługach Google na stronie Damiana Cebuli."
+        },
+        {
+          "name": "og:url",
+          "content": "__ORIGIN__/polityka-prywatnosci/"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Polityka prywatności — Damian Cebula, serwis"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Informacje o przetwarzaniu danych osobowych, formularzu kontaktowym, plikach cookie i opcjonalnych usługach Google na stronie Damiana Cebuli."
+        }
+      ],
+      "canonical": [
+        "__ORIGIN__/polityka-prywatnosci/"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HVACBusiness",
+              "@id": "__ORIGIN__/#business",
+              "name": "Damian Cebula — Serwis Klimatyzacji i AGD",
+              "url": "__ORIGIN__/",
+              "telephone": "+48794225139",
+              "email": "kontakt@damiancebula-serwis.pl",
+              "areaServed": {
+                "@type": "City",
+                "name": "Stalowa Wola"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aleje Jana Pawła II 42",
+                "postalCode": "37-450",
+                "addressLocality": "Stalowa Wola",
+                "addressCountry": "PL"
+              },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "__ORIGIN__/wp-content/themes/dc-serwis/assets/branding/dc-icon.png",
+                "width": 512,
+                "height": 512
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Strona główna",
+                  "item": "__ORIGIN__/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Polityka prywatności",
+                  "item": "__ORIGIN__/polityka-prywatnosci/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/#main",
+          "text": "Przejdź do treści"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": ""
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "__ORIGIN__/serwis-klimatyzacji-stalowa-wola/",
+          "text": "Klimatyzacja"
+        },
+        {
+          "href": "__ORIGIN__/serwis-agd-stalowa-wola/",
+          "text": "Serwis AGD"
+        },
+        {
+          "href": "__ORIGIN__/realizacje/",
+          "text": "Realizacje"
+        },
+        {
+          "href": "__ORIGIN__/o-firmie/",
+          "text": "O firmie"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Kontakt"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/",
+          "text": "Strona główna"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "https://policies.google.com/privacy",
+          "text": "zasady prywatności Google"
+        },
+        {
+          "href": "https://www.trustindex.io/terms-and-conditions-and-privacy-policy/",
+          "text": "polityka prywatności Trustindex"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "https://uodo.gov.pl/",
+          "text": "uodo.gov.pl"
+        },
+        {
+          "href": "tel:+48794225139",
+          "text": "794 225 139"
+        },
+        {
+          "href": "__ORIGIN__/kontakt/",
+          "text": "Skontaktuj się"
+        },
+        {
+          "href": "mailto:kontakt@damiancebula-serwis.pl",
+          "text": "kontakt@damiancebula-serwis.pl"
+        },
+        {
+          "href": "__ORIGIN__/polityka-prywatnosci/",
+          "text": "Polityka prywatności"
+        },
+        {
+          "href": "https://majewskitomasz.pl/",
+          "text": "majewskitomasz.pl"
+        }
+      ],
+      "galleries": [],
+      "lang": "pl-PL"
+    }
+  ],
+  "protectedImages": {
+    "assets/photos/klimatyzator-scienny-gotowy-montaz.webp": "78b97549f29954a87ecfc0dcd1dfbb2a405c2cf231608c649af13ce7f6b9e600",
+    "assets/photos/montaz-klimatyzacji-jednostka-zewnetrzna-aux.webp": "fd6e9161b8ba90ad31277152271043f7711dbe13d3873db13a52a09e39012651",
+    "assets/photos/montaz-klimatyzacji-prowadzenie-instalacji.webp": "c0920f0821ecc37791befdc9e2d38a5bb81b473cad4dca73ed4619161e5808c5",
+    "assets/photos/montaz-klimatyzatora-jednostka-wewnetrzna.webp": "3b14420cfcaf8f636af35ad035ba81575c613e327861f8c571f53282d594b674",
+    "assets/photos/serwis-klimatyzacji-pompa-prozniowa.webp": "ff985f1a8f202436167eeff41345c19724359ddbbc73ff2e27e12c88e6dfcf47",
+    "assets/source-web/identyfikacja-dc-logo.png": "d3081cd07336c790ea817adc8da5f0fee4f4ad37a0e1b2be2330b9f98e675e68",
+    "assets/source-web/identyfikacja-dc-logo.webp": "2e2303f49f12a85be52b746144b635bef20263853779a78383828b01c9f95749",
+    "assets/source-web/realizacja-praca1.webp": "45a420bba99612e362a04b4dc71c20e388124a576cd5c4f8a4bb64b0cf671a6f",
+    "assets/source-web/realizacja-praca3.webp": "6cd6c43f44fb7bc8d9bc4eafaec785546928261a408761dd29da8292361d4ba9",
+    "assets/source-web/realizacja-praca4.webp": "f9d94846a1f0b1336b048f0d48ab48b0e829c40f460848cfc4b882ffcdd316e1",
+    "assets/source-web/realizacja-praca5.webp": "39c6c9fbb1497f876062d1f9f16e3f9e4da86632ad065a5d67d05fd0880c91cb",
+    "assets/source-web/realizacja-prava2.webp": "44289d83127c57f474c674535cb1b7982fdd62fcc777662031e5913b238c2445",
+    "wp-content/themes/dc-serwis/assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp": "247229da426d12b1f52ca926413871f6c5458cbf6c032e5a6cc426635ed3ef60",
+    "wp-content/themes/dc-serwis/assets/images/klimatyzator-scienny-gotowy-montaz-480.webp": "a64e8a15ee5155374ce31ef488730a321c11eb11a1e615020de49486b287942e",
+    "wp-content/themes/dc-serwis/assets/images/klimatyzator-scienny-gotowy-montaz-960.webp": "06aa5b57a68f596eea08265f8f51d495ac1c27035fea85bfcf0ff39f61f62829",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480.webp": "27d65992f4aa6403b5d36c23df74b0524873ff43da2fb69bea14cca67bed3ec6",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-prowadzenie-instalacji-1600.webp": "e6e08caeb11fb74e4b9499368ee679e036488048db9d4a64276ed474c7498f53",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-prowadzenie-instalacji-480.webp": "b5fe5c1c9d7ef7f94701486056c68c76233a5d18377d99f0e9ccef4c2f7fca8e",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-prowadzenie-instalacji-960.webp": "7a107f487af5f8ced62ef1d8b7d9c08099202ce7d8c35da345ffbaa69cc56fdb",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzatora-jednostka-wewnetrzna-1600.webp": "1ed7be5f701b4c71e827f7d9716d53a9e7a8a1e7db592496e8100591d7b51410",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzatora-jednostka-wewnetrzna-480.webp": "88e2228cab65ad083387949c0bc24ec0702ab202dadd8ba09ec05c51755018d0",
+    "wp-content/themes/dc-serwis/assets/images/montaz-klimatyzatora-jednostka-wewnetrzna-960.webp": "401668ce3f2cc0c55288e03b6760e5e3a0f64d5055c2761687eac25ba8d0f62c",
+    "wp-content/themes/dc-serwis/assets/images/realizacja-praca1-480.webp": "8972650961d106e2afd673fe7643970f0411040b035855d0c361ed27da45100b",
+    "wp-content/themes/dc-serwis/assets/images/realizacja-praca3-480.webp": "aea5abf046baed6972291c838b7c45df0abdf29f1f1f72afc999b3124aad499a",
+    "wp-content/themes/dc-serwis/assets/images/realizacja-praca4-480.webp": "d5761e2cc5d5a2d89793209c0d3189e00166923a13c8545ca61e9f56c572b1c3",
+    "wp-content/themes/dc-serwis/assets/images/realizacja-praca5-480.webp": "f63bbc364392c81c3651a028d13c795add503091e1159ba4c8055880cde32f21",
+    "wp-content/themes/dc-serwis/assets/images/realizacja-prava2-480.webp": "bc2d8c1aa6c6503e22c3fdee3aaa61b550d957b4869ee9fe971ba8cdbb2be816",
+    "wp-content/themes/dc-serwis/assets/images/serwis-klimatyzacji-pompa-prozniowa-480.webp": "c35ecacb99d9fab21dbebffeca5f7638e7e2d0d2776edd26768f6f34d365469c",
+    "wp-content/themes/dc-serwis/assets/images/serwis-klimatyzacji-pompa-prozniowa-960.webp": "a619ce8c404f507085b300ad648932b3d7b12ca6d9a4b73508cec7dd1066f8c3"
+  }
+}
