@@ -1,14 +1,18 @@
-# Testy i ograniczenia — DC Serwis 1.3
+# Testy i ograniczenia — DC Serwis 1.4
 
-Testowano lokalnie na odrębnej instalacji WordPress 7.1.4 / PHP 8.3 / MariaDB 11.4. Produkcja nie została zmieniona.
+Testowano 2026-11-06 na odrębnej lokalnej instalacji WordPress 7.1.4 / PHP 8.3 / MariaDB 11.4. Produkcyjna baza i pliki nie zostały zmienione.
 
-- PASS: 49 kombinacji siedmiu stron i siedmiu szerokości, AJAX, historia, obrazy, formularz i menu bez JS. Brak overflow, jeden H1, podpis twórcy obecny.
-- PASS: 14 kontroli axe WCAG A/AA bez wykrytych naruszeń.
-- PASS: galerie home/Klimatyzacja/Realizacje przy 1440/768/390 — całe zdjęcia, proporcje, podpisy, lightbox i fokus.
-- PASS: ciemne pełne logo z dużymi przezroczystymi marginesami — automatyczne dopasowanie i kontrast, czytelne rozmiary 1440/768/390/360, brak zdublowanej nazwy. Ustawienia logo przywrócono po teście.
-- PASS: zwykłe podstrony zamiast scrollspy, sticky bez skoku treści, wszystkie pozycje menu desktop/mobile, Wstecz i obsługa klawiatury.
-- PASS: rzeczywiste animacje opacity/transform w czasie działania, wyjście/wejście/tytuł/smuga na sześciu trasach desktop/mobile bez View Transitions API; wejście home, reveal, szybkie kliknięcia, Wstecz, reduced motion.
-- PASS: formularz — nonce, honeypot, zgoda, e-mail, limit prób, AJAX i przechwycony transport. Dokładny odbiorca kontakt@damiancebula-serwis.pl oraz Reply-To zostały sprawdzone. Żadnego testowego e-maila nie wysłano na prawdziwą skrzynkę.
-- PASS: lint PHP/JS. Wcześniejsze testy wersji 1.2 dla mapy, Rank Math, adresu, polityki i idempotencji pozostają w repozytorium; nie przedstawiamy ich jako nowych testów tej zmiany.
+- PASS: 49 kombinacji siedmiu stron i siedmiu szerokości (1440, 768, 390, 360, 1024, 1280, 1536). Jeden H1, polski język, canonical, brak poziomego przewijania, lokalne obrazy i podpis twórcy. Działają AJAX, historia, lightbox, menu mobilne i formularz bez JS.
+- PASS: 14 kontroli axe WCAG A/AA na wszystkich stronach przy 1440 i 390 px, bez wykrytych naruszeń w testowanym interfejsie i lokalnej atrapie mapy.
+- PASS: rzeczywiste stare przycięcie logo WordPressa 220 × 64 px odwołuje się do oryginalnego PNG 2048 px. Cztery szerokości (1440/768/390/360), ekran Retina DPR2, dostateczna liczba pikseli źródła, brak miniatur srcset/sizes, czytelne napisy, dopasowane marginesy i brak zdublowanej nazwy. Zachowano ustawienie wybranego logo; przywrócono je po teście. Sprawdzono również pozostawienie osobnego symbolu i odrzucenie rodzica będącego stroną zamiast obrazem.
+- PASS: mapa jest automatycznie osadzana w Kontakcie na desktopie i mobile, po powrocie przez AJAX oraz bez JavaScript. Nie ma przycisku zgody. Przy zablokowanej ramce pozostaje adres i odnośnik. Wszystkie żądania Google w tych testach są przechwytywane; testy nie potwierdzają dostępności prawdziwego Google Maps na hostingu.
+- PASS: integracje PHP — bezpieczna normalizacja pełnych linków i kodu iframe Google, odrzucanie obcych hostów/HTML/skróconych linków, zachowanie zapisanej własnej mapy, domyślny potwierdzony adres, wyłączanie mapy i brak fikcyjnych opinii. Ustawienia po teście niezmienione.
+- PASS: siedem unikalnych tytułów/opisów, canonical, schema bez fikcyjnych ocen, spójny adres, wszystkie wewnętrzne linki (także polityka), prawidłowe 404. Lokalna instalacja celowo pozostaje noindex.
+- PASS: synchronizacja zaktualizowała zarządzaną politykę z opisem bezpośredniej mapy, pozostawiając ręczne zmiany. Nie zmieniano logiki importera.
+- PASS: składnia wszystkich 22 plików PHP motywu i zmienionych skryptów JS. ZIP 1.4.0 ma właściwy katalog dc-serwis/, 72 pliki motywu, poprawne CRC i nie zawiera plików środowiska ani repozytorium.
 
-Dane w test-results/, zrzuty w visual/ i artifacts/screenshots/. Brak dostępu do transportu pocztowego Hostinger oznacza brak potwierdzenia rzeczywistego dostarczenia do skrzynki. Skonfiguruj SMTP i zweryfikuj dostarczalność zgodnie z MAIL_DELIVERY.md. Google/Hostinger/indeksacja i produkcyjne CWV nie były zmieniane ani weryfikowane.
+Wyniki JSON: [browser](test-results/browser.json), [accessibility](test-results/accessibility.json), [branding](test-results/branding.json), [map](test-results/map.json), [SEO](test-results/seo.json), [podsumowanie 1.4](test-results/version-1.4.json). Zrzuty logo i mapy w [aktualizacji wizualnej](VISUAL_COMPARISON.md). Test logo używa syntetycznego materiału, zrzuty mapy pokazują jawną atrapę Google. Pełne zrzuty wszystkich stron są w artifacts/screenshots/.
+
+Testy galerii, animacji, nawigacji, Rank Math i przechwyconej wysyłki formularza z wcześniejszych wersji pozostają w repozytorium; nie są przedstawiane jako ponowne pomiary 1.4. Odbiorca formularza nadal wynosi kontakt@damiancebula-serwis.pl. Nie wysyłano testowego e-maila na tę skrzynkę. Konfiguracja rzeczywistego SMTP wymaga hostingu — patrz [instrukcja](MAIL_DELIVERY.md).
+
+Nie zmieniono Hostinger, DNS, indeksacji Google ani starej witryny. Wersja w repozytorium wymaga instalacji ZIP na nowej witrynie. Nie wykonywano nowych pomiarów produkcyjnych Core Web Vitals ani zewnętrznej usługi Google. Własna polityka prywatności i ręcznie edytowane strony nie są nadpisywane; ich opis mapy należy uaktualnić zgodnie z faktyczną konfiguracją.

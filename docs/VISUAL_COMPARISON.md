@@ -1,4 +1,4 @@
-# Porównanie wizualne — wersja 1.3
+# Porównanie wizualne — wersja 1.4
 
 Zestawienia rzeczywistych zrzutów z referencją: [home](visual/home-comparison.jpg), [klimatyzacja](visual/klimatyzacja-comparison.jpg), [AGD](visual/agd-comparison.jpg). Zrzuty [390 px](visual/home-390.jpg), [768 px](visual/home-768.jpg), [1440 px](visual/home-1440.jpg). Wszystkie siedem stron jest sprawdzanych również w artifacts/screenshots/.
 
@@ -11,3 +11,5 @@ Nie deklarujemy pixel-perfect: fotografie są nowymi kompozycjami, a nie kopiami
 Wersja 1.2 ma nowy monogram DC z liniami przepływu powietrza, podpis twórcy, edytowalny adres oraz sticky menu bez scrollspy. Zobacz też [Kontakt](visual/kontakt-1440.jpg) i [menu po przewinięciu](visual/sticky-menu-1440.jpg).
 
 Wersja 1.3 pokazuje pełne fotografie realizacji bez cropowania. Logo pełne z falami powietrza ma jasne napisy i większy rozmiar; obsługiwane są także przesłane ciemne logotypy z marginesami. Przejścia AJAX są animowane również na telefonach.
+
+Wersja 1.4: [logo z odzyskanego oryginału, desktop Retina](visual/logo-original-1440.png), [logo mobile Retina](visual/logo-original-390.png), [bezpośrednia mapa desktop](visual/map-contact-1440.png), [mapa mobile](visual/map-contact-390.png). Logo jest syntetycznym plikiem testowym z przezroczystymi marginesami; wybrany w WordPressie mały crop ma powiązany oryginał 2048 px. Mapa na zrzutach jest celowo oznaczoną atrapą, aby test nie wysyłał ruchu do Google. Pozostałe porównania z makietą powyżej dokumentują kompozycję wersji 1.3, zachowaną w tej aktualizacji.

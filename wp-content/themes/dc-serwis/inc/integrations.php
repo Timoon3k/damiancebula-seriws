@@ -79,7 +79,7 @@ function dc_reviews_code($value) {
 add_action('customize_register', function ($customizer) {
     $customizer->add_section('dc_integrations', ['title'=>'DC — Google: mapa i opinie']);
     $customizer->add_setting('dc_map_enabled', ['default'=>true, 'sanitize_callback'=>'rest_sanitize_boolean']);
-    $customizer->add_control('dc_map_enabled', ['section'=>'dc_integrations', 'label'=>'Pokaż mapę Google z przyciskiem zgody', 'type'=>'checkbox']);
+    $customizer->add_control('dc_map_enabled', ['section'=>'dc_integrations', 'label'=>'Pokaż mapę Google w Kontakcie', 'type'=>'checkbox']);
     $customizer->add_setting('dc_map_url', ['default'=>'', 'sanitize_callback'=>'dc_map_url', 'validate_callback'=>'dc_map_validate']);
     $customizer->add_control('dc_map_url', [
         'section'=>'dc_integrations',
@@ -103,13 +103,9 @@ add_shortcode('dc_google_map', function () {
     if (isset($parameters['cid']) && is_string($parameters['cid'])) { $open = 'https://www.google.com/maps?cid=' . rawurlencode($parameters['cid']); }
     $title = $custom ? 'Mapa Google' : ($address ? 'Adres firmy na mapie' : 'Stalowa Wola — obszar dojazdu');
     $description = $custom ? '' : ($address ? '<p>' . esc_html($address) . '.</p>' : '<p>Mapa przedstawia obszar obsługi w Stalowej Woli, nie dokładny adres siedziby.</p>');
-    $id = wp_unique_id('dc-map-');
-    return '<section class="map-consent" data-map-state="idle"><h2>' . esc_html($title) . '</h2>' . $description
-        . '<p>Mapa Google jest usługą zewnętrzną. Jej włączenie połączy przeglądarkę z Google i może przekazać m.in. adres IP. <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Zasady prywatności Google</a>.</p>'
-        . '<div class="map-actions"><button class="button" type="button" data-map-src="' . esc_url($url) . '" data-map-title="' . esc_attr($title) . '" aria-controls="' . esc_attr($id) . '" aria-describedby="' . esc_attr($id . '-status') . '">Włącz mapę Google</button> '
-        . '<a href="' . esc_url($open) . '" target="_blank" rel="noopener noreferrer" data-no-ajax>Otwórz w Google Maps <span class="screen-reader-text">(nowa karta, usługa zewnętrzna)</span></a></div>'
-        . '<p class="map-status" id="' . esc_attr($id . '-status') . '" role="status" aria-live="polite">Mapa pozostaje wyłączona do czasu wyrażenia zgody przyciskiem.</p>'
-        . '<div class="map-viewport" id="' . esc_attr($id) . '"></div><noscript><p>Aby włączyć mapę tutaj, potrzebny jest JavaScript. Możesz otworzyć ją w Google Maps linkiem powyżej.</p></noscript></section>';
+    return '<section class="map-embed"><h2>' . esc_html($title) . '</h2>' . $description
+        . '<div class="map-viewport"><iframe src="' . esc_url($url) . '" title="' . esc_attr($title) . '" loading="eager" referrerpolicy="no-referrer" allowfullscreen></iframe></div>'
+        . '<p class="map-actions"><a href="' . esc_url($open) . '" target="_blank" rel="noopener noreferrer" data-no-ajax>Otwórz w Google Maps <span class="screen-reader-text">(nowa karta, usługa zewnętrzna)</span></a></p></section>';
 });
 add_shortcode('dc_google_reviews', function () {
     $code = dc_reviews_code(get_theme_mod('dc_reviews_shortcode', ''));

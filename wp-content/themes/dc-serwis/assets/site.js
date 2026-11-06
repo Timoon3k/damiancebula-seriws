@@ -71,39 +71,6 @@
   dialog.addEventListener('close', () => { document.body.classList.remove('lightbox-open'); if (opener?.isConnected) opener.focus(); });
   function init(initial = false) {
     observer?.disconnect();
-    document.querySelectorAll('[data-map-src]').forEach(button => {
-      if (button.dataset.mapBound) return;
-      button.dataset.mapBound = 'true';
-      const section = button.closest('.map-consent');
-      const viewport = section.querySelector('.map-viewport');
-      const status = section.querySelector('.map-status');
-      button.addEventListener('click', () => {
-        const frame = document.createElement('iframe');
-        let timer;
-        section.dataset.mapState = 'loading'; viewport.setAttribute('aria-busy', 'true');
-        button.disabled = true; status.classList.remove('is-error'); status.textContent = 'Ładowanie mapy Google…';
-        const failed = () => {
-          clearTimeout(timer);
-          if (!section.isConnected) return;
-          frame.remove(); section.dataset.mapState = 'error'; viewport.removeAttribute('aria-busy');
-          button.disabled = false; button.textContent = 'Spróbuj wczytać mapę ponownie';
-          status.classList.add('is-error'); status.textContent = 'Nie udało się wczytać mapy. Spróbuj ponownie lub użyj linku „Otwórz w Google Maps”. Blokada treści zewnętrznych może uniemożliwiać osadzenie.';
-        };
-        frame.addEventListener('error', failed, {once:true});
-        frame.addEventListener('load', () => {
-          clearTimeout(timer);
-          if (!frame.isConnected) return;
-          section.dataset.mapState = 'loaded'; viewport.removeAttribute('aria-busy'); button.disabled = false;
-          button.textContent = 'Wczytaj mapę ponownie'; status.classList.remove('is-error');
-          status.textContent = 'Osadzenie Google zostało otwarte. Jeśli mapa nie jest widoczna, użyj linku „Otwórz w Google Maps”.';
-        }, {once:true});
-        frame.title = button.dataset.mapTitle || 'Mapa Google'; frame.loading = 'eager'; frame.referrerPolicy = 'no-referrer';
-        frame.allowFullscreen = true;
-        // The external src is assigned only after explicit consent, also after AJAX navigation.
-        frame.src = button.dataset.mapSrc; viewport.replaceChildren(frame);
-        timer = setTimeout(failed, 15000);
-      });
-    });
     document.querySelectorAll('.mini-gallery a, .gallery-grid a').forEach(a => a.addEventListener('click', e => {
       e.preventDefault(); opener = a; dialog.querySelector('img').src = a.href;
       const alt = a.querySelector('img').alt; dialog.querySelector('img').alt = alt; dialog.querySelector('p').textContent = alt;

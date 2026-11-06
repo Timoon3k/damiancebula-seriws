@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) { exit; }
 function dc_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
-    add_theme_support('custom-logo', ['height' => 64, 'width' => 220, 'flex-width' => true]);
+    add_theme_support('custom-logo', ['height' => 220, 'width' => 1180, 'flex-width' => true, 'flex-height' => true]);
     add_theme_support('html5', ['search-form', 'gallery', 'caption', 'style', 'script']);
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');

@@ -1,5 +1,6 @@
 const {chromium}=require('playwright');
 const fs=require('node:fs');
+const mockMap=require('./mock-map.cjs');
 const assert=require('node:assert/strict');
 const root=(process.env.BASE_URL||'http://127.0.0.1:8080').replace(/\/$/,'');
 const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/','/polityka-prywatnosci/'];
@@ -7,7 +8,7 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
  const errors=[];const failures=[];const results=[];
  for(const width of [1440,768,390,360,1024,1280,1536]){
-  const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}); const page=await context.newPage();
+  const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}); await mockMap(context); const page=await context.newPage();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400 && r.url().startsWith(root)) failures.push([r.status(),r.url()]);});
   for(const route of routes){
@@ -28,14 +29,14 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
   await context.close();
  }
  const page=await browser.newPage({viewport:{width:1440,height:1000}});
- await page.goto(root);await page.evaluate(()=>window.dcTestMarker=1);
+ await mockMap(page);await page.goto(root);await page.evaluate(()=>window.dcTestMarker=1);
  await page.locator('.services .card-link').first().click();await page.waitForURL('**/serwis-klimatyzacji-stalowa-wola/');
  assert.equal(await page.evaluate(()=>window.dcTestMarker),1,'AJAX preserves document');
  assert.match(await page.title(),/Serwis klimatyzacji/);assert.equal(await page.locator('#main').evaluate(el=>el===document.activeElement),true);
  await page.goBack();await page.waitForURL(root+'/');await page.waitForFunction(()=>document.querySelector('h1')?.textContent.includes('Naprawiamy'));
  await page.goto(root+'/realizacje/');const photo=page.locator('.gallery-grid a').first();await photo.focus();await page.keyboard.press('Enter');await page.locator('dialog[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await photo.evaluate(el=>document.activeElement===el),true);
- const mobile=await browser.newPage({viewport:{width:390,height:844}});await mobile.goto(root);await mobile.getByRole('button',{name:'Menu'}).click();assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await mobile.keyboard.press('Escape');assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
- const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const n=await nojs.newPage();await n.goto(root+'/kontakt/');assert.equal(await n.locator('form[action*="admin-post"]').count(),1);assert.equal(await n.locator('#primary-nav').isVisible(),true,'Mobile no-JS navigation');
+ const mobile=await browser.newPage({viewport:{width:390,height:844}});await mockMap(mobile);await mobile.goto(root);await mobile.getByRole('button',{name:'Menu'}).click();assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await mobile.keyboard.press('Escape');assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
+ const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});await mockMap(nojs);const n=await nojs.newPage();await n.goto(root+'/kontakt/');assert.equal(await n.locator('form[action*="admin-post"]').count(),1);assert.equal(await n.locator('#primary-nav').isVisible(),true,'Mobile no-JS navigation');
  await n.locator('[name=dc_name]').fill('Test bez JS');await n.locator('[name=dc_email]').fill('test@example.test');await n.locator('[name=dc_message]').fill('Syntetyczny test wygaśniętego formularza.');await n.locator('[name=dc_privacy]').check();
  await n.locator('[name=dc_nonce]').evaluate(el=>el.value='invalid');await n.getByRole('button',{name:'Wyślij wiadomość'}).click();await n.waitForURL('**/kontakt/?dc_status=expired#contact');assert.match(await n.locator('.form-status').innerText(),/Formularz wygasł/);await nojs.close();
  assert.deepEqual(errors,[],'JavaScript errors');assert.deepEqual(failures,[],'Failed resources');

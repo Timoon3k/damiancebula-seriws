@@ -31,9 +31,9 @@ Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga
 
 Wygląd → Dostosuj → „DC — Google: mapa i opinie”:
 
-- Mapa działa bez klucza API. Puste pole używa potwierdzonego adresu z sekcji DC — Dane firmy. Możesz wkleić pełny kod iframe z Google Maps → Udostępnij → Umieść mapę albo pełny link Google. Skrócony link maps.app.goo.gl trzeba najpierw otworzyć i skopiować kod osadzenia. Przełącznik „Pokaż mapę Google” pozwala ją wyłączyć. Iframe pojawia się dopiero po kliknięciu „Włącz mapę Google”; status, ponowienie i link „Otwórz w Google Maps” pomagają przy blokadzie treści zewnętrznych. Wzorzec Kontakt używa `[dc_google_map]`.
+- Mapa działa bez klucza API. Puste pole używa potwierdzonego adresu z sekcji DC — Dane firmy. Możesz wkleić pełny kod iframe z Google Maps → Udostępnij → Umieść mapę albo pełny link Google. Skrócony link maps.app.goo.gl trzeba najpierw otworzyć i skopiować kod osadzenia. Przełącznik „Pokaż mapę Google w Kontakcie” pozwala ją wyłączyć. Iframe jest osadzony bezpośrednio w Kontakcie i ładuje się automatycznie, bez przycisku zgody, także przez AJAX i bez JavaScript. Tekstowy adres i link „Otwórz w Google Maps” pozostają dostępne przy blokadzie treści zewnętrznych. Wzorzec Kontakt używa `[dc_google_map]`.
 - Opinie: zainstaluj i skonfiguruj oficjalny widget Trustindex dla rzeczywistej wizytówki. Wklej jego `[trustindex ...]` w pole shortcode. Wzorce Kontakt i Strona główna zawierają `[dc_google_reviews]`. Bez shortcode lub aktywnej wtyczki sekcja nie jest wyświetlana. Motyw nie dopisuje ocen, recenzji ani `aggregateRating`. Shortcode opinii pozostaje do samodzielnego uzupełnienia przez właściciela.
-- Zweryfikuj politykę prywatności oraz zgodę na technologie widgetu przed aktywacją integracji. Kod zewnętrznego widgetu może wymagać rozwiązania zarządzania zgodami zależnie od faktycznej konfiguracji.
+- Polityka motywu opisuje automatyczne połączenie z Google Maps i przekazywanie danych technicznych. Uaktualnij również własny dokument, jeśli zastępuje politykę motywu. Przed aktywacją widgetu opinii zweryfikuj opis jego technologii i wymagany mechanizm zgód dla faktycznej konfiguracji.
 
 ## Formularz
 
@@ -60,3 +60,7 @@ Konfigurację Rank Math i ponownego zgłaszania stron do Google opisuje `docs/RA
 ## Wersja 1.3
 
 Scrollspy jest wyłączony; sticky menu i zwykłe podstrony pozostają. Widoczne animacje AJAX i wejścia są wspólne dla desktopu/mobile. Galerie pokazują całe zdjęcia. Logo pełne wgrywaj przez Tożsamość witryny; nie zostanie zmniejszone do samej ikony. Jasny wariant w paczce: `assets/branding/dc-lockup-light.png`; tryb kontrastu jest edytowalny. Formularz wysyła do kontakt@damiancebula-serwis.pl; sprawdź SMTP zgodnie z `docs/MAIL_DELIVERY.md`.
+
+## Wersja 1.4
+
+Nagłówek pobiera oryginalny plik logo bez miniatur responsywnych. Wcześniejsze małe przycięcia WordPressa korzystają z powiązanego oryginału, gdy jest dostępny w bibliotece; świadome wycięcie samego symbolu z pełnego logotypu pozostaje zachowane. Nowe logo wgrywaj w pełnej rozdzielczości i pomiń przycinanie. Gdy oryginał został usunięty, prześlij go ponownie lub usuń własny wybór, aby użyć domyślnego SVG. Mapa jest bezpośrednio osadzona w Kontakcie, bez przycisku zgody. Po aktualizacji wyczyść cache hostingu, WordPressa i przeglądarki. Własne ustawienia i ręcznie edytowane strony pozostają zachowane.

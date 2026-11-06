@@ -59,21 +59,21 @@ try {
     dc_test_mod('dc_map_enabled', true, static function () use ($pb) {
         dc_test_mod('dc_map_url', '', static function () {
             $markup = do_shortcode('[dc_google_map]');
-            dc_expect(str_contains($markup, 'data-map-src='), 'Blank map configuration has a working default');
+            dc_expect(str_contains($markup, '<iframe src='), 'Blank map configuration has a working default');
             dc_expect(str_contains($markup, esc_html(dc_company_address())), 'Default map visibly uses the confirmed company address');
             dc_expect(str_contains(html_entity_decode($markup), rawurlencode(dc_company_map_query())), 'Default embed query shares the company address source');
-            dc_expect(!str_contains($markup, '<iframe'), 'No external frame exists before consent');
-            dc_expect(str_contains($markup, 'Otwórz w Google Maps') && str_contains($markup, '<noscript>'), 'Fallback works without iframe or JavaScript');
-            dc_expect(str_contains($markup, 'role="status"') && str_contains($markup, 'aria-controls='), 'Map exposes accessible status and viewport controls');
+            dc_expect(str_contains($markup, 'loading="eager"') && !str_contains($markup, '<button'), 'Map loads automatically without an activation button');
+            dc_expect(str_contains($markup, 'Otwórz w Google Maps') && str_contains($markup, 'referrerpolicy="no-referrer"'), 'Map and external fallback work without JavaScript and do not send a referrer');
+            dc_expect(str_contains($markup, 'title="Adres firmy na mapie"'), 'Frame has an accessible title');
         });
         dc_test_mod('dc_map_url', $pb, static function () use ($pb) {
             $markup = do_shortcode('[dc_google_map]');
             dc_expect(str_contains(html_entity_decode($markup), dc_map_url($pb)), 'Existing custom embed is preserved');
-            dc_expect(!str_contains($markup, '<iframe'), 'Custom map also waits for consent');
+            dc_expect(str_contains($markup, '<iframe src=') && !str_contains($markup, 'data-map-src'), 'Saved custom map is embedded directly');
         });
         dc_test_mod('dc_map_url', 'https://evil.example/maps/embed?pb=bad', static function () {
             $markup = do_shortcode('[dc_google_map]');
-            dc_expect(!str_contains($markup, 'evil.example') && str_contains($markup, 'data-map-src='), 'Invalid legacy setting uses the safe default');
+            dc_expect(!str_contains($markup, 'evil.example') && str_contains($markup, '<iframe src='), 'Invalid legacy setting uses the safe default');
         });
         dc_test_mod('dc_company_street', '', static function () {
             dc_test_mod('dc_company_postcode', '', static function () {

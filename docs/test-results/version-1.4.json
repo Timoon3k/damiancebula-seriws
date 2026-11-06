@@ -1,0 +1,25 @@
+{
+  "version": "1.4.0",
+  "date": "2026-11-06",
+  "environment": "Isolated local WordPress 7.1.4, PHP 8.3, MariaDB 11.4, Chromium",
+  "browserPageViewportChecks": 49,
+  "axePageViewportChecks": 14,
+  "logoViewports": [
+    1440,
+    768,
+    390,
+    360
+  ],
+  "logoDevicePixelRatio": 2,
+  "selectedLogoCrop": [
+    220,
+    64
+  ],
+  "renderedLogoOriginalWidth": 2048,
+  "automaticMap": true,
+  "googleTrafficIntercepted": true,
+  "productionDeployment": false,
+  "zipBytes": 2526082,
+  "zipFiles": 72,
+  "zipSha256": "9fcbea3a5d73017eb75d35fb880decc4860c86685885c89e04d167baa4efacfb"
+}

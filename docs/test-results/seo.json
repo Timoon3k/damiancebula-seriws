@@ -8,7 +8,8 @@
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness"
-      ]
+      ],
+      "externalFrames": 0
     },
     {
       "route": "/serwis-klimatyzacji-stalowa-wola/",
@@ -20,7 +21,8 @@
         "HVACBusiness",
         "BreadcrumbList",
         "Service"
-      ]
+      ],
+      "externalFrames": 0
     },
     {
       "route": "/serwis-agd-stalowa-wola/",
@@ -32,7 +34,8 @@
         "HVACBusiness",
         "BreadcrumbList",
         "Service"
-      ]
+      ],
+      "externalFrames": 0
     },
     {
       "route": "/realizacje/",
@@ -43,7 +46,8 @@
       "schema": [
         "HVACBusiness",
         "BreadcrumbList"
-      ]
+      ],
+      "externalFrames": 0
     },
     {
       "route": "/o-firmie/",
@@ -54,7 +58,8 @@
       "schema": [
         "HVACBusiness",
         "BreadcrumbList"
-      ]
+      ],
+      "externalFrames": 0
     },
     {
       "route": "/kontakt/",
@@ -65,7 +70,8 @@
       "schema": [
         "HVACBusiness",
         "BreadcrumbList"
-      ]
+      ],
+      "externalFrames": 1
     },
     {
       "route": "/polityka-prywatnosci/",
@@ -76,7 +82,8 @@
       "schema": [
         "HVACBusiness",
         "BreadcrumbList"
-      ]
+      ],
+      "externalFrames": 0
     }
   ],
   "crawl": [
@@ -150,5 +157,8 @@
     }
   ],
   "notFound": true,
+  "automaticContactMap": true,
+  "interceptedMapRequests": 1,
+  "externalGoogleContact": false,
   "privacyPolicy": "Published tailored policy created on separate installation; pre-existing policies preserved."
 }

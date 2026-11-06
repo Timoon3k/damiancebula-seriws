@@ -1,4 +1,4 @@
-# Automatyczne strony, zdjęcia i menu — DC Serwis 1.3
+# Automatyczne strony, zdjęcia i menu — DC Serwis 1.4
 
 ## Nowa, oddzielna witryna
 
@@ -28,10 +28,14 @@ Po gotowości nowej instalacji domenę `damiancebula-serwis.pl` można przypisa�
 
 Przed publicznym przełączeniem sprawdź SSL, canonical, mapę witryny, formularz i rzeczywistą politykę prywatności; dopiero wtedy włącz indeksację. Nie używaj starego lokalnego `seed-local-wordpress.php` do inicjalizacji na hostingu.
 
-## Dane firmy, mapa i polityka w 1.2
+## Dane firmy, mapa i polityka
 
 Adres jest edytowalny w Wygląd → Dostosuj → DC — Dane firmy. Początkowo używany jest potwierdzony adres Aleje Jana Pawła II 42, 37-450 Stalowa Wola. Ten sam adres jest widoczny w kontakcie, stopce, polityce i domyślnej mapie. Własny link Google można podać w sekcji DC — Google: mapa i opinie.
 
+Od wersji 1.4 mapa jest osadzona bezpośrednio w Kontakcie i ładuje się automatycznie, również po przejściu przez menu AJAX i bez JavaScript. Nie trzeba klikać przycisku zgody. Przełącznik „Pokaż mapę Google w Kontakcie” pozwala administratorowi wyłączyć osadzenie; puste pole adresu mapy używa danych firmy. Przy blokadzie zewnętrznych ramek pozostaje tekstowy adres i odnośnik do Google Maps.
+
 Polityka jest osobną stroną pod `/polityka-prywatnosci/` i nie staje się siódmą pozycją głównego menu. Strona wskazana jako polityka w WordPressie i ręczne edycje są zachowywane. Dokument obejmuje faktyczne funkcje motywu, formularz, mapę i opcjonalne opinie; po włączeniu analityki, innej poczty lub nowych wtyczek trzeba go odpowiednio zaktualizować.
+
+Zarządzana polityka bez własnych zmian zostanie zsynchronizowana z opisem automatycznego połączenia z Google Maps. Własny istniejący dokument wymaga samodzielnego uaktualnienia: mapa przesyła dane techniczne do Google już podczas jej ładowania, bez dodatkowego kliknięcia odwiedzającego.
 
 Nowy znak DC jest w `assets/branding/`, a twórca projektu w stopce to majewskitomasz.pl. Sticky menu działa bez powielania nagłówka; scrollspy został wyłączony. Menu otwiera podstrony przez AJAX. Konfigurację Rank Math i ponownej indeksacji opisuje `RANK_MATH_SEO.md`.
