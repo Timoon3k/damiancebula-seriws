@@ -1,0 +1,62 @@
+name: Package DC Serwis theme at 1d92cfb
+
+on:
+  push:
+    branches:
+      - ci/package-theme-1d92cfb
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package-theme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact main commit
+        uses: actions/checkout@v4
+        with:
+          ref: 1d92cfb13f5170fb79aae4ef3658448d251edc8a
+          persist-credentials: false
+      - name: Verify reference commit
+        run: test "$(git rev-parse HEAD)" = "1d92cfb13f5170fb79aae4ef3658448d251edc8a"
+      - name: Build WordPress installable ZIP
+        run: |
+          python3 scripts/package-theme.py
+          test -s artifacts/dc-serwis.zip
+          mv artifacts/dc-serwis.zip artifacts/dc-serwis-1.5.0-1d92cfb.zip
+          python3 - <<'PY'
+          import zipfile
+          p = 'artifacts/dc-serwis-1.5.0-1d92cfb.zip'
+          with zipfile.ZipFile(p) as z:
+              bad = z.testzip()
+              assert bad is None, bad
+              names = z.namelist()
+              assert 'dc-serwis/style.css' in names, 'Missing WordPress theme header'
+              assert 'dc-serwis/functions.php' in names, 'Missing functions.php'
+              assert all(n.startswith('dc-serwis/') for n in names)
+              print(f'Validated theme package: {len(names)} files')
+          PY
+          sha256sum artifacts/dc-serwis-1.5.0-1d92cfb.zip
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc-serwis-1d92cfb
+          path: artifacts/dc-serwis-1.5.0-1d92cfb.zip
+          retention-days: 90
+          if-no-files-found: error
+      - name: Publish permanent downloadable GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag=dc-serwis-1.5.0-1d92cfb
+          asset=artifacts/dc-serwis-1.5.0-1d92cfb.zip
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$asset" --clobber
+          else
+            gh release create "$tag" "$asset" \
+              --target 1d92cfb13f5170fb79aae4ef3658448d251edc8a \
+              --title "DC Serwis 1.5.0 (main 1d92cfb)" \
+              --notes "Instalacyjny ZIP samego motywu WordPress dc-serwis. Źródło: main commit 1d92cfb13f5170fb79aae4ef3658448d251edc8a. Instalacja: Wygląd → Motywy → Dodaj motyw → Wyślij motyw na serwer."
+          fi
