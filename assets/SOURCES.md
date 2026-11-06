@@ -35,3 +35,7 @@ Pliki `wp-content/themes/dc-serwis/assets/images/editorial-*-{480,960,1600}.webp
 - `editorial-agd-service`: ilustracyjna diagnostyka pralki — sekcja AGD.
 
 Obrazy powstały z użyciem image generation na podstawie opisu sceny i kompozycji referencji. ALT określa je jako ilustracyjne. Nie identyfikują technika jako właściciela ani pracownika firmy, nie zawierają logo i nie trafiają do Realizacji. WebP mają usunięte metadane i warianty responsywne. Oryginalne prace klienta w `assets/photos/` i `assets/source-web/` pozostają zachowane.
+
+## 5. Logo 1.2
+
+Nowy autorski monogram DC z motywem przepływu powietrza: `assets/branding/dc-mark.svg` w katalogu motywu. Wektor jest ręcznie zdefiniowaną geometrią inspirowaną koncepcją wygenerowaną dla tej witryny; nie korzysta z logotypu cudzego motywu. PNG są eksportami tego samego SVG. W nagłówku nazwę firmy i opis renderuje HTML. Podpis twórcy projektu w stopce: majewskitomasz.pl, zgodnie z instrukcją właściciela.

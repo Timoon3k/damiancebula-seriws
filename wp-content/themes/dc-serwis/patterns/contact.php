@@ -19,6 +19,9 @@
 <!-- wp:html -->
 <p><a class="big-phone" href="tel:+48794225139">794 225 139</a><br><a href="mailto:kontakt@damiancebula-serwis.pl">kontakt@damiancebula-serwis.pl</a></p>
 <!-- /wp:html -->
+<!-- wp:shortcode -->
+[dc_business_address]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph -->
 <p>Obszar działania: Stalowa Wola i okolice. Termin i zakres dojazdu ustalamy indywidualnie.</p>
 <!-- /wp:paragraph -->

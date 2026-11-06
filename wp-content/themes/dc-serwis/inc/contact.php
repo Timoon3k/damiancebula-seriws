@@ -16,7 +16,7 @@ add_shortcode('dc_contact', function () {
     <div class="form-row"><label>Imię <span>(wymagane)</span><input name="dc_name" required maxlength="100" autocomplete="given-name"></label><label>E-mail <span>(wymagany)</span><input name="dc_email" type="email" required maxlength="190" autocomplete="email"></label></div>
     <label>Telefon <span>(opcjonalnie)</span><input name="dc_phone" type="tel" maxlength="30" autocomplete="tel"></label>
     <label>Wiadomość <span>(wymagana, min. 10 znaków)</span><textarea name="dc_message" required minlength="10" maxlength="5000" rows="5"></textarea></label>
-    <label class="consent"><input type="checkbox" name="dc_privacy" value="1" required><span>Wyrażam zgodę na przetwarzanie podanych danych osobowych przez Damiana Cebulę w celu udzielenia odpowiedzi na zgłoszenie. Zapoznałem/am się z <a href="<?php echo esc_url(home_url('/polityka-prywatnosci/')); ?>">polityką prywatności</a>. Dane służą udzieleniu odpowiedzi na zgłoszenie.</span></label>
+    <label class="consent"><input type="checkbox" name="dc_privacy" value="1" required><span>Wyrażam zgodę na przetwarzanie podanych danych osobowych przez Damiana Cebulę w celu udzielenia odpowiedzi na zgłoszenie. Zapoznałem/am się z <a href="<?php echo esc_url(get_privacy_policy_url() ?: home_url('/polityka-prywatnosci/')); ?>">polityką prywatności</a>. Dane służą udzieleniu odpowiedzi na zgłoszenie.</span></label>
     <p>Nie podawaj danych wrażliwych. Zgłoszenie nie jest potwierdzeniem terminu wizyty.</p>
     <button class="button" type="submit">Wyślij wiadomość <?php echo dc_icon(); ?></button>
     </form><?php return ob_get_clean();
@@ -43,7 +43,7 @@ function dc_contact_handle() {
     if ($attempts >= 3) { dc_contact_finish('limited'); }
     set_transient($key, $attempts + 1, 5 * MINUTE_IN_SECONDS);
     // Fixed destination and subject; user data can never become a mail header.
-    $body = "Imię: $name\nE-mail: $email\nTelefon: $phone\n\n$message";
+    $body = "Imię: $name\nE-mail: $email\nTelefon: $phone\n\n$message\n\nPotwierdzenie zgody na odpowiedź: tak\nData zgłoszenia: " . wp_date('Y-m-d H:i:s T') . "\nPolityka prywatności: " . (get_privacy_policy_url() ?: home_url('/polityka-prywatnosci/'));
     $sent = wp_mail('kontakt@damiancebula-serwis.pl', 'Zgłoszenie ze strony Damian Cebula', $body, ['Content-Type: text/plain; charset=UTF-8']);
     dc_contact_finish($sent ? 'sent' : 'failed');
 }

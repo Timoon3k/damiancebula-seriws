@@ -5,8 +5,8 @@
 - Backup plików i bazy oraz sprawdzona procedura powrotu do poprzedniego motywu. Kopia stagingowa, zablokowana przed indeksacją.
 - Zachować `/` oraz `/polityka-prywatnosci/`, identyfikator i treść istniejącej polityki; nie zastępować jej przykładowym tekstem WordPressa. Odczyt produkcji był blokowany przez proxy, dlatego nie przygotowano niezweryfikowanej kopii polityki.
 - Zaktualizować politykę wyłącznie po sprawdzeniu rzeczywistych procesów: administrator, podstawa przetwarzania i zgoda formularza, odbiorcy/hosting/poczta, czas przechowywania, prawa osób, logi i limit antyspamowy, Google Maps, Trustindex i technologie śledzące po ich konfiguracji. Właściciel zatwierdza finalną treść.
-- Na osobnej nowej instalacji aktywacja motywu 1.1 tworzy strony, zdjęcia i menu automatycznie; sprawdzić raport w Wygląd → DC — synchronizacja. Nie uruchamiać lokalnego skryptu seed na produkcji — ma blokadę domeny.
-- Zachować telefon, e-mail i domenę. Nie uzupełniać niepotwierdzonych adresu, godzin, ocen, uprawnień ani marek.
+- Na osobnej nowej instalacji aktywacja motywu 1.2 tworzy strony, zdjęcia i menu automatycznie; sprawdzić raport w Wygląd → DC — synchronizacja. Nie uruchamiać lokalnego skryptu seed na produkcji — ma blokadę domeny.
+- Zachować telefon, e-mail i domenę. Adres podany przez właściciela: Aleje Jana Pawła II 42, 37-450 Stalowa Wola. Nie uzupełniać niepotwierdzonych godzin, ocen, uprawnień ani marek.
 - Nie usuwać starych uploadów. Sprawdzić URL mediów, linki zewnętrzne, stary profil Google i Search Console po uzyskaniu dostępu.
 
 ## URL i kotwice
@@ -29,7 +29,7 @@ Motyw obsługuje historyczne kotwice na stronie głównej, aby starsze linki prz
 - Mapa XML: domyślnie `/wp-sitemap.xml`; przy wtyczce jej właściwy adres (często `/sitemap_index.xml`). Sprawdzić tylko strony przeznaczone do publikacji. Zachować robots administracyjne.
 - Na produkcji wyłączyć „Proś wyszukiwarki o nieindeksowanie” i blokady stagingowe. W lokalnym środowisku `noindex` jest celowy. Sprawdzić też nagłówek X-Robots-Tag i cache/CDN.
 - Formularz: rzeczywisty test dostarczalności na zatwierdzonym stagingu, SMTP, SPF/DKIM/DMARC, wiadomość sukcesu i błędu, zgoda, brak wycieku danych. Nie kopiować testowej wtyczki przechwytującej pocztę.
-- Mapa i opinie domyślnie puste. Uzupełnić tylko zweryfikowane dane; sprawdzić prywatność i widget. Nie przypisywać zdjęciom lokalizacji bez dowodów.
+- Mapa domyślnie używa potwierdzonego adresu Aleje Jana Pawła II 42, 37-450 Stalowa Wola i wymaga kliknięcia zgody. Opinie pozostają puste. Sprawdzić adres, prywatność i widget. Nie przypisywać zdjęciom lokalizacji bez dowodów.
 - Desktop 1440/1536, tablet 768, mobile 390/360, klawiatura, czytnik, formularz i menu bez JS.
 - PageSpeed/Lighthouse na stagingu i po produkcji; cele LCP <2,5 s, CLS <0,1, INP <200 ms wymagają reprezentatywnych pomiarów. Lokalne testy nie stanowią gwarancji Core Web Vitals.
 - Dopiero po zatwierdzeniu: wdrożenie, purge cache, testy URL, sitemap w GSC, URL Inspection i monitoring 404. Nie deklarować indeksacji ani pozycji bez danych. Uzgodnić NAP z prawdziwym Google Business Profile.

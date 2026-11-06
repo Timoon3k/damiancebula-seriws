@@ -9,6 +9,22 @@ function dc_meta() {
     $description = get_post_meta($id, '_dc_description', true);
     return [$title ?: wp_strip_all_tags(get_the_title($id)), $description ?: wp_trim_words(wp_strip_all_tags(get_post_field('post_content', $id)), 25, '')];
 }
+/** Keep the imported page metadata until an editor supplies Rank Math metadata. */
+function dc_rank_math_metadata($value, $field) {
+    if (!defined('RANK_MATH_VERSION') || !is_singular()) { return $value; }
+    $id = get_queried_object_id();
+    if (!$id) { return $value; }
+    $custom = get_post_meta($id, 'rank_math_' . $field, true);
+    if (is_string($custom) && trim($custom) !== '') { return $value; }
+    $fallback = get_post_meta($id, '_dc_' . $field, true);
+    return is_string($fallback) && trim($fallback) !== '' ? $fallback : $value;
+}
+add_filter('rank_math/frontend/title', function ($title) {
+    return dc_rank_math_metadata($title, 'title');
+});
+add_filter('rank_math/frontend/description', function ($description) {
+    return dc_rank_math_metadata($description, 'description');
+});
 add_filter('pre_get_document_title', function ($title) {
     if (dc_seo_plugin() || !is_singular()) { return $title; }
     return dc_meta()[0];
@@ -27,6 +43,8 @@ add_action('wp_head', function () {
     }
     echo '<meta name="twitter:card" content="summary"><meta name="twitter:title" content="' . esc_attr($title) . '"><meta name="twitter:description" content="' . esc_attr($description) . '">' . "\n";
     $business = ['@type'=>'HVACBusiness','@id'=>home_url('/#business'),'name'=>'Damian Cebula — Serwis Klimatyzacji i AGD','url'=>home_url('/'),'telephone'=>'+48794225139','email'=>'kontakt@damiancebula-serwis.pl','areaServed'=>['@type'=>'City','name'=>'Stalowa Wola']];
+    if (function_exists('dc_company_schema_address')) { $business['address'] = dc_company_schema_address(); }
+    $business['logo'] = ['@type'=>'ImageObject','url'=>get_theme_file_uri('assets/branding/dc-icon.png'),'width'=>512,'height'=>512];
     $graph = [$business];
     if (!is_front_page()) {
         $graph[] = ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Strona główna','item'=>home_url('/')],['@type'=>'ListItem','position'=>2,'name'=>get_the_title(),'item'=>$url]]];
@@ -43,7 +61,7 @@ add_action('init', function () {
     }
 });
 add_action('add_meta_boxes_page', function () {
-    add_meta_box('dc-seo', 'DC — tytuł i opis SEO (bez aktywnej wtyczki SEO)', function ($post) {
+    add_meta_box('dc-seo', 'DC — tytuł i opis SEO (także wartości zapasowe dla Rank Math)', function ($post) {
         wp_nonce_field('dc_seo_save', 'dc_seo_nonce');
         foreach (['_dc_title'=>'Tytuł SEO', '_dc_description'=>'Opis meta'] as $key=>$label) {
             echo '<p><label>' . esc_html($label) . '<input class="widefat" name="' . esc_attr($key) . '" value="' . esc_attr(get_post_meta($post->ID, $key, true)) . '"></label></p>';

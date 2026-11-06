@@ -31,6 +31,11 @@
       "status": 200
     },
     {
+      "width": 1440,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
       "width": 768,
       "route": "/",
       "status": 200
@@ -58,6 +63,11 @@
     {
       "width": 768,
       "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/polityka-prywatnosci/",
       "status": 200
     },
     {
@@ -91,6 +101,11 @@
       "status": 200
     },
     {
+      "width": 390,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
       "width": 360,
       "route": "/",
       "status": 200
@@ -121,6 +136,11 @@
       "status": 200
     },
     {
+      "width": 360,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
       "width": 1024,
       "route": "/",
       "status": 200
@@ -151,6 +171,11 @@
       "status": 200
     },
     {
+      "width": 1024,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
       "width": 1280,
       "route": "/",
       "status": 200
@@ -181,6 +206,11 @@
       "status": 200
     },
     {
+      "width": 1280,
+      "route": "/polityka-prywatnosci/",
+      "status": 200
+    },
+    {
       "width": 1536,
       "route": "/",
       "status": 200
@@ -208,6 +238,11 @@
     {
       "width": 1536,
       "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1536,
+      "route": "/polityka-prywatnosci/",
       "status": 200
     }
   ],

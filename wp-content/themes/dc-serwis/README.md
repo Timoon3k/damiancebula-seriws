@@ -6,7 +6,7 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera, zewnętrznych fontów i bi
 
 1. Wykonaj pełny backup plików i bazy istniejącej witryny. Utwórz odrębną kopię stagingową. Zachowaj aktywne wtyczki i treść `/polityka-prywatnosci/`.
 2. Wgraj `dc-serwis.zip` przez Wygląd → Motywy → Dodaj → Wyślij motyw. Aktywuj na stagingu. Na nowej instalacji aktywacja tworzy strony, zdjęcia i menu; istniejąca witryna jest chroniona przed automatycznym nadpisaniem.
-3. Na nowej oddzielnej instalacji aktywacja automatycznie tworzy sześć stron, importuje fotografie do Mediów i ustawia menu oraz stronę główną. Wynik i ponowna synchronizacja: Wygląd → DC — synchronizacja. Na istniejącej witrynie wykryte kolizje zatrzymują import, bez nadpisywania treści. Nie instaluj do starej bazy, którą chcesz zachować.
+3. Na nowej oddzielnej instalacji aktywacja automatycznie tworzy sześć stron i osobną politykę prywatności, importuje fotografie do Mediów i ustawia menu oraz stronę główną. Wynik i ponowna synchronizacja: Wygląd → DC — synchronizacja. Na istniejącej witrynie wykryte kolizje zatrzymują import, bez nadpisywania treści. Nie instaluj do starej bazy, którą chcesz zachować.
 4. Ustawienia → Czytanie: ustaw statyczną stronę główną. Ustawienia → Bezpośrednie odnośniki: nazwa wpisu. Zachowaj istniejący URL polityki prywatności i jej treść. Motyw wyświetla standardowe strony przez `the_content()`.
 5. Wygląd → Menu: opcjonalnie przypisz własne menu do „Nawigacja główna”; bez przypisania działa wbudowana nawigacja sześciu stron. Wygląd → Dostosuj → Tożsamość witryny pozwala podmienić znak logo.
 6. Uzupełnij pola „DC — tytuł i opis SEO” w edycji każdej strony lub skonfiguruj jedną wtyczkę SEO. Motyw wyłącza własne metadata i schema po wykryciu Yoast, Rank Math, AIOSEO, SEOPress lub The SEO Framework. Dla innej wtyczki ustaw filtr `dc_external_seo` na true. Sprawdź wynikowy HTML po integracji.
@@ -21,17 +21,18 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera, zewnętrznych fontów i bi
 | Realizacje | `/realizacje/` |
 | O firmie | `/o-firmie/` |
 | Kontakt | `/kontakt/` |
+| Polityka prywatności | `/polityka-prywatnosci/` |
 
 ## Edycja
 
-Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Dekoracyjne ikony i strzałki używają bloków HTML. Fotografie można zastąpić obrazami z biblioteki mediów; WordPress tworzy ich srcset. Zdjęcia dostarczone w motywie mają własny srcset dodawany podczas renderowania, aby zachować poprawność bloków w edytorze. Szablony i wzorce są niezależne: zmiana wzorca w pliku nie nadpisuje już zapisanych treści stron.
+Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Dekoracyjne ikony i strzałki używają bloków HTML. Fotografie można zastąpić obrazami z biblioteki mediów; WordPress tworzy ich srcset. Zdjęcia dostarczone w motywie mają własny srcset dodawany podczas renderowania, aby zachować poprawność bloków w edytorze. Synchronizacja aktualizuje zarządzane strony, dopóki nie zostały zmienione ręcznie. Wykryte własne edycje są zachowywane i raportowane.
 
 ## Mapa i opinie Google
 
 Wygląd → Dostosuj → „DC — Google: mapa i opinie”:
 
-- Mapa: wpisz zweryfikowany adres `src` z Google Maps → Udostępnij → Umieść mapę, na domenie `https://www.google.com/maps/embed...`. Nie wpisuj niepotwierdzonej siedziby. Wzorzec Kontakt zawiera `[dc_google_map]`. Bez adresu sekcja nie jest wyświetlana. Iframe jest tworzony dopiero po świadomym kliknięciu „Włącz mapę Google”. Informacja o połączeniu z Google jest widoczna przed kliknięciem.
-- Opinie: zainstaluj i skonfiguruj oficjalny widget Trustindex dla rzeczywistej wizytówki. Wklej jego `[trustindex ...]` w pole shortcode. Wzorce Kontakt i Strona główna zawierają `[dc_google_reviews]`. Bez shortcode lub aktywnej wtyczki sekcja nie jest wyświetlana. Motyw nie dopisuje ocen, recenzji ani `aggregateRating`. Właściciel pozostawił oba pola do samodzielnego uzupełnienia.
+- Mapa działa bez klucza API. Puste pole używa potwierdzonego adresu z sekcji DC — Dane firmy. Możesz wkleić pełny kod iframe z Google Maps → Udostępnij → Umieść mapę albo pełny link Google. Skrócony link maps.app.goo.gl trzeba najpierw otworzyć i skopiować kod osadzenia. Przełącznik „Pokaż mapę Google” pozwala ją wyłączyć. Iframe pojawia się dopiero po kliknięciu „Włącz mapę Google”; status, ponowienie i link „Otwórz w Google Maps” pomagają przy blokadzie treści zewnętrznych. Wzorzec Kontakt używa `[dc_google_map]`.
+- Opinie: zainstaluj i skonfiguruj oficjalny widget Trustindex dla rzeczywistej wizytówki. Wklej jego `[trustindex ...]` w pole shortcode. Wzorce Kontakt i Strona główna zawierają `[dc_google_reviews]`. Bez shortcode lub aktywnej wtyczki sekcja nie jest wyświetlana. Motyw nie dopisuje ocen, recenzji ani `aggregateRating`. Shortcode opinii pozostaje do samodzielnego uzupełnienia przez właściciela.
 - Zweryfikuj politykę prywatności oraz zgodę na technologie widgetu przed aktywacją integracji. Kod zewnętrznego widgetu może wymagać rozwiązania zarządzania zgodami zależnie od faktycznej konfiguracji.
 
 ## Formularz
@@ -47,3 +48,11 @@ Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł,
 Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi: oryginalne wygenerowane obrazy `editorial-*`, inspirowane stylem makiety; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
 
 Pełne zasady automatycznej instalacji, bezpiecznej synchronizacji i przepięcia domeny: `docs/AUTOMATIC_SETUP.md` w repozytorium.
+
+## Wersja 1.2: adres, mapa, polityka i nawigacja
+
+Adres firmy edytujesz w **Wygląd → Dostosuj → DC — Dane firmy**. Wartości początkowe: Aleje Jana Pawła II 42, 37-450 Stalowa Wola. Z tego samego źródła korzystają kontakt, stopka, mapa i polityka. Na nowej instalacji importer dodaje politykę jako osobną stronę, bez siódmej pozycji głównego menu; istniejącej polityki ani ręcznych zmian nie nadpisuje.
+
+Nagłówek ma nowe logo DC; eksporty PNG i ikonę witryny znajdziesz w `assets/branding/`. Sticky menu pojawia się po przewinięciu. Na stronie głównej zwykłe kliknięcia menu przewijają do sekcji, a kafle usług otwierają pełne podstrony. Bez JavaScript i przy otwarciu w nowej karcie działają rzeczywiste URL podstron.
+
+Konfigurację Rank Math i ponownego zgłaszania stron do Google opisuje `docs/RANK_MATH_SEO.md` w repozytorium. Aktualizacja kodu nie zgłasza automatycznie indeksacji ani nie zmienia konfiguracji kont Google.

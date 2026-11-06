@@ -1,11 +1,11 @@
-# Automatyczne strony, zdjęcia i menu — DC Serwis 1.1
+# Automatyczne strony, zdjęcia i menu — DC Serwis 1.2
 
 ## Nowa, oddzielna witryna
 
 1. W Hostinger utwórz osobną instalację WordPress z własną bazą i adresem technicznym. Nie instaluj tej paczki do katalogu ani bazy starej strony.
-2. Zainstaluj `dc-serwis.zip` i aktywuj motyw. Motyw tworzy sześć stron z kompletnymi treściami, SEO i szablonami, importuje zdjęcia do biblioteki Mediów, tworzy menu i przypisuje stronę główną. Nie trzeba ręcznie wstawiać wzorców. Domyślne przykładowe treści WordPressa nie są kasowane bez sprawdzenia: raport przypomina o ich weryfikacji i usunięciu, jeżeli nie są potrzebne.
+2. Zainstaluj `dc-serwis.zip` i aktywuj motyw. Motyw tworzy sześć stron z kompletnymi treściami, SEO i szablonami oraz osobną politykę prywatności, importuje zdjęcia do biblioteki Mediów, tworzy menu i przypisuje stronę główną. Nie trzeba ręcznie wstawiać wzorców. Domyślne przykładowe treści WordPressa nie są kasowane bez sprawdzenia: raport przypomina o ich weryfikacji i usunięciu, jeżeli nie są potrzebne.
 3. Wynik sprawdzisz w **Wygląd → DC — synchronizacja**. Możesz ponownie użyć przycisku „Synchronizuj strony i zdjęcia”. Dostęp wymaga uprawnień administratora; żądanie jest chronione nonce. Alternatywnie: `wp dc sync` w katalogu nowej instalacji.
-4. Ustaw widoczność dla wyszukiwarek na nieindeksowalną na domenie technicznej. Import zachowuje ustawienie indeksacji, zamiast zgadywać gotowość publikacji. Skonfiguruj pocztę, sprawdź wszystkie strony i przenieś rzeczywistą politykę prywatności ze starej strony.
+4. Ustaw widoczność dla wyszukiwarek na nieindeksowalną na domenie technicznej. Import zachowuje ustawienie indeksacji, zamiast zgadywać gotowość publikacji. Skonfiguruj pocztę i sprawdź wszystkie strony. Nowa polityka powstaje automatycznie; jeżeli wskazano już rzeczywisty opublikowany dokument, zostaje on zachowany i wymaga przeglądu zamiast nadpisania.
 
 Automatyczna instalacja zatrzyma się przy kolizji z istniejącą stroną lub własną stroną główną. Nie przejmuje cudzych treści. Stara witryna pozostaje w oddzielnej instalacji, do późniejszego odłączenia od domeny.
 
@@ -27,3 +27,11 @@ Zdjęcia klienta z przekazanego pliku i źródeł starej witryny są używane wy
 Po gotowości nowej instalacji domenę `damiancebula-serwis.pl` można przypisać do niej, zachowując starą bazę i pliki. Przy zmianie ustawień adresu WordPressa importer przelicza zarządzane odnośniki i URL zdjęć; nie pozostawia adresu technicznego w wygenerowanych stronach. Ręczne treści zachowuje, aktualizując tylko znane adresy tej samej instalacji. Nie jest to narzędzie do modyfikacji DNS ani przenoszenia baz między serwerami.
 
 Przed publicznym przełączeniem sprawdź SSL, canonical, mapę witryny, formularz i rzeczywistą politykę prywatności; dopiero wtedy włącz indeksację. Nie używaj starego lokalnego `seed-local-wordpress.php` do inicjalizacji na hostingu.
+
+## Dane firmy, mapa i polityka w 1.2
+
+Adres jest edytowalny w Wygląd → Dostosuj → DC — Dane firmy. Początkowo używany jest potwierdzony adres Aleje Jana Pawła II 42, 37-450 Stalowa Wola. Ten sam adres jest widoczny w kontakcie, stopce, polityce i domyślnej mapie. Własny link Google można podać w sekcji DC — Google: mapa i opinie.
+
+Polityka jest osobną stroną pod `/polityka-prywatnosci/` i nie staje się siódmą pozycją głównego menu. Strona wskazana jako polityka w WordPressie i ręczne edycje są zachowywane. Dokument obejmuje faktyczne funkcje motywu, formularz, mapę i opcjonalne opinie; po włączeniu analityki, innej poczty lub nowych wtyczek trzeba go odpowiednio zaktualizować.
+
+Nowy znak DC jest w `assets/branding/`, a twórca projektu w stopce to majewskitomasz.pl. Sticky menu i scrollspy działają bez powielania nagłówka. Konfigurację Rank Math i ponownej indeksacji opisuje `RANK_MATH_SEO.md`.

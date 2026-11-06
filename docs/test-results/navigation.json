@@ -1,0 +1,12 @@
+{
+  "sticky": true,
+  "reservedHeaderSpace": true,
+  "desktopScrollspy": true,
+  "mobileScrollspy": true,
+  "ajaxHistory": true,
+  "nativeUrls": true,
+  "mobileKeyboard": true,
+  "reducedMotion": true,
+  "noJs": true,
+  "errors": []
+}

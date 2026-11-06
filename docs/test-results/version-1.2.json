@@ -1,0 +1,21 @@
+{
+  "themeVersion": "1.2.0",
+  "confirmedAddress": "Aleje Jana Pawła II 42, 37-450 Stalowa Wola",
+  "automaticPrivacyPage": true,
+  "existingAndEditedPolicyPreserved": true,
+  "nativeGutenbergPages": 7,
+  "primaryMenuItems": 6,
+  "repeatableSync": true,
+  "rankMathBridge": {
+    "filterAssertionsPassed": true,
+    "sourceApiVerified": true,
+    "realPluginInstallationTested": false
+  },
+  "googleMaps": {
+    "urlSanitizerAssertionsPassed": true,
+    "consentAjaxRetryBrowserTestPassed": true,
+    "externalRequestsMocked": true,
+    "liveGoogleAvailabilityVerified": false
+  },
+  "stickyScrollspyBrowserTestPassed": true
+}

@@ -6,7 +6,9 @@
     "test:editor": "node tests/editor.cjs",
     "test:contact": "node tests/contact.cjs",
     "test:a11y": "node tests/accessibility.cjs",
-    "test:seo": "node tests/seo.cjs"
+    "test:seo": "node tests/seo.cjs",
+    "test:map": "node tests/map.cjs",
+    "test:navigation": "node tests/navigation.cjs"
   },
   "engines": {
     "node": ">=20"

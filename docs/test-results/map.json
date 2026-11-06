@@ -1,0 +1,9 @@
+{
+  "noRequestBeforeConsent": true,
+  "confirmedAddress": true,
+  "accessibleStatus": true,
+  "ajaxConsent": true,
+  "timeoutAndRetry": true,
+  "externalGoogleContact": false,
+  "interceptedMapRequests": 3
+}

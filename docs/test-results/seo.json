@@ -66,6 +66,17 @@
         "HVACBusiness",
         "BreadcrumbList"
       ]
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "title": "Polityka prywatności — Damian Cebula, serwis",
+      "description": "Informacje o przetwarzaniu danych osobowych, formularzu kontaktowym, plikach cookie i opcjonalnych usługach Google na stronie Damiana Cebuli.",
+      "canonical": "http://127.0.0.1:8081/polityka-prywatnosci/",
+      "robots": "noindex, nofollow",
+      "schema": [
+        "HVACBusiness",
+        "BreadcrumbList"
+      ]
     }
   ],
   "crawl": [
@@ -107,7 +118,7 @@
     },
     {
       "url": "http://127.0.0.1:8081/polityka-prywatnosci/",
-      "status": 404
+      "status": 200
     },
     {
       "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70.webp",
@@ -139,5 +150,5 @@
     }
   ],
   "notFound": true,
-  "privacyLimitation": "Existing production policy not imported: source network access denied."
+  "privacyPolicy": "Published tailored policy created on separate installation; pre-existing policies preserved."
 }

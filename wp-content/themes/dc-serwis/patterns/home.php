@@ -25,8 +25,8 @@
 <!-- /wp:group -->
 <!-- wp:group {"tagName":"section","className":"wrap services","anchor":"uslugi"} -->
 <section class="wp-block-group wrap services" id="uslugi">
-<!-- wp:group {"tagName":"article","className":"service-card"} -->
-<article class="wp-block-group service-card">
+<!-- wp:group {"tagName":"article","className":"service-card","anchor":"klimatyzacja"} -->
+<article class="wp-block-group service-card" id="klimatyzacja">
 <!-- wp:html -->
 <?php echo dc_icon('snow'); ?>
 <!-- /wp:html -->
@@ -44,8 +44,8 @@
 <!-- /wp:html -->
 </article>
 <!-- /wp:group -->
-<!-- wp:group {"tagName":"article","className":"service-card"} -->
-<article class="wp-block-group service-card">
+<!-- wp:group {"tagName":"article","className":"service-card","anchor":"agd"} -->
+<article class="wp-block-group service-card" id="agd">
 <!-- wp:html -->
 <?php echo dc_icon('washer'); ?>
 <!-- /wp:html -->

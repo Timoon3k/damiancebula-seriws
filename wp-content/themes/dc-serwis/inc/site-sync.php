@@ -74,7 +74,7 @@ function dc_sync_page_hash($id) {
 
 function dc_sync_signature() {
     $hash = hash_init('sha256');
-    foreach (array_merge(glob(get_theme_file_path('patterns/*.php')) ?: [], glob(get_theme_file_path('assets/images/*')) ?: [], [__FILE__, get_theme_file_path('functions.php'), get_theme_file_path('style.css')]) as $path) {
+    foreach (array_merge(glob(get_theme_file_path('patterns/*.php')) ?: [], glob(get_theme_file_path('assets/images/*')) ?: [], [__FILE__, get_theme_file_path('functions.php'), get_theme_file_path('style.css'), get_theme_file_path('inc/company.php')]) as $path) {
         if (is_file($path)) { hash_update_file($hash, $path); }
     }
     hash_update($hash, home_url().'|'.site_url());
@@ -192,6 +192,72 @@ function dc_sync_menu($owned) {
     return true;
 }
 
+/** The privacy page is managed separately and never becomes a primary-menu item. */
+function dc_sync_owned_privacy() {
+    $pages = get_posts(['post_type'=>'page','post_status'=>'any','posts_per_page'=>1,'meta_key'=>'_dc_privacy_managed','meta_value'=>'1']);
+    return $pages ? $pages[0] : null;
+}
+
+function dc_sync_privacy_missing() {
+    if (dc_sync_owned_privacy() || get_page_by_path('polityka-prywatnosci')) { return false; }
+    $selected_id = (int)get_option('wp_page_for_privacy_policy');
+    $selected = $selected_id ? get_post($selected_id) : null;
+    return !$selected || $selected->post_status !== 'publish';
+}
+
+function dc_sync_privacy_policy(&$report, &$media, $owned) {
+    $managed = dc_sync_owned_privacy();
+    $selected_id = (int)get_option('wp_page_for_privacy_policy');
+    $selected = $selected_id ? get_post($selected_id) : null;
+    // An administrator-selected real published policy always takes priority.
+    if ($selected && $selected->post_status === 'publish' && (!$managed || $selected->ID !== $managed->ID)) {
+        $report['preserved'][] = 'Polityka prywatności — zachowano istniejącą opublikowaną stronę i jej ustawienie';
+        return;
+    }
+    $existing = get_page_by_path('polityka-prywatnosci');
+    if ($existing && (!$managed || $existing->ID !== $managed->ID)) {
+        $report['preserved'][] = 'Polityka prywatności — zachowano istniejącą treść i status';
+        if ($existing->post_status !== 'publish') {
+            $report['warnings'][] = 'Istniejąca polityka prywatności nie jest opublikowana. Nie publikowano jej automatycznie; sprawdź ją w edytorze.';
+        } elseif (!$selected || $selected->post_status === 'trash' || ($selected->post_status === 'draft' && $selected->post_name === 'privacy-policy')) {
+            update_option('wp_page_for_privacy_policy',$existing->ID);
+        }
+        return;
+    }
+    if ($managed && get_post_meta($managed->ID,'_dc_privacy_hash',true) !== dc_sync_page_hash($managed->ID)) {
+        $rebased = dc_sync_rebase($managed->post_content);
+        if ($rebased !== $managed->post_content) {
+            $result = wp_update_post(wp_slash(['ID'=>$managed->ID,'post_content'=>$rebased]),true);
+            if (is_wp_error($result)) { $report['errors'][] = $result->get_error_message(); return; }
+        }
+        $report['preserved'][] = 'Polityka prywatności — zachowano ręczne zmiany';
+        return;
+    }
+    $content = dc_sync_render_pattern('privacy',$media,$owned);
+    if (is_wp_error($content)) { $report['errors'][] = $content->get_error_message(); return; }
+    $new = !$managed;
+    $data = ['post_type'=>'page','post_status'=>'publish','post_title'=>'Polityka prywatności','post_content'=>$content];
+    if ($managed) { $data['ID'] = $managed->ID; } else { $data['post_name'] = 'polityka-prywatnosci'; }
+    $id = $managed ? $managed->ID : 0;
+    if (!$managed || $managed->post_content !== $content || $managed->post_title !== $data['post_title']) {
+        $id = $managed ? wp_update_post(wp_slash($data),true) : wp_insert_post(wp_slash($data),true);
+        if (is_wp_error($id)) { $report['errors'][] = $id->get_error_message(); return; }
+        $report[$new ? 'created' : 'updated'][] = 'Polityka prywatności';
+    }
+    update_post_meta($id,'_dc_privacy_managed',1);
+    $has_heading = (bool)preg_match('/<h1\b/i',$content);
+    update_post_meta($id,'_dc_layout',$has_heading ? 'designed' : '');
+    update_post_meta($id,'_wp_page_template',$has_heading ? 'page-designed.php' : 'default');
+    update_post_meta($id,'_dc_title','Polityka prywatności — Damian Cebula, serwis');
+    update_post_meta($id,'_dc_description','Informacje o przetwarzaniu danych osobowych, formularzu kontaktowym, plikach cookie i opcjonalnych usługach Google na stronie Damiana Cebuli.');
+    update_post_meta($id,'_dc_privacy_hash',dc_sync_page_hash($id));
+    if (!$selected || $selected->post_status === 'trash' || ($selected->post_status === 'draft' && $selected->post_name === 'privacy-policy') || $selected_id === $id) {
+        update_option('wp_page_for_privacy_policy',$id);
+    } else {
+        $report['warnings'][] = 'Utworzono politykę prywatności, ale zachowano wybraną wcześniej stronę polityki. Sprawdź Ustawienia → Prywatność.';
+    }
+}
+
 /** Non-destructive reconciliation. Published/user-edited foreign pages are never adopted. */
 function dc_sync_site() {
     $report = ['created'=>[],'updated'=>[],'preserved'=>[],'errors'=>[],'warnings'=>[],'media'=>0];
@@ -257,6 +323,7 @@ function dc_sync_site() {
             }
             $menu = dc_sync_menu($owned);
             if (is_wp_error($menu)) { $report['errors'][] = $menu->get_error_message(); }
+            if (!$report['errors']) { dc_sync_privacy_policy($report,$media,$owned); }
         }
         if (!$report['errors']) { update_option('dc_sync_signature',dc_sync_signature(),false); }
         update_option('dc_sync_report',$report,false);
@@ -268,7 +335,7 @@ add_action('after_switch_theme', function () { dc_sync_site(); });
 add_action('admin_init', function () {
     if (!current_user_can('switch_themes')) { return; }
     $pending = get_posts(['post_type'=>'page','post_status'=>'any','fields'=>'ids','posts_per_page'=>1,'meta_key'=>'_dc_sync_pending','meta_value'=>'1']);
-    if ((get_option('dc_sync_initialized') || $pending) && (count(dc_sync_owned_pages()) < count(dc_sync_pages()) || $pending || get_option('dc_sync_signature') !== dc_sync_signature())) { dc_sync_site(); }
+    if ((get_option('dc_sync_initialized') || $pending) && (count(dc_sync_owned_pages()) < count(dc_sync_pages()) || dc_sync_privacy_missing() || $pending || get_option('dc_sync_signature') !== dc_sync_signature())) { dc_sync_site(); }
 });
 add_action('updated_option', function ($option) {
     if (in_array($option,['home','siteurl'],true) && get_option('dc_sync_initialized')) { wp_upload_dir(null,false,true); dc_sync_site(); }
@@ -277,7 +344,7 @@ add_action('admin_menu', function () { add_theme_page('DC — synchronizacja','D
 function dc_sync_admin_page() {
     if (!current_user_can('switch_themes')) { return; }
     $report = get_option('dc_sync_report', []);
-    echo '<div class="wrap"><h1>DC — strony i zdjęcia</h1><p>Aktywacja motywu na nowej instalacji tworzy sześć stron, nawigację i bibliotekę zdjęć. Synchronizacja uzupełnia brakujące elementy i aktualizuje treści motywu, zachowując Twoje ręczne zmiany. Nie zmienia istniejącej polityki prywatności, indeksacji ani ustawień mapy, opinii i poczty.</p>';
+    echo '<div class="wrap"><h1>DC — strony i zdjęcia</h1><p>Aktywacja motywu na nowej instalacji tworzy sześć stron głównych, politykę prywatności, nawigację i bibliotekę zdjęć. Synchronizacja uzupełnia brakujące elementy i aktualizuje treści motywu, zachowując Twoje ręczne zmiany. Istniejącą politykę prywatności i ręczne zmiany zachowuje. Nie zmienia indeksacji ani ustawień mapy, opinii i poczty.</p>';
     if ($report) {
         foreach (['created'=>'Utworzono','updated'=>'Zaktualizowano','preserved'=>'Zachowano','warnings'=>'Sprawdź przed publikacją','errors'=>'Wymaga uwagi'] as $key=>$label) {
             if (empty($report[$key])) { continue; }
@@ -288,7 +355,7 @@ function dc_sync_admin_page() {
         echo '<p>Zdjęcia dostępne w bibliotece: '.esc_html((string) count(get_posts(['post_type'=>'attachment','post_status'=>'inherit','fields'=>'ids','posts_per_page'=>-1,'meta_key'=>'_dc_asset_key']))).'.</p>';
     }
     echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'"><input type="hidden" name="action" value="dc_site_sync">';
-    wp_nonce_field('dc_site_sync'); submit_button('Synchronizuj strony i zdjęcia'); echo '</form><p>Przed podłączeniem domeny sprawdź politykę prywatności i dostarczalność formularza. Motyw nie zastępuje tych treści automatycznie.</p></div>';
+    wp_nonce_field('dc_site_sync'); submit_button('Synchronizuj strony i zdjęcia'); echo '</form><p>Przed podłączeniem domeny sprawdź politykę prywatności i dostarczalność formularza. Motyw nie zastępuje automatycznie istniejącej polityki ani Twoich ręcznych zmian.</p></div>';
 }
 add_action('admin_post_dc_site_sync', function () {
     if (!current_user_can('switch_themes')) { wp_die('Brak uprawnień.','',['response'=>403]); }

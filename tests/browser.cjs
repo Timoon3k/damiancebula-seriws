@@ -2,7 +2,7 @@ const {chromium}=require('playwright');
 const fs=require('node:fs');
 const assert=require('node:assert/strict');
 const root=(process.env.BASE_URL||'http://127.0.0.1:8080').replace(/\/$/,'');
-const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/'];
+const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/','/polityka-prywatnosci/'];
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
  const errors=[];const failures=[];const results=[];
@@ -13,6 +13,7 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
   for(const route of routes){
    const response=await page.goto(root+route,{waitUntil:'networkidle'});assert.equal(response.status(),200,route);
    assert.equal(await page.locator('h1').count(),1,`H1 ${route}`);
+   assert.equal(await page.locator('.site-credit a[href="https://majewskitomasz.pl/"]').count(),1,`Project credit ${route}`);
    assert.equal(await page.locator('html').getAttribute('lang'),'pl-PL');
    assert.equal(await page.locator('link[rel=canonical]').count(),1);
    assert.equal(await page.locator('.hero-media img, .service-card img, .split-section > figure img').evaluateAll(imgs=>imgs.every(img=>img.getAttribute('src').includes('editorial-'))),true,`Illustrative service photos ${route}`);
@@ -28,7 +29,7 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
  }
  const page=await browser.newPage({viewport:{width:1440,height:1000}});
  await page.goto(root);await page.evaluate(()=>window.dcTestMarker=1);
- await page.locator('#primary-nav a').filter({hasText:'Klimatyzacja'}).click();await page.waitForURL('**/serwis-klimatyzacji-stalowa-wola/');
+ await page.locator('.services .card-link').first().click();await page.waitForURL('**/serwis-klimatyzacji-stalowa-wola/');
  assert.equal(await page.evaluate(()=>window.dcTestMarker),1,'AJAX preserves document');
  assert.match(await page.title(),/Serwis klimatyzacji/);assert.equal(await page.locator('#main').evaluate(el=>el===document.activeElement),true);
  await page.goBack();await page.waitForURL(root+'/');await page.waitForFunction(()=>document.querySelector('h1')?.textContent.includes('Naprawiamy'));
