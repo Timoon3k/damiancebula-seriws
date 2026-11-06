@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "fonts": {
+        "family": "Manrope, Arial, Helvetica, sans-serif",
+        "polish": true,
+        "resources": [
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-wght-normal.woff2",
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-ext-wght-normal.woff2"
+        ]
+      },
+      "focusedButton": {
+        "visible": true,
+        "clip": "none",
+        "outline": "solid"
+      },
+      "focusedCard": {
+        "within": true,
+        "outline": "solid",
+        "width": 2
+      }
+    },
+    {
+      "width": 390,
+      "fonts": {
+        "family": "Manrope, Arial, Helvetica, sans-serif",
+        "polish": true,
+        "resources": [
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-wght-normal.woff2",
+          "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-ext-wght-normal.woff2"
+        ]
+      },
+      "focusedButton": {
+        "visible": true,
+        "clip": "none",
+        "outline": "solid"
+      },
+      "focusedCard": {
+        "within": true,
+        "outline": "solid",
+        "width": 2
+      }
+    }
+  ],
+  "localFonts": true,
+  "polishGlyphs": true,
+  "visibleKeyboardFocus": true
+}

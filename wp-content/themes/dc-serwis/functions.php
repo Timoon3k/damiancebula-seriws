@@ -9,6 +9,8 @@ function dc_setup() {
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
     add_editor_style('assets/site.css');
+    add_editor_style('assets/premium.css');
+    add_editor_style('assets/premium-pages.css');
     register_nav_menus(['primary' => 'Nawigacja główna', 'footer' => 'Nawigacja stopki']);
     register_block_pattern_category('dc-serwis', ['label' => 'DC Serwis']);
 }
@@ -21,7 +23,15 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('dc-motion', get_theme_file_uri('assets/motion.css'), ['dc-site'], filemtime(get_theme_file_path('assets/motion.css')));
     wp_enqueue_style('dc-navigation', get_theme_file_uri('assets/navigation.css'), ['dc-site'], filemtime(get_theme_file_path('assets/navigation.css')));
     wp_enqueue_script('dc-navigation', get_theme_file_uri('assets/navigation.js'), ['dc-site'], filemtime(get_theme_file_path('assets/navigation.js')), ['in_footer'=>true, 'strategy'=>'defer']);
+    wp_enqueue_style('dc-premium', get_theme_file_uri('assets/premium.css'), ['dc-site','dc-branding','dc-motion','dc-navigation'], filemtime(get_theme_file_path('assets/premium.css')));
+    wp_enqueue_style('dc-premium-pages', get_theme_file_uri('assets/premium-pages.css'), ['dc-premium'], filemtime(get_theme_file_path('assets/premium-pages.css')));
 });
+// Both small subsets are needed for the first Polish headings and navigation.
+add_action('wp_head', function () {
+    foreach (['latin','latin-ext'] as $subset) {
+        echo '<link rel="preload" href="'.esc_url(get_theme_file_uri('assets/fonts/manrope-'.$subset.'-wght-normal.woff2')).'" as="font" type="font/woff2" crossorigin>' . "\n";
+    }
+}, 2);
 function dc_links() {
     return ['' => 'Strona główna', 'serwis-klimatyzacji-stalowa-wola' => 'Klimatyzacja', 'serwis-agd-stalowa-wola' => 'Serwis AGD', 'realizacje' => 'Realizacje', 'o-firmie' => 'O firmie', 'kontakt' => 'Kontakt'];
 }

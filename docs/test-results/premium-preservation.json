@@ -1,0 +1,21 @@
+{
+  "version": "1.6",
+  "routes": [
+    "/",
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/realizacje/",
+    "/o-firmie/",
+    "/kontakt/",
+    "/polityka-prywatnosci/"
+  ],
+  "pageCount": 7,
+  "mainTextPreserved": true,
+  "headingTextAndOrderPreserved": true,
+  "titleDescriptionCanonicalRobotsSchemaPreserved": true,
+  "internalServiceLinksPreserved": true,
+  "clientGalleryHrefsAltsAndCaptionsPreserved": true,
+  "protectedImageFiles": 29,
+  "clientImageChecksumsPreserved": true,
+  "externalRequestsBlocked": true
+}

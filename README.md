@@ -1,7 +1,10 @@
 # Damian Cebula — WordPress / DC Serwis
 
-Autorski, wielostronicowy motyw PHP + Gutenberg z automatyczną instalacją stron i zdjęć dla serwisu klimatyzacji i AGD w Stalowej Woli. Zawiera sześć układów stron, lokalne fotografie realizacji, formularz z wymaganą zgodą na przetwarzanie danych, progresywną nawigację AJAX i animacje, fallback SEO oraz konfigurowalne miejsca na Google Maps i opinie Trustindex.
+Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w Stalowej Woli. Wersja 1.6 nadaje witrynie spokojniejszy, przestronny wygląd w czerni, graficie i pomarańczu, z dużą fotografią oraz lokalnym krojem Manrope. Zachowuje treści SEO, adresy podstron i fotografie realizacji. Zawiera automatyczną instalację stron i zdjęć, formularz z wymaganą zgodą na przetwarzanie danych, progresywną nawigację AJAX i animacje, fallback SEO oraz konfigurowalne Google Maps i opinie Trustindex.
 
+- [Aktualizacja 1.6 — nowy wygląd premium](docs/UPDATE_1_6.md)
+- [Założenia wyglądu 1.6 i zachowanie treści](docs/PREMIUM_DESIGN.md)
+- [Lokalny krój Manrope i licencja](docs/FONTS.md)
 - [Aktualizacja 1.5 — mobilne menu i animacje migawki](docs/UPDATE_1_5.md)
 - [Aktualizacja 1.4 — ostre logo i mapa w Kontakcie](docs/UPDATE_1_4.md)
 - [Formularz i SMTP](docs/MAIL_DELIVERY.md)
@@ -33,7 +36,9 @@ Archiwum powstaje jako `artifacts/dc-serwis.zip`, z katalogiem `dc-serwis/` na n
 
 ## Status i granice wdrożenia
 
-Wersja 1.5 wprowadza mobilne menu wysuwane z prawej jako panel modalny, przejścia AJAX na telefonach i komputerach oraz odsłanianie tekstu przy przewijaniu efektem migawki. Dekoracyjne podkreślenia są uproszczone. Ustawienie ograniczenia ruchu pozostawia tekst widoczny bez animacji. Scrollspy jest wyłączony; sticky nagłówek pozostaje. Zakres aktualizacji i kontrolę po instalacji opisuje [instrukcja 1.5](docs/UPDATE_1_5.md), a aktualny stan weryfikacji — [raport testów](docs/TEST_REPORT.md).
+Wersja 1.6 zmienia warstwę wizualną: większy fotograficzny hero, otwarte sekcje usług, więcej przestrzeni w procesie obsługi i dwukolumnowe teksty na szerokich ekranach. Formularz, FAQ, dłuższe treści i galerie korzystają ze wspólnej typografii i spokojniejszych akcentów. Mobilna galeria na stronie głównej przewija się natywnie w poziomie. Na życzenie właściciela nowy projekt rozwija pierwotną makietę; nie jest deklarowany jako jej odwzorowanie 1:1. Zakres i instalację opisuje [instrukcja 1.6](docs/UPDATE_1_6.md), a aktualny stan weryfikacji — [raport testów](docs/TEST_REPORT.md).
+
+Pozostają mobilne menu wysuwane z prawej jako panel modalny, przejścia AJAX na telefonach i komputerach oraz odsłanianie tekstu przy przewijaniu efektem migawki. Ustawienie ograniczenia ruchu pozostawia tekst widoczny bez animacji. Scrollspy jest wyłączony; sticky nagłówek pozostaje. Redesign nie zmienia tekstów SEO, nagłówków H1–H3, URL, metadanych, schema ani plików fotografii, także ilustracyjnych `editorial-*`. Kontrola zachowania treści obejmuje siedem publicznych stron i sumy kontrolne 29 chronionych plików obrazów; jej wynik należy sprawdzić w raporcie.
 
 Zachowane są ostre logo z oryginalnego pliku lub domyślnego SVG, galerie bez przycinania, edytowalny adres firmy i polityka prywatności. Motyw automatycznie zakłada sześć stron, bibliotekę zdjęć i menu na nowej instalacji; kolejne synchronizacje zachowują ręczne edycje. Mapa Google używa podanego adresu firmy jako domyślnego celu i wczytuje się automatycznie w Kontakcie, bez przycisku zgody, również bez JavaScript; można podać własny link lub kod osadzenia. Shortcode opinii pozostaje do samodzielnego uzupełnienia przez właściciela. Formularz kieruje wiadomości na **kontakt@damiancebula-serwis.pl**, a faktyczne doręczenie wymaga prawidłowego transportu pocztowego.
 

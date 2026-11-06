@@ -1,6 +1,6 @@
 # DC Serwis — instalacja i edycja
 
-Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera, zewnętrznych fontów i bibliotek frontendowych. Testowany lokalnie na WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4. Interfejs jest po polsku; pakiet językowy panelu WordPress instaluje administrator niezależnie od motywu.
+Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. Krój Manrope jest dołączony lokalnie: dwa pliki WOFF2 z polskimi znakami, bez żądań do zewnętrznych serwisów fontów. Środowisko dotychczasowych testów lokalnych: WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4; wyniki bieżącej wersji opisuje raport w repozytorium. Interfejs jest po polsku; pakiet językowy panelu WordPress instaluje administrator niezależnie od motywu.
 
 ## Instalacja na stagingu
 
@@ -47,6 +47,8 @@ Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł,
 
 Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi: oryginalne wygenerowane obrazy `editorial-*`, inspirowane stylem makiety; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
 
+Wersja 1.6 zachowuje wszystkie istniejące pliki fotografii i dodaje lokalny krój **Manrope**, wagi 200–800, podzbiory `latin` i `latin-ext` (łącznie około 40 KB). Źródło: `@fontsource-variable/manrope` 5.3.0; licencja SIL OFL 1.1 jest dołączona w `assets/fonts/OFL-Manrope.txt`. Szczegóły: `docs/FONTS.md` w repozytorium.
+
 Pełne zasady automatycznej instalacji, bezpiecznej synchronizacji i przepięcia domeny: `docs/AUTOMATIC_SETUP.md` w repozytorium.
 
 ## Wersja 1.2: adres, mapa, polityka i nawigacja
@@ -70,3 +72,9 @@ Nagłówek pobiera oryginalny plik logo bez miniatur responsywnych. Wcześniejsz
 Mobilne menu wysuwa się z prawej jako panel modalny. Przejścia AJAX działają na telefonach i komputerach; przewijanie odsłania tekst efektem migawki, a dekoracyjne podkreślenia są uproszczone. Ograniczenie ruchu wyłącza animacje i pozostawia całą treść widoczną. Zachowane są ostre logo, automatyczna mapa w Kontakcie oraz odbiorca formularza **kontakt@damiancebula-serwis.pl**.
 
 Zainstaluj ZIP 1.5.0 przez **Wygląd → Motywy → Dodaj → Wyślij motyw** wyłącznie w nowej, oddzielnej instancji WordPress, zastępując tam pliki motywu. Wyczyść cache i sprawdź menu, klawiaturę, Wstecz, przejścia oraz wariant ograniczonego ruchu. Aktualizacja nie zmienia starej witryny, bazy ani domeny; wgranie na Hostinger wykonuje się osobno. Szczegóły: `docs/UPDATE_1_5.md` w repozytorium.
+
+## Wersja 1.6
+
+Przestronny wygląd w czerni, graficie i pomarańczu: duża fotografia w hero, otwarte sekcje usług, spokojniejszy proces obsługi oraz nowe układy tekstów, galerii, FAQ i formularza. Na telefonie mini-galeria strony głównej przewija się w poziomie bez dodatkowej biblioteki. Treści SEO, H1–H3, adresy, metadane, schema i pliki zdjęć pozostają zachowane. Nadal działają drawer, AJAX, migawka tekstu, ograniczenie ruchu, ostre logo i automatyczna mapa w Kontakcie. Formularz kieruje wiadomości na **kontakt@damiancebula-serwis.pl**, a stopka wskazuje **majewskitomasz.pl**.
+
+Wgraj ZIP **1.6.0** wyłącznie do nowej, oddzielnej instancji WordPress i zastąp tam pliki motywu. Wyczyść cache WordPress/LiteSpeed, Hostinger i przeglądarki; sprawdź wszystkie podstrony oraz widoki mobilne. Nie trzeba ponownie wstawiać wzorców ani wpisywać tekstów SEO. Stara strona, jej baza i przypisanie domeny pozostają bez zmian. Push do `main` nie instaluje paczki na Hostinger. Instrukcja: `docs/UPDATE_1_6.md`; założenia wyglądu: `docs/PREMIUM_DESIGN.md` w repozytorium.

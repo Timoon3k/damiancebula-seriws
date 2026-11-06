@@ -1,0 +1,26 @@
+{
+  "version": "1.6.0",
+  "date": "2026-11-06",
+  "environment": "Isolated WordPress 7.1.4, PHP 8.3.36, MariaDB 11.4, Chromium",
+  "browserPageViewportChecks": 49,
+  "axeChecksIncludingOpenModal": 15,
+  "animatedNavigationRoutesDesktopAndTouchMobile": 12,
+  "galleryViewportChecks": 9,
+  "nativeMobileCarouselKeyboardReachable": true,
+  "preservedPages": 7,
+  "protectedClientImageFilesUnchanged": 29,
+  "textHeadingsMetadataCanonicalRobotsSchemaPreserved": true,
+  "allExistingPhotographsPreserved": true,
+  "localManropeFontBytes": 39956,
+  "localFontSubsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "fontLicense": "SIL OFL 1.1",
+  "polishGlyphsVerified": true,
+  "productionDeployment": false,
+  "zipBytes": 2579567,
+  "zipFiles": 77,
+  "zipSha256": "19a21b9b8e58a8b700a100979c1c8a5fc3c4095945eb35fa1a6680a3f77146e4",
+  "visibleKeyboardFocusAt1440And390": true
+}

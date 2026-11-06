@@ -39,3 +39,9 @@ Obrazy powstały z użyciem image generation na podstawie opisu sceny i kompozyc
 ## 5. Logo 1.2
 
 Nowy autorski monogram DC z motywem przepływu powietrza: `assets/branding/dc-mark.svg` w katalogu motywu. Wektor jest ręcznie zdefiniowaną geometrią inspirowaną koncepcją wygenerowaną dla tej witryny; nie korzysta z logotypu cudzego motywu. PNG są eksportami tego samego SVG. W nagłówku nazwę firmy i opis renderuje HTML. Podpis twórcy projektu w stopce: majewskitomasz.pl, zgodnie z instrukcją właściciela.
+
+## 6. Krój pisma i fotografie w wersji 1.6
+
+Do motywu dołączono lokalny krój **Manrope**, wagi 200–800, podzbiory `latin` i `latin-ext` w dwóch plikach WOFF2 (łącznie 39 956 B). Źródło: [`@fontsource-variable/manrope` 5.3.0](https://www.npmjs.com/package/@fontsource-variable/manrope/v/5.3.0), rodzina autorstwa The Manrope Project Authors. Pliki są dystrybuowane na licencji **SIL Open Font License 1.1**; pełna licencja znajduje się w [`assets/fonts/OFL-Manrope.txt`](../wp-content/themes/dc-serwis/assets/fonts/OFL-Manrope.txt) w motywie. Pochodzenie, mapy znaków i sposób dostarczania opisuje [dokumentacja fontów](../docs/FONTS.md). Fonty są pobierane z własnej witryny, bez Google Fonts ani zewnętrznego CDN.
+
+Redesign 1.6 nie dodaje ani nie podmienia plików fotografii. Zachowane są materiały realizacji z `assets/photos/` i `assets/source-web/`, ich warianty w motywie oraz istniejące ilustracyjne obrazy `editorial-*`. Wcześniejsze opisy ich pochodzenia pozostają aktualne.
