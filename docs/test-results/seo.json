@@ -4,7 +4,7 @@
       "route": "/",
       "title": "Serwis klimatyzacji i AGD Stalowa Wola — Damian Cebula",
       "description": "Montaż, serwis i naprawa klimatyzacji oraz naprawa pralek, lodówek i zmywarek w Stalowej Woli. Damian Cebula — zadzwoń i omów zgłoszenie: 794 225 139.",
-      "canonical": "http://127.0.0.1:8080/",
+      "canonical": "http://127.0.0.1:8081/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness"
@@ -14,7 +14,7 @@
       "route": "/serwis-klimatyzacji-stalowa-wola/",
       "title": "Serwis klimatyzacji Stalowa Wola — Damian Cebula",
       "description": "Montaż, naprawa, czyszczenie i konserwacja klimatyzacji w Stalowej Woli. Serwis dla domów, mieszkań i biur. Omów zakres prac z Damianem Cebulą.",
-      "canonical": "http://127.0.0.1:8080/serwis-klimatyzacji-stalowa-wola/",
+      "canonical": "http://127.0.0.1:8081/serwis-klimatyzacji-stalowa-wola/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness",
@@ -26,7 +26,7 @@
       "route": "/serwis-agd-stalowa-wola/",
       "title": "Serwis AGD Stalowa Wola — naprawa pralek i zmywarek",
       "description": "Naprawa pralek, zmywarek i lodówek w Stalowej Woli. Zgłoś objawy, ustal diagnozę i zakres serwisu AGD. Damian Cebula — telefon 794 225 139.",
-      "canonical": "http://127.0.0.1:8080/serwis-agd-stalowa-wola/",
+      "canonical": "http://127.0.0.1:8081/serwis-agd-stalowa-wola/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness",
@@ -38,7 +38,7 @@
       "route": "/realizacje/",
       "title": "Realizacje montażu klimatyzacji — Damian Cebula",
       "description": "Zobacz autentyczne zdjęcia montażu i serwisu klimatyzacji przekazane przez Damiana Cebulę. Jednostki wewnętrzne, zewnętrzne i instalacje.",
-      "canonical": "http://127.0.0.1:8080/realizacje/",
+      "canonical": "http://127.0.0.1:8081/realizacje/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness",
@@ -49,7 +49,7 @@
       "route": "/o-firmie/",
       "title": "Damian Cebula — lokalny serwis AGD i klimatyzacji",
       "description": "Damian Cebula — montaż i serwis klimatyzacji oraz naprawa AGD w Stalowej Woli i okolicach. Poznaj zakres usług i sposób zgłoszenia usterki.",
-      "canonical": "http://127.0.0.1:8080/o-firmie/",
+      "canonical": "http://127.0.0.1:8081/o-firmie/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness",
@@ -60,7 +60,7 @@
       "route": "/kontakt/",
       "title": "Kontakt — Damian Cebula, serwis w Stalowej Woli",
       "description": "Zgłoś naprawę AGD, serwis lub montaż klimatyzacji w Stalowej Woli. Damian Cebula: 794 225 139, kontakt@damiancebula-serwis.pl. Formularz kontaktowy.",
-      "canonical": "http://127.0.0.1:8080/kontakt/",
+      "canonical": "http://127.0.0.1:8081/kontakt/",
       "robots": "noindex, nofollow",
       "schema": [
         "HVACBusiness",
@@ -70,71 +70,71 @@
   ],
   "crawl": [
     {
-      "url": "http://127.0.0.1:8080/",
+      "url": "http://127.0.0.1:8081/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/serwis-klimatyzacji-stalowa-wola/",
+      "url": "http://127.0.0.1:8081/serwis-klimatyzacji-stalowa-wola/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/serwis-agd-stalowa-wola/",
+      "url": "http://127.0.0.1:8081/serwis-agd-stalowa-wola/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/realizacje/",
+      "url": "http://127.0.0.1:8081/realizacje/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/o-firmie/",
+      "url": "http://127.0.0.1:8081/o-firmie/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/kontakt/",
+      "url": "http://127.0.0.1:8081/kontakt/",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/klimatyzator-scienny-gotowy-montaz-1600-247229da42.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-jednostka-zewnetrzna-aux-480-27d65992f4.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/serwis-klimatyzacji-pompa-prozniowa-960.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/serwis-klimatyzacji-pompa-prozniowa-960-a619ce8c40.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/polityka-prywatnosci/",
+      "url": "http://127.0.0.1:8081/polityka-prywatnosci/",
       "status": 404
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzatora-jednostka-wewnetrzna-1600.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzatora-jednostka-wewnetrzna-1600-1ed7be5f70.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/montaz-klimatyzacji-prowadzenie-instalacji-1600.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/montaz-klimatyzacji-prowadzenie-instalacji-1600-e6e08caeb1.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca1-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca1-480-8972650961.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca3-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca3-480-aea5abf046.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca4-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca4-480-d5761e2cc5.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-praca5-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-praca5-480-f63bbc3643.webp",
       "status": 200
     },
     {
-      "url": "http://127.0.0.1:8080/wp-content/themes/dc-serwis/assets/images/realizacja-prava2-480.webp",
+      "url": "http://127.0.0.1:8081/wp-content/uploads/2026/11/realizacja-prava2-480-bc2d8c1aa6.webp",
       "status": 200
     }
   ],

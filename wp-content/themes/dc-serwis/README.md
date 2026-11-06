@@ -5,8 +5,8 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera, zewnętrznych fontów i bi
 ## Instalacja na stagingu
 
 1. Wykonaj pełny backup plików i bazy istniejącej witryny. Utwórz odrębną kopię stagingową. Zachowaj aktywne wtyczki i treść `/polityka-prywatnosci/`.
-2. Wgraj `dc-serwis.zip` przez Wygląd → Motywy → Dodaj → Wyślij motyw. Aktywuj na stagingu. Aktywacja nie tworzy, nie usuwa i nie nadpisuje stron ani ustawień.
-3. Utwórz lub zredaguj strony zgodnie z poniższą tabelą. W edytorze blokowym wybierz Wzorce → DC Serwis i wstaw właściwy wzorzec. Ustaw szablon „DC — układ projektowy (nagłówek w treści)” na podstronach. Strona główna korzysta z `front-page.php`.
+2. Wgraj `dc-serwis.zip` przez Wygląd → Motywy → Dodaj → Wyślij motyw. Aktywuj na stagingu. Na nowej instalacji aktywacja tworzy strony, zdjęcia i menu; istniejąca witryna jest chroniona przed automatycznym nadpisaniem.
+3. Na nowej oddzielnej instalacji aktywacja automatycznie tworzy sześć stron, importuje fotografie do Mediów i ustawia menu oraz stronę główną. Wynik i ponowna synchronizacja: Wygląd → DC — synchronizacja. Na istniejącej witrynie wykryte kolizje zatrzymują import, bez nadpisywania treści. Nie instaluj do starej bazy, którą chcesz zachować.
 4. Ustawienia → Czytanie: ustaw statyczną stronę główną. Ustawienia → Bezpośrednie odnośniki: nazwa wpisu. Zachowaj istniejący URL polityki prywatności i jej treść. Motyw wyświetla standardowe strony przez `the_content()`.
 5. Wygląd → Menu: opcjonalnie przypisz własne menu do „Nawigacja główna”; bez przypisania działa wbudowana nawigacja sześciu stron. Wygląd → Dostosuj → Tożsamość witryny pozwala podmienić znak logo.
 6. Uzupełnij pola „DC — tytuł i opis SEO” w edycji każdej strony lub skonfiguruj jedną wtyczkę SEO. Motyw wyłącza własne metadata i schema po wykryciu Yoast, Rank Math, AIOSEO, SEOPress lub The SEO Framework. Dla innej wtyczki ustaw filtr `dc_external_seo` na true. Sprawdź wynikowy HTML po integracji.
@@ -44,4 +44,6 @@ Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł,
 
 ## Źródła grafiki
 
-Fotografie: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. SVG AGD i ikony są autorską ilustracją, nie fotografiami realizacji. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
+Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi: oryginalne wygenerowane obrazy `editorial-*`, inspirowane stylem makiety; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
+
+Pełne zasady automatycznej instalacji, bezpiecznej synchronizacji i przepięcia domeny: `docs/AUTOMATIC_SETUP.md` w repozytorium.

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-06",
+  "themeVersion": "1.1.0",
+  "freshActivation": true,
+  "managedPages": 6,
+  "importedPhotos": 15,
+  "repeatWithoutChanges": true,
+  "stablePageAndMediaIDs": true,
+  "manualEditsPreserved": true,
+  "foreignPagesProtected": true,
+  "missingPageRecreated": true,
+  "menuOrderPreserved": true,
+  "domainChangeRebasesLinksAndMedia": true,
+  "googleAndPrivacyAndIndexingSettingsPreserved": true,
+  "separateDisposableLocalDatabase": true
+}

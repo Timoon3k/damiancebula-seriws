@@ -55,7 +55,16 @@ add_filter('render_block_core/image', function ($content, $block) {
     if (!$tags->next_tag('IMG')) { return $content; }
     $src = $tags->get_attribute('src');
     $base = get_theme_file_uri('assets/images/');
-    if (!is_string($src) || !str_starts_with($src, $base)) { return $content; }
+    if (!is_string($src) || !str_starts_with($src, $base)) {
+        // Imported Media Library images keep WordPress srcset handling and hero priority.
+        if (str_contains($block['attrs']['className'] ?? '', 'hero-media')) {
+            $tags->set_attribute('loading', 'eager');
+            $tags->set_attribute('fetchpriority', 'high');
+            $tags->set_attribute('decoding', 'async');
+            return $tags->get_updated_html();
+        }
+        return $content;
+    }
     $name = basename(wp_parse_url($src, PHP_URL_PATH));
     $file = get_theme_file_path('assets/images/'.$name);
     $is_hero = str_contains($block['attrs']['className'] ?? '', 'hero-media');
@@ -75,3 +84,5 @@ add_filter('render_block_core/image', function ($content, $block) {
     $tags->set_attribute('decoding','async');
     return $tags->get_updated_html();
 }, 10, 2);
+
+require_once get_theme_file_path('inc/site-sync.php');

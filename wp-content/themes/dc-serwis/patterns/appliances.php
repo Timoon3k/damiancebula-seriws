@@ -19,7 +19,7 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"sizeSlug":"full","className":"hero-media"} -->
-<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/agd-illustration.svg')); ?>" alt="Ilustracja urządzeń AGD — pralka i zmywarka"/></figure>
+<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-washer-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: pralka automatyczna w ciemnym wnętrzu"/></figure>
 <!-- /wp:image -->
 </section>
 <!-- /wp:group -->
@@ -70,7 +70,7 @@
 <!-- wp:group {"tagName":"section","className":"wrap split-section"} -->
 <section class="wp-block-group wrap split-section">
 <!-- wp:image {"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/agd-illustration.svg')); ?>" alt="Ilustracja pralki i zmywarki"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-agd-service-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: technik diagnozujący urządzenie AGD"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"tagName":"div","className":""} -->
 <div class="wp-block-group ">

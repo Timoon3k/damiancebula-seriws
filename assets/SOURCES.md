@@ -21,3 +21,17 @@ Nie pobieraj reklamowych/demo fotografii z `themewant.com`, nie używaj przypadk
 ## 3. Opisy i bezpieczeństwo
 
 Obrazy realnych prac podpisuj wyłącznie tym, co na nich widać. Nie ujawniaj dokładnego adresu domu, nie przypisuj im miejscowości realizacji bez dowodu. Usuń EXIF/GPS podczas optymalizacji, zachowaj proporcje. Zapewnij WebP/AVIF, responsywne źródła i dobre kadry w UI.
+
+## 4. Fotografie ilustracyjne inspirowane makietą — aktualizacja 2026-11-06
+
+Na życzenie właściciela zdjęcia realizacji są używane wyłącznie w galeriach. Główne fotografie usług to nowe, wygenerowane obrazy ilustracyjne w stylistyce makiety: neutralna ciemna przestrzeń, technik w niebrandowanej odzieży, jednostka split, czyszczenie filtrów, pralka i diagnostyka AGD. Nie są kopiami zdjęć z cudzego motywu ani dokumentacją prac Damiana Cebuli.
+
+Pliki `wp-content/themes/dc-serwis/assets/images/editorial-*-{480,960,1600}.webp`:
+
+- `editorial-hvac-hero`: anonimowy technik przy klimatyzatorze — główne hero.
+- `editorial-ac-interior`: jednostka split — kafel i hero Klimatyzacja.
+- `editorial-ac-cleaning`: czyszczenie filtrów — sekcja korzyści Klimatyzacja.
+- `editorial-washer`: pralka — kafel i hero AGD.
+- `editorial-agd-service`: ilustracyjna diagnostyka pralki — sekcja AGD.
+
+Obrazy powstały z użyciem image generation na podstawie opisu sceny i kompozycji referencji. ALT określa je jako ilustracyjne. Nie identyfikują technika jako właściciela ani pracownika firmy, nie zawierają logo i nie trafiają do Realizacji. WebP mają usunięte metadane i warianty responsywne. Oryginalne prace klienta w `assets/photos/` i `assets/source-web/` pozostają zachowane.

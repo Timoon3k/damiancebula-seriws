@@ -19,7 +19,7 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"sizeSlug":"full","className":"hero-media"} -->
-<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp')); ?>" alt="Klimatyzator ścienny — rzeczywista realizacja"/></figure>
+<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-hvac-hero-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: technik przy jednostce wewnętrznej klimatyzacji"/></figure>
 <!-- /wp:image -->
 </section>
 <!-- /wp:group -->
@@ -37,7 +37,7 @@
 <p>Montaż, serwis, czyszczenie i naprawa klimatyzacji w Stalowej Woli.</p>
 <!-- /wp:paragraph -->
 <!-- wp:image {"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp')); ?>" alt="Klimatyzator po montażu"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-ac-interior-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: klimatyzator ścienny w nowoczesnym wnętrzu"/></figure>
 <!-- /wp:image -->
 <!-- wp:html -->
 <a class="card-link" href="<?php echo esc_url(home_url('/serwis-klimatyzacji-stalowa-wola/')); ?>"><span class="screen-reader-text">Klimatyzacja — poznaj usługę</span><?php echo dc_icon(); ?></a>
@@ -56,7 +56,7 @@
 <p>Naprawa pralek, zmywarek i lodówek w Stalowej Woli.</p>
 <!-- /wp:paragraph -->
 <!-- wp:image {"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/agd-illustration.svg')); ?>" alt="Autorska ilustracja pralki i zmywarki"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-washer-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: pralka automatyczna w ciemnym wnętrzu"/></figure>
 <!-- /wp:image -->
 <!-- wp:html -->
 <a class="card-link" href="<?php echo esc_url(home_url('/serwis-agd-stalowa-wola/')); ?>"><span class="screen-reader-text">Serwis AGD — poznaj usługę</span><?php echo dc_icon(); ?></a>

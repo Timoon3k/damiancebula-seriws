@@ -5,7 +5,8 @@
     "test:browser": "node tests/browser.cjs",
     "test:editor": "node tests/editor.cjs",
     "test:contact": "node tests/contact.cjs",
-    "test:a11y": "node tests/accessibility.cjs"
+    "test:a11y": "node tests/accessibility.cjs",
+    "test:seo": "node tests/seo.cjs"
   },
   "engines": {
     "node": ">=20"

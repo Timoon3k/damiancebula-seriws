@@ -1,7 +1,7 @@
 const {chromium}=require('playwright');
 const fs=require('node:fs');
 const assert=require('node:assert/strict');
-const root='http://127.0.0.1:8080';
+const root=(process.env.BASE_URL||'http://127.0.0.1:8080').replace(/\/$/,'');
 const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/'];
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
@@ -15,6 +15,8 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
    assert.equal(await page.locator('h1').count(),1,`H1 ${route}`);
    assert.equal(await page.locator('html').getAttribute('lang'),'pl-PL');
    assert.equal(await page.locator('link[rel=canonical]').count(),1);
+   assert.equal(await page.locator('.hero-media img, .service-card img, .split-section > figure img').evaluateAll(imgs=>imgs.every(img=>img.getAttribute('src').includes('editorial-'))),true,`Illustrative service photos ${route}`);
+   assert.equal(await page.locator('.gallery-grid img, .mini-gallery img').evaluateAll(imgs=>imgs.every(img=>!img.getAttribute('src').includes('editorial-'))),true,`Authentic realization photos ${route}`);
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
    assert.equal(overflow,false,`Overflow ${width} ${route}`);
    await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){scrollTo(0,y);await new Promise(r=>setTimeout(r,30));}scrollTo(0,0)});

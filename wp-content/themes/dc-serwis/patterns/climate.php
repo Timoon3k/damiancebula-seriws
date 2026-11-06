@@ -19,7 +19,7 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"sizeSlug":"full","className":"hero-media"} -->
-<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/klimatyzator-scienny-gotowy-montaz-1600.webp')); ?>" alt="Zamontowana jednostka wewnętrzna klimatyzacji"/></figure>
+<figure class="wp-block-image size-full hero-media"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-ac-interior-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: klimatyzator ścienny w nowoczesnym wnętrzu"/></figure>
 <!-- /wp:image -->
 </section>
 <!-- /wp:group -->
@@ -70,7 +70,7 @@
 <!-- wp:group {"tagName":"section","className":"wrap split-section"} -->
 <section class="wp-block-group wrap split-section">
 <!-- wp:image {"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/serwis-klimatyzacji-pompa-prozniowa-960.webp')); ?>" alt="Pompa próżniowa i prace przy instalacji klimatyzacji"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/editorial-ac-cleaning-1600.webp')); ?>" alt="Zdjęcie ilustracyjne: czyszczenie filtrów otwartego klimatyzatora"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"tagName":"div","className":""} -->
 <div class="wp-block-group ">

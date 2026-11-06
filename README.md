@@ -1,7 +1,8 @@
 # Damian Cebula — WordPress / DC Serwis
 
-Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w Stalowej Woli. Zawiera sześć układów stron, lokalne fotografie realizacji, formularz z wymaganą zgodą na przetwarzanie danych, progresywną nawigację AJAX i animacje, fallback SEO oraz konfigurowalne miejsca na Google Maps i opinie Trustindex.
+Autorski, wielostronicowy motyw PHP + Gutenberg z automatyczną instalacją stron i zdjęć dla serwisu klimatyzacji i AGD w Stalowej Woli. Zawiera sześć układów stron, lokalne fotografie realizacji, formularz z wymaganą zgodą na przetwarzanie danych, progresywną nawigację AJAX i animacje, fallback SEO oraz konfigurowalne miejsca na Google Maps i opinie Trustindex.
 
+- [Automatyczna instalacja i synchronizacja](docs/AUTOMATIC_SETUP.md)
 - [Motyw i instrukcja instalacji](wp-content/themes/dc-serwis/README.md)
 - [Lokalny WordPress w Dockerze](dev/README.md)
 - [Testy i ograniczenia](docs/TEST_REPORT.md)
@@ -28,7 +29,7 @@ Archiwum powstaje jako `artifacts/dc-serwis.zip`, z katalogiem `dc-serwis/` na n
 
 ## Status i granice wdrożenia
 
-Kod jest testowany w lokalnym WordPressie, a produkcja pozostaje bez zmian. Mapa Google i shortcode opinii pozostają puste do samodzielnego uzupełnienia przez właściciela. Motyw nie wymyśla adresu, ocen ani godzin pracy. Zachowuje istniejące treści i politykę prywatności podczas aktywacji — nie zawiera eksportu produkcyjnej bazy.
+Wersja 1.1 automatycznie zakłada sześć stron, bibliotekę zdjęć i menu na nowej instalacji; kolejne synchronizacje zachowują ręczne edycje. Kod jest testowany w odrębnym lokalnym WordPressie, a produkcja pozostaje bez zmian. Mapa Google i shortcode opinii pozostają puste do samodzielnego uzupełnienia przez właściciela. Motyw nie wymyśla adresu, ocen ani godzin pracy. Zachowuje istniejące treści i politykę prywatności podczas aktywacji — nie zawiera eksportu produkcyjnej bazy.
 
 Dostęp do obecnej witryny i API GitHuba był blokowany polityką proxy. Przed wdrożeniem wymagane są weryfikacja istniejącej polityki prywatności, test dostarczalności poczty i akceptacja różnic fotograficznych wobec makiety. Nie deklarujemy zgodności pixel-perfect ani wyników Core Web Vitals bez odpowiednich pomiarów. Pełny stan testów i PR opisuje raport.
 
