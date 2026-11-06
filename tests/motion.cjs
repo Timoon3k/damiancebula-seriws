@@ -10,7 +10,7 @@ const paths = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/'
   const report = [];
   fs.mkdirSync('artifacts/screenshots', {recursive: true});
   for (const mobile of [false, true]) {
-    const context = await browser.newContext({viewport: mobile ? {width: 390, height: 844} : {width: 1440, height: 900}, reducedMotion: 'no-preference'});
+    const context = await browser.newContext({viewport: mobile ? {width: 390, height: 844} : {width: 1440, height: 900}, reducedMotion: 'no-preference', isMobile:mobile, hasTouch:mobile});
     await context.route('**/*', route => route.request().url().startsWith(root) ? route.continue() : route.abort());
     await context.addInitScript(() => {
       // Safari and older browsers do not need the View Transitions API.
@@ -23,7 +23,7 @@ const paths = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/'
         document.getAnimations().filter(animation => animation.id.startsWith('dc-')).forEach(animation => {
           const target = animation.effect.target;
           const style = getComputedStyle(target);
-          window.dcMotionSamples.push({id: animation.id, path: location.pathname, opacity: Number(style.opacity), transform: style.transform, playState: animation.playState, duration: animation.effect.getTiming().duration, stage: document.documentElement.dataset.dcMotion, tag: target.tagName});
+          window.dcMotionSamples.push({id: animation.id, path: location.pathname, opacity: Number(style.opacity), transform: style.transform, clipPath:style.clipPath, probe:target.dataset.dcMotionProbe || '', text:target.textContent?.trim().slice(0,60), playState: animation.playState, duration: animation.effect.getTiming().duration, stage: document.documentElement.dataset.dcMotion, tag: target.tagName});
         });
         requestAnimationFrame(sample);
       }
@@ -49,19 +49,29 @@ const paths = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/'
       assert.ok(visibleMotion('dc-page-leave'), `Visible page exit on ${mobile ? 'mobile' : 'desktop'}: ${path}`);
       assert.ok(visibleMotion('dc-page-enter'), `Visible page entry: ${path}`);
       assert.ok(visibleMotion('dc-title-enter'), `Visible title entry: ${path}`);
-      assert.ok(visibleMotion('dc-navigation-wipe'), `Visible geometric orange wipe: ${path}`);
-      assert.ok(samples.every(sample => sample.duration <= 530), 'Every animation has a bounded duration');
-      assert.ok(Math.max(...samples.filter(sample => sample.id === 'dc-page-leave').map(sample => sample.duration)) + 330 <= 650, 'Combined exit and staggered entrance stay below 650 ms');
+      assert.ok(samples.some(sample => sample.id === 'dc-navigation-wipe' && sample.playState === 'running' && sample.opacity > .05 && sample.opacity < .95 && sample.clipPath.startsWith('inset(')), `Visible full-screen shutter: ${path}`);
+      assert.ok(samples.some(sample => sample.id === 'dc-title-enter' && sample.clipPath.startsWith('inset(') && sample.opacity < .95), 'Title is revealed through a moving mask');
+      assert.ok(samples.every(sample => sample.duration <= 580), 'Every animation has a bounded duration');
+      assert.ok(Math.max(...samples.filter(sample => sample.id === 'dc-page-leave').map(sample => sample.duration)) + 410 <= 700, 'Combined exit and staggered entrance stay below 700 ms');
       assert.equal(await page.evaluate(() => window.dcMotionTest), true, 'Real AJAX navigation preserves the window');
       assert.equal(await page.locator('main').evaluate(element => getComputedStyle(element).opacity), '1');
       assert.equal(await page.locator('main').evaluate(element => getComputedStyle(element).transform), 'none');
       assert.equal(await page.locator('#main[aria-busy]').count(), 0);
-      report.push({mobile, path, realContentAnimation: true, geometricWipe: true, viewTransitionsAvailable: false});
+      report.push({mobile, touch:mobile, path, realContentAnimation:true, pageShutter:true, titleMask:true, viewTransitionsAvailable:false});
     }
-    // Scroll reveal uses running content animations, without hidden waiting nodes.
-    await page.evaluate(() => { window.dcMotionSamples = []; document.querySelector('.local-projects').scrollIntoView({behavior: 'instant', block: 'center'}); });
-    await page.waitForFunction(() => window.dcMotionSamples.some(sample => sample.id === 'dc-section-reveal' && sample.opacity > 0 && sample.opacity < .98 && sample.transform !== 'none'));
+    // Only the text is masked: images and long section containers stay visible.
+    await page.evaluate(() => { window.dcMotionSamples = []; const heading=document.querySelector('.local-copy h2'); heading.dataset.dcMotionProbe='local-heading'; heading.scrollIntoView({behavior:'instant',block:'center'}); });
+    await page.waitForFunction(() => window.dcMotionSamples.some(sample => sample.id === 'dc-text-reveal' && sample.probe === 'local-heading' && sample.opacity > 0 && sample.opacity < .98 && sample.clipPath.startsWith('inset(')));
+    await page.locator('.local-projects').screenshot({path:`artifacts/screenshots/text-shutter-${mobile ? 390 : 1440}.png`,animations:'allow'});
+    const revealSamples = await page.evaluate(() => window.dcMotionSamples.filter(sample => sample.id === 'dc-text-reveal'));
+    assert(revealSamples.every(sample => ['H2','H3','P','FIGCAPTION','LI'].includes(sample.tag)), 'Scroll animation masks text, not entire sections');
     await page.waitForFunction(() => !document.getAnimations().some(animation => animation.id.startsWith('dc-')));
+    assert.equal(await page.locator('.local-copy h2').evaluate(element => getComputedStyle(element).clipPath), 'none', 'Text has no lingering clipping after reveal');
+    await page.evaluate(() => { window.dcMotionSamples = []; scrollTo({top:0,behavior:'instant'}); });
+    await page.waitForFunction(() => scrollY === 0);
+    await page.locator('.local-copy h2').evaluate(element => element.scrollIntoView({behavior:'instant',block:'center'}));
+    await page.waitForTimeout(180);
+    assert.equal(await page.evaluate(() => window.dcMotionSamples.some(sample => sample.id === 'dc-text-reveal' && sample.probe === 'local-heading')), false, 'Previously revealed text does not replay on every scroll');
     // Two fast destinations must leave neither an old page nor a stuck overlay.
     await page.evaluate(({root, paths}) => {
       document.querySelector(`#primary-nav a[href="${root}${paths[0]}"]`).click();
@@ -93,7 +103,7 @@ const paths = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/'
   assert.equal(await page.locator('.dc-motion-wipe').evaluate(element => getComputedStyle(element).display), 'none');
   assert.deepEqual(errors, [], 'No animation JavaScript errors');
   fs.mkdirSync('artifacts/test-results', {recursive: true});
-  fs.writeFileSync('artifacts/test-results/motion.json', JSON.stringify({routes: report, initialHero: true, scrollReveal: true, rapidNavigation: true, history: true, reducedMotion: true, errors}, null, 2));
+  fs.writeFileSync('artifacts/test-results/motion.json', JSON.stringify({routes: report, initialHero: true, scrollReveal:true, textShutter:true, oncePerText:true, touchMobile:true, rapidNavigation: true, history: true, reducedMotion: true, errors}, null, 2));
   await browser.close();
-  console.log('PASS: actual initial/page/scroll animations on desktop/mobile, no View Transitions API, rapid AJAX, history and reduced motion');
+  console.log('PASS: actual page shutters and scroll text masks on desktop/touch mobile, no View Transitions API, rapid AJAX, history and reduced motion');
 })().catch(error => { console.error(error); process.exit(1); });

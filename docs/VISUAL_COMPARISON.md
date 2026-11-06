@@ -1,4 +1,4 @@
-# Porównanie wizualne — wersja 1.4
+# Porównanie wizualne — wersja 1.5
 
 Zestawienia rzeczywistych zrzutów z referencją: [home](visual/home-comparison.jpg), [klimatyzacja](visual/klimatyzacja-comparison.jpg), [AGD](visual/agd-comparison.jpg). Zrzuty [390 px](visual/home-390.jpg), [768 px](visual/home-768.jpg), [1440 px](visual/home-1440.jpg). Wszystkie siedem stron jest sprawdzanych również w artifacts/screenshots/.
 
@@ -13,3 +13,5 @@ Wersja 1.2 ma nowy monogram DC z liniami przepływu powietrza, podpis twórcy, e
 Wersja 1.3 pokazuje pełne fotografie realizacji bez cropowania. Logo pełne z falami powietrza ma jasne napisy i większy rozmiar; obsługiwane są także przesłane ciemne logotypy z marginesami. Przejścia AJAX są animowane również na telefonach.
 
 Wersja 1.4: [logo z odzyskanego oryginału, desktop Retina](visual/logo-original-1440.png), [logo mobile Retina](visual/logo-original-390.png), [bezpośrednia mapa desktop](visual/map-contact-1440.png), [mapa mobile](visual/map-contact-390.png). Logo jest syntetycznym plikiem testowym z przezroczystymi marginesami; wybrany w WordPressie mały crop ma powiązany oryginał 2048 px. Mapa na zrzutach jest celowo oznaczoną atrapą, aby test nie wysyłał ruchu do Google. Pozostałe porównania z makietą powyżej dokumentują kompozycję wersji 1.3, zachowaną w tej aktualizacji.
+
+Wersja 1.5: aktualny wygląd [1440 px](visual/home-v15-1440.png), [768 px](visual/home-v15-768.png), [390 px](visual/home-v15-390.png). Nowe menu modalne z prawej: [360 px](visual/mobile-drawer-360.png), [390 px](visual/mobile-drawer-390.png), [768 px](visual/mobile-drawer-768.png). Zgodnie z nowym życzeniem właściciela usunięto ozdobne podkreślenie aktywnego menu, linię hero, paski przy intro/procesie, łączniki kroków i nadmiarowe obramowania sekcji. Aktywna strona wyróżnia się kolorem i wagą tekstu; znaczące obrysy pól, fokus i zwykłe linki pozostały. To świadome uproszczenie względem referencji. Układ, kolory, geometria kart i prawdziwe galerie są zachowane. Animowane odsłanianie tekstu sprawdza tests/motion.cjs; statyczne zrzuty powstały z ograniczeniem ruchu, aby pokazać finalną treść.

@@ -64,3 +64,9 @@ Scrollspy jest wyłączony; sticky menu i zwykłe podstrony pozostają. Widoczne
 ## Wersja 1.4
 
 Nagłówek pobiera oryginalny plik logo bez miniatur responsywnych. Wcześniejsze małe przycięcia WordPressa korzystają z powiązanego oryginału, gdy jest dostępny w bibliotece; świadome wycięcie samego symbolu z pełnego logotypu pozostaje zachowane. Nowe logo wgrywaj w pełnej rozdzielczości i pomiń przycinanie. Gdy oryginał został usunięty, prześlij go ponownie lub usuń własny wybór, aby użyć domyślnego SVG. Mapa jest bezpośrednio osadzona w Kontakcie, bez przycisku zgody. Po aktualizacji wyczyść cache hostingu, WordPressa i przeglądarki. Własne ustawienia i ręcznie edytowane strony pozostają zachowane.
+
+## Wersja 1.5
+
+Mobilne menu wysuwa się z prawej jako panel modalny. Przejścia AJAX działają na telefonach i komputerach; przewijanie odsłania tekst efektem migawki, a dekoracyjne podkreślenia są uproszczone. Ograniczenie ruchu wyłącza animacje i pozostawia całą treść widoczną. Zachowane są ostre logo, automatyczna mapa w Kontakcie oraz odbiorca formularza **kontakt@damiancebula-serwis.pl**.
+
+Zainstaluj ZIP 1.5.0 przez **Wygląd → Motywy → Dodaj → Wyślij motyw** wyłącznie w nowej, oddzielnej instancji WordPress, zastępując tam pliki motywu. Wyczyść cache i sprawdź menu, klawiaturę, Wstecz, przejścia oraz wariant ograniczonego ruchu. Aktualizacja nie zmienia starej witryny, bazy ani domeny; wgranie na Hostinger wykonuje się osobno. Szczegóły: `docs/UPDATE_1_5.md` w repozytorium.

@@ -1,0 +1,26 @@
+{
+  "version": "1.5.0",
+  "date": "2026-11-06",
+  "environment": "Isolated local WordPress 7.1.4, PHP 8.3.36, MariaDB 11.4, Chromium",
+  "browserPageViewportChecks": 49,
+  "axeChecksIncludingOpenModal": 15,
+  "animatedNavigationRoutesDesktopAndTouchMobile": 12,
+  "drawerViewports": [
+    360,
+    390,
+    768
+  ],
+  "nativeModal": true,
+  "singleRelocatedNav": true,
+  "keyboardAndScrollRestoration": true,
+  "textShutter": true,
+  "oncePerText": true,
+  "reducedMotion": true,
+  "noJavaScriptFallback": true,
+  "noViewTransitionsDependency": true,
+  "reviewNoDialogFallbackAndResizeDuringClose": "PASS",
+  "productionDeployment": false,
+  "zipBytes": 2528928,
+  "zipFiles": 72,
+  "zipSha256": "0d4146cbd1f41614e2b19e845ab6afb402adf763d8b8d769da6dae472cfb785c"
+}

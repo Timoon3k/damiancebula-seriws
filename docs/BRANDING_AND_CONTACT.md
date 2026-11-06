@@ -28,4 +28,8 @@ Podpis twórcy projektu jest widoczny jako **Projekt i wykonanie: majewskitomasz
 
 ## Sticky menu i animacje
 
-Scrollspy został wyłączony w wersji 1.3. Menu otwiera pełne podstrony z użyciem AJAX, a po przewinięciu nadal pojawia się sticky nagłówek bez przeskoku treści. Animacje są widoczne na desktopie i mobile, w tym na stronie głównej; ustawienie ograniczenia ruchu jest respektowane.
+Scrollspy został wyłączony w wersji 1.3. Po przewinięciu nadal pojawia się sticky nagłówek. Wersja 1.5 dodaje mobilny panel menu wysuwany z prawej strony nad przyciemnionym tłem. Panel jest modalny: fokus pozostaje w jego obrębie, a zamknięcie przyciskiem, klawiszem Escape lub kliknięciem tła przywraca dostęp do strony. Wybranie podstrony zamyka menu przed przejściem. Bez JavaScript odnośniki pozostają dostępne jako zwykła nawigacja.
+
+Przejścia AJAX obejmują telefony i komputery, również stronę główną. Tekst odsłania się przy przewijaniu jak migawka, z użyciem przycięcia zamiast krótkiego błysku całej sekcji. Ozdobne podkreślenia nagłówków są uproszczone. Ustawienie **Ogranicz ruch** w systemie lub przeglądarce wyłącza animowane odsłanianie i przejścia; treść pozostaje od razu czytelna. Bez obsługi efektów przeglądarka wyświetla zwykły tekst i odnośniki.
+
+Aktualizację ZIP instaluj w nowej, oddzielnej witrynie zgodnie z [instrukcją 1.5](UPDATE_1_5.md). Po wyczyszczeniu cache sprawdź menu, klawiaturę, Wstecz i animacje na telefonie oraz komputerze. Stara witryna, jej baza i przypisanie domeny pozostają bez zmian.

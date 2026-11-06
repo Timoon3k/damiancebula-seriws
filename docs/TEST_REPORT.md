@@ -1,4 +1,24 @@
-# Testy i ograniczenia — DC Serwis 1.4
+# Testy i ograniczenia — DC Serwis 1.5
+
+Testowano 2026-11-06 na odrębnej lokalnej instalacji WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4. Środowisko po wznowieniu działa, testowy WordPress odpowiada pod http://127.0.0.1:8081. Nie zmieniano produkcyjnej witryny, jej bazy ani przypisania domeny.
+
+- PASS: 49 kombinacji siedmiu stron i siedmiu szerokości (1440/768/390/360/1024/1280/1536). Brak poziomego przewijania, jeden H1, poprawny język i canonical, dostępne obrazy, podpis twórcy, AJAX/historia, lightbox, mobilne menu oraz formularz i nawigacja bez JavaScript.
+- PASS: 15 kontroli axe WCAG A/AA — siedem stron desktop/mobile oraz otwarte mobilne menu modalne. Brak wykrytych naruszeń w badanym interfejsie.
+- PASS: drawer na 360/390/768 px jest zakotwiczony po prawej i używa natywnego dialogu modalnego. Jedno menu jest przenoszone, nie kopiowane. Sprawdzono blokadę tła, Tab/Shift+Tab, Escape/przycisk/kliknięcie tła, przywrócenie scrollY650, powrót fokusu i przeniesienie menu do nagłówka po zmianie rozmiaru na desktop.
+- PASS: rzeczywista animacja wysuwania panelu i przejścia AJAX przy emulacji dotyku (isMobile/hasTouch). Zamknięcie panelu nie odbiera fokusu nowej podstronie. Sticky nadal rezerwuje miejsce i nie zmienia aktywnego linku podczas przewijania; scrollspy pozostaje wyłączony.
+- PASS: 12 przejść między sześcioma trasami na desktopie i telefonie. Próbki z działających animacji potwierdzają zmianę opacity/transform oraz maski clip-path tytułu i przesłony. Przejścia nie wymagają View Transitions API. Sprawdzono Wstecz i dwie szybkie zmiany adresu bez pozostawionej przesłony lub aria-busy.
+- PASS: tekst odsłania się podczas przewijania bez animowania całych długich sekcji. Po zakończeniu znika przycięcie, a powrót do tego samego tekstu nie uruchamia go ponownie. Ograniczony ruch wyłącza animacje, a bez JS treść pozostaje widoczna.
+- PASS: dodatkowy przegląd i kontrole read-only — brak showModal pozostawia zwykłą nawigację i działający AJAX; przejście na desktop podczas animacji zamykania przywraca pojedyncze menu, zamyka dialog i odblokowuje stronę. Brak nowych błędów JS.
+- PASS: składnia zmienionego header.php i skryptów JS, git diff --check. ZIP1.5.0: 72 pliki, katalog dc-serwis/ na górze, poprawne CRC i wersja, bez plików środowiska.
+
+Wyniki: [browser](test-results/browser.json), [accessibility](test-results/accessibility.json), [navigation](test-results/navigation.json), [motion](test-results/motion.json), [podsumowanie 1.5 i SHA256 ZIP](test-results/version-1.5.json). Zrzuty trzech szerokości i otwartego menu są w [porównaniu wizualnym](VISUAL_COMPARISON.md); wszystkie pełne strony w artifacts/screenshots/. Kontrole bez ruchu dokumentują finalny wygląd, a test motion mierzy uruchomione animacje.
+
+Mapa pozostaje osadzona bezpośrednio w Kontakcie. Jej żądania są zastępowane atrapą lub blokowane w testach; nie sprawdzano dostępności prawdziwego Google Maps na hostingu. Logo, odbiorca kontakt@damiancebula-serwis.pl, konfiguracja adresu i treści pozostają zachowane. Nie wysyłano wiadomości na prawdziwą skrzynkę. Rzeczywiste SMTP, indeksacja Google, dostępność zewnętrznych wtyczek i produkcyjne Core Web Vitals nie były zmieniane ani potwierdzane.
+
+Aktualizację trzeba zainstalować ZIP-em na nowej, oddzielnej witrynie Hostinger i wyczyścić cache. Sam push nie wdraża plików na hosting. Instrukcja: [aktualizacja 1.5](UPDATE_1_5.md).
+
+## Wcześniejsza weryfikacja 1.4
+
 
 Testowano 2026-11-06 na odrębnej lokalnej instalacji WordPress 7.1.4 / PHP 8.3 / MariaDB 11.4. Produkcyjna baza i pliki nie zostały zmienione.
 

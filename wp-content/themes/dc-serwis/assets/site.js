@@ -5,6 +5,7 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let observer;
   const animations = new Set();
+  const revealed = new WeakSet();
   let motionEpoch = 0;
   const wipe = document.createElement('div');
   wipe.className = 'dc-motion-wipe'; wipe.setAttribute('aria-hidden', 'true'); document.body.append(wipe);
@@ -37,33 +38,49 @@
     const title = main.querySelector('h1');
     const intro = main.querySelector('.hero-intro') || title?.nextElementSibling;
     const jobs = [
-      play(title, [{opacity: .12, transform: 'translateY(28px)'}, {opacity: 1, transform: 'none'}], {duration: 300, delay: initial ? 0 : 30}, 'dc-title-enter'),
-      play(intro, [{opacity: .12, transform: 'translateY(22px)'}, {opacity: 1, transform: 'none'}], {duration: 260, delay: 70}, 'dc-intro-enter'),
+      play(title, [{opacity: .25, clipPath: 'inset(0 0 100% 0)', transform: 'translateY(20px)'}, {opacity: 1, clipPath: 'inset(0)', transform: 'none'}], {duration: 380, delay: initial ? 0 : 30}, 'dc-title-enter'),
+      play(intro, [{opacity: .3, clipPath: 'inset(0 0 100% 0)', transform: 'translateY(14px)'}, {opacity: 1, clipPath: 'inset(0)', transform: 'none'}], {duration: 340, delay: 70}, 'dc-intro-enter'),
       play(main.querySelector('.hero-media'), [{opacity: .3, transform: 'scale(1.035)'}, {opacity: 1, transform: 'none'}], {duration: 330}, 'dc-hero-enter')
     ];
-    if (!initial) jobs.push(play(main, [{opacity: .18, transform: 'translateY(20px)'}, {opacity: 1, transform: 'none'}], {duration: 300}, 'dc-page-enter'));
+    if (!initial) jobs.push(play(main, [{opacity: .25, transform: 'translateY(16px)'}, {opacity: 1, transform: 'none'}], {duration: 340}, 'dc-page-enter'));
     return Promise.all(jobs).then(() => { if (epoch === motionEpoch) motionStage('idle'); });
   }
 
   function revealSections() {
     if (reduced.matches || !('IntersectionObserver' in window)) return;
-    observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      observer.unobserve(entry.target);
-      play(entry.target, [{opacity: .2, transform: 'translateY(24px)'}, {opacity: 1, transform: 'none'}], {duration: 340}, 'dc-section-reveal');
-    }), {threshold: .08});
-    document.querySelectorAll('main section, main .gallery-grid > figure, main .faq details').forEach(element => {
-      // The title/hero already has its own entrance. Avoid animating whole long
-      // text columns or hiding content while waiting for an observer callback.
-      if (element.querySelector('h1') || element.closest('.hero')) return;
+    observer = new IntersectionObserver(entries => {
+      let stagger = 0;
+      for (const entry of entries) {
+        if (!entry.isIntersecting || !entry.target.isConnected) continue;
+        const element = entry.target;
+        observer.unobserve(element);
+        if (revealed.has(element)) continue;
+        revealed.add(element);
+        // A shutter reveals the text itself, without splitting words or hiding
+        // content while waiting for JavaScript. No blur or scroll event loop.
+        if (element.matches(':focus-within') || entry.boundingClientRect.bottom <= 0) continue;
+        play(element, [
+          {opacity: .3, clipPath: 'inset(0 0 100% 0)', transform: 'translateY(18px)'},
+          {opacity: 1, clipPath: 'inset(0)', transform: 'none'}
+        ], {duration: 460, delay: Math.min(stagger++ * 35, 105)}, 'dc-text-reveal');
+      }
+    }, {threshold: .12, rootMargin: '0px 0px -20px 0px'});
+    const main = document.querySelector('#main');
+    const intro = main.querySelector('.hero-intro') || main.querySelector('h1')?.nextElementSibling;
+    main.querySelectorAll('h2, h3, p, figcaption, .check-list li').forEach(element => {
+      if (revealed.has(element) || element === intro || element.closest('.hero, form, .form-status, .map-embed, .google-reviews')) return;
+      element.classList.add('dc-reveal-text');
       observer.observe(element);
     });
   }
-  const nav = document.querySelector('#primary-nav');
-  const toggle = document.querySelector('.menu-toggle');
-  function closeMenu() { toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); }
-  toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('is-open')) { closeMenu(); toggle.focus(); } });
+  // navigation.js owns the drawer, including its focus and scroll restoration.
+  function closeMenu() { return window.dcCloseMenu?.({restoreFocus:false}); }
+  document.addEventListener('focusin', event => {
+    const target = event.target.closest('.dc-reveal-text');
+    if (!target) return;
+    // Keyboard users must never land on text that is temporarily clipped.
+    animations.forEach(animation => { if (animation.effect?.target === target) animation.cancel(); });
+  });
   const dialog = document.querySelector('.lightbox');
   let opener;
   dialog.querySelector('button').addEventListener('click', () => dialog.close());
@@ -100,7 +117,8 @@
   async function navigate(url, push = true) {
     controller?.abort(); controller = new AbortController(); const current = ++generation;
     observer?.disconnect(); stopMotion();
-    document.documentElement.classList.add('is-navigating'); document.querySelector('main').setAttribute('aria-busy', 'true'); closeMenu();
+    document.documentElement.classList.add('is-navigating'); document.querySelector('main').setAttribute('aria-busy', 'true');
+    const menuClosed = closeMenu();
     try {
       const response = await fetch(url, {headers:{'X-Requested-With':'DCNavigation'},credentials:'same-origin',signal:controller.signal});
       if (!response.ok || !response.headers.get('content-type')?.includes('text/html')) throw new Error('Navigation unavailable');
@@ -109,10 +127,12 @@
       if (!incoming || !next.querySelector('.site-header') || !next.querySelector('script[src*="dc-serwis/assets/site.js"]')) throw new Error('Other layout');
       if (current !== generation) return;
       if (next.querySelector('.google-reviews')) { location.assign(url); return; }
+      await menuClosed;
+      if (current !== generation) return;
       if (!reduced.matches) {
         motionStage('leaving');
-        play(wipe, [{opacity: 0, transform: 'translateX(-200%) skewX(-18deg)'}, {opacity: .8, offset: .2}, {opacity: .8, offset: .7}, {opacity: 0, transform: 'translateX(calc(100vw + 200%)) skewX(-18deg)'}], {duration: 530, easing: 'cubic-bezier(.4,0,.2,1)'}, 'dc-navigation-wipe');
-        await play(document.querySelector('#main'), [{opacity: 1, transform: 'none'}, {opacity: .12, transform: 'translateY(-18px)'}], {duration: 200, easing: 'ease-in'}, 'dc-page-leave');
+        play(wipe, [{opacity: 0, clipPath: 'inset(0 0 0 100%)'}, {opacity: 1, clipPath: 'inset(0)', offset: .4}, {opacity: 0, clipPath: 'inset(0 100% 0 0)'}], {duration: 580, easing: 'cubic-bezier(.4,0,.2,1)'}, 'dc-navigation-wipe');
+        await play(document.querySelector('#main'), [{opacity: 1, transform: 'none'}, {opacity: .18, transform: 'translateY(-14px)'}], {duration: 190, easing: 'ease-in'}, 'dc-page-leave');
       }
       if (current !== generation) return;
       {

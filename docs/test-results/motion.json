@@ -2,91 +2,118 @@
   "routes": [
     {
       "mobile": false,
+      "touch": false,
       "path": "/serwis-klimatyzacji-stalowa-wola/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": false,
+      "touch": false,
       "path": "/serwis-agd-stalowa-wola/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": false,
+      "touch": false,
       "path": "/realizacje/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": false,
+      "touch": false,
       "path": "/o-firmie/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": false,
+      "touch": false,
       "path": "/kontakt/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": false,
+      "touch": false,
       "path": "/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/serwis-klimatyzacji-stalowa-wola/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/serwis-agd-stalowa-wola/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/realizacje/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/o-firmie/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/kontakt/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     },
     {
       "mobile": true,
+      "touch": true,
       "path": "/",
       "realContentAnimation": true,
-      "geometricWipe": true,
+      "pageShutter": true,
+      "titleMask": true,
       "viewTransitionsAvailable": false
     }
   ],
   "initialHero": true,
   "scrollReveal": true,
+  "textShutter": true,
+  "oncePerText": true,
+  "touchMobile": true,
   "rapidNavigation": true,
   "history": true,
   "reducedMotion": true,
