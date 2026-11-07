@@ -1,0 +1,64 @@
+name: Export DC Serwis 3.0.0 from main (4776458)
+
+on:
+  push:
+    branches:
+      - ci/export-dc-serwis-3-0-4776458
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact main source revision
+        uses: actions/checkout@v4
+        with:
+          ref: 4776458b836b53c517a457f509a0842fa241c231
+          persist-credentials: false
+      - name: Confirm source revision
+        run: test "$(git rev-parse HEAD)" = "4776458b836b53c517a457f509a0842fa241c231"
+      - name: Build and validate installable WordPress theme
+        run: |
+          python3 scripts/package-theme.py
+          mv artifacts/dc-serwis.zip artifacts/dc-serwis-3.0.0-4776458.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          path = Path("artifacts/dc-serwis-3.0.0-4776458.zip")
+          assert path.is_file() and path.stat().st_size > 0
+          with zipfile.ZipFile(path) as archive:
+              assert archive.testzip() is None, "ZIP corruption detected"
+              filenames = archive.namelist()
+              assert len(filenames) > 10
+              assert all(f.startswith("dc-serwis/") for f in filenames), "Extra project files found"
+              for required in ("dc-serwis/style.css","dc-serwis/functions.php","dc-serwis/index.php"):
+                  assert required in filenames, required
+              assert "Version: 3.0.0" in archive.read("dc-serwis/style.css").decode()
+              print(f"Validated 3.0.0, {len(filenames)} theme files, {path.stat().st_size} bytes")
+          PY
+          sha256sum artifacts/dc-serwis-3.0.0-4776458.zip
+      - name: Save workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc-serwis-3.0.0-4776458
+          path: artifacts/dc-serwis-3.0.0-4776458.zip
+          retention-days: 90
+          if-no-files-found: error
+      - name: Publish direct ZIP in GitHub Releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="dc-serwis-3.0.0-4776458"
+          asset="artifacts/dc-serwis-3.0.0-4776458.zip"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$asset" --clobber
+          else
+            gh release create "$tag" "$asset" \
+              --target 4776458b836b53c517a457f509a0842fa241c231 \
+              --title "DC Serwis 3.0.0 (main 4776458)" \
+              --notes "Instalacyjny ZIP samego motywu WordPress dc-serwis z commita 4776458b836b53c517a457f509a0842fa241c231 na main, bez całego repozytorium."
+          fi
