@@ -1,0 +1,65 @@
+name: Package DC Serwis 2.1.0 from main
+
+on:
+  push:
+    branches: [ci/export-dc-serwis-2-1-56c417d]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact 2.1.0 source
+        uses: actions/checkout@v4
+        with:
+          ref: 56c417de88af8aaab053532d8b9f0e80645649a6
+          persist-credentials: false
+
+      - name: Verify selected commit
+        run: test "$(git rev-parse HEAD)" = "56c417de88af8aaab053532d8b9f0e80645649a6"
+
+      - name: Build and verify WordPress theme archive
+        run: |
+          python3 scripts/package-theme.py
+          mv artifacts/dc-serwis.zip artifacts/dc-serwis-2.1.0-56c417d.zip
+          python3 - <<'PY'
+          import zipfile
+          from pathlib import Path
+          p=Path('artifacts/dc-serwis-2.1.0-56c417d.zip')
+          assert p.is_file() and p.stat().st_size > 0
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              f=z.namelist()
+              assert f and all(path.startswith('dc-serwis/') for path in f)
+              assert 'dc-serwis/style.css' in f and 'dc-serwis/functions.php' in f
+              assert 'Version: 2.1.0' in z.read('dc-serwis/style.css').decode('utf-8')
+              print(f'ZIP verified: {len(f)} theme files')
+          PY
+          sha256sum artifacts/dc-serwis-2.1.0-56c417d.zip
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc-serwis-2.1.0-56c417d
+          path: artifacts/dc-serwis-2.1.0-56c417d.zip
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Publish theme ZIP as GitHub release asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="dc-serwis-2.1.0-56c417d"
+          file="artifacts/dc-serwis-2.1.0-56c417d.zip"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$file" --clobber
+          else
+            gh release create "$tag" "$file" \
+              --target 56c417de88af8aaab053532d8b9f0e80645649a6 \
+              --title "DC Serwis 2.1.0 (main 56c417d)" \
+              --notes "Instalacyjny ZIP zawierający wyłącznie motyw WordPress dc-serwis v2.1.0 z commita main 56c417de88af8aaab053532d8b9f0e80645649a6. Bez repozytorium, testów i dokumentacji projektu."
+          fi
