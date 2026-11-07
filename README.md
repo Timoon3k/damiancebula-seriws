@@ -22,6 +22,8 @@ Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w
 - [Lokalny WordPress w Dockerze](dev/README.md)
 - [Migracja i SEO](docs/MIGRATION_CHECKLIST.md)
 
+Raport końcowy i pomiary: [REFERENCE_3_0_REPORT.md](docs/REFERENCE_3_0_REPORT.md).
+
 ## Szybki start
 
 ```sh

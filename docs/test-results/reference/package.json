@@ -1,0 +1,12 @@
+{
+  "version": "3.0.0",
+  "runtimeCommit": "50f172c",
+  "package": "artifacts/dc-serwis-3.0.0.zip",
+  "bytes": 4651042,
+  "fileCount": 125,
+  "sha256": "cbb4e949a708f069bd26e6237eac9e0b68c288a1cef0eb3f27091aa1865940a5",
+  "crcPassed": true,
+  "matchesEveryThemeSource": true,
+  "singleThemeRoot": true,
+  "secretsOrTestFixturesIncluded": false
+}

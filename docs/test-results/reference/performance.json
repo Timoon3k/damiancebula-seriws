@@ -1,0 +1,1882 @@
+{
+  "reportType": "Local laboratory performance audit; not field Core Web Vitals",
+  "startedAt": "2026-11-07T15:09:50.632Z",
+  "finishedAt": "2026-11-07T15:13:55.974Z",
+  "lighthouseVersion": "13.6.0",
+  "chromeVersion": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)",
+  "themeVersion": "3.0.0",
+  "baseUrl": "http://127.0.0.1:8081",
+  "source": {
+    "gitHead": "50f172c2f3020286ea9b1ea6bf251d946af07708",
+    "fingerprintBefore": "43d2eb5b595d924c9d1d0efe1cb02d0a52544e8e2b8d9ef773f016fe32eefea8",
+    "fingerprintAfter": "43d2eb5b595d924c9d1d0efe1cb02d0a52544e8e2b8d9ef773f016fe32eefea8",
+    "stableDuringAudit": true
+  },
+  "method": {
+    "runsPerPageAndMode": 3,
+    "browserCache": "Lighthouse default storage reset; separate cold browser per run",
+    "serverCache": "Local PHP/database may be warm; no production CDN or LiteSpeed cache inferred",
+    "throttling": "Lighthouse simulated mobile slow4G/4xCPU and desktop preset; exact settings saved per run",
+    "runOrder": "Sequential mobile then desktop; no intentional parallel audits",
+    "thirdParty": "Only the local installation is targeted. External requests, if any, are listed per run; active production widgets are not assumed."
+  },
+  "targets": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "fieldInpMs": 200
+  },
+  "medians": [
+    {
+      "mode": "mobile",
+      "page": "home",
+      "path": "/",
+      "runs": 3,
+      "performanceScore": 99,
+      "lcpMs": 1965.44385,
+      "cls": 0,
+      "tbtMs": 98,
+      "fcpMs": 913.5120999999999,
+      "speedIndexMs": 1071.4005755465814,
+      "transferBytes": 303588,
+      "requestCount": 20,
+      "observedLcpMs": 372,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    },
+    {
+      "mode": "mobile",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "runs": 3,
+      "performanceScore": 99,
+      "lcpMs": 2113.3460999999998,
+      "cls": 0,
+      "tbtMs": 7.551299999999969,
+      "fcpMs": 910.0671,
+      "speedIndexMs": 937.3202855052143,
+      "transferBytes": 325422,
+      "requestCount": 19,
+      "observedLcpMs": 318,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    },
+    {
+      "mode": "mobile",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "runs": 3,
+      "performanceScore": 99,
+      "lcpMs": 1973.72145,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 909.7674,
+      "speedIndexMs": 909.7674,
+      "transferBytes": 168281,
+      "requestCount": 16,
+      "observedLcpMs": 302,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    },
+    {
+      "mode": "desktop",
+      "page": "home",
+      "path": "/",
+      "runs": 3,
+      "performanceScore": 100,
+      "lcpMs": 436.05075,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 250.70049999999998,
+      "speedIndexMs": 330.9711858070557,
+      "transferBytes": 274631,
+      "requestCount": 20,
+      "observedLcpMs": 314,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    },
+    {
+      "mode": "desktop",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "runs": 3,
+      "performanceScore": 100,
+      "lcpMs": 667.223,
+      "cls": 0,
+      "tbtMs": 32.99999999999994,
+      "fcpMs": 293.3034,
+      "speedIndexMs": 652.8214399662802,
+      "transferBytes": 433688,
+      "requestCount": 19,
+      "observedLcpMs": 708,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    },
+    {
+      "mode": "desktop",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "runs": 3,
+      "performanceScore": 100,
+      "lcpMs": 624.06825,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 263.07,
+      "speedIndexMs": 447.60140183134615,
+      "transferBytes": 309204,
+      "requestCount": 16,
+      "observedLcpMs": 380,
+      "lcpTargetPassed": true,
+      "clsTargetPassed": true
+    }
+  ],
+  "interactions": {
+    "method": "Synthetic trusted touch interactions, local network, real CDP 4x CPU throttling, reduced motion; not field INP",
+    "eventTimingSupported": true,
+    "durationThresholdMs": 16,
+    "scriptedInteractionCount": 12,
+    "observedGroupedInteractions": 12,
+    "maxObservedInteractionMs": 136,
+    "syntheticP98InteractionMs": 136,
+    "fieldInpMeasured": false,
+    "samples": [
+      {
+        "name": "pointerdown",
+        "startTime": 2733.2000000029802,
+        "duration": 16,
+        "processingMs": 5,
+        "interactionId": 7018,
+        "page": "home"
+      },
+      {
+        "name": "pointerup",
+        "startTime": 2733.400000002235,
+        "duration": 16,
+        "processingMs": 1.800000000745058,
+        "interactionId": 7018,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 2733.400000002235,
+        "duration": 104,
+        "processingMs": 57.100000001490116,
+        "interactionId": 7018,
+        "page": "home"
+      },
+      {
+        "name": "pointerdown",
+        "startTime": 2932.5,
+        "duration": 16,
+        "processingMs": 1.2000000029802322,
+        "interactionId": 7025,
+        "page": "home"
+      },
+      {
+        "name": "pointerup",
+        "startTime": 2932.5,
+        "duration": 16,
+        "processingMs": 0,
+        "interactionId": 7025,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 2932.5,
+        "duration": 72,
+        "processingMs": 27.599999997764826,
+        "interactionId": 7025,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 3074,
+        "duration": 64,
+        "processingMs": 29.700000002980232,
+        "interactionId": 7032,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 3203.60000000149,
+        "duration": 56,
+        "processingMs": 22.200000002980232,
+        "interactionId": 7039,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 3321.900000002235,
+        "duration": 64,
+        "processingMs": 28.900000002235174,
+        "interactionId": 7046,
+        "page": "home"
+      },
+      {
+        "name": "click",
+        "startTime": 3468,
+        "duration": 56,
+        "processingMs": 19.399999998509884,
+        "interactionId": 7053,
+        "page": "home"
+      },
+      {
+        "name": "pointerdown",
+        "startTime": 1331.5,
+        "duration": 72,
+        "processingMs": 2,
+        "interactionId": 7688,
+        "page": "climate"
+      },
+      {
+        "name": "pointerup",
+        "startTime": 1331.5,
+        "duration": 72,
+        "processingMs": 0.7000000029802322,
+        "interactionId": 7688,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1331.5,
+        "duration": 112,
+        "processingMs": 2,
+        "interactionId": 7688,
+        "page": "climate"
+      },
+      {
+        "name": "pointerdown",
+        "startTime": 1548.699999999255,
+        "duration": 16,
+        "processingMs": 0,
+        "interactionId": 7695,
+        "page": "climate"
+      },
+      {
+        "name": "pointerup",
+        "startTime": 1548.800000000745,
+        "duration": 16,
+        "processingMs": 0,
+        "interactionId": 7695,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1548.800000000745,
+        "duration": 40,
+        "processingMs": 0,
+        "interactionId": 7695,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1649.699999999255,
+        "duration": 40,
+        "processingMs": 0,
+        "interactionId": 7702,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1751.5,
+        "duration": 40,
+        "processingMs": 2.699999999254942,
+        "interactionId": 7709,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1858.1000000014901,
+        "duration": 32,
+        "processingMs": 0.09999999776482582,
+        "interactionId": 7716,
+        "page": "climate"
+      },
+      {
+        "name": "pointerdown",
+        "startTime": 1932,
+        "duration": 16,
+        "processingMs": 0.8000000007450581,
+        "interactionId": 7723,
+        "page": "climate"
+      },
+      {
+        "name": "pointerup",
+        "startTime": 1932,
+        "duration": 64,
+        "processingMs": 24.900000002235174,
+        "interactionId": 7723,
+        "page": "climate"
+      },
+      {
+        "name": "click",
+        "startTime": 1932,
+        "duration": 136,
+        "processingMs": 2,
+        "interactionId": 7723,
+        "page": "climate"
+      }
+    ]
+  },
+  "cacheHeaders": [
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-wght-normal.woff2",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"6104-65fa02c597d98\"",
+        "last-modified": "Fri, 06 Nov 2026 18:56:43 GMT",
+        "content-type": "font/woff2",
+        "content-encoding": null,
+        "content-length": "24836"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/fonts/manrope-latin-ext-wght-normal.woff2",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"3b10-65fa02c597d98\"",
+        "last-modified": "Fri, 06 Nov 2026 18:56:43 GMT",
+        "content-type": "font/woff2",
+        "content-encoding": null,
+        "content-length": "15120"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/site.css?ver=1794049798",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"7d4c-65fadc4f06fa0-gzip\"",
+        "last-modified": "Sat, 07 Nov 2026 11:09:58 GMT",
+        "content-type": "text/css",
+        "content-encoding": "gzip",
+        "content-length": "7405"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/branding.css?ver=1794048473",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"974-65fad75fdd338-gzip\"",
+        "last-modified": "Sat, 07 Nov 2026 10:47:53 GMT",
+        "content-type": "text/css",
+        "content-encoding": "gzip",
+        "content-length": "695"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/motion.css?ver=1794004560",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"159-65fa33c923f81-gzip\"",
+        "last-modified": "Fri, 06 Nov 2026 22:36:00 GMT",
+        "content-type": "text/css",
+        "content-encoding": "gzip",
+        "content-length": "218"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/navigation.css?ver=1794049354",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"d57-65fadaa807b40-gzip\"",
+        "last-modified": "Sat, 07 Nov 2026 11:02:34 GMT",
+        "content-type": "text/css",
+        "content-encoding": "gzip",
+        "content-length": "1248"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/pages.css?ver=1794048515",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"4fc6-65fad78814fed-gzip\"",
+        "last-modified": "Sat, 07 Nov 2026 10:48:35 GMT",
+        "content-type": "text/css",
+        "content-encoding": "gzip",
+        "content-length": "4297"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/images/editorial-reference-hero-960.webp",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"99d8-65fad95264f1d\"",
+        "last-modified": "Sat, 07 Nov 2026 10:56:36 GMT",
+        "content-type": "image/webp",
+        "content-encoding": null,
+        "content-length": "39384"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/site.js?ver=1794004560",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"2e0a-65fa33c924f20-gzip\"",
+        "last-modified": "Fri, 06 Nov 2026 22:36:00 GMT",
+        "content-type": "text/javascript",
+        "content-encoding": "gzip",
+        "content-length": "3966"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8081/wp-content/themes/dc-serwis/assets/branding.js?ver=1794004560",
+      "status": 200,
+      "headers": {
+        "cache-control": null,
+        "expires": null,
+        "etag": "\"8dc-65fa33c923f81-gzip\"",
+        "last-modified": "Fri, 06 Nov 2026 22:36:00 GMT",
+        "content-type": "text/javascript",
+        "content-encoding": "gzip",
+        "content-length": "933"
+      }
+    }
+  ],
+  "auditRuns": [
+    {
+      "mode": "mobile",
+      "page": "home",
+      "path": "/",
+      "run": 1,
+      "performanceScore": 99,
+      "lcpMs": 1970.2681499999999,
+      "cls": 0,
+      "tbtMs": 107,
+      "fcpMs": 913.5120999999999,
+      "speedIndexMs": 1104.4370349363442,
+      "transferBytes": 303588,
+      "requestCount": 20,
+      "observedLcpMs": 376,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1438.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-home-1.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "home",
+      "path": "/",
+      "run": 2,
+      "performanceScore": 99,
+      "lcpMs": 1961.2294499999998,
+      "cls": 0,
+      "tbtMs": 93,
+      "fcpMs": 907.4863,
+      "speedIndexMs": 1065.0181983932366,
+      "transferBytes": 303588,
+      "requestCount": 20,
+      "observedLcpMs": 357,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1069.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-home-2.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "home",
+      "path": "/",
+      "run": 3,
+      "performanceScore": 99,
+      "lcpMs": 1965.44385,
+      "cls": 0,
+      "tbtMs": 98,
+      "fcpMs": 1012.2959000000001,
+      "speedIndexMs": 1071.4005755465814,
+      "transferBytes": 303588,
+      "requestCount": 20,
+      "observedLcpMs": 372,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1842.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-home-3.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 1,
+      "performanceScore": 99,
+      "lcpMs": 2113.3460999999998,
+      "cls": 0,
+      "tbtMs": 7.551299999999969,
+      "fcpMs": 908.8974000000001,
+      "speedIndexMs": 937.3202855052143,
+      "transferBytes": 325422,
+      "requestCount": 19,
+      "observedLcpMs": 318,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1327,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-climate-1.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 2,
+      "performanceScore": 99,
+      "lcpMs": 2115.1006499999994,
+      "cls": 0,
+      "tbtMs": 3.966450000000009,
+      "fcpMs": 910.0671,
+      "speedIndexMs": 910.0671,
+      "transferBytes": 325422,
+      "requestCount": 19,
+      "observedLcpMs": 262,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1772.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-climate-2.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 3,
+      "performanceScore": 98,
+      "lcpMs": 2041.8073499999998,
+      "cls": 0,
+      "tbtMs": 99.00000000000011,
+      "fcpMs": 911.2049,
+      "speedIndexMs": 1088.0892979958178,
+      "transferBytes": 325422,
+      "requestCount": 19,
+      "observedLcpMs": 394,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1790,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-climate-3.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 1,
+      "performanceScore": 99,
+      "lcpMs": 2114.5926,
+      "cls": 0,
+      "tbtMs": 58,
+      "fcpMs": 909.7284,
+      "speedIndexMs": 909.7284,
+      "transferBytes": 168281,
+      "requestCount": 16,
+      "observedLcpMs": 297,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1521.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-agd-1.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 2,
+      "performanceScore": 99,
+      "lcpMs": 1964.6511,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 909.7674,
+      "speedIndexMs": 909.7674,
+      "transferBytes": 168281,
+      "requestCount": 16,
+      "observedLcpMs": 302,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1758.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-agd-2.json"
+    },
+    {
+      "mode": "mobile",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 3,
+      "performanceScore": 99,
+      "lcpMs": 1973.72145,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 915.8143,
+      "speedIndexMs": 915.8143,
+      "transferBytes": 168281,
+      "requestCount": 16,
+      "observedLcpMs": 318,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1869.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/mobile-agd-3.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "home",
+      "path": "/",
+      "run": 1,
+      "performanceScore": 100,
+      "lcpMs": 436.05075,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 250.70049999999998,
+      "speedIndexMs": 330.9711858070557,
+      "transferBytes": 274631,
+      "requestCount": 20,
+      "observedLcpMs": 314,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1765.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-home-1.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "home",
+      "path": "/",
+      "run": 2,
+      "performanceScore": 100,
+      "lcpMs": 429.9912,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 246.6608,
+      "speedIndexMs": 414.17860321514013,
+      "transferBytes": 274631,
+      "requestCount": 20,
+      "observedLcpMs": 435,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1791,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-home-2.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "home",
+      "path": "/",
+      "run": 3,
+      "performanceScore": 100,
+      "lcpMs": 449.47485,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 259.6499,
+      "speedIndexMs": 326.45625090069063,
+      "transferBytes": 274631,
+      "requestCount": 20,
+      "observedLcpMs": 308,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1701.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-home-3.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 1,
+      "performanceScore": 100,
+      "lcpMs": 667.223,
+      "cls": 0,
+      "tbtMs": 32.99999999999994,
+      "fcpMs": 271.48199999999997,
+      "speedIndexMs": 949.4556436138491,
+      "transferBytes": 433688,
+      "requestCount": 19,
+      "observedLcpMs": 1195,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1302.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-climate-1.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 2,
+      "performanceScore": 100,
+      "lcpMs": 670.55005,
+      "cls": 0,
+      "tbtMs": 44.00000000000006,
+      "fcpMs": 302.3667,
+      "speedIndexMs": 652.8214399662802,
+      "transferBytes": 433688,
+      "requestCount": 19,
+      "observedLcpMs": 708,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1710.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-climate-2.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "climate",
+      "path": "/serwis-klimatyzacji-stalowa-wola/",
+      "run": 3,
+      "performanceScore": 100,
+      "lcpMs": 656.9551,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 293.3034,
+      "speedIndexMs": 523.3675304657114,
+      "transferBytes": 433688,
+      "requestCount": 19,
+      "observedLcpMs": 564,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1151.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-climate-3.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 1,
+      "performanceScore": 100,
+      "lcpMs": 624.06825,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 288.0455,
+      "speedIndexMs": 378.4716457666223,
+      "transferBytes": 309204,
+      "requestCount": 16,
+      "observedLcpMs": 325,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1150.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-agd-1.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 2,
+      "performanceScore": 74,
+      "lcpMs": 572.9964500000001,
+      "cls": 0,
+      "tbtMs": 712.5,
+      "fcpMs": 248.66430000000003,
+      "speedIndexMs": 572.517053248055,
+      "transferBytes": 309204,
+      "requestCount": 16,
+      "observedLcpMs": 380,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1405.5,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-agd-2.json"
+    },
+    {
+      "mode": "desktop",
+      "page": "agd",
+      "path": "/serwis-agd-stalowa-wola/",
+      "run": 3,
+      "performanceScore": 100,
+      "lcpMs": 634.605,
+      "cls": 0,
+      "tbtMs": 0,
+      "fcpMs": 263.07,
+      "speedIndexMs": 447.60140183134615,
+      "transferBytes": 309204,
+      "requestCount": 16,
+      "observedLcpMs": 529,
+      "externalRequests": [],
+      "runWarnings": [],
+      "settings": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1218,
+        "credits": {}
+      },
+      "rawReport": "artifacts/performance-reference-3.0/raw/desktop-agd-3.json"
+    }
+  ],
+  "limitations": [
+    "No production performance or real-user INP was measured.",
+    "Lighthouse TBT is not INP. EventTiming is a small scripted scenario, not a field percentile.",
+    "The separate local WordPress intentionally remains noindex; SEO scores are not used for performance acceptance.",
+    "Local network, server/cache configuration, plugins and third-party widgets differ from production."
+  ]
+}
