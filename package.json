@@ -11,12 +11,15 @@
     "test:navigation": "node tests/navigation.cjs",
     "test:motion": "node tests/motion.cjs",
     "test:gallery": "node tests/gallery.cjs",
-    "test:preservation": "node tests/architectural-seo.cjs",
+    "test:preservation": "node tests/reference-preservation.cjs",
     "test:legacy-preservation": "node tests/premium-preservation.cjs",
     "test:premium": "node tests/premium-design.cjs",
-    "test:refinement": "node tests/editorial-refinement.cjs",
-    "test:visual": "node tests/architectural-screenshots.cjs",
-    "test:performance": "node scripts/performance-audit.mjs --runs=3"
+    "test:refinement": "node tests/reference-design.cjs",
+    "test:visual": "node scripts/capture-reference.cjs",
+    "test:performance": "node scripts/performance-audit.mjs --runs=3",
+    "test:reference": "node tests/reference-design.cjs",
+    "test:architectural-preservation": "node tests/architectural-seo.cjs",
+    "test:legacy-refinement": "node tests/editorial-refinement.cjs"
   },
   "engines": {
     "node": ">=20"

@@ -43,6 +43,7 @@ const routes = [
               fit:getComputedStyle(image).objectFit,
               transform:getComputedStyle(image).transform,
               frame:{width:frame.width,height:frame.height,left:frame.left,right:frame.right},
+              contentFrame:{width:anchor.clientWidth,height:anchor.clientHeight},
               imageBox:{width:bounds.width,height:bounds.height,left:bounds.left,top:bounds.top},
               contained:{width:image.naturalWidth * scale,height:image.naturalHeight * scale},
               caption:caption ? {text:caption.textContent,height:caption.getBoundingClientRect().height,scrollHeight:caption.scrollHeight,clientHeight:caption.clientHeight} : null,
@@ -66,7 +67,7 @@ const routes = [
           assert.equal(photo.transform, 'none', `${label}: no image zoom cropping`);
           assert.ok(photo.frame.width > 40 && photo.frame.height > 40, `${label}: a usable individual frame`);
           assert.ok(photo.frame.width / photo.frame.height >= .55 && photo.frame.width / photo.frame.height <= 1.6, `${label}: intended portrait or landscape editorial frame`);
-          assert.ok(Math.abs(photo.imageBox.width - photo.frame.width) < 1 && Math.abs(photo.imageBox.height - photo.frame.height) < 1, `${label}: intrinsic WP dimensions do not overflow frame`);
+          assert.ok(Math.abs(photo.imageBox.width - photo.contentFrame.width) < 1 && Math.abs(photo.imageBox.height - photo.contentFrame.height) < 1, `${label}: image fills its frame content box without overflowing the border`);
           assert.ok(photo.contained.width <= photo.frame.width + 1 && photo.contained.height <= photo.frame.height + 1, `${label}: original contents fit`);
           assert.ok(photo.frame.left >= -1 && photo.frame.right <= width + 1, `${label}: every frame can be brought fully into the viewport`);
           if (carousel) assert(photo.frame.left >= photo.galleryViewport.left - 1 && photo.frame.right <= photo.galleryViewport.right + 1, `${label}: focused slide is fully inside the scrolling strip`);

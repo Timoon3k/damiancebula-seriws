@@ -1,0 +1,66 @@
+{
+  "sticky": true,
+  "reservedHeaderSpace": true,
+  "scrollspyDisabled": true,
+  "desktopPages": [
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/o-firmie/",
+    "/cennik/",
+    "/porady/",
+    "/kontakt/"
+  ],
+  "mobilePages": [
+    "/serwis-klimatyzacji-stalowa-wola/",
+    "/serwis-agd-stalowa-wola/",
+    "/o-firmie/",
+    "/cennik/",
+    "/porady/",
+    "/kontakt/"
+  ],
+  "ajaxHistory": true,
+  "nativeUrls": true,
+  "mobileKeyboard": true,
+  "reducedMotion": true,
+  "noJs": true,
+  "drawer": [
+    {
+      "width": 360,
+      "rightAligned": true,
+      "singleNav": true,
+      "nativeModal": true,
+      "focusTrap": true,
+      "inertBackground": true,
+      "scrollRestore": true,
+      "backdrop": true,
+      "closeControl": true,
+      "desktopResize": true
+    },
+    {
+      "width": 390,
+      "rightAligned": true,
+      "singleNav": true,
+      "nativeModal": true,
+      "focusTrap": true,
+      "inertBackground": true,
+      "scrollRestore": true,
+      "backdrop": true,
+      "closeControl": true,
+      "desktopResize": true
+    },
+    {
+      "width": 768,
+      "rightAligned": true,
+      "singleNav": true,
+      "nativeModal": true,
+      "focusTrap": true,
+      "inertBackground": true,
+      "scrollRestore": true,
+      "backdrop": true,
+      "closeControl": true,
+      "desktopResize": true
+    }
+  ],
+  "touchSlideAnimation": true,
+  "errors": []
+}

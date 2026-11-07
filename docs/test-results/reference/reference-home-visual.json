@@ -1,0 +1,30 @@
+{
+  "version": "3.0.0",
+  "capturedAt": "2026-11-07T11:10:18.524Z",
+  "beforeCommit": "56c417d",
+  "before": "Existing committed screenshots of the actual2.1installation",
+  "after": "Current isolated local WordPress",
+  "productionScreenshot": false,
+  "reducedMotion": true,
+  "captureOnlyChanges": "Eager/explicit image sizes and content-visibility for off-screen Chromium painting; labelled Google test placeholder.",
+  "captures": [
+    {
+      "route": "/",
+      "width": 1440,
+      "after": "docs/visual/reference/after/home-1440.jpg",
+      "before": "docs/visual/refinement/after/home-1440.jpg"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "after": "docs/visual/reference/after/home-768.jpg",
+      "before": "docs/visual/refinement/after/home-768.jpg"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "after": "docs/visual/reference/after/home-390.jpg",
+      "before": "docs/visual/refinement/after/home-390.jpg"
+    }
+  ]
+}

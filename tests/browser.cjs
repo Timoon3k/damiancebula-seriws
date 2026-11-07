@@ -2,12 +2,13 @@ const {chromium}=require('playwright');
 const fs=require('node:fs');
 const mockMap=require('./mock-map.cjs');
 const assert=require('node:assert/strict');
-const root=(process.env.BASE_URL||'http://127.0.0.1:8080').replace(/\/$/,'');
-const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/','/polityka-prywatnosci/'];
+const root=(process.env.BASE_URL||'http://127.0.0.1:8081').replace(/\/$/,'');
+const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/cennik/','/porady/','/kontakt/','/polityka-prywatnosci/'];
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
  const errors=[];const failures=[];const results=[];
- for(const width of [1440,768,390,360,1024,1280,1536,1920]){
+ fs.mkdirSync('artifacts/screenshots',{recursive:true});
+ for(const width of [1440,967,768,390,360,1024,1280,1536,1920]){
   const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}); await mockMap(context); const page=await context.newPage();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400 && r.url().startsWith(root)) failures.push([r.status(),r.url()]);});
@@ -33,7 +34,7 @@ const routes=['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola
  await page.locator('.services .card-link').first().click();await page.waitForURL('**/serwis-klimatyzacji-stalowa-wola/');
  assert.equal(await page.evaluate(()=>window.dcTestMarker),1,'AJAX preserves document');
  assert.match(await page.title(),/Serwis klimatyzacji/);assert.equal(await page.locator('#main').evaluate(el=>el===document.activeElement),true);
- await page.goBack();await page.waitForURL(root+'/');await page.waitForFunction(()=>document.querySelector('h1')?.textContent.includes('Naprawiamy'));
+ await page.goBack();await page.waitForURL(root+'/');await page.waitForFunction(()=>document.querySelector('h1')?.textContent.includes('Profesjonalny'));
  await page.goto(root+'/realizacje/');const photo=page.locator('.gallery-grid a').first();await photo.focus();await page.keyboard.press('Enter');await page.locator('dialog[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await photo.evaluate(el=>document.activeElement===el),true);
  const mobile=await browser.newPage({viewport:{width:390,height:844}});await mockMap(mobile);await mobile.goto(root);await mobile.getByRole('button',{name:'Menu'}).click();assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await mobile.keyboard.press('Escape');assert.equal(await mobile.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
  const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});await mockMap(nojs);const n=await nojs.newPage();await n.goto(root+'/kontakt/');assert.equal(await n.locator('form[action*="admin-post"]').count(),1);assert.equal(await n.locator('#primary-nav').isVisible(),true,'Mobile no-JS navigation');

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DC Serwis — porównanie wersji 2.1 i 3.0</title>
+  <link rel="icon" href="../../../wp-content/themes/dc-serwis/assets/branding/dc-favicon-blue.svg" type="image/svg+xml">
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#10243a;background:#eef4f9;line-height:1.6}
+    *{box-sizing:border-box}body{margin:0}a{color:#0768a4;text-underline-offset:3px}button,select,input{font:inherit}button,select{min-height:44px}button,select,input,a{touch-action:manipulation}:focus-visible{outline:3px solid #0878bb;outline-offset:4px}
+    header{padding:32px max(22px,calc((100% - 1440px)/2));background:#07182b;color:#fff}header .eyebrow{margin:0 0 7px;color:#78d9ff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}h1{margin:0 0 12px;font-size:clamp(27px,4vw,42px);line-height:1.15;letter-spacing:-.04em}header p{max-width:90ch;margin:0;color:#d3e3f1;font-size:15px}header a{display:inline-block;margin-top:18px;color:#86dfff}
+    main{max-width:1488px;margin:auto;padding:24px}.controls{display:flex;align-items:flex-end;flex-wrap:wrap;gap:18px 24px;margin-bottom:18px;padding:20px;border:1px solid #d3e1ed;border-radius:12px;background:#fff}.control{display:flex;flex-direction:column;gap:5px;min-width:190px}.control label,legend{font-size:13px;font-weight:750}select{max-width:100%;padding:8px 36px 8px 12px;border:1px solid #9cb2c6;border-radius:6px;color:#10243a;background:#fff}.control:first-child{flex:1;min-width:230px}fieldset{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0;padding:0;border:0}legend{margin:0 0 8px}fieldset label{display:inline-flex;align-items:center;gap:6px;min-height:36px;font-size:13px}input{margin:0;accent-color:#0878bb}.notice{margin:0 0 18px;padding:12px 16px;border-left:3px solid #0878bb;border-radius:3px;color:#344f66;background:#fff;font-size:13px}.notice:empty{display:none}
+    .comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}.comparison.single{grid-template-columns:minmax(0,1fr);max-width:1100px;margin-inline:auto}figure{min-width:0;margin:0;border:1px solid #cbdce9;border-radius:10px;overflow:hidden;background:#fff}figcaption{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:13px 16px;color:#344f66;background:#fff;font-size:13px}figcaption strong{color:#10243a;font-size:15px}figcaption a{flex-shrink:0;font-size:12px}.after figcaption{border-top:3px solid #08a9ef}.before figcaption{border-top:3px solid #8196a9}figure img{display:block;width:100%;height:auto;background:#fff}[hidden]{display:none!important}.context{margin-top:24px;padding:20px;border:1px solid #d3e1ed;border-radius:10px;background:#fff}.context h2{margin:0 0 8px;font-size:19px;letter-spacing:-.02em}.context p{max-width:110ch;margin:0 0 10px;color:#496175;font-size:13px}.context p:last-child{margin-bottom:0}footer{max-width:1488px;margin:auto;padding:0 24px 30px;color:#516b80;font-size:12px}
+    @media(max-width:720px){main{padding:16px}.controls{gap:16px;padding:16px}.control,.control:first-child{min-width:0;width:100%}.comparison{grid-template-columns:1fr;gap:20px}header{padding:26px 20px}header p{font-size:14px}figcaption{padding:12px}footer{padding-inline:16px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Damian Cebula Serwis · przegląd projektu</p>
+    <h1>Porównanie wersji 2.1 i 3.0</h1>
+    <p>Wybierz podstronę i szerokość ekranu. Zrzuty przedstawiają działającą witrynę w lokalnym WordPressie: wcześniejszą wersję po lewej i nową kompozycję granatowo-błękitną po prawej.</p>
+    <a href="after/home-reference-967.png" target="_blank" rel="noopener">Otwórz kadr home 967 × 1024 px do porównania z planszą w rozmowie <span aria-hidden="true">↗</span><span class="sr-only"> (nowa karta)</span></a>
+  </header>
+  <main>
+    <div class="controls" aria-label="Ustawienia porównania">
+      <div class="control"><label for="page">Podstrona</label><select id="page">
+        <option value="home">Strona główna</option>
+        <option value="serwis-klimatyzacji-stalowa-wola">Serwis klimatyzacji</option>
+        <option value="serwis-agd-stalowa-wola">Serwis AGD</option>
+        <option value="realizacje">Realizacje</option>
+        <option value="o-firmie">O firmie</option>
+        <option value="kontakt">Kontakt</option>
+        <option value="polityka-prywatnosci">Polityka prywatności</option>
+        <option value="cennik">Cennik — nowa podstrona</option>
+        <option value="porady">Porady — nowa podstrona</option>
+      </select></div>
+      <div class="control"><label for="width">Szerokość ekranu</label><select id="width"><option value="1440">1440 px · komputer</option><option value="768">768 px · tablet</option><option value="390">390 px · telefon</option></select></div>
+      <fieldset><legend>Widok</legend><label><input type="radio" name="mode" value="both" checked> Obok siebie</label><label><input type="radio" name="mode" value="after"> Tylko 3.0</label><label><input type="radio" name="mode" value="before"> Tylko 2.1</label></fieldset>
+    </div>
+    <p id="notice" class="notice" role="status"></p>
+    <div class="comparison" id="comparison">
+      <figure class="before" id="before"><figcaption><strong>Wersja 2.1</strong><a id="before-link" href="../refinement/after/home-1440.jpg" target="_blank" rel="noopener">Pełny zrzut <span class="sr-only">wersji 2.1 (nowa karta)</span></a></figcaption><img id="before-image" src="../refinement/after/home-1440.jpg" alt="Strona główna w wersji 2.1, ekran 1440 px"></figure>
+      <figure class="after" id="after"><figcaption><strong>Wersja 3.0</strong><a id="after-link" href="after/home-1440.jpg" target="_blank" rel="noopener">Pełny zrzut <span class="sr-only">wersji 3.0 (nowa karta)</span></a></figcaption><img id="after-image" src="after/home-1440.jpg" alt="Strona główna w wersji 3.0, ekran 1440 px"></figure>
+    </div>
+    <section class="context" aria-labelledby="context-title">
+      <h2 id="context-title">Jak czytać porównanie</h2>
+      <p>To porównanie dwóch wersji witryny. Nowa plansza referencyjna została wklejona w rozmowie i nie ma osobnego pliku źródłowego w repozytorium. Nie jest tutaj zastąpiona zrekonstruowanym obrazem. Kadr 967 px pozwala ocenić proporcje wobec głównej kompozycji po lewej stronie planszy; nie jest wynikiem pixel-diff.</p>
+      <p>Cennik i Porady powstały w wersji 3.0, dlatego mają wyłącznie aktualne zrzuty. Mapa na lokalnych screenshotach jest podpisaną atrapą testową. Widoczność i treść opinii zależą od rzeczywistej konfiguracji Trustindex. Zrzuty nie są potwierdzeniem wdrożenia produkcyjnego.</p>
+      <p><a href="../../REFERENCE_3_0.md">Zakres zmian, SEO i zasady edycji</a> · <a href="../../../assets/SOURCES.md">Źródła fotografii i ilustracji</a></p>
+    </section>
+  </main>
+  <footer>Pliki lokalne, bez zewnętrznych bibliotek, fontów ani trackerów. Wersje 2.0–2.1 pozostają dokumentacją historyczną.</footer>
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+  <script>
+    (() => {
+      'use strict';
+      const page = document.getElementById('page');
+      const width = document.getElementById('width');
+      const comparison = document.getElementById('comparison');
+      const notice = document.getElementById('notice');
+      const modes = [...document.querySelectorAll('[name="mode"]')];
+      const added = new Set(['cennik', 'porady']);
+      let preferredMode = 'both';
+
+      function render() {
+        const isNew = added.has(page.value);
+        const mode = isNew ? 'after' : preferredMode;
+        const label = page.selectedOptions[0].textContent.replace(' — nowa podstrona', '');
+        for (const input of modes) { input.disabled = isNew && input.value !== 'after'; input.checked = input.value === mode; }
+        for (const version of ['before', 'after']) {
+          const figure = document.getElementById(version);
+          const available = version === 'after' || !isNew;
+          figure.hidden = !available || (mode !== 'both' && mode !== version);
+          if (!available) continue;
+          const source = (version === 'before' ? '../refinement/after/' : 'after/') + page.value + '-' + width.value + '.jpg';
+          const image = document.getElementById(version + '-image');
+          image.src = source;
+          image.alt = label + ' w wersji ' + (version === 'before' ? '2.1' : '3.0') + ', ekran ' + width.value + ' px';
+          document.getElementById(version + '-link').href = source;
+        }
+        comparison.classList.toggle('single', mode !== 'both');
+        notice.textContent = isNew ? label + ' to nowa podstrona wersji 3.0 — brak wcześniejszego zrzutu 2.1.' : '';
+        const state = new URLSearchParams({page:page.value,width:width.value,mode:preferredMode});
+        try { history.replaceState(null, '', '#' + state.toString()); } catch {}
+      }
+
+      const initial = new URLSearchParams(location.hash.slice(1));
+      if ([...page.options].some(option => option.value === initial.get('page'))) page.value = initial.get('page');
+      if ([...width.options].some(option => option.value === initial.get('width'))) width.value = initial.get('width');
+      if (modes.some(input => input.value === initial.get('mode'))) preferredMode = initial.get('mode');
+      page.addEventListener('change', render);
+      width.addEventListener('change', render);
+      for (const input of modes) input.addEventListener('change', () => { if (input.checked) preferredMode = input.value; render(); });
+      render();
+    })();
+  </script>
+</body>
+</html>

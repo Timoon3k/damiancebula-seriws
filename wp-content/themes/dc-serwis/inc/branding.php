@@ -37,12 +37,17 @@ function dc_brand_source($selected_id) {
     return $source;
 }
 
+/** The vector mark and live type stay crisp on retina and small screens. */
+function dc_reference_brand() {
+    echo '<img class="brand-logo brand-reference-symbol" src="'.esc_url(get_theme_file_uri('assets/branding/dc-cog-snowflake.svg')).'" width="128" height="128" alt="" decoding="async">';
+    echo '<span class="brand-reference-wordmark"><strong>Damian Cebula</strong><small>SERWIS</small></span>';
+}
+
 function dc_header_brand() {
-    $palette = get_theme_mod('dc_logo_palette', 'copper') === 'original' ? 'original' : 'copper';
-    if ($palette === 'copper') {
-        // A colour treatment of the original alpha channel keeps the source sharp.
-        // sRGB plus the CSS accent gives precisely the same ink as the hero text.
-        echo '<svg class="brand-ink-filter" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="dc-brand-copper" color-interpolation-filters="sRGB"><feFlood class="brand-ink-color" flood-color="#9c4f2c"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs></svg>';
+    // Changing the visual default never rewrites an uploaded logo or its crop.
+    if (get_theme_mod('dc_brand_style', 'blue-reference') !== 'custom') {
+        dc_reference_brand();
+        return;
     }
     $id = (int) get_theme_mod('custom_logo');
     if ($id && wp_attachment_is_image($id)) {
@@ -64,34 +69,31 @@ function dc_header_brand() {
             // chosen from a nominal 310px sizes hint would become visibly enlarged.
             $image->remove_attribute('srcset');
             $image->remove_attribute('sizes');
-            if ($palette === 'copper') {
-                $style = trim((string) $image->get_attribute('style'), "; \t\n\r");
-                $image->set_attribute('style', ($style !== '' ? $style.';' : '').'filter:url(#dc-brand-copper)');
-            }
         }
         echo $image->get_updated_html();
         if ($lockup) { echo '</span>'; return; }
     } else {
-        echo '<img class="brand-logo brand-lockup" src="'.esc_url(get_theme_file_uri('assets/branding/dc-lockup-porcelain.svg')).'" width="1180" height="220" alt="" decoding="async"'.($palette === 'copper' ? ' style="filter:url(#dc-brand-copper)"' : '').'>';
+        dc_reference_brand();
         return;
     }
-    echo '<span class="brand-wordmark" data-logo-palette="'.esc_attr($palette).'"><strong>Damian Cebula</strong><small>Serwis Klimatyzacji i AGD</small></span>';
+    echo '<span class="brand-wordmark"><strong>Damian Cebula</strong><small>Serwis Klimatyzacji i AGD</small></span>';
 }
 add_action('customize_register', function ($customizer) {
-    $customizer->add_setting('dc_logo_palette', ['default'=>'copper','sanitize_callback'=>function ($value) { return $value === 'original' ? 'original' : 'copper'; }]);
-    $customizer->add_control('dc_logo_palette', ['section'=>'title_tagline','label'=>'Kolor logo w nagłówku','description'=>'Miedziany wariant stosuje dokładnie kolor wyróżnienia „Przywracamy komfort”, także do własnego logo z przezroczystym tłem. Oryginalny plik i jego rozdzielczość pozostają zachowane.','type'=>'select','choices'=>['copper'=>'Miedź motywu','original'=>'Oryginalne kolory logo']]);
+    $customizer->add_setting('dc_brand_style', ['default'=>'blue-reference','sanitize_callback'=>function ($value) { return $value === 'custom' ? 'custom' : 'blue-reference'; }]);
+    $customizer->add_control('dc_brand_style', ['section'=>'title_tagline','label'=>'Logo w nagłówku','description'=>'Niebieski znak z płatkiem śniegu i kołem zębatym odpowiada nowej makiecie. Wariant własny korzysta z logo wybranego w bibliotece. Zapisane pliki i wcześniejsze ustawienia pozostają zachowane.','type'=>'select','choices'=>['blue-reference'=>'Niebieskie logo Damian Cebula Serwis','custom'=>'Własne logo z biblioteki']]);
     $customizer->add_setting('dc_logo_tone', ['default'=>'auto','sanitize_callback'=>function ($value) { return in_array($value,['auto','light','dark'],true) ? $value : 'auto'; }]);
-    $customizer->add_control('dc_logo_tone', ['section'=>'title_tagline','label'=>'Czytelność oryginalnych kolorów logo','description'=>'Dotyczy wariantu „Oryginalne kolory logo”. Wgraj oryginalne logo w dużej rozdzielczości i pomiń przycinanie. Motyw korzysta z oryginału zamiast miniatury, również dla wcześniejszych przycięć, gdy oryginał jest w bibliotece. Samo powiększenie małego pliku nie przywróci szczegółów.','type'=>'select','choices'=>['auto'=>'Automatycznie','light'=>'Logo ma jasne napisy — przyciemnij','dark'=>'Logo ma ciemne napisy']]);
-    $customizer->add_setting('dc_favicon_style', ['default'=>'copper','sanitize_callback'=>function ($value) { return $value === 'wordpress' ? 'wordpress' : 'copper'; }]);
-    $customizer->add_control('dc_favicon_style', ['section'=>'title_tagline','label'=>'Ikona witryny','description'=>'Domyślna miedziana ikona odpowiada nowemu logo. Wariant WordPress używa ikony wybranej poniżej, bez zmiany zapisanych ustawień.','type'=>'select','choices'=>['copper'=>'Miedziana ikona DC','wordpress'=>'Własna ikona WordPress']]);
+    $customizer->add_control('dc_logo_tone', ['section'=>'title_tagline','label'=>'Czytelność własnego logo','description'=>'Dotyczy własnego logo. Ciemne napisy można rozjaśnić na granatowym nagłówku. Wgraj oryginał w dużej rozdzielczości i pomiń przycinanie. Motyw używa oryginalnego pliku, również dla wcześniejszych przycięć, gdy oryginał jest w bibliotece.','type'=>'select','choices'=>['auto'=>'Automatycznie','light'=>'Jasne logo — zachowaj kolory','dark'=>'Ciemne logo — rozjaśnij']]);
+    $customizer->add_setting('dc_favicon_style', ['default'=>'blue-reference','sanitize_callback'=>function ($value) { return $value === 'wordpress' ? 'wordpress' : 'blue-reference'; }]);
+    $customizer->add_control('dc_favicon_style', ['section'=>'title_tagline','label'=>'Ikona witryny','description'=>'Domyślna ikona łączy niebieski płatek śniegu z kołem zębatym. Wariant WordPress używa własnej ikony wybranej poniżej.','type'=>'select','choices'=>['blue-reference'=>'Niebieski znak serwisu','wordpress'=>'Własna ikona WordPress']]);
 });
 
 // Let WordPress emit its native, single set of browser/mobile icon tags. The
 // filter also works with an existing site_icon and never rewrites that option.
 add_filter('get_site_icon_url', function ($url, $size, $blog_id) {
-    if (get_theme_mod('dc_favicon_style', 'copper') === 'wordpress' || ($blog_id && (int) $blog_id !== get_current_blog_id())) { return $url; }
+    if (get_theme_mod('dc_favicon_style', 'blue-reference') === 'wordpress' || ($blog_id && (int) $blog_id !== get_current_blog_id())) { return $url; }
     $width = $size <= 32 ? 32 : ($size <= 180 ? 180 : ($size <= 192 ? 192 : 512));
-    $file = 'assets/branding/dc-favicon-copper-'.$width.'.png';
+    $file = 'assets/branding/dc-favicon-blue-'.$width.'.png';
+    if (!is_readable(get_theme_file_path($file))) { $file = 'assets/branding/dc-favicon-blue.svg'; }
     if (!is_readable(get_theme_file_path($file))) { return $url; }
     return add_query_arg('ver', wp_get_theme()->get('Version'), get_theme_file_uri($file));
 }, 10, 3);

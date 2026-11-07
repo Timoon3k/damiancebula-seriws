@@ -1,0 +1,116 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/serwis-klimatyzacji-stalowa-wola/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/serwis-agd-stalowa-wola/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/realizacje/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/o-firmie/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/cennik/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/porady/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/kontakt/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/polityka-prywatnosci/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/serwis-klimatyzacji-stalowa-wola/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/serwis-agd-stalowa-wola/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/realizacje/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/o-firmie/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/cennik/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/porady/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/kontakt/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/polityka-prywatnosci/",
+    "state": "page",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/polityka-prywatnosci/",
+    "state": "mobile-modal-open",
+    "violations": []
+  }
+]

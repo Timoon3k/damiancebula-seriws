@@ -9,3 +9,5 @@ artifacts/test-results/
 artifacts/production-seo/
 artifacts/performance-architectural/
 artifacts/performance-refinement*/
+
+artifacts/performance-reference*/

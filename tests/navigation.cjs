@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const mockMap = require('./mock-map.cjs');
 const root = (process.env.BASE_URL || 'http://127.0.0.1:8081').replace(/\/$/, '');
-const routes = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/', '/realizacje/', '/o-firmie/', '/kontakt/'];
+const routes = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/', '/o-firmie/', '/cennik/', '/porady/', '/kontakt/'];
 
 (async () => {
   const browser = await chromium.launch({executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium', headless: true, args: ['--no-sandbox']});
@@ -38,6 +38,7 @@ const routes = ['/serwis-klimatyzacji-stalowa-wola/', '/serwis-agd-stalowa-wola/
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(root, {waitUntil: 'networkidle'});
     await page.waitForSelector('.site-header-shell');
+    assert.deepEqual(await page.locator('#primary-nav a').evaluateAll(links => links.map(link => new URL(link.href).pathname)), ['/', ...routes], 'Every reference menu position has its real WordPress URL');
     await page.evaluate(() => { window.dcNavigationTest = true; });
     const mainTop = await page.locator('main').evaluate(element => element.getBoundingClientRect().top + scrollY);
     await page.evaluate(() => scrollTo({top: 650, behavior: 'instant'}));

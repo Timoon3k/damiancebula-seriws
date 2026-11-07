@@ -11,53 +11,63 @@
       "palette": [
         {
           "slug": "ink",
-          "color": "#192E33",
-          "name": "Petrol"
+          "color": "#07182B",
+          "name": "Granat serwisu"
         },
         {
           "slug": "surface",
-          "color": "#FFFEFB",
-          "name": "Porcelana"
+          "color": "#F2F7FC",
+          "name": "Jasna powierzchnia"
         },
         {
           "slug": "orange",
-          "color": "#9C4F2C",
-          "name": "Miedź — tekst"
+          "color": "#0878BB",
+          "name": "Błękit — wyróżnienie"
         },
         {
           "slug": "text",
-          "color": "#192E33",
+          "color": "#10243A",
           "name": "Tekst"
         },
         {
           "slug": "paper",
-          "color": "#F7F6F2",
-          "name": "Ciepła biel"
+          "color": "#FFFFFF",
+          "name": "Białe tło"
         },
         {
           "slug": "sage",
-          "color": "#DDE5E1",
-          "name": "Szałwia"
+          "color": "#EAF1F7",
+          "name": "Chłodny szary"
         },
         {
           "slug": "copper",
-          "color": "#CC7446",
-          "name": "Miedź"
+          "color": "#08A9EF",
+          "name": "Cyjan — detal"
         },
         {
           "slug": "blue",
-          "color": "#255F8A",
+          "color": "#0878BB",
           "name": "Błękit — akcent"
         },
         {
           "slug": "blue-hover",
-          "color": "#17476C",
+          "color": "#0666A0",
           "name": "Granat — interakcja"
         },
         {
           "slug": "blue-wash",
-          "color": "#E5EDF4",
+          "color": "#EAF4FC",
           "name": "Jasny błękit"
+        },
+        {
+          "slug": "navy",
+          "color": "#07182B",
+          "name": "Granat"
+        },
+        {
+          "slug": "cyan",
+          "color": "#08A9EF",
+          "name": "Cyjan"
         }
       ]
     },
@@ -95,11 +105,37 @@
   },
   "styles": {
     "color": {
-      "background": "#F7F6F2",
-      "text": "#192E33"
+      "background": "#FFFFFF",
+      "text": "#10243A"
     },
     "typography": {
-      "fontFamily": "var:preset|font-family|sans"
+      "fontFamily": "var:preset|font-family|sans",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontWeight": "800",
+          "lineHeight": "1.15"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var:preset|color|blue-hover"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|blue-hover",
+          "text": "var:preset|color|paper"
+        },
+        "border": {
+          "radius": "7px"
+        },
+        "typography": {
+          "fontWeight": "800"
+        }
+      }
     }
   }
 }

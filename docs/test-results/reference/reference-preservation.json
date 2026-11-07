@@ -1,0 +1,76 @@
+{
+  "version": "3.0.0",
+  "checkedAt": "2026-11-07T11:05:18.758Z",
+  "sourceCommit": "c007e40",
+  "baselineCapturedAt": "2026-11-06T19:52:12.414Z",
+  "baselineSha256": "3ba19259fb0a0398d1413cd5552c95b6eeac868404d537c7fac7876ff12c37a2",
+  "pages": [
+    {
+      "route": "/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "retained local SEO and project context; new composition authorised"
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    },
+    {
+      "route": "/realizacje/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    },
+    {
+      "route": "/o-firmie/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    },
+    {
+      "route": "/kontakt/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "metadataAndSchema": "unchanged",
+      "gallery": "unchanged",
+      "existingMainContent": "unchanged"
+    }
+  ],
+  "newPages": [
+    {
+      "route": "/cennik/",
+      "h1": 1,
+      "uniqueMetadata": true,
+      "substantiveContent": true,
+      "relatedServiceLinks": true
+    },
+    {
+      "route": "/porady/",
+      "h1": 1,
+      "uniqueMetadata": true,
+      "substantiveContent": true,
+      "relatedServiceLinks": true
+    }
+  ],
+  "protectedImages": 29,
+  "authorisedChanges": [
+    "homepage hero/service/process composition",
+    "global navigation and footer organisation",
+    "cyan/snowflake identity"
+  ],
+  "productionSnapshotVerified": false,
+  "productionReason": "The available fixture is an isolated local WordPress snapshot; production host access remains blocked by the environment proxy.",
+  "databaseReset": false
+}

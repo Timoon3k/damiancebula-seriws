@@ -1,6 +1,20 @@
 # Instrukcje dla Codexa — damiancebula-seriws
 
-## Bieżące doprecyzowanie — wersja 2.1, 2026-11-07
+## Bieżący priorytet — niebieska makieta 3.0, 2026-11-07
+
+Najnowsza prośba właściciela o przebudowę według nowej makiety ma pierwszeństwo przed kierunkami 2.0–2.1 i pierwotnym czarno-pomarańczowym projektem. Wzorzec to główna strona po **lewej stronie** planszy 1536×1024 z rozmowy (obszar szerokości około 967 px). Prawa kolumna wariantów i notatek SEO nie jest treścią witryny. Obowiązują granat `#07182B`, błękit `#08A9EF`, biel, ciemniejszy błękit przycisków `#0878BB`, logo koła zębatego ze śnieżynką i proporcje referencji. Statyczne ukośne kadry zdjęć są teraz wymagane; nadal nie maskuj i nie animuj całego `main` ani H1.
+
+Pozostaw mapę Google ładowaną bezpośrednio w Kontakcie, konfigurowalne opinie Trustindex, formularz i dotychczasowy target SEO: serwis klimatyzacji, serwis AGD, montaż i naprawa klimatyzacji oraz naprawa pralek i zmywarek w Stalowej Woli. Właściciel dopuścił zmianę tekstów przy zachowaniu tych fraz. Nowe H1, intro i prezentacja usług na home są zamierzone. Zachowaj istniejące adresy, metadane, schema, ustawienia Rank Math, treść polityki, lokalne akapity SEO i wszystkie fotografie realizacji (pliki, kolejność, ALT i podpisy). Nie regeneruj historycznych fixture, aby dopasować test do nowej implementacji.
+
+Używaj potwierdzonego telefonu **794 225 139**, nie numeru 603 z makiety. Nie przepisuj z grafiki niepotwierdzonych godzin, gwarancji, doświadczenia, zakresu marek ani dodatkowych usług. Cennik i Porady to dwie nowe, merytoryczne strony; nie wpisuj wymyślonych cen. Nawigacja główna odpowiada siedmiu pozycjom makiety, a Realizacje pozostają dostępne ze strony głównej i stopki.
+
+Nowe obrazy `editorial-reference-*` są ilustracjami wygenerowanymi według kompozycji makiety. Model przy samochodzie nie jest przedstawiany jako Damian Cebula ani pracownik. Nie używaj ilustracji w Realizacjach. Dekoracyjny obrys miasta jest autorskim rysunkiem, nie fotografią Stalowej Woli. Pochodzenie: `assets/SOURCES.md`. Dawny plik `design/reference/makieta-uklad-strony-1-1.jpg` przedstawia poprzednią makietę. Nowy wzorzec jest dostępny w rozmowie, bez osobnego pliku źródłowego w repo; porównaj wizualnie widok 967 px, lecz nie deklaruj zweryfikowanej zgodności pixel-perfect ani wykonanego pixel-diff.
+
+Edycja nowej górnej części home odbywa się przez **Dostosuj → DC — Strona główna: niebieska makieta**. Zapisane wcześniejsze grupy `home-hero`, `services`, `process` pozostają w bazie, a szablon zastępuje ich prezentację; lokalny tekst, SEO, realizacje, dodatkowe bloki i shortcode pozostają edytowalne w Gutenbergu. Moduł `inc/reference-pages.php` dodaje tylko brakujące Cennik i Porady po aktywacji lub uprawnionej wizycie w panelu. Nie nadpisuj istniejących ani świadomie przemianowanych/usuniętych stron.
+
+Pracuj na osobnej gałęzi i weryfikuj wszystkie dziewięć stron na komputerze, tablecie i telefonie. Push do `main` jest wcześniej autoryzowany po testach; nie oznacza zgody na bezpośrednie wdrożenie na Hostinger, zmianę produkcyjnej bazy ani DNS. Bieżący zakres i edycja: `docs/REFERENCE_3_0.md` oraz `wp-content/themes/dc-serwis/UPDATE_3_0.md`. Raporty 2.0–2.1 pozostają historyczne.
+
+## Historyczne doprecyzowanie — wersja 2.1, 2026-11-07
 
 Najnowsze poprawki właściciela rozwijają Architectural Service: siedem odrębnych scen ilustracyjnych zamiast powtórzeń, stopka bez adresu i e-maila, dokładnie miedziane logo `#9C4F2C` i nowa ikona DC. Zmiany identyfikacji zastępują historyczne wymaganie zachowania wyglądu favicon z 2.0. Zachowaj oryginalne pliki i ustawienia WordPress; pozwól wybrać własną ikonę i oryginalną paletę logo. Dane adresowe, e-mail, metadane i treść prawna pozostają w Kontakcie/schema/polityce. Jedyną zamierzoną zmianą istniejących linków jest usunięcie e-maila ze stopki.
 
@@ -10,7 +24,7 @@ Wymagane autentyczne zdjęcie Stalowej Woli pozostaje do pozyskania, dopóki nie
 
 Pracuj na osobnej gałęzi. Właściciel dopuścił push do `main` po weryfikacji; nie jest to zgoda na bezpośrednie wdrożenie na Hostinger ani zmianę produkcyjnej bazy czy DNS. Bieżące instrukcje: `docs/UPDATE_2_1.md`; faktyczne wyniki: `docs/REFINEMENT_2_1_REPORT.md`. Raporty 2.0 pozostają historyczne. Nie dopasowuj baseline przez regenerację danych po zmianie.
 
-## Zachowany kierunek Architectural Service — baza 2.0
+## Historyczny kierunek Architectural Service — baza 2.0
 
 Najnowsza prośba właściciela „PREMIUM WEBSITE REDESIGN — Architectural Service” zastępuje wcześniejszy wymóg ciemnej makiety 1:1. Obowiązuje jasna porcelana, petrol, szałwia i miedź, asymetryczna kompozycja, duża typografia i osobne układy wszystkich podstron. Szczegóły: `docs/ARCHITECTURAL_DESIGN.md` i `docs/UPDATE_2_0.md`. Nie przywracaj czarno-pomarańczowych kart, migawki, `clipPath`, pełnoekranowej przesłony ani animowania całego `main`.
 

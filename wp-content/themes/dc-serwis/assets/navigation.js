@@ -56,7 +56,7 @@
     return;
   }
 
-  const mobile = matchMedia('(max-width:1050px)');
+  const mobile = matchMedia('(max-width:800px)');
   const reduced = matchMedia('(prefers-reduced-motion:reduce)');
   const home = document.createComment('Primary navigation desktop position');
   nav.before(home);

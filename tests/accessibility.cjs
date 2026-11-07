@@ -1,10 +1,10 @@
-const root = (process.env.BASE_URL || 'http://127.0.0.1:8080').replace(/\/$/, '');
+const root = (process.env.BASE_URL || 'http://127.0.0.1:8081').replace(/\/$/, '');
 const mockMap = require('./mock-map.cjs');
 const {chromium} = require('playwright');
 const {default:AxeBuilder} = require('@axe-core/playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
-const routes = ['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/kontakt/','/polityka-prywatnosci/'];
+const routes = ['/','/serwis-klimatyzacji-stalowa-wola/','/serwis-agd-stalowa-wola/','/realizacje/','/o-firmie/','/cennik/','/porady/','/kontakt/','/polityka-prywatnosci/'];
 
 (async () => {
   const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',args:['--no-sandbox']});

@@ -10,7 +10,7 @@ function dc_setup() {
     add_theme_support('editor-styles');
     add_editor_style('assets/site.css');
     add_editor_style('assets/pages.css');
-    register_nav_menus(['primary' => 'Nawigacja główna', 'footer' => 'Nawigacja stopki']);
+    register_nav_menus(['primary' => 'Nawigacja główna — układ wcześniejszy', 'reference' => 'Nawigacja główna — niebieska makieta', 'footer' => 'Nawigacja stopki']);
     register_block_pattern_category('dc-serwis', ['label' => 'DC Serwis']);
 }
 add_action('after_setup_theme', 'dc_setup');
@@ -51,6 +51,11 @@ function dc_icon($name = 'arrow') {
         'check' => '<circle cx="12" cy="12" r="9"/><path d="m7 12 3 3 7-7"/>',
         'calendar' => '<rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M7 2v6m10-6v6M7 14h2m4 0h2m-8 4h2m4 0h2"/>',
         'pin' => '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+        'clock' => '<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',
+        'chevron' => '<path d="m9 5 7 7-7 7"/>',
+        'ac' => '<rect x="2" y="3" width="20" height="12" rx="2"/><path d="M4 11h16M5 15v2m14-2v2M7 19c-3 2 3 3 0 5m5-5c-3 2 3 3 0 5m5-5c-3 2 3 3 0 5M18 6h1"/>',
+        'shield' => '<path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z"/><path d="m7 11 4 4 6-7"/>',
+        'coins' => '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v5c0 4 16 4 16 0V5M4 10v5c0 4 16 4 16 0v-5M4 15v4c0 4 16 4 16 0v-4"/>',
     ];
     return '<svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($paths[$name] ?? $paths['arrow']) . '</svg>';
 }
@@ -104,3 +109,5 @@ require_once get_theme_file_path('inc/site-sync.php');
 
 require_once get_theme_file_path('inc/architectural.php');
 require_once get_theme_file_path('inc/local-city.php');
+require_once get_theme_file_path('inc/reference.php');
+require_once get_theme_file_path('inc/reference-pages.php');

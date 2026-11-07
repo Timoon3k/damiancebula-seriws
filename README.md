@@ -1,10 +1,13 @@
 # Damian Cebula — WordPress / DC Serwis
 
-Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w Stalowej Woli. Wersja **2.1.0 — Architectural Service / editorial refinement** łączy porcelanę i petrol z niebieskim interfejsem oraz miedzianą identyfikacją: siedem odrębnych scen ilustracyjnych zamiast powtarzających się fotografii, uporządkowana stopka, logo i nowa ikona DC. Autentyczne realizacje, istniejące treści SEO i adresy stron pozostają chronione. Rzeczywiste zdjęcie Stalowej Woli jest nadal do pozyskania; przygotowane pole konfiguracji nie zastępuje brakującego materiału.
+Autorski, wielostronicowy motyw PHP + Gutenberg dla serwisu klimatyzacji i AGD w Stalowej Woli. Wersja **3.0.0 — niebieska makieta** odtwarza główny projekt po lewej stronie nowej planszy właściciela: granat, błękit i biel, znak ze śnieżynką, ukośne hero, dwa panele usług oraz sekcję korzyści. Mapa Google, Trustindex, kontakt i dotychczasowy target lokalnego SEO pozostają zachowane. Prawdziwe realizacje nadal przedstawiają prace Damiana Cebuli; nowe sceny hero i modela są oznaczonymi ilustracjami.
 
-- [Aktualizacja 2.1, ustawienia identyfikacji i status zdjęcia miasta](docs/UPDATE_2_1.md)
-- [Bieżące wyniki i ograniczenia 2.1](docs/REFINEMENT_2_1_REPORT.md)
-- [Kierunek Architectural Service i ochrona treści](docs/ARCHITECTURAL_DESIGN.md)
+- [Bieżący zakres 3.0, porównanie, SEO i edycja](docs/REFERENCE_3_0.md)
+- [Instalacja i aktualizacja motywu 3.0](wp-content/themes/dc-serwis/UPDATE_3_0.md)
+- [Interaktywne porównanie wyglądu 2.1 / 3.0](docs/visual/reference/index.html)
+- [Historyczna aktualizacja 2.1](docs/UPDATE_2_1.md)
+- [Historyczne wyniki i ograniczenia 2.1](docs/REFINEMENT_2_1_REPORT.md)
+- [Historyczny kierunek Architectural Service](docs/ARCHITECTURAL_DESIGN.md)
 - [Bazowa aktualizacja 2.0 — instalacja na stagingu](docs/UPDATE_2_0.md)
 - [Motyw i edycja w WordPress](wp-content/themes/dc-serwis/README.md)
 - [Historyczny raport testów 2.0](docs/TEST_REPORT.md)
@@ -30,13 +33,19 @@ npm ci
 npm run test:browser
 npm run test:a11y
 npm run test:motion
-npm run test:preservation
+node tests/reference-preservation.cjs
 python3 scripts/package-theme.py
 ```
 
-Dla już uruchomionego, izolowanego WordPressa wskaż jego adres przez `BASE_URL`, np. `http://127.0.0.1:8081`. Polecenia testów i wymagane fixture opisuje raport testów. Archiwum powstaje jako `artifacts/dc-serwis.zip`, zawierające wyłącznie katalog `dc-serwis/` na najwyższym poziomie. Zrzuty wszystkich siedmiu stron w szerokościach 1440/768/390 zapisuje test przeglądarkowy w `artifacts/screenshots/`; pełne porównania przed/po wszystkich stron znajdują się w `docs/visual/architectural/`.
+Dla już uruchomionego, izolowanego WordPressa wskaż jego adres przez `BASE_URL`, np. `http://127.0.0.1:8081`. Polecenia testów i wymagane fixture opisuje raport testów. Archiwum powstaje jako `artifacts/dc-serwis.zip`, zawierające wyłącznie katalog `dc-serwis/` na najwyższym poziomie. `scripts/capture-reference.cjs` zapisuje 27 zrzutów dziewięciu stron przy 1440/768/390 px oraz widok home 967 px w `docs/visual/reference/after/`. Porównanie z poprzednią wersją korzysta z istniejących zrzutów 2.1; nowa plansza z rozmowy nie ma osobnego pliku źródłowego do pixel-diff.
 
-## Zakres wersji 2.1
+## Zakres bieżącej wersji 3.0
+
+Na desktopie układ podąża za główną stroną z referencji, a na telefonie menu wysuwa się z prawej jako modal. Górną część home edytuje się w **Dostosuj → DC — Strona główna: niebieska makieta**. Dotychczasowe lokalne akapity SEO, galeria i shortcode opinii pozostają w Gutenbergu. Nowe strony **Cennik** i **Porady** mają unikalne treści i SEO, a ich synchronizacja dodaje wyłącznie brakujące strony. Istniejące treści i ustawienia nie są resetowane.
+
+Numer telefonu to nadal **794 225 139**; formularz korzysta z **kontakt@damiancebula-serwis.pl**, a stopka zachowuje **majewskitomasz.pl**. Dane i obietnice z makiety są dostosowane do potwierdzonej oferty firmy. Dekoracyjny obrys miasta nie jest przedstawiany jako zdjęcie Stalowej Woli. Bieżący opis nie stanowi potwierdzenia wdrożenia na Hostinger ani wykonania testów produkcji.
+
+## Historyczny zakres wersji 2.1
 
 Usunięto powtórzenia ilustracji pomiędzy hero a kolejnymi modułami usług. Fotografie realizacji pozostają nienaruszone. Stopka nie pokazuje adresu i e-maila; nadal udostępnia telefon, Kontakt, pełną nawigację, politykę i podpis twórcy. Dane firmy pozostały w Kontakcie, polityce oraz schema, a formularz nadal używa właściwego odbiorcy.
 

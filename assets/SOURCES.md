@@ -87,3 +87,29 @@ Każda rodzina ma proporcje 3:2 i warianty 480×320, 960×640 oraz 1536×1024, d
 Nowa ikona `assets/branding/dc-favicon-copper-{32,180,192,512}.png` jest wariantem wygenerowanym na podstawie dotychczasowego `dc-icon.png`, w miedzianej kolorystyce i z uproszczonym motywem DC do małych rozmiarów. Źródłowy PNG: `/workspace/generated_images/exec-221ef19b-2ef2-4d8c-bb63-29d5b0c575b1.png`. Dawny `dc-icon.png` pozostaje w motywie, także pod dotychczasowym adresem wykorzystywanym przez schema. W nagłówku geometryczne źródło logo pozostaje oryginalne; miedziany filtr nadaje mu dokładny akcent `#9C4F2C`, zgodny z wyróżnieniem tekstu hero. Administrator może wrócić do oryginalnej palety i własnej ikony WordPress bez zmiany plików źródłowych.
 
 **Autentyczne zdjęcie Stalowej Woli: nadal do pozyskania.** Próba pobrania materiału z Wikimedia Commons została zablokowana przez proxy środowiska (CONNECT 403). Nie przypisano wygenerowanej scenie nazwy miasta ani nie wpisano niezweryfikowanego autora lub licencji. Przygotowano wybór fotografii, podpisu i linku źródłowego w Dostosuj; bez własnego zdjęcia lub zweryfikowanego materiału w paczce nie renderuje się puste miejsce. Zapisany projekt konfiguracji sieci dla `commons.wikimedia.org` i `upload.wikimedia.org` wymaga publikacji w ustawieniach środowiska przed kolejną próbą. Dodanie kontrolowanego miejsca nie oznacza spełnienia prośby o rzeczywistą fotografię miasta.
+
+## 9. Niebieska makieta 3.0 — ilustracje i wektory, 2026-11-07
+
+Najnowsza plansza właściciela zastępuje kierunek Architectural Service z sekcji 7–8. Źródłem kompozycji jest główna witryna po lewej stronie obrazu 1536×1024 przekazanego w rozmowie; prawa kolumna alternatywnych układów nie jest treścią strony. Nowy obraz referencyjny nie ma osobnego pliku w repozytorium. Istniejący `design/reference/makieta-uklad-strony-1-1.jpg` przedstawia wcześniejszą, czarno-pomarańczową makietę.
+
+Przygotowano przez **image generation** dwie odrębne sceny inspirowane fotograficznymi fragmentami nowej referencji. Są to ilustracje, nie fotografie realizacji firmy, jej właściciela lub pracowników. Nie pochodzą z biblioteki stockowej ani cudzego motywu. Model w granatowej odzieży jest postacią ilustracyjną; samochód i ubranie w źródłowym obrazie są niebrandowane. Znak oraz napis na samochodzie dodaje osobny element HTML witryny, a fotografia ma widoczny podpis ilustracyjny.
+
+| Rodzina w motywie `assets/images/` | Scena | WebP 480 / 960 / 1536 px |
+|---|---|---|
+| `editorial-reference-hero-*` | Biały klimatyzator split i srebrna pralka w chłodnym granatowym wnętrzu | 14 684 / 39 384 / 83 312 B |
+| `editorial-reference-technician-*` | Ilustracyjny model obok granatowego samochodu serwisowego | 18 748 / 45 424 / 93 530 B |
+
+Źródłowe wygenerowane PNG pozostają w przestrzeni roboczej, poza repozytorium i paczką motywu:
+
+- hero: `/workspace/generated_images/exec-658abc79-5620-431a-9769-f977ab945fa6.png`;
+- model i samochód: `/workspace/generated_images/exec-132eaa51-9dba-485d-b3b7-cf6efedbf125.png`.
+
+Warianty mają rozmiary 480×320, 960×640 i 1536×1024, bez EXIF/GPS. Są dostarczane lokalnie przez `srcset` i `sizes`; hero ma priorytet ładowania, druga scena ładuje się leniwie. ALT określają ilustracyjny charakter obrazów. Żaden z tych plików nie jest używany w Realizacjach. Oryginalne fotografie właściciela i ich warianty pozostają zachowane.
+
+Nowe autorskie wektory w motywie `assets/branding/`:
+
+- `dc-cog-snowflake.svg` — geometryczny znak koła zębatego ze śnieżynką, błękit/biel na granacie; nazwa firmy jest tekstem HTML;
+- `dc-favicon-blue.svg` i `dc-favicon-blue-{32,180,192,512}.png` — warianty tego samego znaku dla przeglądarki i urządzeń mobilnych;
+- `local-outline.svg` — dekoracyjny rysunek zabudowy i wieży, używany obok lokalnych tekstów SEO. Nie jest fotografią, mapą ani zweryfikowanym odwzorowaniem panoramy Stalowej Woli; ma funkcję dekoracyjną i jest ukryty przed czytnikiem ekranu.
+
+Nie pozyskano nowej autentycznej fotografii miasta. Obrys nie zastępuje takiej fotografii pod fałszywym podpisem. Dotychczasowa możliwość wyboru własnego zdjęcia i źródła pozostaje dostępna. Dawne pliki ilustracji, logo oraz ikony są zachowane dla historii i kompatybilności; opisy w poprzednich sekcjach dotyczą wersji, w których je wprowadzono.

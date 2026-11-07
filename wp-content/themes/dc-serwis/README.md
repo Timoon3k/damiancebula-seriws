@@ -1,6 +1,8 @@
-# DC Serwis 2.1 — instalacja i edycja
+# DC Serwis 3.0 — instalacja i edycja
 
-Aktualny kierunek to **Architectural Service**: jasna porcelana, petrol, niebieski interfejs i miedziana identyfikacja. Wersja **2.1.0** usuwa powtórzenia ilustracji, porządkuje stopkę bez adresu/e-maila oraz dodaje dokładnie miedziany wariant logo i nową ikonę DC. [Instrukcja aktualizacji 2.1](UPDATE_2_1.md) opisuje instalację i nowe ustawienia. Rzeczywista fotografia Stalowej Woli pozostaje do pozyskania; przygotowano jej wybór i źródło, bez pustego placeholdera. Historyczne sekcje 1.2–2.0 niżej dokumentują poprzednie wersje; migawka, ciemny wygląd i pozioma mini-galeria zostały zastąpione w 2.0.
+Wersja **3.0.0** realizuje nową granatowo-błękitną makietę właściciela: znak ze śnieżynką, ukośne hero, dwa panele usług, korzyści i lokalny tekst SEO. Wzorzec stanowi główna strona po lewej stronie planszy; kolumna wariantów nie jest treścią witryny. Zachowane są mapa Google, Trustindex, formularz, target SEO i prawdziwe realizacje. [Instrukcja aktualizacji 3.0](UPDATE_3_0.md) ma pierwszeństwo przed historycznymi opisami 1.2–2.1 niżej.
+
+Górną część home edytujesz w **Dostosuj → DC — Strona główna: niebieska makieta**. Dodatkowe lokalne akapity SEO, realizacje i shortcode opinii pozostają w Gutenbergu. Nowe sceny są ilustracyjne; model nie jest identyfikowany jako Damian Cebula ani pracownik. Obrys miasta jest dekoracją, nie fotografią Stalowej Woli. Nowy plik źródłowy planszy nie jest dołączony do repo; nie deklaruje się potwierdzonej zgodności pixel-perfect.
 
 Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. Krój Manrope jest dołączony lokalnie: dwa pliki WOFF2 z polskimi znakami, bez żądań do zewnętrznych serwisów fontów. Środowisko dotychczasowych testów lokalnych: WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4; wyniki bieżącej wersji opisuje raport w repozytorium. Interfejs jest po polsku; pakiet językowy panelu WordPress instaluje administrator niezależnie od motywu.
 
@@ -8,9 +10,9 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. 
 
 1. Wykonaj pełny backup plików i bazy istniejącej witryny. Utwórz odrębną kopię stagingową. Zachowaj aktywne wtyczki i treść `/polityka-prywatnosci/`.
 2. Wgraj `dc-serwis.zip` przez Wygląd → Motywy → Dodaj → Wyślij motyw. Aktywuj na stagingu. Na nowej instalacji aktywacja tworzy strony, zdjęcia i menu; istniejąca witryna jest chroniona przed automatycznym nadpisaniem.
-3. Na nowej oddzielnej instalacji aktywacja automatycznie tworzy sześć stron i osobną politykę prywatności, importuje fotografie do Mediów i ustawia menu oraz stronę główną. Wynik i ponowna synchronizacja: Wygląd → DC — synchronizacja. Na istniejącej witrynie wykryte kolizje zatrzymują import, bez nadpisywania treści. Nie instaluj do starej bazy, którą chcesz zachować.
+3. Na nowej oddzielnej instalacji aktywacja tworzy sześć podstawowych stron i osobną politykę prywatności, importuje fotografie do Mediów i ustawia stronę główną. Moduł 3.0 dodaje jeszcze brakujące Cennik i Porady po aktywacji lub uprawnionej wizycie w panelu. Istniejących stron nie nadpisuje. Wynik podstawowego importera i ponowna synchronizacja: Wygląd → DC — synchronizacja. Na istniejącej witrynie kolizje zatrzymują podstawowy import, bez nadpisywania treści. Nie instaluj do starej bazy, którą chcesz zachować.
 4. Ustawienia → Czytanie: ustaw statyczną stronę główną. Ustawienia → Bezpośrednie odnośniki: nazwa wpisu. Zachowaj istniejący URL polityki prywatności i jej treść. Motyw wyświetla standardowe strony przez `the_content()`.
-5. Wygląd → Menu: opcjonalnie przypisz własne menu do „Nawigacja główna”; bez przypisania działa wbudowana nawigacja sześciu stron. Wygląd → Dostosuj → Tożsamość witryny pozwala podmienić znak logo.
+5. Wygląd → Menu: opcjonalnie przypisz własne menu do „Nawigacja główna — niebieska makieta”; bez przypisania działa wbudowane menu siedmiu pozycji z referencji. Realizacje są dostępne z home i stopki. Zapisane stare menu nie jest kasowane. Wygląd → Dostosuj → Tożsamość witryny pozwala wybrać domyślny znak lub własne logo i ikonę WordPress.
 6. Uzupełnij pola „DC — tytuł i opis SEO” w edycji każdej strony lub skonfiguruj jedną wtyczkę SEO. Motyw wyłącza własne metadata i schema po wykryciu Yoast, Rank Math, AIOSEO, SEOPress lub The SEO Framework. Dla innej wtyczki ustaw filtr `dc_external_seo` na true. Sprawdź wynikowy HTML po integracji.
 7. Sprawdź formularz na stagingu z przechwytywaniem poczty. Przed produkcją skonfiguruj transport `wp_mail` / SMTP, nadawcę i SPF/DKIM/DMARC. Komunikat sukcesu oznacza przyjęcie przez transport, nie potwierdzone dostarczenie do skrzynki.
 8. Przejdź checklistę migracji i testy. Dopiero po akceptacji wykonaj osobne wdrożenie. Repozytorium nie zawiera danych produkcyjnego WordPressa ani jego bazy.
@@ -22,12 +24,16 @@ Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. 
 | Serwis AGD | `/serwis-agd-stalowa-wola/` |
 | Realizacje | `/realizacje/` |
 | O firmie | `/o-firmie/` |
+| Cennik | `/cennik/` |
+| Porady | `/porady/` |
 | Kontakt | `/kontakt/` |
 | Polityka prywatności | `/polityka-prywatnosci/` |
 
 ## Edycja
 
-Teksty, nagłówki, listy, sekcje, FAQ i obrazy są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Dekoracyjne ikony i strzałki używają bloków HTML. Fotografie można zastąpić obrazami z biblioteki mediów; WordPress tworzy ich srcset. Wersja 2.0 rozpoznaje wyłącznie znane pliki domyślnych ilustracji wcześniejszego motywu i prezentuje nowe wnętrza bez zapisu do bazy. Edytor może nadal pokazywać zapisany wcześniejszy podgląd; ostateczny wygląd sprawdzaj w podglądzie witryny. Własne zdjęcie o innej nazwie nie jest podmieniane. Zdjęcia dostarczone w motywie mają własny srcset dodawany podczas renderowania, aby zachować poprawność bloków w edytorze. Synchronizacja aktualizuje zarządzane strony, dopóki nie zostały zmienione ręcznie. Wykryte własne edycje są zachowywane i raportowane.
+Nagłówki, wprowadzenie, panele usług, lista korzyści i dwa zdjęcia nowego home mają pola w **Dostosuj → DC — Strona główna: niebieska makieta**. Zapisane wcześniejsze grupy `home-hero`, `services`, `process` pozostają w bazie, a szablon zastępuje ich prezentację. Informuje o tym panel w edycji strony głównej.
+
+Lokalny opis, teksty SEO, realizacje, dodatkowe bloki i shortcode opinii na home oraz treść wszystkich podstron są natywnymi blokami Gutenberga, bez edycji PHP. Zachowaj jedno H1 i klasy sekcji podczas zmian. Fotografie można wybrać z biblioteki mediów; WordPress tworzy ich srcset. Domyślne zdjęcia motywu również mają warianty responsywne. Synchronizacja podstawowych stron zachowuje wykryte własne edycje, a moduł Cennik/Porady wyłącznie tworzy brakujące strony. Istniejące treści i SEO tych dwóch stron nie są później automatycznie przepisywane.
 
 ## Mapa i opinie Google
 
@@ -47,7 +53,7 @@ Nawigacja progresywnie pobiera pełny HTML WordPressa, wymienia treść, tytuł,
 
 ## Źródła grafiki
 
-Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Hero i fotografie opisujące usługi w wersji 2.0: wygenerowane wnętrza `editorial-architecture-*` (WebP 480/960/1536), bez wizerunków techników; nie są zdjęciami rzeczywistych prac klienta. Kopie WebP w `assets/images/` mają usunięte metadane; ze zdjęcia AUX usunięto czarne pasy z oryginału. Ikony oraz rezerwowa grafika SVG AGD są autorskie; docelowe podstrony AGD wykorzystują fotografie ilustracyjne. Makieta jest referencją, nie tłem HTML. Różnice wobec jej fotografii opisuje raport porównawczy. Oryginały w repozytorium pozostają zachowane.
+Fotografie Realizacji: materiały właściciela z `assets/photos/` i istniejącej strony z `assets/source-web/`. Nowe obrazy home 3.0 to `editorial-reference-hero-*` i `editorial-reference-technician-*` (WebP 480/960/1536). Powstały przez image generation według kompozycji nowej referencji. Model jest postacią ilustracyjną, nie przedstawicielem firmy, a źródłowy samochód jest niebrandowany; znak nakłada osobny element strony. Fotografie są oznaczone jako ilustracyjne i nie trafiają do Realizacji. Dekoracyjny obrys miasta nie jest zdjęciem Stalowej Woli. Wcześniejsze ilustracje i pliki identyfikacji pozostają zachowane w paczce. Szczegółowe pochodzenie opisuje `assets/SOURCES.md` w repozytorium.
 
 Wersja 1.6 zachowuje wszystkie istniejące pliki fotografii i dodaje lokalny krój **Manrope**, wagi 200–800, podzbiory `latin` i `latin-ext` (łącznie około 40 KB). Źródło: `@fontsource-variable/manrope` 5.3.0; licencja SIL OFL 1.1 jest dołączona w `assets/fonts/OFL-Manrope.txt`. Szczegóły: `docs/FONTS.md` w repozytorium.
 
