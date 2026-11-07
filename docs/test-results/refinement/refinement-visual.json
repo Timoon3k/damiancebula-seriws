@@ -1,0 +1,138 @@
+{
+  "version": "2.1.0",
+  "capturedAt": "2026-11-07T09:01:53.635Z",
+  "beforeCommit": "8ebc717",
+  "before": "Existing committed screenshots of the actual 2.0 installation",
+  "after": "Current isolated local WordPress",
+  "productionScreenshot": false,
+  "reducedMotion": true,
+  "captureOnlyChanges": "Eager/explicit image sizes and content-visibility for off-screen Chromium painting; labelled Google test placeholder.",
+  "captures": [
+    {
+      "route": "/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/home-1440.jpg",
+      "before": "docs/visual/architectural/after/home-1440.jpg"
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/serwis-klimatyzacji-stalowa-wola-1440.jpg",
+      "before": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-1440.jpg"
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/serwis-agd-stalowa-wola-1440.jpg",
+      "before": "docs/visual/architectural/after/serwis-agd-stalowa-wola-1440.jpg"
+    },
+    {
+      "route": "/realizacje/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/realizacje-1440.jpg",
+      "before": "docs/visual/architectural/after/realizacje-1440.jpg"
+    },
+    {
+      "route": "/o-firmie/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/o-firmie-1440.jpg",
+      "before": "docs/visual/architectural/after/o-firmie-1440.jpg"
+    },
+    {
+      "route": "/kontakt/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/kontakt-1440.jpg",
+      "before": "docs/visual/architectural/after/kontakt-1440.jpg"
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "width": 1440,
+      "after": "docs/visual/refinement/after/polityka-prywatnosci-1440.jpg",
+      "before": "docs/visual/architectural/after/polityka-prywatnosci-1440.jpg"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/home-768.jpg",
+      "before": "docs/visual/architectural/after/home-768.jpg"
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/serwis-klimatyzacji-stalowa-wola-768.jpg",
+      "before": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-768.jpg"
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/serwis-agd-stalowa-wola-768.jpg",
+      "before": "docs/visual/architectural/after/serwis-agd-stalowa-wola-768.jpg"
+    },
+    {
+      "route": "/realizacje/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/realizacje-768.jpg",
+      "before": "docs/visual/architectural/after/realizacje-768.jpg"
+    },
+    {
+      "route": "/o-firmie/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/o-firmie-768.jpg",
+      "before": "docs/visual/architectural/after/o-firmie-768.jpg"
+    },
+    {
+      "route": "/kontakt/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/kontakt-768.jpg",
+      "before": "docs/visual/architectural/after/kontakt-768.jpg"
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "width": 768,
+      "after": "docs/visual/refinement/after/polityka-prywatnosci-768.jpg",
+      "before": "docs/visual/architectural/after/polityka-prywatnosci-768.jpg"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/home-390.jpg",
+      "before": "docs/visual/architectural/after/home-390.jpg"
+    },
+    {
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/serwis-klimatyzacji-stalowa-wola-390.jpg",
+      "before": "docs/visual/architectural/after/serwis-klimatyzacji-stalowa-wola-390.jpg"
+    },
+    {
+      "route": "/serwis-agd-stalowa-wola/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/serwis-agd-stalowa-wola-390.jpg",
+      "before": "docs/visual/architectural/after/serwis-agd-stalowa-wola-390.jpg"
+    },
+    {
+      "route": "/realizacje/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/realizacje-390.jpg",
+      "before": "docs/visual/architectural/after/realizacje-390.jpg"
+    },
+    {
+      "route": "/o-firmie/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/o-firmie-390.jpg",
+      "before": "docs/visual/architectural/after/o-firmie-390.jpg"
+    },
+    {
+      "route": "/kontakt/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/kontakt-390.jpg",
+      "before": "docs/visual/architectural/after/kontakt-390.jpg"
+    },
+    {
+      "route": "/polityka-prywatnosci/",
+      "width": 390,
+      "after": "docs/visual/refinement/after/polityka-prywatnosci-390.jpg",
+      "before": "docs/visual/architectural/after/polityka-prywatnosci-390.jpg"
+    }
+  ]
+}

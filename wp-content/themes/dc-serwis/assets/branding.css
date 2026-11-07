@@ -1,6 +1,19 @@
 .brand {
   gap: 12px;
 }
+.brand-ink-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.brand .brand-ink-color {
+  flood-color: var(--accent);
+}
+.brand-wordmark[data-logo-palette="copper"] {
+  color: var(--accent);
+}
 .brand .brand-lockup {
   display: block;
   width: 310px;

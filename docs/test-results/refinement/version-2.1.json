@@ -1,0 +1,36 @@
+{
+  "version": "2.1.0",
+  "dateEuropeWarsaw": "2026-11-07",
+  "baseMain": "8ebc717",
+  "deliveryTarget": "main",
+  "localChecksPassed": true,
+  "browserViews": 56,
+  "refinementViews": 28,
+  "axeStates": 15,
+  "axeViolations": 0,
+  "distinctIllustrations": 7,
+  "protectedFilesUnchanged": 29,
+  "actualCopperLogoPaintStates": 8,
+  "citySlotSyntheticChecks": 25,
+  "cityPhotographObtained": false,
+  "allRequestedWorkComplete": false,
+  "pending": [
+    "Actual verified photograph of Stalowa Wola (Wikimedia proxy CONNECT403)",
+    "Production SEO comparison blocked by network policy"
+  ],
+  "lighthouseRuns": 18,
+  "lcpClsMedianTargetsPassed": true,
+  "fieldInpMeasured": false,
+  "runtimeSourceFingerprint": "ea22cfee704245f3f902322de8c9c0ae5fe828d43a145993816d390dab903070",
+  "package": {
+    "version": "2.1.0",
+    "files": 106,
+    "bytes": 4160425,
+    "sha256": "310534813e42216a800144443ec8f54152b61e9d43173752d80620fa1bf52df2",
+    "rootDirectoryOnly": "dc-serwis/",
+    "crcVerified": true,
+    "exactSourceMatch": true,
+    "productionDeployed": false
+  },
+  "productionDeployed": false
+}

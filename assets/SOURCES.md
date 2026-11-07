@@ -63,3 +63,27 @@ Na podstawie nowego briefu właściciela przygotowano przez **image generation**
 WebP są dostarczane lokalnie z `srcset` i `sizes`, z ALT zaczynającym się od „Zdjęcie ilustracyjne”. Nie trafiły do Realizacji. Autentyczne pliki z `assets/photos/`, `assets/source-web/` oraz ich chronione warianty pozostają bez zmian, z dotychczasowymi ALT, podpisami i kolejnością.
 
 Wariant logo `assets/branding/dc-lockup-porcelain.svg` w motywie zachowuje geometrię dotychczasowego znaku DC i zmienia wyłącznie wypełnienia na petrol oraz ciemniejszą miedź dla jasnego nagłówka. Istniejące warianty i favicon pozostają zachowane. Fonty Manrope i licencja OFL nie zmieniają się.
+
+## 8. Editorial refinement 2.1 — odrębne kadry i identyfikacja, 2026-11-07
+
+Na prośbę właściciela o usunięcie powtarzających się zdjęć przygotowano przez **image generation** pięć nowych, odrębnych scen ilustracyjnych. Zachowują jasną, architektoniczną paletę; nie są fotografiami prac Damiana Cebuli ani zdjęciami Stalowej Woli. Nie zawierają osób identyfikowanych jako właściciel lub pracownicy i nie trafiają do Realizacji. Siedem ilustracyjnych miejsc na home i obu podstronach usług korzysta teraz z siedmiu różnych scen; pozostają wśród nich dwa wnętrza opisane w sekcji 7.
+
+| Rodzina w motywie `assets/images/` | Zastosowanie i scena | WebP 480 / 960 / 1536 px |
+|---|---|---|
+| `editorial-architecture-ac-detail-*` | Moduł Klimatyzacji na home; detal białego klimatyzatora na jasnej ścianie | 8 800 / 33 838 / 78 364 B |
+| `editorial-architecture-climate-room-*` | Hero Klimatyzacji; klimatyzator w jasnej jadalni | 18 966 / 60 750 / 137 912 B |
+| `editorial-architecture-filter-detail-*` | Sekcja serwisu Klimatyzacji; filtry siatkowe na kamiennym blacie | 23 212 / 83 726 / 207 816 B |
+| `editorial-architecture-dishwasher-kitchen-*` | Hero AGD; otwarta zmywarka w jasnej kuchni | 17 320 / 53 956 / 115 084 B |
+| `editorial-architecture-washer-detail-*` | Sekcja AGD; drzwi i stalowy bęben pralki | 23 556 / 69 762 / 144 664 B |
+
+Każda rodzina ma proporcje 3:2 i warianty 480×320, 960×640 oraz 1536×1024, dostarczane lokalnie przez `srcset` i `sizes`. ALT jednoznacznie opisują zdjęcie ilustracyjne. Źródłowe wygenerowane PNG poza paczką motywu:
+
+- ac-detail: `/workspace/generated_images/exec-f9df9905-e3ed-40d4-ae21-853551de9766.png`;
+- climate-room: `/workspace/generated_images/exec-c0f244f3-2d32-43f4-9b0d-663d5388de78.png`;
+- filter-detail: `/workspace/generated_images/exec-5c55b195-aaa5-444e-a8d1-3aad68e0aaa2.png`;
+- dishwasher-kitchen: `/workspace/generated_images/exec-1cf7cb17-3bec-4eba-bda9-2decd3bb0ed5.png`;
+- washer-detail: `/workspace/generated_images/exec-f8d945f3-bfa5-4b4f-b27f-6bac08b550b9.png`.
+
+Nowa ikona `assets/branding/dc-favicon-copper-{32,180,192,512}.png` jest wariantem wygenerowanym na podstawie dotychczasowego `dc-icon.png`, w miedzianej kolorystyce i z uproszczonym motywem DC do małych rozmiarów. Źródłowy PNG: `/workspace/generated_images/exec-221ef19b-2ef2-4d8c-bb63-29d5b0c575b1.png`. Dawny `dc-icon.png` pozostaje w motywie, także pod dotychczasowym adresem wykorzystywanym przez schema. W nagłówku geometryczne źródło logo pozostaje oryginalne; miedziany filtr nadaje mu dokładny akcent `#9C4F2C`, zgodny z wyróżnieniem tekstu hero. Administrator może wrócić do oryginalnej palety i własnej ikony WordPress bez zmiany plików źródłowych.
+
+**Autentyczne zdjęcie Stalowej Woli: nadal do pozyskania.** Próba pobrania materiału z Wikimedia Commons została zablokowana przez proxy środowiska (CONNECT 403). Nie przypisano wygenerowanej scenie nazwy miasta ani nie wpisano niezweryfikowanego autora lub licencji. Przygotowano wybór fotografii, podpisu i linku źródłowego w Dostosuj; bez własnego zdjęcia lub zweryfikowanego materiału w paczce nie renderuje się puste miejsce. Zapisany projekt konfiguracji sieci dla `commons.wikimedia.org` i `upload.wikimedia.org` wymaga publikacji w ustawieniach środowiska przed kolejną próbą. Dodanie kontrolowanego miejsca nie oznacza spełnienia prośby o rzeczywistą fotografię miasta.

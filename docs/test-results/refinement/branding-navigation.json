@@ -1,0 +1,46 @@
+{
+  "actualPaintedPixels": true,
+  "ajaxStable": true,
+  "checks": [
+    {
+      "width": 1440,
+      "route": "/",
+      "copperPixels": 2903
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "copperPixels": 2903
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-agd-stalowa-wola/",
+      "copperPixels": 2903
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "copperPixels": 2903
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "copperPixels": 2087
+    },
+    {
+      "width": 390,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "copperPixels": 2087
+    },
+    {
+      "width": 390,
+      "route": "/serwis-agd-stalowa-wola/",
+      "copperPixels": 2087
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "copperPixels": 2087
+    }
+  ]
+}

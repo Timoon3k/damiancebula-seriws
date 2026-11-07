@@ -103,3 +103,4 @@ add_filter('render_block_core/image', function ($content, $block) {
 require_once get_theme_file_path('inc/site-sync.php');
 
 require_once get_theme_file_path('inc/architectural.php');
+require_once get_theme_file_path('inc/local-city.php');

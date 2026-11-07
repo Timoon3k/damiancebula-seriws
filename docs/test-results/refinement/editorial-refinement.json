@@ -1,0 +1,287 @@
+{
+  "version": "2.1.0",
+  "checks": [
+    {
+      "width": 1440,
+      "route": "/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true,
+      "composition": {
+        "headingBottom": 1714.453125,
+        "introBottom": 1760.953125,
+        "headingTop": 1659.453125,
+        "photoTop": 1061.140625,
+        "photoBottom": 1589.65625
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 1440,
+      "route": "/serwis-agd-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 1440,
+      "route": "/realizacje/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 1440,
+      "route": "/o-firmie/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 1440,
+      "route": "/kontakt/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 1440,
+      "route": "/polityka-prywatnosci/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true,
+      "composition": {
+        "headingBottom": 1000.03125,
+        "introBottom": 1071.21875,
+        "headingTop": 962.640625,
+        "photoTop": 652.15625,
+        "photoBottom": 892.84375
+      }
+    },
+    {
+      "width": 768,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/serwis-agd-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/realizacje/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/o-firmie/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/kontakt/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 768,
+      "route": "/polityka-prywatnosci/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true,
+      "composition": {
+        "headingBottom": 999.71875,
+        "introBottom": 1068.90625,
+        "headingTop": 959.03125,
+        "photoTop": 1096.90625,
+        "photoBottom": 1357.703125
+      }
+    },
+    {
+      "width": 390,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/serwis-agd-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/realizacje/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/o-firmie/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/kontakt/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 390,
+      "route": "/polityka-prywatnosci/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true,
+      "composition": {
+        "headingBottom": 969.328125,
+        "introBottom": 1038.515625,
+        "headingTop": 928.640625,
+        "photoTop": 1066.515625,
+        "photoBottom": 1303.3125
+      }
+    },
+    {
+      "width": 360,
+      "route": "/serwis-klimatyzacji-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/serwis-agd-stalowa-wola/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/realizacje/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/o-firmie/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/kontakt/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    },
+    {
+      "width": 360,
+      "route": "/polityka-prywatnosci/",
+      "footerContactDetailsRemoved": true,
+      "requiredFooterLinks": 10,
+      "schemaAddressPreserved": true
+    }
+  ],
+  "sceneSets": [
+    {
+      "width": 1440,
+      "scenes": [
+        "editorial-architecture-living",
+        "editorial-architecture-ac-detail",
+        "editorial-architecture-laundry",
+        "editorial-architecture-climate-room",
+        "editorial-architecture-filter-detail",
+        "editorial-architecture-dishwasher-kitchen",
+        "editorial-architecture-washer-detail"
+      ]
+    },
+    {
+      "width": 768,
+      "scenes": [
+        "editorial-architecture-living",
+        "editorial-architecture-ac-detail",
+        "editorial-architecture-laundry",
+        "editorial-architecture-climate-room",
+        "editorial-architecture-filter-detail",
+        "editorial-architecture-dishwasher-kitchen",
+        "editorial-architecture-washer-detail"
+      ]
+    },
+    {
+      "width": 390,
+      "scenes": [
+        "editorial-architecture-living",
+        "editorial-architecture-ac-detail",
+        "editorial-architecture-laundry",
+        "editorial-architecture-climate-room",
+        "editorial-architecture-filter-detail",
+        "editorial-architecture-dishwasher-kitchen",
+        "editorial-architecture-washer-detail"
+      ]
+    },
+    {
+      "width": 360,
+      "scenes": [
+        "editorial-architecture-living",
+        "editorial-architecture-ac-detail",
+        "editorial-architecture-laundry",
+        "editorial-architecture-climate-room",
+        "editorial-architecture-filter-detail",
+        "editorial-architecture-dishwasher-kitchen",
+        "editorial-architecture-washer-detail"
+      ]
+    }
+  ],
+  "checkedResponsiveAssets": 24,
+  "logoExactCopper": true,
+  "faviconsVersionedAndDecoded": true,
+  "externalMapMocked": true,
+  "cityPhotoVerification": "pending-network-access",
+  "realCityPhotoObtained": false,
+  "errors": [],
+  "failedResources": []
+}

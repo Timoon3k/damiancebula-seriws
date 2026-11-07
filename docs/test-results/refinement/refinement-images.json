@@ -1,0 +1,125 @@
+{
+  "photographs": [
+    {
+      "scene": "ac-detail",
+      "source": "/workspace/generated_images/exec-f9df9905-e3ed-40d4-ae21-853551de9766.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-ac-detail-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 8800
+    },
+    {
+      "scene": "ac-detail",
+      "source": "/workspace/generated_images/exec-f9df9905-e3ed-40d4-ae21-853551de9766.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-ac-detail-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 33838
+    },
+    {
+      "scene": "ac-detail",
+      "source": "/workspace/generated_images/exec-f9df9905-e3ed-40d4-ae21-853551de9766.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-ac-detail-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 78364
+    },
+    {
+      "scene": "climate-room",
+      "source": "/workspace/generated_images/exec-c0f244f3-2d32-43f4-9b0d-663d5388de78.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-climate-room-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 18966
+    },
+    {
+      "scene": "climate-room",
+      "source": "/workspace/generated_images/exec-c0f244f3-2d32-43f4-9b0d-663d5388de78.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-climate-room-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 60750
+    },
+    {
+      "scene": "climate-room",
+      "source": "/workspace/generated_images/exec-c0f244f3-2d32-43f4-9b0d-663d5388de78.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-climate-room-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 137912
+    },
+    {
+      "scene": "filter-detail",
+      "source": "/workspace/generated_images/exec-5c55b195-aaa5-444e-a8d1-3aad68e0aaa2.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-filter-detail-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 23212
+    },
+    {
+      "scene": "filter-detail",
+      "source": "/workspace/generated_images/exec-5c55b195-aaa5-444e-a8d1-3aad68e0aaa2.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-filter-detail-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 83726
+    },
+    {
+      "scene": "filter-detail",
+      "source": "/workspace/generated_images/exec-5c55b195-aaa5-444e-a8d1-3aad68e0aaa2.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-filter-detail-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 207816
+    },
+    {
+      "scene": "dishwasher-kitchen",
+      "source": "/workspace/generated_images/exec-1cf7cb17-3bec-4eba-bda9-2decd3bb0ed5.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-dishwasher-kitchen-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 17320
+    },
+    {
+      "scene": "dishwasher-kitchen",
+      "source": "/workspace/generated_images/exec-1cf7cb17-3bec-4eba-bda9-2decd3bb0ed5.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-dishwasher-kitchen-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 53956
+    },
+    {
+      "scene": "dishwasher-kitchen",
+      "source": "/workspace/generated_images/exec-1cf7cb17-3bec-4eba-bda9-2decd3bb0ed5.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-dishwasher-kitchen-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 115084
+    },
+    {
+      "scene": "washer-detail",
+      "source": "/workspace/generated_images/exec-f8d945f3-bfa5-4b4f-b27f-6bac08b550b9.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-washer-detail-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 23556
+    },
+    {
+      "scene": "washer-detail",
+      "source": "/workspace/generated_images/exec-f8d945f3-bfa5-4b4f-b27f-6bac08b550b9.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-washer-detail-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 69762
+    },
+    {
+      "scene": "washer-detail",
+      "source": "/workspace/generated_images/exec-f8d945f3-bfa5-4b4f-b27f-6bac08b550b9.png",
+      "file": "wp-content/themes/dc-serwis/assets/images/editorial-architecture-washer-detail-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 144664
+    }
+  ],
+  "faviconSource": "/workspace/generated_images/exec-221ef19b-2ef2-4d8c-bb63-29d5b0c575b1.png"
+}

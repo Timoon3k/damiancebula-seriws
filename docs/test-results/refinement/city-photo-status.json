@@ -1,0 +1,17 @@
+{
+  "version": "2.1.0",
+  "attemptedAt": "2026-11-07T08:57:24.369294+00:00",
+  "source": "Wikimedia Commons public image API",
+  "photographObtained": false,
+  "networkError": "curl (56) CONNECT tunnel failed, response403; origin HTTP000",
+  "environmentRevision": "1",
+  "preparedDraftHosts": [
+    "commons.wikimedia.org",
+    "upload.wikimedia.org"
+  ],
+  "draftSaved": true,
+  "requiresPublishReportedByTool": true,
+  "configuredMediaSlotVerified": true,
+  "generatedCitySubstitute": false,
+  "taskPartComplete": false
+}

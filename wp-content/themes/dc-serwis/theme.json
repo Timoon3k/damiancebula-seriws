@@ -43,6 +43,21 @@
           "slug": "copper",
           "color": "#CC7446",
           "name": "Miedź"
+        },
+        {
+          "slug": "blue",
+          "color": "#255F8A",
+          "name": "Błękit — akcent"
+        },
+        {
+          "slug": "blue-hover",
+          "color": "#17476C",
+          "name": "Granat — interakcja"
+        },
+        {
+          "slug": "blue-wash",
+          "color": "#E5EDF4",
+          "name": "Jasny błękit"
         }
       ]
     },

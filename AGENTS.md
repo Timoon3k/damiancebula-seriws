@@ -1,12 +1,22 @@
 # Instrukcje dla Codexa — damiancebula-seriws
 
-## Aktualny kierunek — wersja 2.0
+## Bieżące doprecyzowanie — wersja 2.1, 2026-11-07
+
+Najnowsze poprawki właściciela rozwijają Architectural Service: siedem odrębnych scen ilustracyjnych zamiast powtórzeń, stopka bez adresu i e-maila, dokładnie miedziane logo `#9C4F2C` i nowa ikona DC. Zmiany identyfikacji zastępują historyczne wymaganie zachowania wyglądu favicon z 2.0. Zachowaj oryginalne pliki i ustawienia WordPress; pozwól wybrać własną ikonę i oryginalną paletę logo. Dane adresowe, e-mail, metadane i treść prawna pozostają w Kontakcie/schema/polityce. Jedyną zamierzoną zmianą istniejących linków jest usunięcie e-maila ze stopki.
+
+Kolejne doprecyzowanie właściciela wymaga niebieskich akcentów UI: `#255F8A` (działania i aktywna nawigacja), `#17476C` (hover), `#E5EDF4` (powierzchnie procesu, panelu AGD i formularza). Stosuj błękit także do mobilnego telefonu, numeracji, wybranych ikon i fokusu na jasnym tle. Miedź `--accent: #9C4F2C`, wyróżnienie H1, logo i ikona DC pozostają miedziane. Nie przemalowuj fotografii ani petrolowej stopki. Ta paleta UI ma pierwszeństwo przed historyczną szałwią akcentowanych powierzchni w bazie 2.0.
+
+Wymagane autentyczne zdjęcie Stalowej Woli pozostaje do pozyskania, dopóki nie ma zweryfikowanego pliku i źródła. Nie podszywaj wygenerowanego obrazu pod zdjęcie miasta. Gotowe pola Dostosuj nie oznaczają zakończenia tego elementu; bez materiału nie pokazuj pustego placeholdera. Blokadę Wikimedia CONNECT 403 i potrzebę publikacji zapisanej konfiguracji sieci raportuj jawnie.
+
+Pracuj na osobnej gałęzi. Właściciel dopuścił push do `main` po weryfikacji; nie jest to zgoda na bezpośrednie wdrożenie na Hostinger ani zmianę produkcyjnej bazy czy DNS. Bieżące instrukcje: `docs/UPDATE_2_1.md`; faktyczne wyniki: `docs/REFINEMENT_2_1_REPORT.md`. Raporty 2.0 pozostają historyczne. Nie dopasowuj baseline przez regenerację danych po zmianie.
+
+## Zachowany kierunek Architectural Service — baza 2.0
 
 Najnowsza prośba właściciela „PREMIUM WEBSITE REDESIGN — Architectural Service” zastępuje wcześniejszy wymóg ciemnej makiety 1:1. Obowiązuje jasna porcelana, petrol, szałwia i miedź, asymetryczna kompozycja, duża typografia i osobne układy wszystkich podstron. Szczegóły: `docs/ARCHITECTURAL_DESIGN.md` i `docs/UPDATE_2_0.md`. Nie przywracaj czarno-pomarańczowych kart, migawki, `clipPath`, pełnoekranowej przesłony ani animowania całego `main`.
 
-Pracuj na gałęzi i przygotuj PR do `main`; bez merge i bez bezpośredniego wdrożenia produkcyjnego. Zachowaj wszystkie istniejące adresy, treści SEO, H1–H3, metadane, schema, Rank Math, politykę oraz fotografie realizacji (pliki, kolejność, ALT, podpisy). Nowe wnętrza mogą zastępować wyłącznie ilustracyjne zdjęcia usług. Przed zmianami zapisuj dane SEO; lokalny test nie zastępuje porównania rzeczywistej produkcji. Blokady dostępu raportuj jawnie.
+Zachowaj wszystkie istniejące adresy, treści SEO, H1–H3, metadane, schema, Rank Math, politykę oraz fotografie realizacji (pliki, kolejność, ALT, podpisy). Nowe wnętrza mogą zastępować wyłącznie ilustracyjne zdjęcia usług. Przed zmianami zapisuj dane SEO; lokalny test nie zastępuje porównania rzeczywistej produkcji. Blokady dostępu raportuj jawnie.
 
-Animuj tylko wybrane grupy poniżej pierwszego widoku: opacity 0→1, translateY 16→0, 500–750 ms, jednorazowo. Hero ma być widoczne od razu. Bez JavaScript i przy ograniczonym ruchu treść pozostaje widoczna. Favicon jest zachowany; logo DC może zmieniać kolor dla jasnego nagłówka.
+Animuj tylko wybrane grupy poniżej pierwszego widoku: opacity 0→1, translateY 16→0, 500–750 ms, jednorazowo. Hero ma być widoczne od razu. Bez JavaScript i przy ograniczonym ruchu treść pozostaje widoczna. Zmiany koloru logo i ikony witryny opisuje bieżące doprecyzowanie 2.1 powyżej.
 
 ## Historyczne źródła projektu
 

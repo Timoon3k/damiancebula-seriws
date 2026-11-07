@@ -1,6 +1,6 @@
-# DC Serwis 2.0 — instalacja i edycja
+# DC Serwis 2.1 — instalacja i edycja
 
-Aktualny kierunek to **Architectural Service**: jasna porcelana, petrol, szałwia i miedź, asymetryczne układy, różne kompozycje usług oraz nowe ilustracyjne wnętrza. [Instrukcja aktualizacji 2.0](UPDATE_2_0.md) opisuje instalację na odrębnym stagingu. Historyczne sekcje 1.2–1.6 niżej dokumentują poprzednie wersje; migawka, ciemny wygląd i pozioma mini-galeria zostały zastąpione w 2.0.
+Aktualny kierunek to **Architectural Service**: jasna porcelana, petrol, niebieski interfejs i miedziana identyfikacja. Wersja **2.1.0** usuwa powtórzenia ilustracji, porządkuje stopkę bez adresu/e-maila oraz dodaje dokładnie miedziany wariant logo i nową ikonę DC. [Instrukcja aktualizacji 2.1](UPDATE_2_1.md) opisuje instalację i nowe ustawienia. Rzeczywista fotografia Stalowej Woli pozostaje do pozyskania; przygotowano jej wybór i źródło, bez pustego placeholdera. Historyczne sekcje 1.2–2.0 niżej dokumentują poprzednie wersje; migawka, ciemny wygląd i pozioma mini-galeria zostały zastąpione w 2.0.
 
 Natywny motyw WordPress 6.6+, PHP 8.2+. Bez bundlera i bibliotek frontendowych. Krój Manrope jest dołączony lokalnie: dwa pliki WOFF2 z polskimi znakami, bez żądań do zewnętrznych serwisów fontów. Środowisko dotychczasowych testów lokalnych: WordPress 7.1.4 / PHP 8.3.36 / MariaDB 11.4; wyniki bieżącej wersji opisuje raport w repozytorium. Interfejs jest po polsku; pakiet językowy panelu WordPress instaluje administrator niezależnie od motywu.
 
@@ -86,3 +86,13 @@ Wgraj ZIP **1.6.0** wyłącznie do nowej, oddzielnej instancji WordPress i zast�
 Architectural Service zastępuje ciemne powierzchnie porcelaną, petrolem i szałwią. Nowe fotografie wnętrz są ilustracjami; fotografie realizacji pozostają w niezmienionej kolejności, z oryginalnymi ALT, podpisami i pełnym lightboxem. Galerie na telefonie korzystają z pionowej, nieregularnej kompozycji. Logo zachowuje znak DC, z wariantem kolorystycznym dla jasnego nagłówka; favicon pozostaje bez zmian.
 
 Migawka tekstu, pełnoekranowy wipe i przygaszanie `main` są usunięte. Hero jest widoczne natychmiast, a dyskretna animacja niższych grup działa tylko raz. Zachowano pełne adresy stron, teksty SEO, H1–H3, metadata, schema, Rank Math, prawną treść polityki i mechanizmy formularza, mapy oraz opinii. Aktualizacja nie przepisuje bazy. Szczegóły instalacji i sprawdzenia: [UPDATE_2_0.md](UPDATE_2_0.md).
+
+## Wersja 2.1
+
+Siedem miejsc ilustracyjnych ma siedem różnych scen; prawdziwe zdjęcia realizacji pozostają zachowane. Stopka udostępnia telefon, Kontakt, nawigację, politykę i `majewskitomasz.pl`; adres i e-mail są nadal w Kontakcie, polityce i schema. Formularz kieruje wiadomości do `kontakt@damiancebula-serwis.pl`.
+
+Niebieski `#255F8A` akcentuje główne przyciski, mobilny telefon, nawigację, numerację i wybrane ikony; hover to `#17476C`, a jasne powierzchnie procesu, panelu AGD i formularza — `#E5EDF4`. Miedź logo i wyróżnienia hero oraz kolory zdjęć i petrolowej stopki pozostają zachowane.
+
+W **Dostosuj → Tożsamość witryny** można wybrać miedź `#9C4F2C` albo oryginalne kolory logo oraz miedzianą ikonę DC albo własną ikonę WordPress. Korzystaj z ostrego pliku źródłowego; miedziany wariant własnego logo wymaga przezroczystego tła. Zapisane ustawienia i oryginalne pliki pozostają zachowane.
+
+W **Dostosuj → DC — Lokalność i zdjęcie miasta** wybiera się autentyczne zdjęcie, autora i link źródłowy. W paczce nie ma jeszcze zweryfikowanej fotografii Stalowej Woli; pobranie z Wikimedia blokuje proxy środowiska. Brak zdjęcia nie tworzy pustej ramki i nie jest uznawany za zakończenie tej części prośby. Pełne ustawienia i ograniczenia: [UPDATE_2_1.md](UPDATE_2_1.md).
